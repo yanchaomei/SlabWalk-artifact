@@ -1,0 +1,10 @@
+{
+  "amended_manifest_sha256": "e0324f8b2815eef0d11b9f2531578baf7cad9f7276c7de919db8c4da30ada559",
+  "amended_utc": "2026-07-13T15:22:08.293247+00:00",
+  "campaign_id": "vldb-worker-scaling-final-node3-v1-20260713",
+  "new_tool_sha256": "5d621f7af2af678ab15e0464219cf51a1f5a87e5f899983fac256020e66f7b1f",
+  "old_tool_sha256": "e5fceed8a7ea9c6f9e4ce2f2e4b00a8a0c1805f6fe3b256e904cb2729a7e3ec8",
+  "original_manifest_sha256": "21661ee15e41a426beaf0f7213e1fdd32937cfb927a40cf49b58320e2f7e8021",
+  "protocol_key": "assembler_sha256",
+  "reason": "Accept fixed-pool d-HNSW client logs as the authoritative retained detail source when the deprecated benchmark-details side file is absent; no binary, query, raw log, or measurement changed."
+}

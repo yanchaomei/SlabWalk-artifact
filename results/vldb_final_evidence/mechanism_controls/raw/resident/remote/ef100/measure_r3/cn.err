@@ -1,0 +1,117 @@
+============================================================
+                        CLIENT
+============================================================
+connect to:                   [skv-node5, ]
+is initiator:                 true
+TCP port:                     1316
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           4294967296
+data path:                    "/home/kvgroup/chaomei/hnsw-data/sift1m"
+query suffix:                 uniform
+number of threads:            1
+number of coroutines:         8
+query QP/CQ contexts:         1
+threads pinned:               true
+seed:                         1234
+------------------------------------------------------------
+K:                            10
+M:                            16
+ef search:                    100
+ef construction:              100
+spec-k (GraphBeyond C1):      1
+============================================================
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+[STATUS]: LAVD neighborhood region: requested bytes=17179869184, resolved bytes=17179869184
+client id: 0
+number of clients: 1
+connect to server skv-node5
+pairing: 190178 -- 17283
+[STATUS]: pinned main thread to core 20
+[STATUS]: receive access tokens of remote memory regions
+[STATUS]: LAVD neighborhood region: registered bytes per MN=17179869184
+reading input data... (dim=128, num vectors=10000/10000, filesize=5120008)
+reading input data... (dim=100, num vectors=10000/10000, filesize=4000008)
+[STATUS]: allocate worker threads and read buffers
+allocated ALIGNED MEM (no hugepage) at 140690082332736 with buffer size 4294967296
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 190179 -- 17284
+[STATUS]: synchronize compute nodes
+[STATUS]: LAVD: building neighborhood region
+[LAVD][multi] start build, num_mns=1 bits=8 stride=4616 rabitq_b=0
+[LAVD][multi] MN 0 staged-read 800573128B via 67108864B MR
+[LAVD][multi] parsed N=1000000 uids across 1 MNs
+[LAVD][native][export] N=1000000 mns=1 policy=block_cyclic mode=packed_write packed_region=4616016384 sparse_region=4616016384 saved=0 MN[0]_blocks=1000000 MN[0]_bytes=4616016384
+[LAVD][varblock][multi] MN[0] offset_table written: L=1000000 table_bytes=8000008 blocks_total=2764713536 avg_stride=2764
+LAVD_PHYSICAL_ACCOUNTING {"descriptor_version":2,"policy":"block_cyclic","record_layout":"variable","scoring_code":"scalar","scoring_bits":8,"total_slots":1000000,"num_mns":1,"mn":0,"local_slots":1000000,"header_bytes":16384,"budget_map_bytes":0,"placement_padding_bytes":0,"offset_table_bytes":8000008,"record_bytes":2764713536,"materialized_bytes":2772729928,"registered_bytes":17179869184,"actual_write_bytes":2772729928}
+[LAVD][multi] build done: N=1000000 edges=19143844 avg_deg=19.1438 MN[0]=1000000
+[STATUS]: synchronize compute nodes
+[LAVD][native] packed addressing restored from descriptor: N=1000000 mns=1 policy=block_cyclic layout=variable descriptor_version=2 packed_bytes=2772729928 sparse_bytes=0
+[STATUS]: LAVD: config ready (bits=8 stride=4616 rerank=50)
+[STATUS]: construct placement datastructure
+  fetched 20 nodes on level 4
+  fetched 259 nodes on level 3
+  fetched 3923 nodes on level 2
+[STATUS]: run balanced k-means
+run kmeans
+cluster sizes:
+  cluster 0: 1920
+  cluster 1: 2003
+  final iteration: 5, final error: 0
+run balanced kmeans
+num iterations: 75
+reported cluster sizes:
+  cluster 0: 1961
+  cluster 1: 1962
+actual cluster sizes:
+  cluster 0: 1922
+  cluster 1: 2001
+combine clusters
+final cluster sizes:
+  cluster 0: 3923
+final mapping: 0 0 
+[STATUS]: synchronize compute nodes
+[STATUS]: run queries
+allocated ALIGNED MEM (no hugepage) at 94379795230464 with buffer size 416000
+routing buffer size: 416000
+[STATUS]: **QUERY**: running worker threads...
+query 0/10000
+query 1000/10000
+query 2000/10000
+query 3000/10000
+query 4000/10000
+query 5000/10000
+query 6000/10000
+query 7000/10000
+query 8000/10000
+query 9000/10000
+[STATUS]: join compute threads
+t0 processed: 10000, CHR: 0
+[STATUS]: processed queries: 10000
+[STATUS]: local recall: 0.976620
+[STATUS]: collect statistics and timings from compute nodes
+
+statistics:
+cache histogram
+  size: 0 | freq: 75454
+total entries: 0
+cooling table histogram
+  size: 0 | freq: 1258
+  size: 1 | freq: 0
+  size: 2 | freq: 0
+  size: 3 | freq: 0
+  size: 4 | freq: 0
+  size: 5 | freq: 0
+  size: 6 | freq: 0
+CT total entries: 0

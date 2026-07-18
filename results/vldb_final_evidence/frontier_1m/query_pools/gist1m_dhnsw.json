@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-15T15:59:25.511929+00:00",
+  "dataset": "GIST1M",
+  "groundtruth": {
+    "bytes": 4040000,
+    "canonical_ids_sha256": "676d5f14acb96f88906360245f86bab8529fcb0fe290290a5901691f3c834f30",
+    "file_sha256": "620fab5f04a61a138abe4d968bb21eb18a143d9b6f9cb1231a2ed024b53752b0",
+    "format": "ivecs",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw-work/gist/gist_groundtruth.ivecs",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 10000,
+  "method": "d-HNSW",
+  "metric": "l2",
+  "query": {
+    "bytes": 38440000,
+    "canonical_sha256": "bfada3fbec6e0b72f52dcbbe8bbe381ebb78c9410970eaccd51d6d11d455103f",
+    "dim": 960,
+    "file_sha256": "62c54834935cb2b0abfbab984eb44021673cc9953e9f27d40188ced08eaa403d",
+    "format": "fvecs",
+    "path": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw-work/gist/gist_query.fvecs",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

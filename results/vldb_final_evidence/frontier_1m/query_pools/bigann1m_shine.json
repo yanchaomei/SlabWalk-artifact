@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-15T15:59:25.750355+00:00",
+  "dataset": "BIGANN1M",
+  "groundtruth": {
+    "bytes": 4000008,
+    "canonical_ids_sha256": "a80f5fbbdbaf8a8e79112f56eb3b04436a7615a55cc2bcedd99cf53c9555b8da",
+    "file_sha256": "d13853a6c820c69b3c972e96d4a979a0003cd12a1e13ee171ebd350873db94e2",
+    "format": "bin",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/hnsw-data/bigann1m/queries/groundtruth-uniform.bin",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 10000,
+  "method": "SHINE",
+  "metric": "l2",
+  "query": {
+    "bytes": 1280008,
+    "canonical_sha256": "6fc3c31f8d2f2020255aada4b39d002ef1525664755b1343e3e426f009e162f0",
+    "dim": 128,
+    "file_sha256": "eca755831fc9a8004e14886df48b81109a8ed3bfc6b632509c93c0460a30d552",
+    "format": "u8bin",
+    "path": "/home/kvgroup/chaomei/hnsw-data/bigann1m/queries/query-uniform.u8bin",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

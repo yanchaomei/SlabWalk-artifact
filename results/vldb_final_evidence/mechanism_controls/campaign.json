@@ -1,0 +1,72 @@
+{
+  "campaign_id": "vldb-mechanism-controls-final-v6-20260715",
+  "created_utc": "2026-07-14T20:21:20.246784+00:00",
+  "protocol": {
+    "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+    "budget": {
+      "coroutines": 8,
+      "dataset": "GIST200K",
+      "ef_construction": 200,
+      "ef_search": 100,
+      "fraction_values": {
+        "f05": 0.05,
+        "f10": 0.1,
+        "f25": 0.25,
+        "f50": 0.5,
+        "f75": 0.75,
+        "full": 1.0
+      },
+      "fractions": [
+        "f05",
+        "f10",
+        "f25",
+        "f50",
+        "f75",
+        "full"
+      ],
+      "hotset": "indeg",
+      "m": 32,
+      "queries_per_run": 1000,
+      "query_contexts": 16,
+      "threads": 16
+    },
+    "fingerprint_tool_sha256": "80e588f99e34450a6c238d94c7b459027b4d5c02184581fcc30c261305d25eb3",
+    "gist_groundtruth_sha256": "514e87d5ac18f65c726804bf34ecede07feabe90d2273f11f497d720f79ff08a",
+    "gist_index_dump_sha256": "4c4675eb57a3b36385a95b8a86650761f3e29b186d1d3a745c6f5519487a2980",
+    "gist_query_sha256": "220465f0ab851de6890d87ab1dd5081f526da8d214aa7a3849e738e63cad6775",
+    "index_region_bytes": 4294967296,
+    "lavd_region_bytes": 17179869184,
+    "memory_node": "skv-node5",
+    "query_suffix": "uniform",
+    "record_layout": "packed_variable",
+    "repeats": 5,
+    "resident": {
+      "coroutines": 8,
+      "dataset": "SIFT1M",
+      "ef_construction": 100,
+      "ef_values": [
+        50,
+        100,
+        200
+      ],
+      "m": 16,
+      "modes": [
+        "remote",
+        "resident"
+      ],
+      "queries_per_run": 10000,
+      "query_contexts": 1,
+      "threads": 1
+    },
+    "runner_sha256": "d4cd6470d805bc534df26e59edd965cc84d47f6e4fbf138010d9a241938b183f",
+    "scoring_code": "sq8",
+    "sift_groundtruth_sha256": "4c06dd3d1539b1de50f1b7e98a116833ed5c2f1571d0ef81f383a04541e797e7",
+    "sift_index_dump_sha256": "bbfe1fd976ab0fd79ef8575c5256fb24f2a3bcb43c28c8cc8ea9efd72d63f336",
+    "sift_query_sha256": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65",
+    "summarizer_sha256": "f4a9b580f2e6933ff2a79f914978df2edce033e597e53712ce7f3e4efb3cf456",
+    "tcp_port": 1316,
+    "top_k": 10,
+    "warmups": 1
+  },
+  "protocol_fingerprint": "d60f2d12f0f23c2bbccecb65db1a2fe074ba819ef11567887c6734768129e31a"
+}

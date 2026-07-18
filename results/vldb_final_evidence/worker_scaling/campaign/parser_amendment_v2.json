@@ -1,0 +1,144 @@
+{
+  "amended_manifest_sha256": "7836fb7968191348329662c31d59842f1cafbd7a63b6b8232b5c40bf70fe99cc",
+  "amended_utc": "2026-07-13T15:42:03.256529+00:00",
+  "campaign_id": "vldb-worker-scaling-final-node3-v1-20260713",
+  "new_parser_sha256": "aec9e23c727c746227fdd17131913ffc1714af9f039e8d3b10b577ae99d0f156",
+  "old_parser_sha256": "18071fcf49ebbfafc094607c235d659d9330f80ada473c6e308960cac0d38684",
+  "original_manifest_sha256": "e0324f8b2815eef0d11b9f2531578baf7cad9f7276c7de919db8c4da30ada559",
+  "reason": "Preserve protocol sentinels when a malformed color CSI prefix is spliced immediately before FRONTIER output. Every retained result was reparsed byte-for-field with no measurement change.",
+  "revalidated_runs": [
+    {
+      "client_log_sha256": "990b5ad8c995e78dc93b19d7d63e70cc213e440904280579ec7d5b970080ee7b",
+      "frontier_sha256": "028c0a1e77badc24a25fa31f7f2023861c2a4cd9ae6bfd092584753c6e5e94a0",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w1/r0",
+      "workers": 1
+    },
+    {
+      "client_log_sha256": "473142af2130f169fa820709915eaeaec91852235ace82e4691e1fd280c80979",
+      "frontier_sha256": "01fa05621e92bfa868caa13fb8b0263772935e5388ffea794b1dba54ad17b2de",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w1/r1",
+      "workers": 1
+    },
+    {
+      "client_log_sha256": "10ab68205d697679083583e3fd3def3f9ffccce404b6182abe1a788e81c49f45",
+      "frontier_sha256": "17ce2a1b0f868f06da5ebb933b5c3a081818d67bef5ee74795d5bf5235ccba44",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w1/r2",
+      "workers": 1
+    },
+    {
+      "client_log_sha256": "3f4d725cc799b66baabfb689c94f4858ad8d4d8ac080566d3457dd4974cd61e3",
+      "frontier_sha256": "7c5d9f5f8ea9997a18ffee97f226564d8ba76e6af2439641fd4d8f28133387ff",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w1/r3",
+      "workers": 1
+    },
+    {
+      "client_log_sha256": "52f345e3048752126a5b631b0d8e5ff664983ea565c51016b8f9df928548297c",
+      "frontier_sha256": "c3e5cb5054955d5c2c727a84c076d973d31aa9ddcdd38b38dec15481041d3555",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w1/r4",
+      "workers": 1
+    },
+    {
+      "client_log_sha256": "031dc0ebad925a9f2969c267b76443bb4530f2e5e052069f9119845f846afd3a",
+      "frontier_sha256": "638b1785af2143d897639779d8b389327662a4e9221ec0350ff5fd2badc66a9b",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w1/warmup0",
+      "workers": 1
+    },
+    {
+      "client_log_sha256": "2b17dafb02df065b8b3fdf2a43c0cd129dd5e0c3501ccf83da3702789bc035f7",
+      "frontier_sha256": "3805b95b7f9b2e6bb381aba52c4f65d433272bfce98840af7a8af7566c177145",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w16/r0",
+      "workers": 16
+    },
+    {
+      "client_log_sha256": "7512775ac6e22e936cea5efae01efa36f181a3b6a16b6bbe834f1ef6b7cf5905",
+      "frontier_sha256": "52d3559d5856d95396c5ee1b629b4b18e66bef8bbf26fec706bea9fea120f94e",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w16/r1",
+      "workers": 16
+    },
+    {
+      "client_log_sha256": "c39d56676d97096b05e412b57ed988a7337a29f661cb670e40219faf64c5fd92",
+      "frontier_sha256": "a4fc163ef5481d465c34f42aec81b54752a1fca31f12ab5bf0cc2b5f98f7a9e0",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w16/r2",
+      "workers": 16
+    },
+    {
+      "client_log_sha256": "4d0e8e7b083a3b7c9344aaa256e0f5a373868a46e4099af1e601ec4aaf7b14f2",
+      "frontier_sha256": "e1e4933f2eb13ed9af9ba0f001f282f7ae701ac705ea8398261892e99bf0fe98",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w16/r3",
+      "workers": 16
+    },
+    {
+      "client_log_sha256": "9d0560ce1246ff33e4ff35a4b80e20b99046d9520ecb14d331bd21e64f1ac777",
+      "frontier_sha256": "84a21e8881dda9c73eaeb3b125124c402a4651a31419d475b8438b713c618ba9",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w16/r4",
+      "workers": 16
+    },
+    {
+      "client_log_sha256": "cfc50ce4aad5598c34261d75e67950fbd5afa53646cd076add63b137eb787206",
+      "frontier_sha256": "b64e4d468ad101308cc71f54e4a0f6d703661b542aa65283f5e15d39dee862ee",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w16/warmup0",
+      "workers": 16
+    },
+    {
+      "client_log_sha256": "22a1242f641f359a44a7b4606ae4de52f6a490922ed1b12aa3c0dda25d907a02",
+      "frontier_sha256": "6728bb9cedc745f01d193b3536fe2454643cd3dc5b375f03a10b59ccfc80eb6a",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w40/warmup0",
+      "workers": 40
+    },
+    {
+      "client_log_sha256": "9c498e4440cbfa79be5e5222c5ca9bb56b504fdb8fe4011cee7c4b461fd4495e",
+      "frontier_sha256": "5eaa01bbd1b9d399be115d743231c97e0b29886cb0091467f5aa060f986770c7",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w8/r0",
+      "workers": 8
+    },
+    {
+      "client_log_sha256": "c3aa812104a38148400d906e3ff58413c9a357486a829ecccc896d931d71ae80",
+      "frontier_sha256": "17a2b986940f6869a11c5574b90aed833bd80d44f97e9b57f3c21a917f79afd2",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w8/r1",
+      "workers": 8
+    },
+    {
+      "client_log_sha256": "83ca75c56d6eb1adcdcd1081a83725c434d6b0ce71ee4bba161887980744c145",
+      "frontier_sha256": "1dedbdd76f327d6b5b947e2325bc89922ceb66a0b17bbf782d4cb14ad2eac396",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w8/r2",
+      "workers": 8
+    },
+    {
+      "client_log_sha256": "a68421aa41f5b41c054bbc28267bd4085c4623ce4cf5b8e0b7235fd1d87bf0f1",
+      "frontier_sha256": "53bf997c90527249ba6e7dde6b0d66903993fbcb7c2b0da915308a4351e1c856",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w8/r3",
+      "workers": 8
+    },
+    {
+      "client_log_sha256": "0e2ececef98733c170fa7145809e1f5ebaea1e2bfcfa3b605595c6186b21609f",
+      "frontier_sha256": "a0d0c99e0fd7e0905c5f3307097207e9f43abcc8105e8db3fe40e07803b4e142",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w8/r4",
+      "workers": 8
+    },
+    {
+      "client_log_sha256": "5775733ec68c808a6dfa5e38fe1bb54818853252e79f76f515b21f1d521b3452",
+      "frontier_sha256": "22f2c92093aff7ed36421690b2e97ab55a5552bac533fb098e86ece3f496671b",
+      "row_unchanged": true,
+      "run": "raw/dhnsw/w8/warmup0",
+      "workers": 8
+    }
+  ]
+}

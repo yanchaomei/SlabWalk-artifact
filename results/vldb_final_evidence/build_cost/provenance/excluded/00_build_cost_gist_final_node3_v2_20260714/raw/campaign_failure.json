@@ -1,0 +1,30 @@
+{
+  "campaign_id": "vldb-build-cost-gist-node3-v2-20260714",
+  "closed_utc": "2026-07-13T17:22:13.769395+00:00",
+  "failed_stage": "pre-build-input-validation",
+  "files": [
+    {
+      "path": "GIST1M_r0.err",
+      "sha256": "7c107b726174bb2c43a2357c59675514bc604c4834c82662d077891ec4ef85f3",
+      "size_bytes": 3041
+    },
+    {
+      "path": "GIST1M_r0.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "GIST1M_r0.mn.err",
+      "sha256": "73d8ce84b66afe4adf08a21aea79092a3d045cfc3c5b9e69bd8d2e373e5a5e68",
+      "size_bytes": 1258
+    },
+    {
+      "path": "campaign.json",
+      "sha256": "8b685226e160a45defc579903b8fb3fd39be3155fd749a0c8be5670d3d17efc4",
+      "size_bytes": 542
+    }
+  ],
+  "measured_rows_admitted": 0,
+  "reason": "node3 lacked GIST1M base.fbin; the run exited before Slab construction and contributes zero admitted rows",
+  "status": "excluded_prebuild_input_failure"
+}

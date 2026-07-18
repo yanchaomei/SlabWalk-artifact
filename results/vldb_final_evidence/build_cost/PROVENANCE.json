@@ -1,0 +1,505 @@
+{
+  "assembled_utc": "2026-07-13T18:03:32.143326+00:00",
+  "assembler": {
+    "path": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/experiments/sigmetrics/assemble_vldb_build_cost.py",
+    "sha256": "9f86b3113f1ae2700ea4befa21dd19c31fbaa2b1d566ec4f7d857d9d60b4537f"
+  },
+  "excluded_campaigns": [
+    {
+      "files": [
+        {
+          "retained": "provenance/excluded/00_build_cost_gist_final_node3_v2_20260714/raw/GIST1M_r0.err",
+          "sha256": "7c107b726174bb2c43a2357c59675514bc604c4834c82662d077891ec4ef85f3",
+          "size_bytes": 3041,
+          "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v2_20260714/raw/GIST1M_r0.err"
+        },
+        {
+          "retained": "provenance/excluded/00_build_cost_gist_final_node3_v2_20260714/raw/GIST1M_r0.json",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0,
+          "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v2_20260714/raw/GIST1M_r0.json"
+        },
+        {
+          "retained": "provenance/excluded/00_build_cost_gist_final_node3_v2_20260714/raw/GIST1M_r0.mn.err",
+          "sha256": "73d8ce84b66afe4adf08a21aea79092a3d045cfc3c5b9e69bd8d2e373e5a5e68",
+          "size_bytes": 1258,
+          "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v2_20260714/raw/GIST1M_r0.mn.err"
+        },
+        {
+          "retained": "provenance/excluded/00_build_cost_gist_final_node3_v2_20260714/raw/campaign.json",
+          "sha256": "8b685226e160a45defc579903b8fb3fd39be3155fd749a0c8be5670d3d17efc4",
+          "size_bytes": 542,
+          "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v2_20260714/raw/campaign.json"
+        },
+        {
+          "retained": "provenance/excluded/00_build_cost_gist_final_node3_v2_20260714/raw/campaign_failure.json",
+          "sha256": "7acbacf3464c17fd177782e8056f633c10dd9afc53abc82152a81ef944324faf",
+          "size_bytes": 990,
+          "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v2_20260714/raw/campaign_failure.json"
+        }
+      ],
+      "retained_root": "provenance/excluded/00_build_cost_gist_final_node3_v2_20260714",
+      "source_root": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v2_20260714"
+    }
+  ],
+  "kind": "vldb_build_cost_provenance_v1",
+  "retained_runs": [
+    {
+      "dataset": "SIFT1M",
+      "kind": "json",
+      "repeat": 0,
+      "retained": "raw/SIFT1M_r0.json",
+      "sha256": "f107279f28acee253a9e145365831ff98334b493ad5476e40be5feed6f7e2a2b",
+      "size_bytes": 2815,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r0.json"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "err",
+      "repeat": 0,
+      "retained": "raw/SIFT1M_r0.err",
+      "sha256": "e5ed525eacc1ebf2ffd7e940d50f30c48289676807af6646f9bbca310b2b8244",
+      "size_bytes": 5921,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r0.err"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "mn_err",
+      "repeat": 0,
+      "retained": "raw/SIFT1M_r0.mn.err",
+      "sha256": "01e3f37eb1c38db67d12daa340a2fc283256db6c770cf240b7f17addc4407091",
+      "size_bytes": 1490,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r0.mn.err"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "json",
+      "repeat": 1,
+      "retained": "raw/SIFT1M_r1.json",
+      "sha256": "c6306ed59d7ef1cfd132745c13b02f516067493aa6b0eef307caa66740fc0074",
+      "size_bytes": 2805,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r1.json"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "err",
+      "repeat": 1,
+      "retained": "raw/SIFT1M_r1.err",
+      "sha256": "185677407a35da9233fdf5e79364a06ea879715f497f51266ca47b5a3d5e07b6",
+      "size_bytes": 5921,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r1.err"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "mn_err",
+      "repeat": 1,
+      "retained": "raw/SIFT1M_r1.mn.err",
+      "sha256": "028982ea8a9d17f1bfdad04474658902acbdae6c206a49210b5d42425fd5c8a9",
+      "size_bytes": 1490,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r1.mn.err"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "json",
+      "repeat": 2,
+      "retained": "raw/SIFT1M_r2.json",
+      "sha256": "b6048853bdb04ae6971cf82f3b496c785bae148ae7e45e2d9aac16e166ecfb47",
+      "size_bytes": 2823,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r2.json"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "err",
+      "repeat": 2,
+      "retained": "raw/SIFT1M_r2.err",
+      "sha256": "b656778af5e1ad6982cc1fe3cfe27b521da2da1abacb8293b044e6c51aae2ed0",
+      "size_bytes": 5921,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r2.err"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "mn_err",
+      "repeat": 2,
+      "retained": "raw/SIFT1M_r2.mn.err",
+      "sha256": "280d602ea3680d0fe2a4806ac64b49504f63efa8a65ec109815c3fdf037f6637",
+      "size_bytes": 1490,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r2.mn.err"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "json",
+      "repeat": 3,
+      "retained": "raw/SIFT1M_r3.json",
+      "sha256": "42e3c0c2ad17122745449338103138f5e05788705a17359d197414e5923e18c6",
+      "size_bytes": 2799,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r3.json"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "err",
+      "repeat": 3,
+      "retained": "raw/SIFT1M_r3.err",
+      "sha256": "297d8967888f899d8a69c66a1804d10463df7a3d0d3ee66d845ac9635d7d0c09",
+      "size_bytes": 5921,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r3.err"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "mn_err",
+      "repeat": 3,
+      "retained": "raw/SIFT1M_r3.mn.err",
+      "sha256": "5075b05262da5501c4a395d991bcfcadbf2b3543dcd160e3d9c3d6d239c4873b",
+      "size_bytes": 1490,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r3.mn.err"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "json",
+      "repeat": 4,
+      "retained": "raw/SIFT1M_r4.json",
+      "sha256": "c71bb4e77550333d15de82b34c5d822e56646fa6842bd31198368b5b5b4dbf4c",
+      "size_bytes": 2828,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r4.json"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "err",
+      "repeat": 4,
+      "retained": "raw/SIFT1M_r4.err",
+      "sha256": "165c3741bc01f8bc96a4251bc9c704b70a640b0ccacbe0130b7b11173e64d8af",
+      "size_bytes": 5921,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r4.err"
+    },
+    {
+      "dataset": "SIFT1M",
+      "kind": "mn_err",
+      "repeat": 4,
+      "retained": "raw/SIFT1M_r4.mn.err",
+      "sha256": "91f77f2edb16b6d371c786ec4f158684ab6ce175e0c32e918f884e899a695f53",
+      "size_bytes": 1490,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714/raw/SIFT1M_r4.mn.err"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "json",
+      "repeat": 0,
+      "retained": "raw/DEEP1M_r0.json",
+      "sha256": "f69a284963adccaef98a79dfa80076de7a78fbae0d76e54d21e7e0202f514bd0",
+      "size_bytes": 2806,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r0.json"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "err",
+      "repeat": 0,
+      "retained": "raw/DEEP1M_r0.err",
+      "sha256": "cfffff8baee589c76eff2928e8478c9b4f2e3a559ed40d74cda5ffce68e05b10",
+      "size_bytes": 5922,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r0.err"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "mn_err",
+      "repeat": 0,
+      "retained": "raw/DEEP1M_r0.mn.err",
+      "sha256": "5414c43b695adb48274055ef46484405a3316234435fb436d83f805267d4b707",
+      "size_bytes": 1490,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r0.mn.err"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "json",
+      "repeat": 1,
+      "retained": "raw/DEEP1M_r1.json",
+      "sha256": "266ac8dfde06ea11d196fda633a9b34cec5a8d9f2df5c64e78ee9a4682f42060",
+      "size_bytes": 2811,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r1.json"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "err",
+      "repeat": 1,
+      "retained": "raw/DEEP1M_r1.err",
+      "sha256": "200a57d1fdc3dee88fc0e49a30ca6b49e160606360762a351e0bc63593fd2ea0",
+      "size_bytes": 5922,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r1.err"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "mn_err",
+      "repeat": 1,
+      "retained": "raw/DEEP1M_r1.mn.err",
+      "sha256": "5719e6a5d775f1f57f78cc849037713be5a5af90e5b6c0799f53d892f3164294",
+      "size_bytes": 1490,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r1.mn.err"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "json",
+      "repeat": 2,
+      "retained": "raw/DEEP1M_r2.json",
+      "sha256": "ae2284d4e0bd49bbf4c0b04801c0413d5b49d6c11353e0103b2f6d60a8189eac",
+      "size_bytes": 2825,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r2.json"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "err",
+      "repeat": 2,
+      "retained": "raw/DEEP1M_r2.err",
+      "sha256": "1e3c605f1b43772492511edad672df72c00dec424b2a0ec773c9159a974f39a1",
+      "size_bytes": 5922,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r2.err"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "mn_err",
+      "repeat": 2,
+      "retained": "raw/DEEP1M_r2.mn.err",
+      "sha256": "17f29b3e1b3e6cdb218c6b99a7d3bb8d4528c68cd8990ab31d0deb086bd44703",
+      "size_bytes": 1490,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r2.mn.err"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "json",
+      "repeat": 3,
+      "retained": "raw/DEEP1M_r3.json",
+      "sha256": "d1fb04a4519dd6378bb6526740593d09cc9f5961f32ee7f2f9e4b231c7061bbc",
+      "size_bytes": 2814,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r3.json"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "err",
+      "repeat": 3,
+      "retained": "raw/DEEP1M_r3.err",
+      "sha256": "3876014a359269c63e5e7f5597cb7e0b76f799c20a3dfe5e7cbfb5d5aa0d3f55",
+      "size_bytes": 5922,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r3.err"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "mn_err",
+      "repeat": 3,
+      "retained": "raw/DEEP1M_r3.mn.err",
+      "sha256": "5e5e9cc6dc328873781c49d05477ce656a853e621b6749957c0f2b902e42d898",
+      "size_bytes": 1490,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r3.mn.err"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "json",
+      "repeat": 4,
+      "retained": "raw/DEEP1M_r4.json",
+      "sha256": "a0ca6dd74020d9621bf5309642da867dad16720fb167a0af2f426ff5d14627c4",
+      "size_bytes": 2838,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r4.json"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "err",
+      "repeat": 4,
+      "retained": "raw/DEEP1M_r4.err",
+      "sha256": "5fb9cecd3a2cae977412ec04ce678f6548fe29448e24f2e7bdc7677f9da1abf2",
+      "size_bytes": 5922,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r4.err"
+    },
+    {
+      "dataset": "DEEP1M",
+      "kind": "mn_err",
+      "repeat": 4,
+      "retained": "raw/DEEP1M_r4.mn.err",
+      "sha256": "ac575cb2d2716ef700db130772659777b4e72210dd917caea7f60ca1ea0d4997",
+      "size_bytes": 1490,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714/raw/DEEP1M_r4.mn.err"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "json",
+      "repeat": 0,
+      "retained": "raw/GIST1M_r0.json",
+      "sha256": "a1fe0e5ed1b9ff4306410a72e90153f9f72196f043c86f2a1d0d9b53273d652b",
+      "size_bytes": 2814,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r0.json"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "err",
+      "repeat": 0,
+      "retained": "raw/GIST1M_r0.err",
+      "sha256": "a5b24fa6e219edeb94462a1617d8cd2719a0742e975487e942da5f1a0e243eac",
+      "size_bytes": 6103,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r0.err"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "mn_err",
+      "repeat": 0,
+      "retained": "raw/GIST1M_r0.mn.err",
+      "sha256": "ba531f6caa1ddec9247b6d53b563f4281ac9dca14b7ef1a4b45f261ac2914bd4",
+      "size_bytes": 1491,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r0.mn.err"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "json",
+      "repeat": 1,
+      "retained": "raw/GIST1M_r1.json",
+      "sha256": "e1957dfcc9fdc43550b699e32f9f14bd812fc11258a9bf86aa55c4314f23c892",
+      "size_bytes": 2800,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r1.json"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "err",
+      "repeat": 1,
+      "retained": "raw/GIST1M_r1.err",
+      "sha256": "ea4db281aa99f3b3e9445225819f41ebdeb20e8970a7517ca6f60ca2ff33f66e",
+      "size_bytes": 6103,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r1.err"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "mn_err",
+      "repeat": 1,
+      "retained": "raw/GIST1M_r1.mn.err",
+      "sha256": "dfd45db4e296887eb7cb4873491a58694702d98eb426e5cb05b62fc1ec7481fe",
+      "size_bytes": 1491,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r1.mn.err"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "json",
+      "repeat": 2,
+      "retained": "raw/GIST1M_r2.json",
+      "sha256": "a87b97f3a8ce04ff5fbd105b5ff97a87bafff1caa08ad3080ffc5191316fa783",
+      "size_bytes": 2830,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r2.json"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "err",
+      "repeat": 2,
+      "retained": "raw/GIST1M_r2.err",
+      "sha256": "833274917c1ac0f815b5acb3f1c592c2e7eea51a5d1659c138cccd235586e9b9",
+      "size_bytes": 6103,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r2.err"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "mn_err",
+      "repeat": 2,
+      "retained": "raw/GIST1M_r2.mn.err",
+      "sha256": "07199b0f40513d72b948b67374b55ab1dafa378b50bf99c514149b7970d6e7fe",
+      "size_bytes": 1491,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r2.mn.err"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "json",
+      "repeat": 3,
+      "retained": "raw/GIST1M_r3.json",
+      "sha256": "d342c92b104b2c0552da34c52bcaa72fa34a9dedad3a59a0c744d1a3c68e34a6",
+      "size_bytes": 2817,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r3.json"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "err",
+      "repeat": 3,
+      "retained": "raw/GIST1M_r3.err",
+      "sha256": "206854ede95bd63dd0639dcdac72d0a3ab50b48beb373f906a18ad632970a1df",
+      "size_bytes": 6103,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r3.err"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "mn_err",
+      "repeat": 3,
+      "retained": "raw/GIST1M_r3.mn.err",
+      "sha256": "dede1d1edfbc7a4dabee5475ac59c8c12d9482d961af0483742488c9542173f6",
+      "size_bytes": 1491,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r3.mn.err"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "json",
+      "repeat": 4,
+      "retained": "raw/GIST1M_r4.json",
+      "sha256": "7e51694b52bce62f5271b7c81d275e5137a9f107b0366c9cf0f9ac60ca48f832",
+      "size_bytes": 2818,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r4.json"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "err",
+      "repeat": 4,
+      "retained": "raw/GIST1M_r4.err",
+      "sha256": "f7889e30d0ea58966505be7b421bfd8c8a9c6d003c8f1f69f9a6211453c8024c",
+      "size_bytes": 6103,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r4.err"
+    },
+    {
+      "dataset": "GIST1M",
+      "kind": "mn_err",
+      "repeat": 4,
+      "retained": "raw/GIST1M_r4.mn.err",
+      "sha256": "eca1c1e4177692f192a7e59d8182f3c8d6c02424e6f0de000fe27102b8c2583d",
+      "size_bytes": 1491,
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714/raw/GIST1M_r4.mn.err"
+    }
+  ],
+  "source_campaigns": [
+    {
+      "campaign_id": "vldb-build-cost-sift-node3-v4-20260714",
+      "dataset": "SIFT1M",
+      "manifests": [
+        {
+          "path": "provenance/source_campaigns/SIFT1M/campaign.json",
+          "sha256": "b576f1038e1779bced8731353e60bb935f71248d07522733c46138aded6e4865"
+        }
+      ],
+      "retained_manifest": "provenance/source_campaigns/SIFT1M/campaign.json",
+      "retained_manifest_sha256": "b576f1038e1779bced8731353e60bb935f71248d07522733c46138aded6e4865",
+      "runner_script_sha256": "a7be767ba9daaac529b498f378ea1cca810a740856b1d9ae0c7396d00fbee791",
+      "source_root": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_sift_final_node3_v4_20260714"
+    },
+    {
+      "campaign_id": "vldb-build-cost-final-node3-v1-20260714",
+      "dataset": "DEEP1M",
+      "manifests": [
+        {
+          "path": "provenance/source_campaigns/DEEP1M/campaign.json",
+          "sha256": "d9ec6f7bf131f42ec7a6f0fc6c33ef81dcef250ba7f2134d12edc0c6efa2ecd5"
+        },
+        {
+          "path": "provenance/source_campaigns/DEEP1M/campaign_partition.json",
+          "sha256": "82479f49fcefbef4b50e36eb2f5e1c39d2b0050ca04ee01aca942e044df031bc"
+        }
+      ],
+      "retained_manifest": "provenance/source_campaigns/DEEP1M/campaign.json",
+      "retained_manifest_sha256": "d9ec6f7bf131f42ec7a6f0fc6c33ef81dcef250ba7f2134d12edc0c6efa2ecd5",
+      "runner_script_sha256": "65f3fbc30d53cc1e9fdd08b1c9b2ccc5dcfd47e3c05056daaa70af6ae47af5c3",
+      "source_root": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_final_node3_v1_20260714"
+    },
+    {
+      "campaign_id": "vldb-build-cost-gist-node3-v3-20260714",
+      "dataset": "GIST1M",
+      "manifests": [
+        {
+          "path": "provenance/source_campaigns/GIST1M/campaign.json",
+          "sha256": "a29797ac86fd5829a1e18f03be5645fdfc637d97cba20d9bd1aadd9cf6999435"
+        }
+      ],
+      "retained_manifest": "provenance/source_campaigns/GIST1M/campaign.json",
+      "retained_manifest_sha256": "a29797ac86fd5829a1e18f03be5645fdfc637d97cba20d9bd1aadd9cf6999435",
+      "runner_script_sha256": "f75050a2886a9437596bfc227e96905bcb367327c126f54da7396ab7b4964791",
+      "source_root": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/build_cost_gist_final_node3_v3_20260714"
+    }
+  ],
+  "summarizer": {
+    "path": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/experiments/sigmetrics/summarize_slab_build_cost.py",
+    "sha256": "18e207397293d1ba9d073fe38a55b023dd73836d1da9d48585df04c0ee008e21"
+  }
+}

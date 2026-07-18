@@ -1,0 +1,139 @@
+============================================================
+                        CLIENT
+============================================================
+connect to:                   [skv-node5, ]
+is initiator:                 true
+TCP port:                     1510
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           17179869184
+data path:                    "/home/kvgroup/chaomei/hnsw-data/deep1m/"
+query suffix:                 uniform
+number of threads:            1
+number of coroutines:         1
+query QP/CQ contexts:         1
+threads pinned:               true
+seed:                         1234
+------------------------------------------------------------
+K:                            10
+M:                            16
+ef search:                    100
+ef construction:              100
+spec-k (GraphBeyond C1):      1
+============================================================
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+[STATUS]: LAVD neighborhood region: requested bytes=4294967296, resolved bytes=4294967296
+client id: 0
+number of clients: 1
+connect to server skv-node5
+pairing: 10428 -- 15638
+[STATUS]: pinned main thread to core 20
+[STATUS]: receive access tokens of remote memory regions
+[STATUS]: LAVD neighborhood region: registered bytes per MN=4294967296
+reading input data... (dim=96, num vectors=10000/10000, filesize=3840008)
+reading input data... (dim=100, num vectors=10000/10000, filesize=4000008)
+[STATUS]: allocate worker threads and read buffers
+allocated ALIGNED MEM (no hugepage) at 140558272073792 with buffer size 4294967296
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 10429 -- 15639
+[STATUS]: synchronize compute nodes
+[STATUS]: LAVD: building neighborhood region
+[LAVD][multi] start build, num_mns=1 bits=8 stride=3592 rabitq_b=0
+[LAVD][multi] MN 0 staged-read 672573128B via 67108864B MR
+[LAVD][multi] parsed N=1000000 uids across 1 MNs
+[LAVD][native][export] N=1000000 mns=1 policy=block_cyclic mode=packed_write packed_region=3592016384 sparse_region=3592016384 saved=0 MN[0]_blocks=1000000 MN[0]_bytes=3592016384
+LAVD_PHYSICAL_ACCOUNTING {"descriptor_version":2,"policy":"block_cyclic","record_layout":"fixed","scoring_code":"scalar","scoring_bits":8,"total_slots":1000000,"num_mns":1,"mn":0,"local_slots":1000000,"header_bytes":16384,"budget_map_bytes":0,"placement_padding_bytes":0,"offset_table_bytes":0,"record_bytes":3592000000,"materialized_bytes":3592016384,"registered_bytes":4294967296,"actual_write_bytes":3592016384}
+[LAVD][multi] build done: N=1000000 edges=19782625 avg_deg=19.7826 MN[0]=1000000
+[STATUS]: synchronize compute nodes
+[LAVD][native] packed addressing restored from descriptor: N=1000000 mns=1 policy=block_cyclic layout=fixed descriptor_version=2 packed_bytes=3592016384 sparse_bytes=3592016384
+[STATUS]: LAVD: config ready (bits=8 stride=3592 rerank=50)
+[STATUS]: construct placement datastructure
+  fetched 20 nodes on level 4
+  fetched 259 nodes on level 3
+  fetched 3923 nodes on level 2
+[STATUS]: run balanced k-means
+run kmeans
+cluster sizes:
+  cluster 0: 2318
+  cluster 1: 1605
+  final iteration: 18, final error: 0
+run balanced kmeans
+num iterations: 176
+reported cluster sizes:
+  cluster 0: 1962
+  cluster 1: 1961
+actual cluster sizes:
+  cluster 0: 2020
+  cluster 1: 1903
+combine clusters
+final cluster sizes:
+  cluster 0: 3923
+final mapping: 0 0 
+[STATUS]: synchronize compute nodes
+[STATUS]: run queries
+allocated ALIGNED MEM (no hugepage) at 94796108563328 with buffer size 313600
+routing buffer size: 313600
+[STATUS]: **QUERY**: running worker threads...
+query 0/10000
+query 1000/10000
+query 2000/10000
+query 3000/10000
+query 4000/10000
+query 5000/10000
+query 6000/10000
+query 7000/10000
+query 8000/10000
+query 9000/10000
+[STATUS]: join compute threads
+t0 processed: 10000, CHR: 0
+[STATUS]: processed queries: 10000
+[STATUS]: local recall: 0.969570
+[STATUS]: collect statistics and timings from compute nodes
+
+statistics:
+cache histogram
+  size: 0 | freq: 83599
+total entries: 0
+cooling table histogram
+  size: 0 | freq: 1394
+  size: 1 | freq: 0
+  size: 2 | freq: 0
+  size: 3 | freq: 0
+  size: 4 | freq: 0
+  size: 5 | freq: 0
+  size: 6 | freq: 0
+CT total entries: 0
+	Command being timed: "env SHINE_CRANE=0 GB_BITMAP_DEDUP=1 SHINE_LAVD_NATIVE_PACKED_WRITE=1 SHINE_LAVD_BUILD_THREADS=20 SHINE_LAVD_BUILD_CPU_BASE=1 SHINE_LAVD_BUILD_CPU_STRIDE=2 LD_LIBRARY_PATH=/home/kvgroup/chaomei/lib numactl --preferred=1 /home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/build-final-v5/shine --servers skv-node5 --initiator --threads 1 --coroutines 1 --port 1510 --index-region-bytes 17179869184 --data-path /home/kvgroup/chaomei/hnsw-data/deep1m/ --query-suffix uniform --ef-search 100 --ef-construction 100 --m 16 --k 10 --label vldb_build_DEEP1M_r0 --spec-k 1 --load-index --lavd 8 --lavd-region-bytes 4294967296"
+	User time (seconds): 68.82
+	System time (seconds): 3.31
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:12.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4935636
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1246591
+	Voluntary context switches: 297
+	Involuntary context switches: 7434
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

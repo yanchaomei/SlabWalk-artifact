@@ -1,0 +1,44 @@
+{
+  "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+  "builder_threads": 20,
+  "campaign_id": "vldb-build-cost-bundle-e71e2b48f267",
+  "datasets": [
+    "SIFT1M",
+    "DEEP1M",
+    "GIST1M"
+  ],
+  "kind": "vldb_build_cost_bundle_v1",
+  "layout": "packed_fixed",
+  "measurement": "derived_build_only",
+  "provenance_path": "PROVENANCE.json",
+  "provenance_sha256": "45636b0adff12f1a73e977bd56267ed92ded0b28b2f13fedb124e6f757500644",
+  "query_coroutines": 1,
+  "query_threads": 1,
+  "repeats": 5,
+  "script_role": "bundle_assembler",
+  "script_sha256": "9f86b3113f1ae2700ea4befa21dd19c31fbaa2b1d566ec4f7d857d9d60b4537f",
+  "source_campaigns": [
+    {
+      "campaign_id": "vldb-build-cost-sift-node3-v4-20260714",
+      "dataset": "SIFT1M",
+      "retained_manifest": "provenance/source_campaigns/SIFT1M/campaign.json",
+      "retained_manifest_sha256": "b576f1038e1779bced8731353e60bb935f71248d07522733c46138aded6e4865",
+      "runner_script_sha256": "a7be767ba9daaac529b498f378ea1cca810a740856b1d9ae0c7396d00fbee791"
+    },
+    {
+      "campaign_id": "vldb-build-cost-final-node3-v1-20260714",
+      "dataset": "DEEP1M",
+      "retained_manifest": "provenance/source_campaigns/DEEP1M/campaign.json",
+      "retained_manifest_sha256": "d9ec6f7bf131f42ec7a6f0fc6c33ef81dcef250ba7f2134d12edc0c6efa2ecd5",
+      "runner_script_sha256": "65f3fbc30d53cc1e9fdd08b1c9b2ccc5dcfd47e3c05056daaa70af6ae47af5c3"
+    },
+    {
+      "campaign_id": "vldb-build-cost-gist-node3-v3-20260714",
+      "dataset": "GIST1M",
+      "retained_manifest": "provenance/source_campaigns/GIST1M/campaign.json",
+      "retained_manifest_sha256": "a29797ac86fd5829a1e18f03be5645fdfc637d97cba20d9bd1aadd9cf6999435",
+      "runner_script_sha256": "f75050a2886a9437596bfc227e96905bcb367327c126f54da7396ab7b4964791"
+    }
+  ],
+  "summary_script_sha256": "18e207397293d1ba9d073fe38a55b023dd73836d1da9d48585df04c0ee008e21"
+}

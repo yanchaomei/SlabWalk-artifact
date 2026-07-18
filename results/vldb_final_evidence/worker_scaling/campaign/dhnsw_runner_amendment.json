@@ -1,0 +1,10 @@
+{
+  "amended_manifest_sha256": "3cf2de808c207c3f8cb98e7a8bfad68aa2df7b6d0742c138fbd46fdce316e0e3",
+  "amended_utc": "2026-07-13T15:42:03.313706+00:00",
+  "campaign_id": "vldb-worker-scaling-final-node3-v1-20260713",
+  "new_tool_sha256": "e95de4cec7ff0724fc61000a1f83607e72d4121072ff03a1d87a8a1702f754b7",
+  "old_tool_sha256": "ceed401aef2eb9a0967e281bd2d397d74a505dc2386337a36faebbfbb6ebd933",
+  "original_manifest_sha256": "7836fb7968191348329662c31d59842f1cafbd7a63b6b8232b5c40bf70fe99cc",
+  "protocol_key": "dhnsw_runner_sha256",
+  "reason": "Create the released client's aggregate-output directory, remove stale side files before every EF point, and fail closed when a successful client does not publish fresh aggregate details. Existing measurements are unchanged; subsequent runs retain an unambiguous detail record."
+}

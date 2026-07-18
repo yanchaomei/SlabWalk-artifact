@@ -1,0 +1,48 @@
+percent,command,shared_object,symbol,role
+19.90,shine,libpthread-2.31.so,pthread_spin_lock,observed_other
+8.80,shine,shine,"std::_Hashtable<RemotePtr, RemotePtr, std::allocator<RemotePtr>, std::__detail::_Identity, std::equal_to<RemotePtr>, std::hash<RemotePtr>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::find",observed_other
+5.16,shine,shine,l2,useful
+4.83,shine,libmlx5.so.1.19.35.0,0x000000000001e669,observed_other
+4.73,shine,shine,BufferAllocator::get_free_space,observed_other
+4.11,shine,libc-2.31.so,_int_malloc,observed_other
+3.58,shine,shine,"std::_Hashtable<RemotePtr, RemotePtr, std::allocator<RemotePtr>, std::__detail::_Identity, std::equal_to<RemotePtr>, std::hash<RemotePtr>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert_unique<RemotePtr const&, RemotePtr const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<RemotePtr, false> > > >",observed_other
+3.33,shine,libc-2.31.so,_int_free,observed_other
+3.13,shine,shine,std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release,observed_other
+2.62,shine,shine,"std::__shared_ptr<Node, (__gnu_cxx::_Lock_policy)2>::__shared_ptr",observed_other
+2.59,shine,shine,hnsw::HNSW<L2Distance>::search_level,observed_other
+2.38,shine,shine,"hnsw::schedule<L2Distance, false>",observed_other
+2.21,shine,shine,rdma::read_node,observed_other
+2.00,shine,libc-2.31.so,malloc,observed_other
+1.78,shine,libc-2.31.so,malloc_consolidate,observed_other
+1.40,shine,shine,hnsw::HNSW<L2Distance>::cache_lookup,observed_other
+1.20,shine,shine,Context::poll_send_cq,observed_other
+1.03,shine,shine,"std::_Function_handler<void (unsigned long), ComputeThread::poll_cq()::{lambda(unsigned long)#1}>::_M_invoke",observed_other
+0.99,shine,shine,"heap::Heap<heap::heap_entry_t, heap::MaxHeapCompare>::push",observed_other
+0.98,shine,libc-2.31.so,unlink_chunk.isra.0,observed_other
+0.96,shine,shine,"moodycamel::ConcurrentQueue<unsigned char*, moodycamel::ConcurrentQueueDefaultTraits>::get_or_add_implicit_producer",observed_other
+0.93,shine,shine,"heap::Heap<heap::heap_entry_t, heap::MaxHeapCompare>::push_k",observed_other
+0.92,shine,shine,QueuePair::post_send,observed_other
+0.85,shine,libc-2.31.so,cfree@GLIBC_2.2.5,observed_other
+0.81,shine,shine,Node::~Node,observed_other
+0.80,shine,shine,"std::_Hashtable<RemotePtr, RemotePtr, std::allocator<RemotePtr>, std::__detail::_Identity, std::equal_to<RemotePtr>, std::hash<RemotePtr>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::clear",observed_other
+0.73,shine,shine,hnsw::HNSW<L2Distance>::knn,observed_other
+0.68,shine,shine,hnsw::HNSW<L2Distance>::admit_to_cache,observed_other
+0.53,shine,shine,"heap::Heap<heap::heap_entry_t, heap::MinHeapCompare>::push",observed_other
+0.50,shine,libmlx5.so.1.19.35.0,0x000000000001e721,observed_other
+0.48,shine,shine,"heap::Heap<heap::heap_entry_t, heap::MaxHeapCompare>::pop",observed_other
+0.45,shine,libmlx5.so.1.19.35.0,0x000000000001e580,observed_other
+0.40,shine,libmlx5.so.1.19.35.0,0x000000000001e68c,observed_other
+0.35,shine,libmlx5.so.1.19.35.0,0x000000000001e712,observed_other
+0.33,shine,libpthread-2.31.so,pthread_spin_unlock,observed_other
+0.30,shine,shine,hnsw::HNSW<L2Distance>::cache_lookup<Node>,observed_other
+0.28,shine,libmlx5.so.1.19.35.0,0x000000000001e810,observed_other
+0.27,shine,shine,hnsw::HNSW<L2Distance>::search_for_one,observed_other
+0.27,shine,libmlx5.so.1.19.35.0,0x000000000001e835,observed_other
+0.26,shine,libstdc++.so.6.0.32,operator new,observed_other
+0.26,shine,libmlx5.so.1.19.35.0,0x000000000004ad9d,observed_other
+0.25,shine,libmlx5.so.1.19.35.0,0x000000000001e616,observed_other
+0.25,shine,libmlx5.so.1.19.35.0,0x000000000001e70d,observed_other
+0.23,shine,libmlx5.so.1.19.35.0,0x000000000001e756,observed_other
+0.20,shine,libstdc++.so.6.0.32,operator delete,observed_other
+0.20,shine,shine,"moodycamel::ConcurrentQueue<unsigned char*, moodycamel::ConcurrentQueueDefaultTraits>::inner_enqueue<(moodycamel::ConcurrentQueue<unsigned char*, moodycamel::ConcurrentQueueDefaultTraits>::AllocationMode)0, unsigned char* const&>",observed_other
+0.20,shine,shine,"std::vector<std::shared_ptr<Neighborlist>, std::allocator<std::shared_ptr<Neighborlist> > >::~vector",observed_other

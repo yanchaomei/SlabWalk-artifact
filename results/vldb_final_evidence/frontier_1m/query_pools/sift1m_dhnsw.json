@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-15T15:59:24.812407+00:00",
+  "dataset": "SIFT1M",
+  "groundtruth": {
+    "bytes": 4040000,
+    "canonical_ids_sha256": "c1130328dffc9ac74262669f0879856786eb15dba7cb2d72d0af7d51efa680a6",
+    "file_sha256": "2b71de0a8d5a83e6a84eec3e23fb8b611d8801dd9b3a6cd62f070ab65ea65f4f",
+    "format": "ivecs",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw-work/sift/sift_groundtruth.ivecs",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 10000,
+  "method": "d-HNSW",
+  "metric": "l2",
+  "query": {
+    "bytes": 5160000,
+    "canonical_sha256": "bf4c4c9db385017e63e7b0a9ccd8e3aab3744a02e053c135e000fa0b1dea2d6f",
+    "dim": 128,
+    "file_sha256": "f7fc9be140accdfd64116c2fa2365ecdb69b8f084970c6b0532db5ff79ac8fdc",
+    "format": "fvecs",
+    "path": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw-work/sift/sift_query.fvecs",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

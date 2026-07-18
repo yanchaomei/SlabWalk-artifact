@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-15T15:59:26.444845+00:00",
+  "dataset": "TTI1M",
+  "groundtruth": {
+    "bytes": 4040000,
+    "canonical_ids_sha256": "0e9fef72fe1825d7fe7a93e225ae92ee80a9a097fda6dec95bcc7b3c9de3e3fd",
+    "file_sha256": "45d824485ee933bbb4ca565ad271cea3f23782f338cc128c981db41e9f0fff9a",
+    "format": "ivecs",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw-work/text1M/text1M_groundtruth.ivecs",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 10000,
+  "method": "d-HNSW",
+  "metric": "ip",
+  "query": {
+    "bytes": 8040000,
+    "canonical_sha256": "3a61d70abbd6d12ce46d3dae5650b7ae79828c155b32813d180024d293e3cb85",
+    "dim": 200,
+    "file_sha256": "0e2108fd2a3c1f1b43e6fbe41fbfa2ffdf2ffcb59f1d23a7d67947e87a21d248",
+    "format": "fvecs",
+    "path": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw-work/text1M/text1M_query.fvecs",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

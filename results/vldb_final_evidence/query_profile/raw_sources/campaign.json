@@ -1,0 +1,44 @@
+{
+  "campaign_id": "vldb-query-profile-sift1-frozen-v2-20260714",
+  "created_utc": "2026-07-14T18:19:55.132136+00:00",
+  "protocol": {
+    "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+    "capture_perf": true,
+    "compute_host": "skv-node7",
+    "compute_recall": false,
+    "coroutines": 8,
+    "datasets": [
+      "SIFT1M"
+    ],
+    "ef": 100,
+    "index_region_bytes_by_scale": {
+      "10M": 17179869184,
+      "1M": 4294967296
+    },
+    "lavd_region_bytes_by_dataset": {
+      "DEEP10M": 42949672960,
+      "DEEP1M": 4294967296,
+      "SIFT1M": 4294967296
+    },
+    "memory_nodes_by_dataset": {
+      "DEEP10M": "skv-node5",
+      "DEEP1M": "skv-node6",
+      "SIFT1M": "skv-node4"
+    },
+    "methods": [
+      "shine"
+    ],
+    "perf_command": "sudo -n perf",
+    "perf_data_fixup_command": "sudo -n chown",
+    "perf_frequency": 199,
+    "perf_report_command": "perf",
+    "profile_scope": "query-only-after-phase-marker",
+    "profile_seconds": 20,
+    "query_contexts_requested": 1,
+    "query_tile": 20,
+    "tcp_port": 1312,
+    "threads": 1,
+    "top_k": 10
+  },
+  "protocol_fingerprint": "4ca6cfeed2fac78516324082be8b3f6705d40574a3831266719d17dbf1ad1319"
+}

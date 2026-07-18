@@ -1,0 +1,115 @@
+{
+  "actual_total_local_buffer_size": 1842496,
+  "allocated_local_buffer_size": 4294967296,
+  "build": {
+    "dist_comps": 0,
+    "index_size": 0,
+    "max_level": 0,
+    "rdma_reads_in_bytes": 0,
+    "rdma_writes_in_bytes": 0,
+    "remote_allocations": 0
+  },
+  "cache": {
+    "cache_buckets_size": 30181800,
+    "cached_nodes": 0,
+    "hit_rate": 0.0,
+    "hits_total": 0,
+    "local_hit_rates": {
+      "c0": 0.0
+    },
+    "local_size": 0,
+    "misses_total": 0,
+    "num_cache_buckets": 754545,
+    "num_cooling_table_buckets": 12576
+  },
+  "distance": "squared_l2",
+  "estimated_total_index_size": 7968000044,
+  "hnsw_parameters": {
+    "ef_construction": 100,
+    "ef_search": 64,
+    "k": 10,
+    "m": 16
+  },
+  "lavd_region_registered_bytes_per_mn": 42949672960,
+  "lavd_region_registered_bytes_total": 42949672960,
+  "lavd_region_requested_bytes": 42949672960,
+  "lavd_region_resolved_bytes": 42949672960,
+  "meta": {
+    "compute_nodes": 1,
+    "compute_threads": 10,
+    "coroutines_per_thread": 2,
+    "dataset": "sift10m",
+    "hyperthreading": "true",
+    "label": "SIFT10M_slabwalk_expansion_r1_measure_T10_ef64",
+    "memory_nodes": 1,
+    "query_suffix": "uniform",
+    "threads_pinned": "true",
+    "timestamp": {
+      "$date": "2026-07-14T18:34:02Z"
+    },
+    "zipf_parameter": "niform"
+  },
+  "neighborlist_size": 132,
+  "neighborlist_size_l0": 260,
+  "node_size": 528,
+  "num_queries": 10000,
+  "num_vectors": 10000000,
+  "queries": {
+    "compute_recall": "true",
+    "cwc_batched_reads": 0,
+    "cwc_batches": 0,
+    "dist_comps": 12765160,
+    "local_cn_read_bytes_gini": 0.0,
+    "local_cn_read_bytes_per_mn": [
+      2394007976
+    ],
+    "local_cn_read_submits_gini": 0.0,
+    "local_cn_read_submits_per_mn": [
+      676217
+    ],
+    "local_cn_read_wrs_gini": 0.0,
+    "local_cn_read_wrs_per_mn": [
+      986217
+    ],
+    "local_latency_p50_us": 744.742,
+    "local_latency_p95_us": 855.4,
+    "local_latency_p99_us": 974.564,
+    "local_latency_samples": 10000,
+    "posts_l0": 666217,
+    "posts_rerank": 320000,
+    "posts_upnav": 0,
+    "processed": 10000,
+    "processed_local": {
+      "c0": 10000
+    },
+    "queries_per_sec": 25648,
+    "rdma_cqes": 676217,
+    "rdma_posts": 676217,
+    "rdma_reads_in_bytes": 2394007976,
+    "rdma_writes_in_bytes": 0,
+    "rdma_wrs": 986217,
+    "recall": 0.90661,
+    "rerank_chunks": 10000,
+    "visited_neighborlists": 666217,
+    "visited_nodes": 0,
+    "visited_nodes_l0": 12445160
+  },
+  "query_contexts": 10,
+  "timings": {
+    "build_c0": 0.0,
+    "build_max": 0.0,
+    "crane_build_multi": 3628.431196,
+    "lavd_build_encode": 54.227436,
+    "lavd_build_fetch": 9780.990069,
+    "lavd_build_materialize": 235431.307164,
+    "lavd_build_metadata": 589.140732,
+    "lavd_build_multi": 247246.034523,
+    "lavd_build_parse": 1366.1080769999999,
+    "lavd_build_rank": 3.5e-05,
+    "placement_fetch": 27.267235,
+    "placement_kmeans": 21.367228,
+    "query_c0": 389.882339,
+    "query_max": 389.882339,
+    "routing": 0.0
+  }
+}

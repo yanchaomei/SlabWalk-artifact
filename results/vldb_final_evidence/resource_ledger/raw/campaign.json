@@ -1,0 +1,41 @@
+{
+  "campaign_id": "vldb-resource-gist-final-v4-20260714",
+  "created_utc": "2026-07-14T16:42:28.757230+00:00",
+  "protocol": {
+    "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+    "build_cpu_base": 1,
+    "build_cpu_stride": 2,
+    "build_threads": 20,
+    "coroutines": 2,
+    "dataset": "GIST1M",
+    "ef_search": 400,
+    "index_region_bytes": 4294967296,
+    "layouts": [
+      "legacy",
+      "fixed",
+      "variable"
+    ],
+    "memory_node_counts": [
+      1,
+      3,
+      5
+    ],
+    "memory_node_pool": [
+      "skv-node3",
+      "skv-node4",
+      "skv-node5",
+      "skv-node6",
+      "skv-node7"
+    ],
+    "query_contexts": 10,
+    "query_suffix": "u10k",
+    "repeat_start": 0,
+    "repeats": 5,
+    "runner_sha256": "47ed9a0c9001fde9d0f99c4a67b1624ef26c1e9cedc9a7fd16914333c9d05ece",
+    "tcp_port": 1300,
+    "threads": 10,
+    "timeout_seconds": 2400,
+    "warmups": 1
+  },
+  "protocol_fingerprint": "98d500d9d4626f8bab9f1845f85cc0e5bdecd6fedc9a8fdde86fefa0750d0423"
+}

@@ -1,0 +1,42 @@
+{
+  "campaign_id": "vldb-dhnsw-text-sift-node7-final-v3-20260713",
+  "created_utc": "2026-07-13T16:32:53.895126+00:00",
+  "protocol": {
+    "build_dhnsw": 0,
+    "client_binary_sha256": "60ddb08234a93c431f94fea3cb37d9b109a3feb207d7b72eb8887bc28afff595",
+    "datasets": [
+      "tti10M",
+      "sift10M"
+    ],
+    "ef_values": [
+      48,
+      64,
+      96,
+      128,
+      200
+    ],
+    "measured_build_dhnsw": 0,
+    "measured_prepare_datasets": 0,
+    "measurement_mode": "fixed_query_pool",
+    "parser_path": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/dhnsw_10m_node7_snapshot_v3_20260713/experiments/sigmetrics/parse_dhnsw_frontier.py",
+    "parser_sha256": "aec9e23c727c746227fdd17131913ffc1714af9f039e8d3b10b577ae99d0f156",
+    "prepare_datasets": 0,
+    "rdma_ip": "10.0.0.67",
+    "rdma_port": 8978,
+    "repeats": 5,
+    "runner_path": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/dhnsw_10m_node7_snapshot_v3_20260713/experiments/sigmetrics/run_dhnsw_frontier.sh",
+    "runner_sha256": "e95de4cec7ff0724fc61000a1f83607e72d4121072ff03a1d87a8a1702f754b7",
+    "runtime_library_path": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/dhnsw-text-sift-node7-final-v3/runtime-lib",
+    "runtime_manifest_sha256": "2808df31f35b07a29719f7bf1c96640108d32fd17a9f7224aa1bae7e6c44333b",
+    "server_binary_sha256": "4a21756eab6270b77222948023e94ece0db1d18d5c4540a51dc50338d51c09a4",
+    "server_ip": "10.0.0.67",
+    "tcp_port": 50371,
+    "threads": 10,
+    "top_k": 10,
+    "validator_path": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/dhnsw_10m_node7_snapshot_v3_20260713/experiments/sigmetrics/validate_dhnsw_dataset.py",
+    "validator_sha256": "8f51ab198db8d64f84b36da0cf9ba16810d4fb0158118229832f28922b5b6c50",
+    "warmup_build_dhnsw": 0,
+    "warmup_prepare_datasets": 0
+  },
+  "protocol_fingerprint": "48df00951959ab72ebfe8b17cfdd10ef0cf42e8f91b286597d59c2a881564d28"
+}

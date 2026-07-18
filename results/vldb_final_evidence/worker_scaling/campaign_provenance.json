@@ -1,0 +1,111 @@
+{
+  "campaign_id": "vldb-worker-scaling-final-node3-v1-20260713",
+  "files": [
+    {
+      "path": "campaign/campaign.before-parser-amendment.json",
+      "sha256": "e85c0cf4b4d56f2e2f9c1d6b67adfc7f6a7d91b4cd987a4731b5673c952fb6fe",
+      "size_bytes": 1536
+    },
+    {
+      "path": "campaign/parser_amendment.json",
+      "sha256": "cb3aa36e2e3fdbce34058a83ce2ac9aa3d51d8fcf228d70182fb12f1d73fd8f6",
+      "size_bytes": 8569
+    },
+    {
+      "path": "campaign/campaign.before-assembler-amendment.json",
+      "sha256": "21661ee15e41a426beaf0f7213e1fdd32937cfb927a40cf49b58320e2f7e8021",
+      "size_bytes": 1583
+    },
+    {
+      "path": "campaign/assembler_amendment.json",
+      "sha256": "858001769042ecf0334be4d4932f4651971e436e515decdc6304ac593570770e",
+      "size_bytes": 737
+    },
+    {
+      "path": "campaign/campaign.before-parser-amendment-v2.json",
+      "sha256": "e0324f8b2815eef0d11b9f2531578baf7cad9f7276c7de919db8c4da30ada559",
+      "size_bytes": 1636
+    },
+    {
+      "path": "campaign/parser_amendment_v2.json",
+      "sha256": "ce6f6e375091bbf73dea89d7dc782a6d3b0885ffda527cbd9e2f9b01b421fe2c",
+      "size_bytes": 6100
+    },
+    {
+      "path": "campaign/campaign.before-dhnsw-runner-amendment.json",
+      "sha256": "7836fb7968191348329662c31d59842f1cafbd7a63b6b8232b5c40bf70fe99cc",
+      "size_bytes": 1689
+    },
+    {
+      "path": "campaign/dhnsw_runner_amendment.json",
+      "sha256": "9d7b666998c2a55c75800967c0bf3050c4cc037fb4e9c76f6a78882a61c6a80f",
+      "size_bytes": 826
+    },
+    {
+      "path": "campaign/campaign.before-assembler-amendment-v2.json",
+      "sha256": "3cf2de808c207c3f8cb98e7a8bfad68aa2df7b6d0742c138fbd46fdce316e0e3",
+      "size_bytes": 1748
+    },
+    {
+      "path": "campaign/assembler_amendment_v2.json",
+      "sha256": "4bc75840c63fb21cb89d56703751b964e8f77aab667a49f00c4b7db5470543ad",
+      "size_bytes": 746
+    },
+    {
+      "path": "campaign/failed_run_archive_w40_r0_before-runner-fix.json",
+      "sha256": "5db8a5de888a030c68a19cf6cf76c28376fda7402f1b3d061bae246d31112a4c",
+      "size_bytes": 1942
+    },
+    {
+      "path": "campaign/campaign.json",
+      "sha256": "ac124a718afef57b8cd9a09bfa62e6e3659eea96d4608096d3c0132335a00275",
+      "size_bytes": 1807
+    },
+    {
+      "path": "campaign/failed_runs/dhnsw/w40/r0-before-runner-fix/deep1M_dataset_validation.json",
+      "sha256": "9941b037c3ff6580e8668e1175dde736393336c8fc4d4208deddd8c0b06246b1",
+      "size_bytes": 781
+    },
+    {
+      "path": "campaign/failed_runs/dhnsw/w40/r0-before-runner-fix/deep1M_ef200_client.log",
+      "sha256": "7c723354a306f2feea961b49531f249d94a5b3ba514af56adf2b443784312235",
+      "size_bytes": 61628
+    },
+    {
+      "path": "campaign/failed_runs/dhnsw/w40/r0-before-runner-fix/deep1M_server.log",
+      "sha256": "31e7dc9b8684b986922530b3aa3882499fd606ce37bbc8ac55442129cb924a8e",
+      "size_bytes": 5487
+    },
+    {
+      "path": "campaign/failed_runs/dhnsw/w40/r0-before-runner-fix/deep1M_server_process.txt",
+      "sha256": "c3ad151b356c5f4343e566c50cef8e6e479069003575f69bb21d0594dbe50fda",
+      "size_bytes": 164
+    },
+    {
+      "path": "campaign/failed_runs/dhnsw/w40/r0-before-runner-fix/deep1M_server_ready_seconds.txt",
+      "sha256": "ffb004bf801c8d48a8033d433373c9bd076b631e05a2d0e07c1d89ed4de3ff6a",
+      "size_bytes": 18
+    },
+    {
+      "path": "campaign/failed_runs/dhnsw/w40/r0-before-runner-fix/deep1M_server_rss_after.txt",
+      "sha256": "88d4954b366fb8a6717e8c2414287b981c4d22adedfa0decfbf3d67628424aa0",
+      "size_bytes": 38
+    },
+    {
+      "path": "campaign/failed_runs/dhnsw/w40/r0-before-runner-fix/deep1M_server_rss_before.txt",
+      "sha256": "f726a93a2c74c9c92779fa13aec7ca957494bb19e33a25402979db79f48e7440",
+      "size_bytes": 38
+    },
+    {
+      "path": "campaign/failed_runs/dhnsw/w40/r0-before-runner-fix/frontier.csv",
+      "sha256": "c19b4bfd4c882fecd3e91d4d161b94e34b0a1d8335183cc8d924e1f48b177181",
+      "size_bytes": 1260
+    },
+    {
+      "path": "campaign/failed_runs/dhnsw/w40/r0-before-runner-fix/run.log",
+      "sha256": "491c40509114eb122ca86e6ff63c4832743982452702b31edb02c7ab7c1eb035",
+      "size_bytes": 122
+    }
+  ],
+  "kind": "worker_scaling_campaign_provenance"
+}

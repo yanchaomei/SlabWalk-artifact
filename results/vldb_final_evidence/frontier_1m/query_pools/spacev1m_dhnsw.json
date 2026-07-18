@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-15T15:59:26.100707+00:00",
+  "dataset": "SPACEV1M",
+  "groundtruth": {
+    "bytes": 4040000,
+    "canonical_ids_sha256": "6656b7336adba21df9d8d245119d74373508454036247566760763088bb25edc",
+    "file_sha256": "5019922414a7130326fddf8375d83dc204e41e8c992434deed60e5e7a2f5e0eb",
+    "format": "ivecs",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw-work/spacev1M/spacev1M_groundtruth.ivecs",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 10000,
+  "method": "d-HNSW",
+  "metric": "l2",
+  "query": {
+    "bytes": 4040000,
+    "canonical_sha256": "b4581479f0bb057e94fab251e12d09efc55ded364cdda88e6745050953dd872f",
+    "dim": 100,
+    "file_sha256": "64be4354d5fe783a5a9115108dbece237b625c76bd71064a5e02b10e1ea60c4a",
+    "format": "fvecs",
+    "path": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw-work/spacev1M/spacev1M_query.fvecs",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

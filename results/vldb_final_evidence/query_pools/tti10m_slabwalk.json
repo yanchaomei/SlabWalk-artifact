@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-14T07:54:56.787777+00:00",
+  "dataset": "TTI10M",
+  "groundtruth": {
+    "bytes": 4000008,
+    "canonical_ids_sha256": "55e07ca3d7bd38ec22dab631ca4272753cad0566c8173dc31839bb62956e7640",
+    "file_sha256": "ffba593187bf1f9b148328301a4844fed4571f7bb42ba72c6fb48d2381aebbe0",
+    "format": "bin",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/hnsw-data/tti-10m/queries/groundtruth-u10k.bin",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 10000,
+  "method": "SlabWalk",
+  "metric": "ip",
+  "query": {
+    "bytes": 8000008,
+    "canonical_sha256": "3a61d70abbd6d12ce46d3dae5650b7ae79828c155b32813d180024d293e3cb85",
+    "dim": 200,
+    "file_sha256": "2a520db6f53400df11ccaa758893da6b22cabef9c17f27ac508ffc67d9160fa0",
+    "format": "fbin",
+    "path": "/home/kvgroup/chaomei/hnsw-data/tti-10m/queries/query-u10k.fbin",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

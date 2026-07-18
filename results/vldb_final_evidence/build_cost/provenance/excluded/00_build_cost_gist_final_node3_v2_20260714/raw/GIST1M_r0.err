@@ -1,0 +1,66 @@
+============================================================
+                        CLIENT
+============================================================
+connect to:                   [skv-node5, ]
+is initiator:                 true
+TCP port:                     1511
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           17179869184
+data path:                    "/home/kvgroup/chaomei/hnsw-data/gist1m/"
+query suffix:                 u10k
+number of threads:            1
+number of coroutines:         1
+query QP/CQ contexts:         1
+threads pinned:               true
+seed:                         1234
+------------------------------------------------------------
+K:                            10
+M:                            16
+ef search:                    400
+ef construction:              100
+spec-k (GraphBeyond C1):      1
+============================================================
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+[STATUS]: LAVD neighborhood region: requested bytes=9663676416, resolved bytes=9663676416
+client id: 0
+number of clients: 1
+connect to server skv-node5
+pairing: 10439 -- 15650
+[STATUS]: pinned main thread to core 20
+[STATUS]: receive access tokens of remote memory regions
+[STATUS]: LAVD neighborhood region: registered bytes per MN=9663676416
+base or query file missing
+Command exited with non-zero status 1
+	Command being timed: "env SHINE_CRANE=0 GB_BITMAP_DEDUP=1 SHINE_LAVD_NATIVE_PACKED_WRITE=1 SHINE_LAVD_BUILD_THREADS=20 SHINE_LAVD_BUILD_CPU_BASE=1 SHINE_LAVD_BUILD_CPU_STRIDE=2 SHINE_LAVD_RABITQ_B=2 LD_LIBRARY_PATH=/home/kvgroup/chaomei/lib numactl --preferred=1 /home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/build-final-v5/shine --servers skv-node5 --initiator --threads 1 --coroutines 1 --port 1511 --index-region-bytes 17179869184 --data-path /home/kvgroup/chaomei/hnsw-data/gist1m/ --query-suffix u10k --ef-search 400 --ef-construction 100 --m 16 --k 10 --label vldb_build_GIST1M_r0 --spec-k 1 --load-index --lavd 8 --lavd-region-bytes 9663676416"
+	User time (seconds): 40.68
+	System time (seconds): 0.02
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:40.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7936
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 769
+	Voluntary context switches: 129
+	Involuntary context switches: 4235
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

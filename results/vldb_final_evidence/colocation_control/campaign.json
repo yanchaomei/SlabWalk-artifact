@@ -1,0 +1,46 @@
+{
+  "campaign_id": "vldb-colocation-deep1-final-v4-20260715",
+  "created_utc": "2026-07-14T21:34:27.005760+00:00",
+  "protocol": {
+    "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+    "code": "sq8",
+    "coroutines": 2,
+    "dataset": "DEEP1M",
+    "degrees": [
+      "full",
+      "24",
+      "16",
+      "8",
+      "4",
+      "1"
+    ],
+    "ef_search": 200,
+    "fingerprint_tool_sha256": "80e588f99e34450a6c238d94c7b459027b4d5c02184581fcc30c261305d25eb3",
+    "groundtruth_sha256": "40706891f31cac7124935bfff8ba970a72f31946a00f4e65f310c2429b9e9e88",
+    "index_dump_sha256": "c0713c48cb3145693c8b2677bc31916872537f20c43317365da2b9257dcc5bcf",
+    "index_region_bytes": 4294967296,
+    "inline_codes": {
+      "1": 1,
+      "16": 16,
+      "24": 24,
+      "4": 4,
+      "8": 8,
+      "full": 32
+    },
+    "lavd_region_bytes": 6442450944,
+    "m_max0": 32,
+    "memory_node": "skv-node5",
+    "queries_per_run": 10000,
+    "query_contexts": 10,
+    "query_sha256": "8438fc763f14e0f9741fda15b3e11215aef089ce17d1ad47d53b52a7c9fda5bb",
+    "query_suffix": "uniform",
+    "repeats": 5,
+    "runner_sha256": "b1d18539b1d73b1cff17d9aa3333eecbf32ca92ffdb2d373a3c78388fce007a4",
+    "summarizer_sha256": "cdcd91484f3358d4896145321ab8c66e250095295dca9d0cad95979967ea33e5",
+    "tcp_port": 1314,
+    "threads": 10,
+    "top_k": 10,
+    "warmups": 1
+  },
+  "protocol_fingerprint": "d99de8f75c7153f0182b21a9804e050a45c8c4e60c04ceac37e7071afa4c8bb5"
+}

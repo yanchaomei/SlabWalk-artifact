@@ -1,0 +1,141 @@
+============================================================
+                        CLIENT
+============================================================
+connect to:                   [skv-node5, ]
+is initiator:                 true
+TCP port:                     1512
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           17179869184
+data path:                    "/home/kvgroup/chaomei/hnsw-data/gist1m/"
+query suffix:                 u10k
+number of threads:            1
+number of coroutines:         1
+query QP/CQ contexts:         1
+threads pinned:               true
+seed:                         1234
+------------------------------------------------------------
+K:                            10
+M:                            16
+ef search:                    400
+ef construction:              100
+spec-k (GraphBeyond C1):      1
+============================================================
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+[STATUS]: LAVD neighborhood region: requested bytes=9663676416, resolved bytes=9663676416
+client id: 0
+number of clients: 1
+connect to server skv-node5
+pairing: 10444 -- 15656
+[STATUS]: pinned main thread to core 20
+[STATUS]: receive access tokens of remote memory regions
+[STATUS]: LAVD neighborhood region: registered bytes per MN=9663676416
+reading input data... (dim=960, num vectors=10000/10000, filesize=38400008)
+reading input data... (dim=100, num vectors=10000/10000, filesize=4000008)
+[STATUS]: allocate worker threads and read buffers
+allocated ALIGNED MEM (no hugepage) at 140534112477248 with buffer size 4294967296
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 10445 -- 15657
+[STATUS]: synchronize compute nodes
+[STATUS]: LAVD: building neighborhood region
+[LAVD][multi] start build, num_mns=1 bits=8 stride=8456 rabitq_b=2
+[LAVD][multi] MN 0 staged-read 4128573128B via 67108864B MR
+[LAVD][multi] parsed N=1000000 uids across 1 MNs
+[LAVD][native][export] N=1000000 mns=1 policy=block_cyclic mode=packed_write packed_region=8456016384 sparse_region=8456016384 saved=0 MN[0]_blocks=1000000 MN[0]_bytes=8456016384
+[LAVD][multi][rabitq] B=2 code_bytes=240 (scalar would be 960 B) build_threads=20
+LAVD_PHYSICAL_ACCOUNTING {"descriptor_version":2,"policy":"block_cyclic","record_layout":"fixed","scoring_code":"rabitq","scoring_bits":2,"total_slots":1000000,"num_mns":1,"mn":0,"local_slots":1000000,"header_bytes":16384,"budget_map_bytes":0,"placement_padding_bytes":0,"offset_table_bytes":0,"record_bytes":8456000000,"materialized_bytes":8456016384,"registered_bytes":9663676416,"actual_write_bytes":8456016384}
+[LAVD][multi] build done: N=1000000 edges=9794739 avg_deg=9.79474 MN[0]=1000000
+[STATUS]: synchronize compute nodes
+[LAVD][rabitq] CN reconstructed encoder from header: B=2 dim=960 code_bytes=240
+[LAVD][native] packed addressing restored from descriptor: N=1000000 mns=1 policy=block_cyclic layout=fixed descriptor_version=2 packed_bytes=8456016384 sparse_bytes=8456016384
+[STATUS]: LAVD: config ready (bits=8 stride=8456 rerank=200)
+[STATUS]: construct placement datastructure
+  fetched 20 nodes on level 4
+  fetched 257 nodes on level 3
+  fetched 3832 nodes on level 2
+[STATUS]: run balanced k-means
+run kmeans
+cluster sizes:
+  cluster 0: 3831
+  cluster 1: 1
+  final iteration: 3, final error: 0
+run balanced kmeans
+num iterations: 64
+reported cluster sizes:
+  cluster 0: 1916
+  cluster 1: 1916
+actual cluster sizes:
+  cluster 0: 2007
+  cluster 1: 1825
+combine clusters
+final cluster sizes:
+  cluster 0: 3832
+final mapping: 0 0 
+[STATUS]: synchronize compute nodes
+[STATUS]: run queries
+allocated ALIGNED MEM (no hugepage) at 94608585475520 with buffer size 3078400
+routing buffer size: 3078400
+[STATUS]: **QUERY**: running worker threads...
+query 0/10000
+query 1000/10000
+query 2000/10000
+query 3000/10000
+query 4000/10000
+query 5000/10000
+query 6000/10000
+query 7000/10000
+query 8000/10000
+query 9000/10000
+[STATUS]: join compute threads
+t0 processed: 10000, CHR: 0
+[STATUS]: processed queries: 10000
+[STATUS]: local recall: 0.925700
+[STATUS]: collect statistics and timings from compute nodes
+
+statistics:
+cache histogram
+  size: 0 | freq: 53485
+total entries: 0
+cooling table histogram
+  size: 0 | freq: 892
+  size: 1 | freq: 0
+  size: 2 | freq: 0
+  size: 3 | freq: 0
+  size: 4 | freq: 0
+  size: 5 | freq: 0
+  size: 6 | freq: 0
+CT total entries: 0
+	Command being timed: "env SHINE_CRANE=0 GB_BITMAP_DEDUP=1 SHINE_LAVD_NATIVE_PACKED_WRITE=1 SHINE_LAVD_BUILD_THREADS=20 SHINE_LAVD_BUILD_CPU_BASE=1 SHINE_LAVD_BUILD_CPU_STRIDE=2 SHINE_LAVD_RABITQ_B=2 LD_LIBRARY_PATH=/home/kvgroup/chaomei/lib numactl --preferred=1 /home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/build-final-v5/shine --servers skv-node5 --initiator --threads 1 --coroutines 1 --port 1512 --index-region-bytes 17179869184 --data-path /home/kvgroup/chaomei/hnsw-data/gist1m/ --query-suffix u10k --ef-search 400 --ef-construction 100 --m 16 --k 10 --label vldb_build_GIST1M_r2 --spec-k 1 --load-index --lavd 8 --lavd-region-bytes 9663676416"
+	User time (seconds): 321.04
+	System time (seconds): 6.18
+	Percent of CPU this job got: 253%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:08.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8919508
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2246221
+	Voluntary context switches: 408
+	Involuntary context switches: 33766
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 144
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

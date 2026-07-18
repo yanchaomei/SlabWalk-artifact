@@ -1,0 +1,9 @@
+config,threads,ef,qps,recall,posts_per_query,mb_per_query,note,source
+fp32 baseline,1,300,260,0.96105,3870.3025,2.9809445536,authoritative high-recall point,mx_tti1m_base_ef_uniform_T1_ef300_r0.json
+sq8 Slabs,1,300,600,0.86392,578.4244,2.350507248,"operation collapse, recall boundary",mx_tti1m_lavd_ef_uniform_T1_ef300_r0.json
+sq8 Slabs+upper graph,1,300,731,0.86392,458.788,2.25921296,upper navigation removed,mx_tti1m_crane_ef_uniform_T1_ef300_r0.json
+RaBitQ-2 Slabs,1,300,58,0.81522,579.9653,0.9510357544,"fewer bytes, coarse IP code",mx_tti1m_rabitq2_uniform_T1_ef300_r0.json
+RaBitQ-4 Slabs,1,300,53,0.86214,578.3246,1.4410385711999998,"more bits, still below fp32 recall",mx_tti1m_rabitq4_uniform_T1_ef300_r0.json
+fp32 baseline 16T,16,300,1250,0.96105,3870.3145,2.9809446496,throughput point,mx_tti1m_baseline_uniform_T16_ef300_r0.json
+sq8 Slabs 16T,16,300,4313,0.86392,578.4364,2.350507344,throughput point,mx_tti1m_lavd_uniform_T16_ef300_r0.json
+sq8 Slabs+upper graph 16T,16,300,4438,0.86392,458.788,2.25921296,throughput point,mx_tti1m_lavd_crane_uniform_T16_ef300_r0.json

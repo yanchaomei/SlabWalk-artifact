@@ -1,0 +1,111 @@
+{
+  "admitted_cells": [
+    "DEEP1M"
+  ],
+  "campaign_id": "vldb-build-cost-final-node3-v1-20260714",
+  "closed_utc": "2026-07-13T17:21:24.307634+00:00",
+  "excluded_cells": [
+    "GIST1M"
+  ],
+  "failed_stage": "pre-build-input-validation",
+  "files": [
+    {
+      "path": "DEEP1M_r0.err",
+      "sha256": "cfffff8baee589c76eff2928e8478c9b4f2e3a559ed40d74cda5ffce68e05b10",
+      "size_bytes": 5922
+    },
+    {
+      "path": "DEEP1M_r0.json",
+      "sha256": "f69a284963adccaef98a79dfa80076de7a78fbae0d76e54d21e7e0202f514bd0",
+      "size_bytes": 2806
+    },
+    {
+      "path": "DEEP1M_r0.mn.err",
+      "sha256": "5414c43b695adb48274055ef46484405a3316234435fb436d83f805267d4b707",
+      "size_bytes": 1490
+    },
+    {
+      "path": "DEEP1M_r1.err",
+      "sha256": "200a57d1fdc3dee88fc0e49a30ca6b49e160606360762a351e0bc63593fd2ea0",
+      "size_bytes": 5922
+    },
+    {
+      "path": "DEEP1M_r1.json",
+      "sha256": "266ac8dfde06ea11d196fda633a9b34cec5a8d9f2df5c64e78ee9a4682f42060",
+      "size_bytes": 2811
+    },
+    {
+      "path": "DEEP1M_r1.mn.err",
+      "sha256": "5719e6a5d775f1f57f78cc849037713be5a5af90e5b6c0799f53d892f3164294",
+      "size_bytes": 1490
+    },
+    {
+      "path": "DEEP1M_r2.err",
+      "sha256": "1e3c605f1b43772492511edad672df72c00dec424b2a0ec773c9159a974f39a1",
+      "size_bytes": 5922
+    },
+    {
+      "path": "DEEP1M_r2.json",
+      "sha256": "ae2284d4e0bd49bbf4c0b04801c0413d5b49d6c11353e0103b2f6d60a8189eac",
+      "size_bytes": 2825
+    },
+    {
+      "path": "DEEP1M_r2.mn.err",
+      "sha256": "17f29b3e1b3e6cdb218c6b99a7d3bb8d4528c68cd8990ab31d0deb086bd44703",
+      "size_bytes": 1490
+    },
+    {
+      "path": "DEEP1M_r3.err",
+      "sha256": "3876014a359269c63e5e7f5597cb7e0b76f799c20a3dfe5e7cbfb5d5aa0d3f55",
+      "size_bytes": 5922
+    },
+    {
+      "path": "DEEP1M_r3.json",
+      "sha256": "d1fb04a4519dd6378bb6526740593d09cc9f5961f32ee7f2f9e4b231c7061bbc",
+      "size_bytes": 2814
+    },
+    {
+      "path": "DEEP1M_r3.mn.err",
+      "sha256": "5e5e9cc6dc328873781c49d05477ce656a853e621b6749957c0f2b902e42d898",
+      "size_bytes": 1490
+    },
+    {
+      "path": "DEEP1M_r4.err",
+      "sha256": "5fb9cecd3a2cae977412ec04ce678f6548fe29448e24f2e7bdc7677f9da1abf2",
+      "size_bytes": 5922
+    },
+    {
+      "path": "DEEP1M_r4.json",
+      "sha256": "a0ca6dd74020d9621bf5309642da867dad16720fb167a0af2f426ff5d14627c4",
+      "size_bytes": 2838
+    },
+    {
+      "path": "DEEP1M_r4.mn.err",
+      "sha256": "ac575cb2d2716ef700db130772659777b4e72210dd917caea7f60ca1ea0d4997",
+      "size_bytes": 1490
+    },
+    {
+      "path": "GIST1M_r0.err",
+      "sha256": "da4d7f6c79c82ae738c6a3cefea76391afb841592de4e20b151c7c40c8f0d6ba",
+      "size_bytes": 3248
+    },
+    {
+      "path": "GIST1M_r0.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "GIST1M_r0.mn.err",
+      "sha256": "eb20452855af0b95f020f25c5237445078ccabfb698974d7c7a837e7b775ec6a",
+      "size_bytes": 1258
+    },
+    {
+      "path": "campaign.json",
+      "sha256": "d9ec6f7bf131f42ec7a6f0fc6c33ef81dcef250ba7f2134d12edc0c6efa2ecd5",
+      "size_bytes": 557
+    }
+  ],
+  "measured_rows_admitted": 5,
+  "reason": "node3 lacked the canonical GIST1M queries directory; GIST r0 aborted before Slab construction and contributes zero admitted rows",
+  "status": "partial_success"
+}

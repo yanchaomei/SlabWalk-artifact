@@ -1,0 +1,2 @@
+pid=1024011
+exe=/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/topology_remote_node5_v2_20260713/bin/run_server

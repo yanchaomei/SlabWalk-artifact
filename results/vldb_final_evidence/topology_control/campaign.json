@@ -1,0 +1,35 @@
+{
+  "campaign_id": "dhnsw-topology-final-node3-v2-20260713",
+  "created_utc": "2026-07-13T16:23:27.173058+00:00",
+  "protocol": {
+    "base_sha256": "f25e9ba07d05c5f18c9a4fbe23bd2ee8b8e31747bcddbb77cc3811e768fb7bb2",
+    "client_binary_sha256": "1fede56b39bf640663761bce92646a464098f95baf64a58d7847d520f7833bd8",
+    "client_ip": "10.0.0.63",
+    "dataset": "DEEP1M",
+    "ef": 200,
+    "grpc_port": 50320,
+    "measurement_mode": "fixed_query_pool",
+    "nic_index": 1,
+    "parser_sha256": "eb70e3a829782a23fcc9e1e99a5a2f9b1076e616c3675bbe1beed6f271b21486",
+    "queries_per_run": 10000,
+    "query_manifest_sha256": "a0147ce5fafab891b6b5963b6db47213c8fcb99cfa682486d61f1400d5084a2f",
+    "rdma_port": 8980,
+    "remote_base": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/topology_remote_node5_v2_20260713/data/deep1M_base.fvecs",
+    "remote_base_sha256": "f25e9ba07d05c5f18c9a4fbe23bd2ee8b8e31747bcddbb77cc3811e768fb7bb2",
+    "remote_runtime_library_path": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/topology_remote_node5_v2_20260713/runtime-lib",
+    "remote_server_binary": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/topology_remote_node5_v2_20260713/bin/run_server",
+    "remote_server_host": "skv-node5",
+    "remote_server_ip": "10.0.0.65",
+    "remote_server_sha256": "648fee24609ed09c58e5474f9aa1de29a2e7460517ed24e1d72f7c9f669e3994",
+    "repeats": 5,
+    "server_binary_sha256": "648fee24609ed09c58e5474f9aa1de29a2e7460517ed24e1d72f7c9f669e3994",
+    "threads": 10,
+    "top_k": 10,
+    "topologies": [
+      "loopback",
+      "remote"
+    ],
+    "warmups": 1
+  },
+  "protocol_fingerprint": "80506827c390a35bceaefe6e702e5fa6348a3e629925f2a50b3610aef4d24242"
+}

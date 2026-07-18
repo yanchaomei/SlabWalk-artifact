@@ -1,0 +1,23 @@
+	Command being timed: "python3 experiments/tools/build_hnswlib_index.py --base /home/kvgroup/chaomei/hnsw-data/tti-10m/base.fbin --output /home/kvgroup/chaomei/graphbeyond-hnswlib-converter-v1-20260714/formal-tti10m-v1/tti10m_m16_efc100_seed47.hnswlib --manifest /home/kvgroup/chaomei/graphbeyond-hnswlib-converter-v1-20260714/formal-tti10m-v1/build.json --space ip --m 16 --ef-construction 100 --threads 80 --batch-size 250000 --random-seed 47"
+	User time (seconds): 25961.63
+	System time (seconds): 381.60
+	Percent of CPU this job got: 6338%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:55.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19595224
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 12736
+	Minor (reclaiming a frame) page faults: 37255407
+	Voluntary context switches: 2718950
+	Involuntary context switches: 2754137
+	Swaps: 0
+	File system inputs: 256
+	File system outputs: 18526736
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

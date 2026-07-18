@@ -1,0 +1,66 @@
+============================================================
+                        SERVER
+============================================================
+num clients:                  1
+TCP port:                     1300
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           4294967296
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.64)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+pairing: 2224 -- 187386
+[STATUS]: pinned main thread to core 20
+[STATUS]: query QP/CQ contexts per compute node=10
+[STATUS]: LAVD neighborhood region: resolved bytes=9663676416
+allocation size: 4294967296
+allocated ALIGNED MEM (no hugepage) at 140155978801216 with buffer size 4294967296
+allocated ALIGNED MEM (no hugepage) at 140146315120704 with buffer size 9663676416
+[STATUS]: LAVD neighborhood region: allocated bytes=9663676416
+[STATUS]: register memory and distribute access token
+[STATUS]: LAVD neighborhood region: registered bytes=9663676416
+[STATUS]: connect QPs of compute threads
+pairing: 2225 -- 187389
+pairing: 2226 -- 187392
+pairing: 2227 -- 187395
+pairing: 2228 -- 187398
+pairing: 2229 -- 187401
+pairing: 2230 -- 187404
+pairing: 2231 -- 187407
+pairing: 2232 -- 187410
+pairing: 2233 -- 187413
+pairing: 2234 -- 187416
+[STATUS]: idle: index construction
+[STATUS]: loading index (1376176688 Bytes) from /home/kvgroup/chaomei/hnsw-data/gist1m/dump/index_m16_efc100_node2_of3.dat
+[STATUS]: query processing
+[STATUS]: idle: queries
+	Command being timed: "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/build-final-v5/shine --is-server --num-clients 1 --port 1300 --index-region-bytes 4294967296"
+	User time (seconds): 47.73
+	System time (seconds): 9.49
+	Percent of CPU this job got: 90%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:03.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 13646948
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4199874
+	Voluntary context switches: 441
+	Involuntary context switches: 495
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

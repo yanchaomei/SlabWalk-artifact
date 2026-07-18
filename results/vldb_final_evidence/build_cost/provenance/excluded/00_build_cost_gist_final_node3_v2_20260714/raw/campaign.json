@@ -1,0 +1,18 @@
+{
+  "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+  "builder_threads": 20,
+  "campaign_id": "vldb-build-cost-gist-node3-v2-20260714",
+  "compute_node": "skv-node3",
+  "datasets": [
+    "GIST1M"
+  ],
+  "index_region_bytes": 17179869184,
+  "layout": "packed_fixed",
+  "measurement": "derived_build_only",
+  "memory_node": "skv-node5",
+  "query_coroutines": 1,
+  "query_threads": 1,
+  "repeats": 5,
+  "script_sha256": "65f3fbc30d53cc1e9fdd08b1c9b2ccc5dcfd47e3c05056daaa70af6ae47af5c3",
+  "tcp_port": 1511
+}

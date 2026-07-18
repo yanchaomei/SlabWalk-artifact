@@ -1,0 +1,6 @@
+=== RUN deep1M ===
+server_pid=3817237
+server_ready_s=71
+dataset=deep1M ef=200 client_rc=0
+client_rc=0
+=== DONE deep1M ===

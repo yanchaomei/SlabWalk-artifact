@@ -1,0 +1,39 @@
+{
+  "assembler_amendment": "assembler_amendment.json",
+  "campaign_id": "vldb-worker-scaling-final-node3-v1-20260713",
+  "created_utc": "2026-07-13T13:49:36.812888+00:00",
+  "parser_amendment": "parser_amendment.json",
+  "protocol": {
+    "assembler_sha256": "5d621f7af2af678ab15e0464219cf51a1f5a87e5f899983fac256020e66f7b1f",
+    "dataset": "DEEP1M",
+    "dhnsw_build_mode": "prevalidated_binary",
+    "dhnsw_client_binary_sha256": "1fede56b39bf640663761bce92646a464098f95baf64a58d7847d520f7833bd8",
+    "dhnsw_parser_sha256": "18071fcf49ebbfafc094607c235d659d9330f80ada473c6e308960cac0d38684",
+    "dhnsw_rdma_ip": "10.0.0.63",
+    "dhnsw_rdma_port": 8970,
+    "dhnsw_runner_sha256": "ceed401aef2eb9a0967e281bd2d397d74a505dc2386337a36faebbfbb6ebd933",
+    "dhnsw_runtime_library_path": "/home/kvgroup/chaomei/dhnsw-pilot-20260713/runtime-lib",
+    "dhnsw_server_ip": "10.0.0.63",
+    "dhnsw_tcp_port": 50310,
+    "dhnsw_topology": "released_harness_colocated_server_client",
+    "ef": 200,
+    "graph_preserving_coroutines": 2,
+    "graph_preserving_query_contexts": "one_per_worker",
+    "measurement_mode": "fixed_query_pool",
+    "queries_per_run": 10000,
+    "repeats": 5,
+    "slabwalk_binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+    "slabwalk_memory_node": "skv-node5",
+    "slabwalk_tcp_port": 1390,
+    "sw_runner_sha256": "f5fff398b12a40d620817f362105025816a6d1267e054a92efb8a8c0d7b2cf3b",
+    "top_k": 10,
+    "warmups": 1,
+    "workers": [
+      1,
+      8,
+      16,
+      40
+    ]
+  },
+  "protocol_fingerprint": "9c751a8636272c457576792a8cbe76f5a9f6f272c789c0f2eb2b33675285c8f8"
+}

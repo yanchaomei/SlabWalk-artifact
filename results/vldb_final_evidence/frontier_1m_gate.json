@@ -1,0 +1,32 @@
+{
+  "campaign_id": "vldb-1m-seven-final-v2-20260715",
+  "campaign_mode": "legacy_single_campaign",
+  "campaign_sha256": "b070d994791cff9f2caf52b75bed71f5c0eb8696ddd324336bd4c4a978fb8d0e",
+  "datasets": [
+    "SIFT1M",
+    "GIST1M",
+    "DEEP1M",
+    "BIGANN1M",
+    "SPACEV1M",
+    "TURING1M",
+    "TTI1M"
+  ],
+  "expected_repeats": 5,
+  "expected_slabwalk_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+  "kind": "vldb_frontier_1m_gate",
+  "manifest_files": 35,
+  "measured_rows": 585,
+  "methods": [
+    "SHINE",
+    "SlabWalk",
+    "d-HNSW"
+  ],
+  "provenance_sha256": "b9139e8fed2ff464f40bb14370fb0be6e85a8be8edeacabee7ab7c8279224e2a",
+  "query_pool_cells": 21,
+  "raw_sha256": "900db2951721d469edaae1cb1ab466cb77210369e9a7fe29b0a4f1981ba33427",
+  "ready_for_plotting": true,
+  "source_campaigns_verified": 1,
+  "summary_rows": 117,
+  "summary_sha256": "5b259b652d51cdfced22f2344ddf7eac06122510519182033d54df5417df46ff",
+  "validated_utc": "2000-01-01T00:00:00+00:00"
+}

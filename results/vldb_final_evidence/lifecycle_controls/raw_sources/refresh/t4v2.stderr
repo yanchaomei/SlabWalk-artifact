@@ -1,0 +1,113 @@
+============================================================
+                        CLIENT
+============================================================
+connect to:                   [skv-node4, ]
+is initiator:                 true
+TCP port:                     1234
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+data path:                    "/home/kvgroup/chaomei/hnsw-data/sift1m/"
+query suffix:                 uniform
+number of threads:            1
+number of coroutines:         8
+threads pinned:               true
+seed:                         1234
+------------------------------------------------------------
+K:                            10
+M:                            16
+ef search:                    100
+ef construction:              100
+spec-k (GraphBeyond C1):      1
+============================================================
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+client id: 0
+number of clients: 1
+connect to server skv-node4
+pairing: 9695 -- 70946
+[STATUS]: pinned main thread to core 20
+[STATUS]: receive access tokens of remote memory regions
+reading input data... (dim=128, num vectors=10000/10000, filesize=5120008)
+reading input data... (dim=100, num vectors=10000/10000, filesize=4000008)
+[STATUS]: allocate worker threads and read buffers
+allocated ALIGNED MEM (no hugepage) at 140653914038336 with buffer size 6442450944
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 9696 -- 70947
+[STATUS]: synchronize compute nodes
+[STATUS]: LAVD: building neighborhood region
+[LAVD] build done: N=1000000 m_max0=32 bits=8 stride=4616 region=4616000000B avg_deg=19.1439
+[STATUS]: LAVD T4: incremental maintenance tick 1
+[LAVD][maintain] mode=init inserts=100000 touched=638132 blocks/insert=6.38132 write_amp=6.38132 read_MB=800.573 full_idx_MB=800.573 read_frac=1 (m_max0=32)
+[LAVD][maintain][selftest] slots=1000000 mismatches=0  PASS (delta==full-rebuild)
+[STATUS]: LAVD T4: incremental maintenance tick 2
+[LAVD][maintain] mode=diff inserts=100000 touched=638132 blocks/insert=6.38132 write_amp=6.38132 read_MB=510.89 full_idx_MB=800.573 read_frac=0.638156 (m_max0=32)
+[LAVD][maintain][selftest] slots=1000000 mismatches=0  PASS (delta==full-rebuild)
+[STATUS]: synchronize compute nodes
+[STATUS]: LAVD: config ready (bits=8 stride=4616 rerank=50)
+[STATUS]: construct placement datastructure
+  fetched 20 nodes on level 4
+  fetched 259 nodes on level 3
+  fetched 3923 nodes on level 2
+[STATUS]: run balanced k-means
+run kmeans
+cluster sizes:
+  cluster 0: 1920
+  cluster 1: 2003
+  final iteration: 5, final error: 0
+run balanced kmeans
+num iterations: 75
+reported cluster sizes:
+  cluster 0: 1961
+  cluster 1: 1962
+actual cluster sizes:
+  cluster 0: 1922
+  cluster 1: 2001
+combine clusters
+final cluster sizes:
+  cluster 0: 3923
+final mapping: 0 0 
+[STATUS]: synchronize compute nodes
+[STATUS]: run queries
+allocated ALIGNED MEM (no hugepage) at 94460453268224 with buffer size 416000
+routing buffer size: 416000
+[STATUS]: **QUERY**: running worker threads...
+query 0/10000
+query 1000/10000
+query 2000/10000
+query 3000/10000
+query 4000/10000
+query 5000/10000
+query 6000/10000
+query 7000/10000
+query 8000/10000
+query 9000/10000
+[STATUS]: join compute threads
+t0 processed: 10000, CHR: 0
+[STATUS]: processed queries: 10000
+[STATUS]: local recall: 0.976620
+[STATUS]: collect statistics and timings from compute nodes
+
+statistics:
+cache histogram
+  size: 0 | freq: 75454
+total entries: 0
+cooling table histogram
+  size: 0 | freq: 1258
+  size: 1 | freq: 0
+  size: 2 | freq: 0
+  size: 3 | freq: 0
+  size: 4 | freq: 0
+  size: 5 | freq: 0
+  size: 6 | freq: 0
+CT total entries: 0
+Cannot deallocate protection domain

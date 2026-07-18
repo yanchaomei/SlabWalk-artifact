@@ -1,0 +1,35 @@
+{
+  "campaign_id": "dhnsw-17d63b6f-5a31-4f66-8bc5-c51f212b689d",
+  "created_utc": "2026-07-13T04:57:11.339535+00:00",
+  "protocol": {
+    "build_dhnsw": 0,
+    "client_binary_sha256": "1fede56b39bf640663761bce92646a464098f95baf64a58d7847d520f7833bd8",
+    "datasets": [
+      "deep10M"
+    ],
+    "ef_values": [
+      48,
+      64,
+      96,
+      128,
+      200
+    ],
+    "measurement_mode": "fixed_query_pool",
+    "parser_path": "/home/kvgroup/chaomei/dhnsw-pilot-20260713/runner-exactgt-v2/parse_dhnsw_frontier.py",
+    "parser_sha256": "eb70e3a829782a23fcc9e1e99a5a2f9b1076e616c3675bbe1beed6f271b21486",
+    "prepare_datasets": 1,
+    "rdma_ip": "10.0.0.63",
+    "rdma_port": 8923,
+    "repeats": 5,
+    "runner_path": "/home/kvgroup/chaomei/dhnsw-pilot-20260713/runner-exactgt-v2/run_dhnsw_frontier.sh",
+    "runner_sha256": "84e93708b76e6daf7c55c89836fbf9664cc5602946cb8d5a09a79b19082570ad",
+    "server_binary_sha256": "648fee24609ed09c58e5474f9aa1de29a2e7460517ed24e1d72f7c9f669e3994",
+    "server_ip": "10.0.0.63",
+    "tcp_port": 50173,
+    "threads": 10,
+    "top_k": 10,
+    "validator_path": "/home/kvgroup/chaomei/dhnsw-pilot-20260713/runner-exactgt-v2/validate_dhnsw_dataset.py",
+    "validator_sha256": "bbe95499ab38992c4c46f89fee5c223276d2a94fc7dd6c6b00b4bb89637c2781"
+  },
+  "protocol_fingerprint": "1863973b6b014a939d48f024e96ca97dbfa809b6b7a8eb3fa516cb3917fcce8e"
+}

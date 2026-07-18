@@ -1,0 +1,253 @@
+============================================================
+                        CLIENT
+============================================================
+connect to:                   [skv-node3, skv-node4, skv-node5, skv-node6, skv-node7, ]
+is initiator:                 true
+TCP port:                     1300
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           4294967296
+data path:                    "/home/kvgroup/chaomei/hnsw-data/gist1m"
+query suffix:                 u10k
+number of threads:            10
+number of coroutines:         2
+query QP/CQ contexts:         10
+threads pinned:               true
+seed:                         1234
+------------------------------------------------------------
+K:                            10
+M:                            16
+ef search:                    400
+ef construction:              100
+spec-k (GraphBeyond C1):      1
+============================================================
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+[STATUS]: LAVD neighborhood region: requested bytes=9663676416, resolved bytes=9663676416
+client id: 0
+number of clients: 1
+connect to server skv-node3
+pairing: 187649 -- 12361
+connect to server skv-node4
+pairing: 187650 -- 2290
+connect to server skv-node5
+pairing: 187651 -- 15857
+connect to server skv-node6
+pairing: 187652 -- 28417
+connect to server skv-node7
+pairing: 187653 -- 130269
+[STATUS]: pinned main thread to core 20
+[STATUS]: receive access tokens of remote memory regions
+[STATUS]: LAVD neighborhood region: registered bytes per MN=9663676416
+reading input data... (dim=960, num vectors=10000/10000, filesize=38400008)
+reading input data... (dim=100, num vectors=10000/10000, filesize=4000008)
+[STATUS]: allocate worker threads and read buffers
+allocated ALIGNED MEM (no hugepage) at 140217251541056 with buffer size 4294967296
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 187654 -- 12362
+pairing: 187655 -- 2291
+pairing: 187656 -- 15858
+pairing: 187657 -- 28418
+pairing: 187658 -- 130270
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 187659 -- 12363
+pairing: 187660 -- 2292
+pairing: 187661 -- 15859
+pairing: 187662 -- 28419
+pairing: 187663 -- 130271
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 187664 -- 12364
+pairing: 187665 -- 2293
+pairing: 187666 -- 15860
+pairing: 187667 -- 28420
+pairing: 187668 -- 130272
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 187669 -- 12365
+pairing: 187670 -- 2294
+pairing: 187671 -- 15861
+pairing: 187672 -- 28421
+pairing: 187673 -- 130273
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 187674 -- 12366
+pairing: 187675 -- 2295
+pairing: 187676 -- 15862
+pairing: 187677 -- 28422
+pairing: 187678 -- 130274
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 187679 -- 12367
+pairing: 187680 -- 2296
+pairing: 187681 -- 15863
+pairing: 187682 -- 28423
+pairing: 187683 -- 130275
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 187684 -- 12368
+pairing: 187685 -- 2297
+pairing: 187686 -- 15864
+pairing: 187687 -- 28424
+pairing: 187688 -- 130276
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 187689 -- 12369
+pairing: 187690 -- 2298
+pairing: 187691 -- 15865
+pairing: 187692 -- 28425
+pairing: 187693 -- 130277
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 187694 -- 12370
+pairing: 187695 -- 2299
+pairing: 187696 -- 15866
+pairing: 187697 -- 28426
+pairing: 187698 -- 130278
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 187699 -- 12371
+pairing: 187700 -- 2300
+pairing: 187701 -- 15867
+pairing: 187702 -- 28427
+pairing: 187703 -- 130279
+[STATUS]: synchronize compute nodes
+[STATUS]: LAVD: building neighborhood region
+[LAVD][multi] start build, num_mns=5 bits=8 stride=8456 rabitq_b=2
+[LAVD][multi] MN 0 staged-read 825701848B via 67108864B MR
+[LAVD][multi] MN 1 staged-read 825723344B via 67108864B MR
+[LAVD][multi] MN 2 staged-read 825702856B via 67108864B MR
+[LAVD][multi] MN 3 staged-read 825730400B via 67108864B MR
+[LAVD][multi] MN 4 staged-read 825714744B via 67108864B MR
+[LAVD][multi] parsed N=1000000 uids across 5 MNs
+[LAVD][multi][rabitq] B=2 code_bytes=240 (scalar would be 960 B) build_threads=20
+LAVD_PHYSICAL_ACCOUNTING {"descriptor_version":0,"policy":"authoritative_owner_global_slot","record_layout":"legacy_sparse_fixed","scoring_code":"rabitq","scoring_bits":2,"total_slots":1000000,"num_mns":5,"mn":0,"local_slots":200000,"header_bytes":16384,"budget_map_bytes":0,"placement_padding_bytes":6764766176,"offset_table_bytes":0,"record_bytes":1691200000,"materialized_bytes":8455982560,"registered_bytes":9663676416,"actual_write_bytes":1691216384}
+LAVD_PHYSICAL_ACCOUNTING {"descriptor_version":0,"policy":"authoritative_owner_global_slot","record_layout":"legacy_sparse_fixed","scoring_code":"rabitq","scoring_bits":2,"total_slots":1000000,"num_mns":5,"mn":1,"local_slots":200000,"header_bytes":0,"budget_map_bytes":0,"placement_padding_bytes":6764774632,"offset_table_bytes":0,"record_bytes":1691200000,"materialized_bytes":8455991016,"registered_bytes":9663676416,"actual_write_bytes":1691200000}
+LAVD_PHYSICAL_ACCOUNTING {"descriptor_version":0,"policy":"authoritative_owner_global_slot","record_layout":"legacy_sparse_fixed","scoring_code":"rabitq","scoring_bits":2,"total_slots":1000000,"num_mns":5,"mn":2,"local_slots":200000,"header_bytes":0,"budget_map_bytes":0,"placement_padding_bytes":6764783088,"offset_table_bytes":0,"record_bytes":1691200000,"materialized_bytes":8455999472,"registered_bytes":9663676416,"actual_write_bytes":1691200000}
+LAVD_PHYSICAL_ACCOUNTING {"descriptor_version":0,"policy":"authoritative_owner_global_slot","record_layout":"legacy_sparse_fixed","scoring_code":"rabitq","scoring_bits":2,"total_slots":1000000,"num_mns":5,"mn":3,"local_slots":200000,"header_bytes":0,"budget_map_bytes":0,"placement_padding_bytes":6764791544,"offset_table_bytes":0,"record_bytes":1691200000,"materialized_bytes":8456007928,"registered_bytes":9663676416,"actual_write_bytes":1691200000}
+LAVD_PHYSICAL_ACCOUNTING {"descriptor_version":0,"policy":"authoritative_owner_global_slot","record_layout":"legacy_sparse_fixed","scoring_code":"rabitq","scoring_bits":2,"total_slots":1000000,"num_mns":5,"mn":4,"local_slots":200000,"header_bytes":0,"budget_map_bytes":0,"placement_padding_bytes":6764800000,"offset_table_bytes":0,"record_bytes":1691200000,"materialized_bytes":8456016384,"registered_bytes":9663676416,"actual_write_bytes":1691200000}
+[LAVD][multi] build done: N=1000000 edges=9794739 avg_deg=9.79474 MN[0]=200000 MN[1]=200000 MN[2]=200000 MN[3]=200000 MN[4]=200000
+[LAVD][multi] retained authoritative snapshot for resident upper graph: shards=5
+[STATUS]: synchronize compute nodes
+[LAVD][rabitq] CN reconstructed encoder from header: B=2 dim=960 code_bytes=240
+[STATUS]: LAVD: config ready (bits=8 stride=8456 rerank=200)
+[STATUS]: CRANE: building CN-resident upper-nav cache
+[CRANE][multi] reused authoritative build snapshot: shards=5
+[CRANE][multi] upper cache built: U=62529 (960-d) comp=240111360B entry_uid=12678 num_mns=5
+[STATUS]: construct placement datastructure
+  fetched 20 nodes on level 4
+  fetched 257 nodes on level 3
+  fetched 3832 nodes on level 2
+[STATUS]: run balanced k-means
+run kmeans
+cluster sizes:
+  cluster 0: 3831
+  cluster 1: 1
+  final iteration: 3, final error: 0
+run balanced kmeans
+num iterations: 64
+reported cluster sizes:
+  cluster 0: 1916
+  cluster 1: 1916
+actual cluster sizes:
+  cluster 0: 2007
+  cluster 1: 1825
+combine clusters
+final cluster sizes:
+  cluster 0: 3832
+final mapping: 0 0 
+[STATUS]: synchronize compute nodes
+[STATUS]: run queries
+allocated ALIGNED MEM (no hugepage) at 94133695539200 with buffer size 9235200
+routing buffer size: 9235200
+[STATUS]: **QUERY**: running worker threads...
+[STATUS]: pinned thread 1 to core 0
+[STATUS]: pinned thread 2 to core 21
+[STATUS]: pinned thread 3 to core 1
+[STATUS]: pinned thread 4 to core 22
+[STATUS]: pinned thread 5 to core 2
+[STATUS]: pinned thread 6 to core 23
+[STATUS]: pinned thread 7 to core 3
+[STATUS]: pinned thread 8 to core 24
+[STATUS]: pinned thread 9 to core 4
+query 0/10000
+query 1000/10000
+query 2000/10000
+query 3000/10000
+query 4000/10000
+query 5000/10000
+query 6000/10000
+query 7000/10000
+query 8000/10000
+query 9000/10000
+[STATUS]: join compute threads
+t0 processed: 985, CHR: 0
+t1 processed: 990, CHR: 0
+t2 processed: 1002, CHR: 0
+t3 processed: 1005, CHR: 0
+t4 processed: 990, CHR: 0
+t5 processed: 998, CHR: 0
+t6 processed: 1022, CHR: 0
+t7 processed: 1008, CHR: 0
+t8 processed: 997, CHR: 0
+t9 processed: 1003, CHR: 0
+[STATUS]: processed queries: 10000
+[STATUS]: local recall: 0.925700
+[STATUS]: collect statistics and timings from compute nodes
+
+statistics:
+cache histogram
+  size: 0 | freq: 53485
+total entries: 0
+cooling table histogram
+  size: 0 | freq: 892
+  size: 1 | freq: 0
+  size: 2 | freq: 0
+  size: 3 | freq: 0
+  size: 4 | freq: 0
+  size: 5 | freq: 0
+  size: 6 | freq: 0
+CT total entries: 0
+	Command being timed: "env SHINE_LAVD_RABITQ_B=2 SHINE_CRANE=1 GB_BITMAP_DEDUP=1 GB_QUERY_LATENCY=1 SHINE_LAVD_BUILD_THREADS=20 SHINE_LAVD_BUILD_CPU_BASE=1 SHINE_LAVD_BUILD_CPU_STRIDE=2 SHINE_LAVD_MULTI_BUILDER=1 numactl --preferred=1 /home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/build-final-v5/shine --servers skv-node3 skv-node4 skv-node5 skv-node6 skv-node7 --initiator --port 1300 --index-region-bytes 4294967296 --data-path /home/kvgroup/chaomei/hnsw-data/gist1m --threads 10 --coroutines 2 --query-contexts 10 --query-suffix u10k --load-index --ef-search 400 --ef-construction 100 --k 10 --m 16 --lavd 8 --lavd-rerank 200 --lavd-region-bytes 9663676416 --label gist1m_legacy_s5_measure_r2"
+	User time (seconds): 286.42
+	System time (seconds): 8.59
+	Percent of CPU this job got: 507%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:58.11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8954892
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2380303
+	Voluntary context switches: 2518
+	Involuntary context switches: 464
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 40
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

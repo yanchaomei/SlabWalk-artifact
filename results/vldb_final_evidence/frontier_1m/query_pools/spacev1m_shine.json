@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-15T15:59:25.962409+00:00",
+  "dataset": "SPACEV1M",
+  "groundtruth": {
+    "bytes": 4000008,
+    "canonical_ids_sha256": "6656b7336adba21df9d8d245119d74373508454036247566760763088bb25edc",
+    "file_sha256": "eed55ef1c49e62c5f1bec36fa3e4a48509331f1fc2800d7a0c1cf23c9595e891",
+    "format": "bin",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/hnsw-data/spacev1m/queries/groundtruth-uniform.bin",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 10000,
+  "method": "SHINE",
+  "metric": "l2",
+  "query": {
+    "bytes": 1000008,
+    "canonical_sha256": "b4581479f0bb057e94fab251e12d09efc55ded364cdda88e6745050953dd872f",
+    "dim": 100,
+    "file_sha256": "a40d9d40f833b672b00cffed56bd923d0c459e9e7d0100022aadc0b85ce67c57",
+    "format": "i8bin",
+    "path": "/home/kvgroup/chaomei/hnsw-data/spacev1m/queries/query-uniform.i8bin",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

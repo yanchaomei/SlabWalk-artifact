@@ -1,0 +1,80 @@
+{
+  "assembled_utc": "2026-07-14T08:41:45.398016+00:00",
+  "expected_datasets": [
+    "DEEP10M",
+    "TTI10M",
+    "SIFT10M"
+  ],
+  "expected_methods": [
+    "SHINE",
+    "SlabWalk",
+    "d-HNSW"
+  ],
+  "input_roots": {
+    "base_dir": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_base_six_20260714",
+    "tti_dhnsw_manifest": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/dhnsw_text_sift_node7_final_v3_20260713/provenance/tti10m_dhnsw.json",
+    "tti_graph_dir": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_text_sift_recovery_v3_20260714"
+  },
+  "retained_sources": [
+    {
+      "cell": "DEEP10M/SHINE",
+      "retained": "deep10m_shine.json",
+      "sha256": "5159f1bd3106f75cda7e05a9ad317b5a5a40f2680b5052b12de7294a7df5c7a2",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_base_six_20260714/deep10m_shine.json"
+    },
+    {
+      "cell": "DEEP10M/SlabWalk",
+      "retained": "deep10m_slabwalk.json",
+      "sha256": "c612e182571a1122897bffa07af6d12bc23865e47a4879c6708a94f0402bb22c",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_base_six_20260714/deep10m_slabwalk.json"
+    },
+    {
+      "cell": "DEEP10M/d-HNSW",
+      "retained": "deep10m_dhnsw.json",
+      "sha256": "b97007a13e201be4ba3f5b5cdfabfdf913b2147aa65bf9658c06ae3af01ab15e",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_base_six_20260714/deep10m_dhnsw.json"
+    },
+    {
+      "cell": "SIFT10M/SHINE",
+      "retained": "sift10m_shine.json",
+      "sha256": "91493e9adb4ea476f5564ba9c60fda9b977f12a0e4d73d00275c6bb7b6a32854",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_base_six_20260714/sift10m_shine.json"
+    },
+    {
+      "cell": "SIFT10M/SlabWalk",
+      "retained": "sift10m_slabwalk.json",
+      "sha256": "d58097e37e74b6216cdbf13c0aae955b25fb8121ac99d59f6185d862f70855c1",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_base_six_20260714/sift10m_slabwalk.json"
+    },
+    {
+      "cell": "SIFT10M/d-HNSW",
+      "retained": "sift10m_dhnsw.json",
+      "sha256": "613c052a4e6ca606a52614e9a634ff4ff5306e82d42097a86ee1a9455c7d4c80",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_base_six_20260714/sift10m_dhnsw.json"
+    },
+    {
+      "cell": "TTI10M/SHINE",
+      "retained": "tti10m_shine.json",
+      "sha256": "17a13dc96a603675901a2e217dd29368b065f0fc5edb6430882471c5d85e118d",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_text_sift_recovery_v3_20260714/tti10m_shine.json"
+    },
+    {
+      "cell": "TTI10M/SlabWalk",
+      "retained": "tti10m_slabwalk.json",
+      "sha256": "9ee8036ed9d3dc5d311b9ccb39725afc30a5048c6978c464b8b7293bf2c42f01",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_text_sift_recovery_v3_20260714/tti10m_slabwalk.json"
+    },
+    {
+      "cell": "TTI10M/d-HNSW",
+      "retained": "tti10m_dhnsw.json",
+      "sha256": "29c3d65729a2deaa907934a00ce2eab1d8525266824570f1a2cd3fa8556624b9",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/dhnsw_text_sift_node7_final_v3_20260713/provenance/tti10m_dhnsw.json"
+    },
+    {
+      "cell": "TTI10M/exact-groundtruth-spotcheck",
+      "retained": "tti_exact_groundtruth_spotcheck.json",
+      "sha256": "9f0db14c9b649752247b8c43e58ccd2fe49de4874a03f97ef31bfbe5ae353130",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/query_pools_text_sift_recovery_v3_20260714/tti_exact_groundtruth_spotcheck.json"
+    }
+  ]
+}

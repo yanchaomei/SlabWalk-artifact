@@ -1,0 +1,17 @@
+tag=gist1m_fixed_s1_warmup_r0
+layout=fixed
+memory_nodes=1
+hosts=skv-node3
+capacity_per_mn=9663676416
+binary_sha256=2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6
+campaign_id=vldb-resource-gist-final-v4-20260714
+protocol_fingerprint=98d500d9d4626f8bab9f1845f85cc0e5bdecd6fedc9a8fdde86fefa0750d0423
+cn_host=skv-node1
+started_utc=2026-07-14T17:04:44Z
+layout_env=SHINE_LAVD_NATIVE_PACKED_WRITE=1
+build_threads=20
+build_cpu_base=1
+build_cpu_stride=2
+query_contexts=10
+tcp_port=1300
+index_region_bytes=4294967296

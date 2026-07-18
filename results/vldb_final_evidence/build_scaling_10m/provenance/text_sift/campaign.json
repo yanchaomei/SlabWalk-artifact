@@ -1,0 +1,33 @@
+{
+  "campaign_id": "vldb-frontier-text-sift-sw-final-v2-20260714",
+  "created_utc": "2026-07-14T07:54:56.866338+00:00",
+  "protocol": {
+    "configured_timeout_s": 20.0,
+    "coroutines": 2,
+    "datasets_dh": [
+      "text10M",
+      "sift10M"
+    ],
+    "datasets_sw": [
+      "TEXT10M",
+      "SIFT10M"
+    ],
+    "dhnsw_ef_list": [
+      48,
+      64,
+      96,
+      128,
+      200
+    ],
+    "dhnsw_rdma_port": 8915,
+    "dhnsw_tcp_port": 50165,
+    "gb_binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+    "measurement_mode": "fixed_query_pool",
+    "query_contexts": 10,
+    "repeats": 5,
+    "sw_tcp_port": 1493,
+    "threads": 10,
+    "top_k": 10
+  },
+  "protocol_fingerprint": "4345202a9238babc1843a5ffeee70b728751bed1f85bcefda293c290cc328948"
+}

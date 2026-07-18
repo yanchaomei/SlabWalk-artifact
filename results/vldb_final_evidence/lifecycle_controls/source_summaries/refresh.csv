@@ -1,0 +1,5 @@
+batch_inserts,touched_blocks,write_amp_blocks_per_insert,diff_read_frac,diff_read_mb,full_index_mb,byte_identical,recall,source
+1000,12403,12.403,0.0123958,9.92378,800.573,PASS,0.97662,results/lavd_t4/v2_K1k.stderr
+10000,98881,9.8881,0.0988663,79.1497,800.573,PASS,0.97662,results/lavd_t4/v2_K10k.stderr
+50000,412589,8.25178,,,,PASS,0.97662,results/lavd_t4/t4_K50k.stderr
+100000,638132,6.38132,0.638156,510.89,800.573,PASS,0.97662,results/lavd_t4/t4v2.stderr

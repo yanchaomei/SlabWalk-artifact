@@ -1,0 +1,87 @@
+{
+  "files": [
+    {
+      "path": "raw_sources/refresh/t4_K50k.stderr",
+      "sha256": "9a78b6376562607f5fe41517685c79e7f883bf106f225982a278d40d70f678f5",
+      "size_bytes": 3627
+    },
+    {
+      "path": "raw_sources/refresh/t4v2.stderr",
+      "sha256": "bfc52fdd7bbd6ccd9f9736ecdfc4e594cfb009a64099610adcb49fc0c9e850c9",
+      "size_bytes": 4024
+    },
+    {
+      "path": "raw_sources/refresh/v2_K10k.stderr",
+      "sha256": "273184b807577c662b37404f09f194fff3de8ea0033caaf827e21543ba7395c6",
+      "size_bytes": 4020
+    },
+    {
+      "path": "raw_sources/refresh/v2_K1k.stderr",
+      "sha256": "9dd39b65e157038fd32fb75a2506e5f806b6d9761af58c12980b278c64f201d5",
+      "size_bytes": 4018
+    },
+    {
+      "path": "raw_sources/tti/mx_tti1m_base_ef_uniform_T1_ef300_r0.json",
+      "sha256": "f237e475067defdaac6645d5985715d68be6a675013ec04eb426903ec47cab05",
+      "size_bytes": 2091
+    },
+    {
+      "path": "raw_sources/tti/mx_tti1m_baseline_uniform_T16_ef300_r0.json",
+      "sha256": "ea09d8ca5c91b241cf2b59028d8369c1186e6eb38546dcb020b11ddff0c52fb3",
+      "size_bytes": 2103
+    },
+    {
+      "path": "raw_sources/tti/mx_tti1m_crane_ef_uniform_T1_ef300_r0.json",
+      "sha256": "51992510910edc2b066c4457d10a9d53c150bd09d8f4d7fabf73637b18e74d11",
+      "size_bytes": 2159
+    },
+    {
+      "path": "raw_sources/tti/mx_tti1m_lavd_crane_uniform_T16_ef300_r0.json",
+      "sha256": "24b970d83a31e4ed02dcef295c9d6da8faca07db0b797f642bb8b1e2b8451d8b",
+      "size_bytes": 2172
+    },
+    {
+      "path": "raw_sources/tti/mx_tti1m_lavd_ef_uniform_T1_ef300_r0.json",
+      "sha256": "baed1bf2fa4b23b9b202020765a60db8b84522e9e223d79ce45f698171313285",
+      "size_bytes": 2139
+    },
+    {
+      "path": "raw_sources/tti/mx_tti1m_lavd_uniform_T16_ef300_r0.json",
+      "sha256": "6663a4c6e38c0acaacd71182e6f2bd780b1becc3ded5606c19f97f76e2ab0fd3",
+      "size_bytes": 2137
+    },
+    {
+      "path": "raw_sources/tti/mx_tti1m_rabitq2_uniform_T1_ef300_r0.json",
+      "sha256": "1a7d695e61228d1a931a74da37137d970de5501aa37bb38efdbcbab33f069570",
+      "size_bytes": 2133
+    },
+    {
+      "path": "raw_sources/tti/mx_tti1m_rabitq4_uniform_T1_ef300_r0.json",
+      "sha256": "e83ab0cdccc592bc44992919e520c10c86af20a5595fd6b970bdae78bf6f29ef",
+      "size_bytes": 2134
+    },
+    {
+      "path": "refresh.csv",
+      "sha256": "7577f2d82eb1f2dddcf6025c474f31e7f117f4835ff0911f7b13652ed71075d0",
+      "size_bytes": 749
+    },
+    {
+      "path": "source_summaries/refresh.csv",
+      "sha256": "546fa2e983ed71ef21f1f93af9497e69f74e51fd3f0439c8fd09c2d44f95f578",
+      "size_bytes": 459
+    },
+    {
+      "path": "source_summaries/tti.csv",
+      "sha256": "cd4f6369a798b9431489994aaa4efff2dd31f7343f420931e9959f61bd1c0d9e",
+      "size_bytes": 1082
+    },
+    {
+      "path": "tti.csv",
+      "sha256": "4f00909dac644acb14a930591fc293ad721435983b55089d2062b1fc6e3a6f16",
+      "size_bytes": 1760
+    }
+  ],
+  "kind": "vldb_lifecycle_controls_v1",
+  "refresh_cells": 4,
+  "tti_cells": 8
+}

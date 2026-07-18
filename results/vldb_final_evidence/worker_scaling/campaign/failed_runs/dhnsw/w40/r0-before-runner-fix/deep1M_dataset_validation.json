@@ -1,0 +1,19 @@
+{
+  "base_bytes": 388000000,
+  "base_dim": 96,
+  "base_path": "/home/kvgroup/chaomei/dhnsw-pilot-20260713/datasets/deep1M/deep1M_base.fvecs",
+  "base_rows": 1000000,
+  "groundtruth_bytes": 4040000,
+  "groundtruth_k": 100,
+  "groundtruth_path": "/home/kvgroup/chaomei/dhnsw-pilot-20260713/datasets/deep1M/deep1M_groundtruth.ivecs",
+  "groundtruth_rows": 10000,
+  "groundtruth_sha256": "d99e96c21cfdc2383f2735f80d0d7e3c7ef62989510bf840023a6454e108a5b2",
+  "max_groundtruth_id": 999998,
+  "min_groundtruth_id": 5,
+  "query_bytes": 3880000,
+  "query_dim": 96,
+  "query_path": "/home/kvgroup/chaomei/dhnsw-pilot-20260713/datasets/deep1M/deep1M_query.fvecs",
+  "query_rows": 10000,
+  "query_sha256": "0359efc4a332e6f79ebeade7665aa314e10b122fea1d54b3878f97c9bb5ba574",
+  "status": "ok"
+}

@@ -1,0 +1,222 @@
+{
+  "aggregate_script": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/experiments/sigmetrics/aggregate_frontier_repeats.py",
+  "aggregate_script_sha256": "27c93c68480c43ed8648716efa5b78fd44c7bf6e7773ebfeb6c866d14444d0bc",
+  "assembled_utc": "2026-07-15T16:01:44.755746+00:00",
+  "campaign": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715",
+  "campaign_manifest_sha256": "b070d994791cff9f2caf52b75bed71f5c0eb8696ddd324336bd4c4a978fb8d0e",
+  "expected_datasets": [
+    "SIFT1M",
+    "GIST1M",
+    "DEEP1M",
+    "BIGANN1M",
+    "SPACEV1M",
+    "TURING1M",
+    "TTI1M"
+  ],
+  "expected_methods": [
+    "SHINE",
+    "SlabWalk",
+    "d-HNSW"
+  ],
+  "expected_repeats": 5,
+  "query_pool_manifests": [
+    {
+      "cell": "BIGANN1M/SHINE",
+      "retained": "query_pools/bigann1m_shine.json",
+      "sha256": "85be80c84e8ca2886857c971634587f79364f7347c0d97889c9f832d78e315f5",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/bigann1m_shine.json"
+    },
+    {
+      "cell": "BIGANN1M/SlabWalk",
+      "retained": "query_pools/bigann1m_slabwalk.json",
+      "sha256": "27aecbeba9b04b8ec3bbfdbc109c2d5d63d77cf404b508fb21dd44d9f8ef794f",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/bigann1m_slabwalk.json"
+    },
+    {
+      "cell": "BIGANN1M/d-HNSW",
+      "retained": "query_pools/bigann1m_dhnsw.json",
+      "sha256": "2263050a9e5ea4d654eeaf620340e249d9225adbb4db02ea7c603a30c400a622",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/bigann1m_dhnsw.json"
+    },
+    {
+      "cell": "DEEP1M/SHINE",
+      "retained": "query_pools/deep1m_shine.json",
+      "sha256": "967667fefec77efc3ec36a84fecbaaf5e8cb87e0ddd6df7d0481a7c0f482162c",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/deep1m_shine.json"
+    },
+    {
+      "cell": "DEEP1M/SlabWalk",
+      "retained": "query_pools/deep1m_slabwalk.json",
+      "sha256": "78066118403b0b57b38da5c0da7b07915903e61398bf360608ee5ed8d3787dac",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/deep1m_slabwalk.json"
+    },
+    {
+      "cell": "DEEP1M/d-HNSW",
+      "retained": "query_pools/deep1m_dhnsw.json",
+      "sha256": "a5a3eceb53bffacf46436b19fcb2234ad2c2f1e8370e13c3e74c7077a7c33788",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/deep1m_dhnsw.json"
+    },
+    {
+      "cell": "GIST1M/SHINE",
+      "retained": "query_pools/gist1m_shine.json",
+      "sha256": "3d13135fa15b5360291d5aeff90a73a90140390001b798083db3630e8ab28304",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/gist1m_shine.json"
+    },
+    {
+      "cell": "GIST1M/SlabWalk",
+      "retained": "query_pools/gist1m_slabwalk.json",
+      "sha256": "efb4bc57fa5ba606e37088967ed65d361410f6278f8c1c4297d7cc1f9c610ee8",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/gist1m_slabwalk.json"
+    },
+    {
+      "cell": "GIST1M/d-HNSW",
+      "retained": "query_pools/gist1m_dhnsw.json",
+      "sha256": "f240e0715ad8d5b27d22bff82c4764fe3817272e4a9c30acafb69dba1f9ddc78",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/gist1m_dhnsw.json"
+    },
+    {
+      "cell": "SIFT1M/SHINE",
+      "retained": "query_pools/sift1m_shine.json",
+      "sha256": "6dda92adea4e1486f16e43b9427364810364d747572803767e8191f39975af9f",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/sift1m_shine.json"
+    },
+    {
+      "cell": "SIFT1M/SlabWalk",
+      "retained": "query_pools/sift1m_slabwalk.json",
+      "sha256": "b8cf3e3a620f938dbfde1f3117effc8ee1d4b6b85d67059be4f1f19c6474b646",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/sift1m_slabwalk.json"
+    },
+    {
+      "cell": "SIFT1M/d-HNSW",
+      "retained": "query_pools/sift1m_dhnsw.json",
+      "sha256": "1b3fb5e1570f3f1f8f86adf87bec43736ed48ba4a8a510c072239cb296499123",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/sift1m_dhnsw.json"
+    },
+    {
+      "cell": "SPACEV1M/SHINE",
+      "retained": "query_pools/spacev1m_shine.json",
+      "sha256": "0688b5c206bcf8f16ba3bb55b7a331459779249575c5d0899c50f73f82a16640",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/spacev1m_shine.json"
+    },
+    {
+      "cell": "SPACEV1M/SlabWalk",
+      "retained": "query_pools/spacev1m_slabwalk.json",
+      "sha256": "e45dfc2f157c5199b4a615217b2687fb70e4e6dbaf623b9fbf9c2c7bb21721a9",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/spacev1m_slabwalk.json"
+    },
+    {
+      "cell": "SPACEV1M/d-HNSW",
+      "retained": "query_pools/spacev1m_dhnsw.json",
+      "sha256": "1f4dbdb27839330580234ebbce06c4f19909d8dea4f3488739c89ff459a079de",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/spacev1m_dhnsw.json"
+    },
+    {
+      "cell": "TTI1M/SHINE",
+      "retained": "query_pools/tti1m_shine.json",
+      "sha256": "ae1fb6390e5383f26ad047e915a9132ae4f0e8c1fbbc20f271f1bbec29a9ee50",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/tti1m_shine.json"
+    },
+    {
+      "cell": "TTI1M/SlabWalk",
+      "retained": "query_pools/tti1m_slabwalk.json",
+      "sha256": "e3172c53d61f654b9c495c788efa7da402071275ac35851e4c42764cb181dd5a",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/tti1m_slabwalk.json"
+    },
+    {
+      "cell": "TTI1M/d-HNSW",
+      "retained": "query_pools/tti1m_dhnsw.json",
+      "sha256": "dad923f3fa188c680b8135187ecb8f87cbbe49737a36959270e01b27bd2789ae",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/tti1m_dhnsw.json"
+    },
+    {
+      "cell": "TURING1M/SHINE",
+      "retained": "query_pools/turing1m_shine.json",
+      "sha256": "e1873aa34af65964fa03bae88d14db2d3c7b2b65f45990eb0f8261d1c343331c",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/turing1m_shine.json"
+    },
+    {
+      "cell": "TURING1M/SlabWalk",
+      "retained": "query_pools/turing1m_slabwalk.json",
+      "sha256": "514d6c727713662f079e6a301edd0932e7c33f04f7db9a19ac9483e6ef8e3097",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/turing1m_slabwalk.json"
+    },
+    {
+      "cell": "TURING1M/d-HNSW",
+      "retained": "query_pools/turing1m_dhnsw.json",
+      "sha256": "32a2c727fa72056e022176144367b236e10136466eefbc5d524737c340c773c1",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-query-pools-final-v2-20260715/turing1m_dhnsw.json"
+    }
+  ],
+  "retained_sources": [
+    {
+      "kind": "sw",
+      "retained": "raw_sources/sw/r1.csv",
+      "run_id": "r1",
+      "sha256": "117e6382c1d077dc4c32f8c9a7e5e835491f5178682d1a174bda0e0d3b95cd7f",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/sw_r1/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "kind": "sw",
+      "retained": "raw_sources/sw/r2.csv",
+      "run_id": "r2",
+      "sha256": "4b7d2c8a4f4a2add3f82cfc089c8c8ff73cd6f137db6fc44966c0aed760ec341",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/sw_r2/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "kind": "sw",
+      "retained": "raw_sources/sw/r3.csv",
+      "run_id": "r3",
+      "sha256": "81014d3cb58b041c16c19fe528a88589b67c307bf1360e1330ccf2e0e7707b63",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/sw_r3/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "kind": "sw",
+      "retained": "raw_sources/sw/r4.csv",
+      "run_id": "r4",
+      "sha256": "de11e5c6851699411a944bfd23a2085935d02d6a592a938be43da1a36a8da92d",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/sw_r4/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "kind": "sw",
+      "retained": "raw_sources/sw/r5.csv",
+      "run_id": "r5",
+      "sha256": "ae1d4390196d1163a948ecd6860c36ce6b924285d2929387fa7d11b0902c8334",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/sw_r5/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "kind": "dhnsw",
+      "retained": "raw_sources/dhnsw/r1.csv",
+      "run_id": "r1",
+      "sha256": "3a7c418525a24bc105497d08cba69d3b836600d57ee3d647c775bc703b4c4a82",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw_r1/frontier.csv"
+    },
+    {
+      "kind": "dhnsw",
+      "retained": "raw_sources/dhnsw/r2.csv",
+      "run_id": "r2",
+      "sha256": "7e8f3b613fe0e19bd0aa164e4430854ed4b56c1c9fad15cfda6ce978b60bc6b9",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw_r2/frontier.csv"
+    },
+    {
+      "kind": "dhnsw",
+      "retained": "raw_sources/dhnsw/r3.csv",
+      "run_id": "r3",
+      "sha256": "269e0821baa28b363ec5d4143aa7d963e2b2edde40b2595f4e954d3e29479d9a",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw_r3/frontier.csv"
+    },
+    {
+      "kind": "dhnsw",
+      "retained": "raw_sources/dhnsw/r4.csv",
+      "run_id": "r4",
+      "sha256": "cb26426396312317f4c223823831984d7ad62fd85a8a624a30ff2ca6bf08cb19",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw_r4/frontier.csv"
+    },
+    {
+      "kind": "dhnsw",
+      "retained": "raw_sources/dhnsw/r5.csv",
+      "run_id": "r5",
+      "sha256": "6adba043b4957b3f2b6937b539f2c866d7713beca215a178c73787745ac911b8",
+      "source": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw_r5/frontier.csv"
+    }
+  ]
+}

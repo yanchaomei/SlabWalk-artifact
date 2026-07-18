@@ -1,0 +1,31 @@
+{
+  "campaign_id": "vldb-cache-control-sift1-final-v2-20260714",
+  "created_utc": "2026-07-14T17:46:24.033979+00:00",
+  "protocol": {
+    "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+    "conditions": [
+      "off",
+      "c5",
+      "c20",
+      "c50"
+    ],
+    "coroutines": 8,
+    "dataset": "SIFT1M",
+    "ef_search": 100,
+    "fingerprint_tool_sha256": "80e588f99e34450a6c238d94c7b459027b4d5c02184581fcc30c261305d25eb3",
+    "index_dump_sha256": "bbfe1fd976ab0fd79ef8575c5256fb24f2a3bcb43c28c8cc8ea9efd72d63f336",
+    "index_region_bytes": 4294967296,
+    "memory_node": "skv-node4",
+    "queries_per_run": 10000,
+    "query_contexts": 1,
+    "query_suffix": "uniform",
+    "repeats": 5,
+    "runner_sha256": "bc17d0040eda996db1c3e5b4bc1276cb6cb20777385f1f0251108773e262bcc8",
+    "summarizer_sha256": "209644be7a01b0c7817de9553149b93fa0450068281c1293428e2ff020eabdca",
+    "tcp_port": 1310,
+    "threads": 1,
+    "top_k": 10,
+    "warmups": 1
+  },
+  "protocol_fingerprint": "311f13155e2ed0acb33282d43c9f7192c418a3d880fd27c44fb8d6f168a10dbc"
+}

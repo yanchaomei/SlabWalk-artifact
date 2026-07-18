@@ -1,0 +1,88 @@
+{
+  "actual_total_local_buffer_size": 97195584,
+  "allocated_local_buffer_size": 6442450944,
+  "build": {
+    "dist_comps": 0,
+    "index_size": 0,
+    "max_level": 0,
+    "rdma_reads_in_bytes": 0,
+    "rdma_writes_in_bytes": 0,
+    "remote_allocations": 0
+  },
+  "cache": {
+    "cache_buckets_size": 2658800,
+    "cached_nodes": 0,
+    "hit_rate": 0.0,
+    "hits_total": 0,
+    "local_hit_rates": {
+      "c0": 0.0
+    },
+    "local_size": 0,
+    "misses_total": 0,
+    "num_cache_buckets": 66470,
+    "num_cooling_table_buckets": 1108
+  },
+  "distance": "inner_product",
+  "estimated_total_index_size": 1084799780,
+  "hnsw_parameters": {
+    "ef_construction": 100,
+    "ef_search": 300,
+    "k": 10,
+    "m": 16
+  },
+  "meta": {
+    "compute_nodes": 1,
+    "compute_threads": 16,
+    "coroutines_per_thread": 8,
+    "dataset": "tti1m",
+    "hyperthreading": "true",
+    "label": "tti1m_baseline_uniform_T16_ef300_r0",
+    "memory_nodes": 1,
+    "query_suffix": "uniform",
+    "threads_pinned": "true",
+    "timestamp": {
+      "$date": "2026-06-10T13:40:39Z"
+    },
+    "zipf_parameter": "niform"
+  },
+  "neighborlist_size": 132,
+  "neighborlist_size_l0": 260,
+  "node_size": 816,
+  "num_queries": 10000,
+  "num_vectors": 1000000,
+  "queries": {
+    "compute_recall": "true",
+    "cwc_batched_reads": 0,
+    "cwc_batches": 0,
+    "dist_comps": 35546877,
+    "per_mn_bytes": [],
+    "per_mn_gini": 0.0,
+    "per_mn_posts": [],
+    "per_mn_reads": [],
+    "posts_l0": 0,
+    "posts_rerank": 0,
+    "posts_upnav": 0,
+    "processed": 10000,
+    "processed_local": {
+      "c0": 10000
+    },
+    "queries_per_sec": 1250,
+    "rdma_cqes": 38695720,
+    "rdma_posts": 38703145,
+    "rdma_reads_in_bytes": 29809446496,
+    "rdma_writes_in_bytes": 0,
+    "recall": 0.96105,
+    "visited_neighborlists": 3166140,
+    "visited_nodes": 1103836,
+    "visited_nodes_l0": 34433041
+  },
+  "timings": {
+    "build_c0": 0.0,
+    "build_max": 0.0,
+    "placement_fetch": 42.980920999999995,
+    "placement_kmeans": 587.8964569999999,
+    "query_c0": 7996.706172,
+    "query_max": 7996.706172,
+    "routing": 0.0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+  "campaign_id": "vldb-query-profile-sift1-frozen-v2-20260714",
+  "perf_data_sha256": "1a9ba844d4ae0509cf80b51eeb66a4235ce7577eb910240317ae7ef3e1aa74f3",
+  "protocol_fingerprint": "4ca6cfeed2fac78516324082be8b3f6705d40574a3831266719d17dbf1ad1319",
+  "retained_sources": [
+    "raw_sources/campaign.json",
+    "raw_sources/runner_snapshot.sh",
+    "raw_sources/profile_sources.sha256",
+    "raw_sources/SIFT1M_shine_T1_C8_ef100.json",
+    "raw_sources/SIFT1M_shine_T1_C8_ef100.perf.data",
+    "raw_sources/SIFT1M_shine_T1_C8_ef100.perf.data.sha256",
+    "raw_sources/SIFT1M_shine_T1_C8_ef100.perf.record.status",
+    "raw_sources/SIFT1M_shine_T1_C8_ef100.perf.txt"
+  ],
+  "runner_sha256": "3d20f0968654a3ad27fa1b4624c5425e1844258a1a75cc905232ac78e68bcf6e",
+  "source_directory": "/private/tmp/vldb-query-profile.iyVG5D"
+}

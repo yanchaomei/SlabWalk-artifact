@@ -1,0 +1,18 @@
+{
+  "batch_size": 250000,
+  "builder_sha256": "8e57c9fee680301a30eadcafe77de4b64ba5e9625de7dea30bcb258cdddd6f94",
+  "campaign_id": "vldb-hnswlib-tti10m-final-v1-20260714",
+  "converter_sha256": "0ed84767a9abaf97de19da2873a1125211be044762889168885c7f79ed25a40b",
+  "converter_source_sha256": "f418538d493f8c1fa7898837a455eaf02d5c23158bd856cace21794b3795ba2b",
+  "count": 10000000,
+  "dim": 200,
+  "ef_construction": 100,
+  "frozen_graphbeyond_binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+  "host": "skv-node3",
+  "m": 16,
+  "publication_policy": "publish only after full converter post-write validation and canonical SHA verification",
+  "random_seed": 47,
+  "source": "/home/kvgroup/chaomei/hnsw-data/tti-10m/base.fbin",
+  "space": "ip",
+  "threads": 80
+}

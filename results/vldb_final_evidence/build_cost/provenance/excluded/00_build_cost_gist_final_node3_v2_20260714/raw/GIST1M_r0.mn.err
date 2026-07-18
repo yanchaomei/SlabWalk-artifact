@@ -1,0 +1,29 @@
+============================================================
+                        SERVER
+============================================================
+num clients:                  1
+TCP port:                     1511
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           17179869184
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.65)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+pairing: 15650 -- 10439
+[STATUS]: pinned main thread to core 20
+[STATUS]: query QP/CQ contexts per compute node=1
+[STATUS]: LAVD neighborhood region: resolved bytes=9663676416
+allocation size: 17179869184
+allocated ALIGNED MEM (no hugepage) at 139896074776640 with buffer size 17179869184
+allocated ALIGNED MEM (no hugepage) at 139886411096128 with buffer size 9663676416
+[STATUS]: LAVD neighborhood region: allocated bytes=9663676416
+[STATUS]: register memory and distribute access token
+[STATUS]: LAVD neighborhood region: registered bytes=9663676416
+[STATUS]: connect QPs of compute threads

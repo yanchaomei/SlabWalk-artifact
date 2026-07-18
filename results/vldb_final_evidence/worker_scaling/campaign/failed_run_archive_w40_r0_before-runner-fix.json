@@ -1,0 +1,55 @@
+{
+  "archive": "failed_runs/dhnsw/w40/r0-before-runner-fix",
+  "archived_utc": "2026-07-13T15:42:02.259020+00:00",
+  "campaign_id": "vldb-worker-scaling-final-node3-v1-20260713",
+  "campaign_manifest_sha256": "e0324f8b2815eef0d11b9f2531578baf7cad9f7276c7de919db8c4da30ada559",
+  "files": [
+    {
+      "path": "deep1M_dataset_validation.json",
+      "sha256": "9941b037c3ff6580e8668e1175dde736393336c8fc4d4208deddd8c0b06246b1",
+      "size_bytes": 781
+    },
+    {
+      "path": "deep1M_ef200_client.log",
+      "sha256": "7c723354a306f2feea961b49531f249d94a5b3ba514af56adf2b443784312235",
+      "size_bytes": 61628
+    },
+    {
+      "path": "deep1M_server.log",
+      "sha256": "31e7dc9b8684b986922530b3aa3882499fd606ce37bbc8ac55442129cb924a8e",
+      "size_bytes": 5487
+    },
+    {
+      "path": "deep1M_server_process.txt",
+      "sha256": "c3ad151b356c5f4343e566c50cef8e6e479069003575f69bb21d0594dbe50fda",
+      "size_bytes": 164
+    },
+    {
+      "path": "deep1M_server_ready_seconds.txt",
+      "sha256": "ffb004bf801c8d48a8033d433373c9bd076b631e05a2d0e07c1d89ed4de3ff6a",
+      "size_bytes": 18
+    },
+    {
+      "path": "deep1M_server_rss_after.txt",
+      "sha256": "88d4954b366fb8a6717e8c2414287b981c4d22adedfa0decfbf3d67628424aa0",
+      "size_bytes": 38
+    },
+    {
+      "path": "deep1M_server_rss_before.txt",
+      "sha256": "f726a93a2c74c9c92779fa13aec7ca957494bb19e33a25402979db79f48e7440",
+      "size_bytes": 38
+    },
+    {
+      "path": "frontier.csv",
+      "sha256": "c19b4bfd4c882fecd3e91d4d161b94e34b0a1d8335183cc8d924e1f48b177181",
+      "size_bytes": 1260
+    },
+    {
+      "path": "run.log",
+      "sha256": "491c40509114eb122ca86e6ff63c4832743982452702b31edb02c7ab7c1eb035",
+      "size_bytes": 122
+    }
+  ],
+  "reason": "stdout interleaving corrupted seven per-thread detail blocks and one fixed-pool protocol sentinel; no fresh aggregate detail side file was retained",
+  "source": "raw/dhnsw/w40/r0"
+}

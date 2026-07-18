@@ -1,0 +1,72 @@
+============================================================
+                        SERVER
+============================================================
+num clients:                  1
+TCP port:                     1316
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           4294967296
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.65)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+pairing: 17019 -- 189914
+[STATUS]: pinned main thread to core 20
+[STATUS]: query QP/CQ contexts per compute node=16
+[STATUS]: LAVD neighborhood region: resolved bytes=17179869184
+allocation size: 4294967296
+allocated ALIGNED MEM (no hugepage) at 139715903791168 with buffer size 4294967296
+allocated ALIGNED MEM (no hugepage) at 139698723917888 with buffer size 17179869184
+[STATUS]: LAVD neighborhood region: allocated bytes=17179869184
+[STATUS]: register memory and distribute access token
+[STATUS]: LAVD neighborhood region: registered bytes=17179869184
+[STATUS]: connect QPs of compute threads
+pairing: 17020 -- 189915
+pairing: 17021 -- 189916
+pairing: 17022 -- 189917
+pairing: 17023 -- 189918
+pairing: 17024 -- 189919
+pairing: 17025 -- 189920
+pairing: 17026 -- 189921
+pairing: 17027 -- 189922
+pairing: 17028 -- 189923
+pairing: 17029 -- 189924
+pairing: 17030 -- 189925
+pairing: 17031 -- 189926
+pairing: 17032 -- 189927
+pairing: 17033 -- 189928
+pairing: 17034 -- 189929
+pairing: 17035 -- 189930
+[STATUS]: idle: index construction
+[STATUS]: loading index (876871208 Bytes) from /home/kvgroup/chaomei/hnsw-data/gist200k/dump/index_m32_efc200_node1_of1.dat
+[STATUS]: query processing
+[STATUS]: idle: queries
+	Command being timed: "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/build-final-v5/shine --is-server --num-clients 1 --port 1316 --index-region-bytes 4294967296 --lavd-region-bytes 17179869184"
+	User time (seconds): 35.99
+	System time (seconds): 10.38
+	Percent of CPU this job got: 91%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:50.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 20991848
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 5246856
+	Voluntary context switches: 586
+	Involuntary context switches: 202
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 40
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

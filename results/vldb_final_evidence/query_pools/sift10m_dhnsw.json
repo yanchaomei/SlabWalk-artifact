@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-13T10:29:45.890155+00:00",
+  "dataset": "SIFT10M",
+  "groundtruth": {
+    "bytes": 40040000,
+    "canonical_ids_sha256": "84007548401b9edd0f307ba28c91af3b8baee1ba1593beb87b6a4008fa212b96",
+    "file_sha256": "fa4458d753f34b7b1997ed1caa3ddd6ba53d4622c00d751249cb9d2c957cfd3d",
+    "format": "ivecs",
+    "k": 1000,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/d-HNSW/datasets/sift10M/gnd/idx_10M.ivecs",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": null,
+  "method": "d-HNSW",
+  "metric": "l2",
+  "query": {
+    "bytes": 5160000,
+    "canonical_sha256": "6fc3c31f8d2f2020255aada4b39d002ef1525664755b1343e3e426f009e162f0",
+    "dim": 128,
+    "file_sha256": "4e686785082f56916a6422b120ad4c54b4110701195c17fa582391156bcb32cc",
+    "format": "fvecs",
+    "path": "/home/kvgroup/chaomei/d-HNSW/datasets/sift10M/bigann_query.fvecs",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

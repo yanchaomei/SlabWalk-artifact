@@ -1,0 +1,155 @@
+{
+  "input_csv": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/evidence/worker_scaling_final_node3_v1_20260713/raw/sw/w1/r0/slabwalk_shine_frontier_raw.csv",
+  "input_csv_sha256": "5f5db5278dde4055e2699c04cd3f4a22570791c658f5bf3b79a393a332dcadb1",
+  "kind": "worker_scaling_raw_source",
+  "measurement_json": {
+    "actual_total_local_buffer_size": 1758656,
+    "allocated_local_buffer_size": 4294967296,
+    "build": {
+      "dist_comps": 0,
+      "index_size": 0,
+      "max_level": 0,
+      "rdma_reads_in_bytes": 0,
+      "rdma_writes_in_bytes": 0,
+      "remote_allocations": 0
+    },
+    "cache": {
+      "cache_buckets_size": 3343960,
+      "cached_nodes": 0,
+      "hit_rate": 0.0,
+      "hits_total": 0,
+      "local_hit_rates": {
+        "c0": 0.0
+      },
+      "local_size": 0,
+      "misses_total": 0,
+      "num_cache_buckets": 83599,
+      "num_cooling_table_buckets": 1394
+    },
+    "distance": "squared_l2",
+    "estimated_total_index_size": 668799780,
+    "hnsw_parameters": {
+      "ef_construction": 100,
+      "ef_search": 200,
+      "k": 10,
+      "m": 16
+    },
+    "lavd_region_registered_bytes_per_mn": 0,
+    "lavd_region_registered_bytes_total": 0,
+    "lavd_region_requested_bytes": 0,
+    "lavd_region_resolved_bytes": 6442450944,
+    "meta": {
+      "compute_nodes": 1,
+      "compute_threads": 1,
+      "coroutines_per_thread": 2,
+      "dataset": "deep1m",
+      "hyperthreading": "true",
+      "label": "DEEP1M_shine_path_r0_measure_T1_ef200",
+      "memory_nodes": 1,
+      "query_suffix": "uniform",
+      "threads_pinned": "true",
+      "timestamp": {
+        "$date": "2026-07-13T21:56:17Z"
+      },
+      "zipf_parameter": "niform"
+    },
+    "neighborlist_size": 132,
+    "neighborlist_size_l0": 260,
+    "node_size": 400,
+    "num_queries": 10000,
+    "num_vectors": 1000000,
+    "queries": {
+      "compute_recall": "true",
+      "cwc_batched_reads": 0,
+      "cwc_batches": 0,
+      "dist_comps": 28092240,
+      "local_cn_read_bytes_gini": 0.0,
+      "local_cn_read_bytes_per_mn": [
+        11767360896
+      ],
+      "local_cn_read_submits_gini": 0.0,
+      "local_cn_read_submits_per_mn": [
+        30183646
+      ],
+      "local_cn_read_wrs_gini": 0.0,
+      "local_cn_read_wrs_per_mn": [
+        30183646
+      ],
+      "local_latency_p50_us": 16254.395,
+      "local_latency_p95_us": 20977.106,
+      "local_latency_p99_us": 22307.133,
+      "local_latency_samples": 10000,
+      "posts_l0": 0,
+      "posts_rerank": 0,
+      "posts_upnav": 0,
+      "processed": 10000,
+      "processed_local": {
+        "c0": 10000
+      },
+      "queries_per_sec": 125,
+      "rdma_cqes": 30183646,
+      "rdma_posts": 30183646,
+      "rdma_reads_in_bytes": 11767360896,
+      "rdma_writes_in_bytes": 0,
+      "rdma_wrs": 30183646,
+      "recall": 0.98901,
+      "rerank_chunks": 0,
+      "visited_neighborlists": 2101404,
+      "visited_nodes": 1249924,
+      "visited_nodes_l0": 26832316
+    },
+    "query_contexts": 1,
+    "timings": {
+      "build_c0": 0.0,
+      "build_max": 0.0,
+      "placement_fetch": 42.423015,
+      "placement_kmeans": 63.334256999999994,
+      "query_c0": 79431.013449,
+      "query_max": 79431.013449,
+      "routing": 0.0
+    }
+  },
+  "method": "SHINE",
+  "parsed_row": {
+    "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+    "bytes_per_q": "1176736.0896",
+    "campaign_id": "vldb-worker-scaling-final-node3-v1-20260713",
+    "coroutines": "2",
+    "dataset": "DEEP1M",
+    "ef": "200",
+    "efc": "100",
+    "env": "none",
+    "expected_queries": "10000",
+    "failed_queries": "0",
+    "index_region_bytes": "4294967296",
+    "json": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/evidence/worker_scaling_final_node3_v1_20260713/raw/sw/w1/r0/DEEP1M_shine_path_r0_measure_T1_ef200.json",
+    "lavd": "0",
+    "lavd_region_bytes": "0",
+    "m": "16",
+    "measurement_mode": "fixed_query_pool",
+    "method": "SHINE",
+    "metric": "l2",
+    "p50_us": "16254.395",
+    "p95_us": "20977.106",
+    "p99_us": "22307.133",
+    "posts_per_q": "3018.3646",
+    "processed": "10000",
+    "protocol_fingerprint": "db5b00e0de2734c96e0b9cc6084793c7c2a336f8e7588b1e5df4efdd9a320828",
+    "qps": "125",
+    "query_contexts": "1",
+    "query_suffix": "uniform",
+    "recall": "0.98901",
+    "run_id": "r0",
+    "run_kind": "measure",
+    "status": "ok",
+    "stderr": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/evidence/worker_scaling_final_node3_v1_20260713/raw/sw/w1/r0/DEEP1M_shine_path_r0_measure_T1_ef200.err",
+    "threads": "1",
+    "top_k": "10",
+    "trace": "0",
+    "trace_csv": "",
+    "variant": "shine_path"
+  },
+  "repeat": 0,
+  "stderr": "============================================================\n                        CLIENT\n============================================================\nconnect to:                   [skv-node5, \b\b]\nis initiator:                 true\nTCP port:                     1390\nIB port:                      1\nmax outstanding CQEs:         16\nmax send work requests:       1024\nmax receive work requests:    1024\n============================================================\nindex region bytes:           4294967296\ndata path:                    \"/home/kvgroup/chaomei/hnsw-data/deep1m/\"\nquery suffix:                 uniform\nnumber of threads:            1\nnumber of coroutines:         2\nquery QP/CQ contexts:         1\nthreads pinned:               true\nseed:                         1234\n------------------------------------------------------------\nK:                            10\nM:                            16\nef search:                    200\nef construction:              100\nspec-k (GraphBeyond C1):      1\n============================================================\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\nnum_cores: 80\nphysical cores per socket: 20\nhyperthreading enabled\ninterleaved policy\n[STATUS]: LAVD neighborhood region: requested bytes=0, resolved bytes=6442450944\nclient id: 0\nnumber of clients: 1\nconnect to server skv-node5\npairing: 8566 -- 14754\n[STATUS]: pinned main thread to core 20\n[STATUS]: receive access tokens of remote memory regions\n[STATUS]: LAVD neighborhood region: registered bytes per MN=0\nreading input data... (dim=96, num vectors=10000/10000, filesize=3840008)\nreading input data... (dim=100, num vectors=10000/10000, filesize=4000008)\n[STATUS]: allocate worker threads and read buffers\nallocated ALIGNED MEM (no hugepage) at 140455577944128 with buffer size 4294967296\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 8567 -- 14755\n[STATUS]: synchronize compute nodes\n[STATUS]: construct placement datastructure\n  fetched 20 nodes on level 4\n  fetched 259 nodes on level 3\n  fetched 3923 nodes on level 2\n[STATUS]: run balanced k-means\nrun kmeans\ncluster sizes:\n  cluster 0: 2318\n  cluster 1: 1605\n  final iteration: 18, final error: 0\nrun balanced kmeans\nnum iterations: 176\nreported cluster sizes:\n  cluster 0: 1962\n  cluster 1: 1961\nactual cluster sizes:\n  cluster 0: 2020\n  cluster 1: 1903\ncombine clusters\nfinal cluster sizes:\n  cluster 0: 3923\nfinal mapping: 0 0 \n[STATUS]: synchronize compute nodes\n[STATUS]: run queries\nallocated ALIGNED MEM (no hugepage) at 140455568175168 with buffer size 313600\nrouting buffer size: 313600\n[STATUS]: **QUERY**: running worker threads...\nquery 0/10000\nquery 1000/10000\nquery 2000/10000\nquery 3000/10000\nquery 4000/10000\nquery 5000/10000\nquery 6000/10000\nquery 7000/10000\nquery 8000/10000\nquery 9000/10000\n[STATUS]: join compute threads\nt0 processed: 10000, CHR: 0\n[STATUS]: processed queries: 10000\n[STATUS]: local recall: 0.989010\n[STATUS]: collect statistics and timings from compute nodes\n\nstatistics:\ncache histogram\n  size: 0 | freq: 83599\ntotal entries: 0\ncooling table histogram\n  size: 0 | freq: 1394\n  size: 1 | freq: 0\n  size: 2 | freq: 0\n  size: 3 | freq: 0\n  size: 4 | freq: 0\n  size: 5 | freq: 0\n  size: 6 | freq: 0\nCT total entries: 0\n",
+  "workers": 1
+}

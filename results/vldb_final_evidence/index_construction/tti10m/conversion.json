@@ -1,0 +1,22 @@
+{
+  "converter": "convert_hnswlib_dump-v1",
+  "source_format": "hnswlib-0.8.0-native-64le",
+  "format": "graphbeyond-hnsw-single-mn-v1",
+  "source_path": "/home/kvgroup/chaomei/graphbeyond-hnswlib-converter-v1-20260714/formal-tti10m-v1/tti10m_m16_efc100_seed47.hnswlib",
+  "output_path": "/home/kvgroup/chaomei/graphbeyond-hnswlib-converter-v1-20260714/formal-tti10m-v1/index_m16_efc100_node1_of1.dat",
+  "source_sha256": "690b51020c4b63a66064b5887c2d236b7675352c2c0a4e1c10c0710c7b17a144",
+  "output_sha256": "efa55196ce5420107683f07a577bc222f0b42ff0684887bc16f120ec6644cfb3",
+  "source_bytes": 9485342088,
+  "output_bytes": 10885664672,
+  "count": 10000000,
+  "dim": 200,
+  "m": 16,
+  "max_m0": 32,
+  "ef_construction": 100,
+  "max_level": 6,
+  "entry_internal_id": 7719731,
+  "entry_uid": 7719731,
+  "graph_preserved": true,
+  "post_write_validation": "full_graph_payload_and_pointers",
+  "deleted_nodes_accepted": false
+}

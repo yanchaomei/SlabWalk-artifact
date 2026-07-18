@@ -1,0 +1,101 @@
+{
+  "claims_sha256": "8297ca77006fcab836ed0d0f0c351127f7dac768804fd68fd597275e66bfe17b",
+  "claims_target": "results/vldb_final_evidence/manuscript_claims.json",
+  "entries": {
+    "paper_vldb/ACM-Reference-Format.bst": {
+      "sha256": "0590db3b8d255a3af91982ab710f3ace5fcaa52434020c9af8a4f141b00b68f3",
+      "size_bytes": 84856
+    },
+    "paper_vldb/acmart.cls": {
+      "sha256": "2f949e6e3f2a79f2cdc218b9dcdbaa7dd451adb4ee0be1af6dc7ebe00b318ea7",
+      "size_bytes": 121737
+    },
+    "paper_vldb/figs/eval_access_scaling.pdf": {
+      "sha256": "cb4383723730ea9f623f5977c5ef5bb8793f60b09373f322187056ef6aea8105",
+      "size_bytes": 50959
+    },
+    "paper_vldb/figs/eval_frontier_curves.pdf": {
+      "sha256": "fb0847c4642f65c31cbcd97acad0c0a481945759a6bf2b0a1c1483647872dfc4",
+      "size_bytes": 68629
+    },
+    "paper_vldb/figs/eval_index_cost.pdf": {
+      "sha256": "f9bc1658032b55a244675d97c2cee63562266c961899599a716d25251018c1f1",
+      "size_bytes": 47694
+    },
+    "paper_vldb/figs/eval_lifecycle_boundaries.pdf": {
+      "sha256": "74fa72644923578f69ec5811c217ea57262b18a3063dba429bf5e0913058c69b",
+      "size_bytes": 51201
+    },
+    "paper_vldb/figs/fig_construction_refresh.pdf": {
+      "sha256": "aaec5910246cdcbb19093204c8e20715f67f88cde7c8125357a6e2ba59c86395",
+      "size_bytes": 22653
+    },
+    "paper_vldb/figs/fig_physical_units.pdf": {
+      "sha256": "8fa454f345a78c5f3a2f9de93ddca5e5197cae3d3c30110397c50dcddd32af22",
+      "size_bytes": 20069
+    },
+    "paper_vldb/figs/fig_physical_units.svg": {
+      "sha256": "fdf2a5cb219ff4081270afa20ef9425ea2b6854469da021b2ea8a81560915d53",
+      "size_bytes": 22487
+    },
+    "paper_vldb/figs/fig_search_placement.pdf": {
+      "sha256": "173dd601df2bfd0611bf00eb3c005e3f9135e4134d761ea41292bd420cd5ac79",
+      "size_bytes": 20554
+    },
+    "paper_vldb/figs/fig_slab_layout.pdf": {
+      "sha256": "9352fb636c2f91658c659e3a1a8546e60403aa3cbe8adf96efdc3ea6518c9db8",
+      "size_bytes": 18039
+    },
+    "paper_vldb/figs/overview.pdf": {
+      "sha256": "3005c999e5c36df0df8b1015ce6b13797a3545b5767d5d8e3990cfdfebdc4ce7",
+      "size_bytes": 20753
+    },
+    "paper_vldb/generated_claims.tex": {
+      "sha256": "d6fc9f47c05928591ecb4afe5d8f5fab6fdf012b8349813d7af95ca696677b55",
+      "size_bytes": 4494
+    },
+    "paper_vldb/main.tex": {
+      "sha256": "a959d58f4c54565f3ef3208b05285585424012cbfbacb582f3158e63f477eac2",
+      "size_bytes": 65831
+    },
+    "paper_vldb/pvldb.sty": {
+      "sha256": "52ad3948f3231b31d2ac90f470c1759e7f96add7b577ec4e267dfbdc87fc4eb2",
+      "size_bytes": 4351
+    },
+    "paper_vldb/refs.bib": {
+      "sha256": "efcd9db689316418cdd71b6f2761600f4f1fe2adb51699c78e73627602d4a354",
+      "size_bytes": 17172
+    },
+    "results/vldb_final_evidence/evidence_gate.json": {
+      "sha256": "fea1f82f79120a94c7327a1e3009a4b3163b00a8e4c8ae0e3a0a926e04fdfbdd",
+      "size_bytes": 26350
+    },
+    "results/vldb_final_evidence/frontier_1m_gate.json": {
+      "sha256": "7ca88aebec78e216a69d1abfedb367b6ccabdb20bd435cfb0ddab60b35085510",
+      "size_bytes": 1004
+    },
+    "results/vldb_final_evidence/headline_candidates.json": {
+      "sha256": "b45d4d3d9cb06d8875c8923a6a02ee617361bc8531362e0b028077ed00afb88b",
+      "size_bytes": 12760
+    },
+    "results/vldb_final_evidence/manuscript_claims.json": {
+      "sha256": "8297ca77006fcab836ed0d0f0c351127f7dac768804fd68fd597275e66bfe17b",
+      "size_bytes": 32252
+    }
+  },
+  "gate_sha256": "fea1f82f79120a94c7327a1e3009a4b3163b00a8e4c8ae0e3a0a926e04fdfbdd",
+  "gate_target": "results/vldb_final_evidence/evidence_gate.json",
+  "generated_claims_target": "paper_vldb/generated_claims.tex",
+  "kind": "vldb_release_bundle",
+  "publication_pdf_targets": [
+    "paper_vldb/figs/fig_physical_units.pdf",
+    "paper_vldb/figs/eval_frontier_curves.pdf",
+    "paper_vldb/figs/eval_access_scaling.pdf",
+    "paper_vldb/figs/eval_index_cost.pdf",
+    "paper_vldb/figs/eval_lifecycle_boundaries.pdf",
+    "paper_vldb/figs/fig_construction_refresh.pdf",
+    "paper_vldb/figs/fig_search_placement.pdf",
+    "paper_vldb/figs/fig_slab_layout.pdf",
+    "paper_vldb/figs/overview.pdf"
+  ]
+}

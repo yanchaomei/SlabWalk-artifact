@@ -1,0 +1,75 @@
+{
+  "campaign_id": "vldb-frontier-10m-composite-0bae8d60895c",
+  "cell_sources": {
+    "DEEP10M/SHINE": "deep10m_shine_slabwalk",
+    "DEEP10M/SlabWalk": "deep10m_shine_slabwalk",
+    "DEEP10M/d-HNSW": "deep10m_dhnsw",
+    "SIFT10M/SHINE": "text_sift_shine_slabwalk",
+    "SIFT10M/SlabWalk": "text_sift_shine_slabwalk",
+    "SIFT10M/d-HNSW": "text_sift_dhnsw",
+    "TTI10M/SHINE": "text_sift_shine_slabwalk",
+    "TTI10M/SlabWalk": "text_sift_shine_slabwalk",
+    "TTI10M/d-HNSW": "text_sift_dhnsw"
+  },
+  "created_utc": "2026-07-17T10:08:16.240218+00:00",
+  "kind": "composite_frontier_evidence",
+  "schema_version": 2,
+  "source_campaigns": [
+    {
+      "campaign_id": "vldb-frontier-deep10-sw-final-v1-20260713",
+      "datasets": [
+        "DEEP10M"
+      ],
+      "manifest": "source_campaigns/deep10m_shine_slabwalk.json",
+      "manifest_sha256": "676705e0947c2dc722ae0721d1a55ea840cef83b273dd6a528de3885a89d5339",
+      "methods": [
+        "SHINE",
+        "SlabWalk"
+      ],
+      "protocol_fingerprint": "7a9f9dc3be579a53c80a106a02680e2af46f0d97ef27640dea347f4b2505f6cc",
+      "role": "deep10m_shine_slabwalk"
+    },
+    {
+      "campaign_id": "dhnsw-17d63b6f-5a31-4f66-8bc5-c51f212b689d",
+      "datasets": [
+        "DEEP10M"
+      ],
+      "manifest": "source_campaigns/deep10m_dhnsw.json",
+      "manifest_sha256": "61063131c8e08b34721b5e6d9ba557a7e585b85382c1a712c7e2848306fb5aff",
+      "methods": [
+        "d-HNSW"
+      ],
+      "protocol_fingerprint": "1863973b6b014a939d48f024e96ca97dbfa809b6b7a8eb3fa516cb3917fcce8e",
+      "role": "deep10m_dhnsw"
+    },
+    {
+      "campaign_id": "vldb-frontier-text-sift-sw-final-v2-20260714",
+      "datasets": [
+        "SIFT10M",
+        "TTI10M"
+      ],
+      "manifest": "source_campaigns/text_sift_shine_slabwalk.json",
+      "manifest_sha256": "f29cc8f2bc3e01341464e86226d737c7a914553436a6355dcb3e5d053058c38c",
+      "methods": [
+        "SHINE",
+        "SlabWalk"
+      ],
+      "protocol_fingerprint": "4345202a9238babc1843a5ffeee70b728751bed1f85bcefda293c290cc328948",
+      "role": "text_sift_shine_slabwalk"
+    },
+    {
+      "campaign_id": "vldb-dhnsw-text-sift-node7-final-v3-20260713",
+      "datasets": [
+        "SIFT10M",
+        "TTI10M"
+      ],
+      "manifest": "source_campaigns/text_sift_dhnsw.json",
+      "manifest_sha256": "c703f3ec6360c87100a79c2afb69e746673aa53d8ae7dbb066ce57c8fd1b9272",
+      "methods": [
+        "d-HNSW"
+      ],
+      "protocol_fingerprint": "48df00951959ab72ebfe8b17cfdd10ef0cf42e8f91b286597d59c2a881564d28",
+      "role": "text_sift_dhnsw"
+    }
+  ]
+}

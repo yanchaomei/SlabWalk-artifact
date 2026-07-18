@@ -1,0 +1,10 @@
+{
+  "budget_summary_sha256": "5d367c9667df11bb227b59c93ddd6a314215933c6d58ffbf5d024816850ff41f",
+  "measured_cells": 12,
+  "measured_runs": 60,
+  "provenance_sha256": "bc423c28a582757839692c2ff0134c3af2c916c4f6a0c415fc9dcb1d69ffc82a",
+  "resident_summary_sha256": "8aa3fd7f3eb559ebab52f0f2c4c0334e808f9588fb3eb7ac391d47a1b76e650f",
+  "retained_cells": 72,
+  "retained_source_files": 360,
+  "runs_sha256": "fc81a1e0f806a01895e0dd85b19ab5f4aaa86dd2a06d5bf3c264700ce6fbbce6"
+}

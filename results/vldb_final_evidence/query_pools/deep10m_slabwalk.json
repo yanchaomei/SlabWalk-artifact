@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-13T10:28:22.176661+00:00",
+  "dataset": "DEEP10M",
+  "groundtruth": {
+    "bytes": 4000008,
+    "canonical_ids_sha256": "51db82a2f80e17ffefee34f60ab288d184a20a1f734503bc957c304f0002c0ce",
+    "file_sha256": "f885350a1b6648a69fbe8e8cba2f613aef95a34d619ec3cea539de205a55aa73",
+    "format": "bin",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/hnsw-data/deep10m/queries/groundtruth-uniform.bin",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": null,
+  "method": "SlabWalk",
+  "metric": "l2",
+  "query": {
+    "bytes": 3840008,
+    "canonical_sha256": "68973a8fa5af6691d904c0f5a292136be6e3f21fed6b28154a1bfbdb1c93db57",
+    "dim": 96,
+    "file_sha256": "8438fc763f14e0f9741fda15b3e11215aef089ce17d1ad47d53b52a7c9fda5bb",
+    "format": "fbin",
+    "path": "/home/kvgroup/chaomei/hnsw-data/deep10m/queries/query-uniform.fbin",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

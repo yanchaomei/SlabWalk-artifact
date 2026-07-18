@@ -1,0 +1,2 @@
+latency(us)	recall	network_latency(us)	compute_time(us)	duration_meta_search(us)	deserialize_time(us)	throughput(QPS)
+[12317.4, 0.9089, 11786.6, 425.339, 38.3628, 492.639, 377.734],

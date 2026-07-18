@@ -1,0 +1,8 @@
+{
+  "dataset": "SIFT1M",
+  "distance_self_percent": 5.16,
+  "lost_samples": 0,
+  "passed": true,
+  "query_rows": 200000,
+  "samples": 3000
+}

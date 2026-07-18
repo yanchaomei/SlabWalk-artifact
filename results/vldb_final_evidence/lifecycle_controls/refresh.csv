@@ -1,0 +1,5 @@
+batch_inserts,touched_blocks,write_amp_blocks_per_insert,diff_read_frac,diff_read_mb,full_index_mb,byte_identical,recall,source,source_sha256
+1000,12403,12.403,0.0123958,9.92378,800.573,PASS,0.97662,raw_sources/refresh/v2_K1k.stderr,9dd39b65e157038fd32fb75a2506e5f806b6d9761af58c12980b278c64f201d5
+10000,98881,9.8881,0.0988663,79.1497,800.573,PASS,0.97662,raw_sources/refresh/v2_K10k.stderr,273184b807577c662b37404f09f194fff3de8ea0033caaf827e21543ba7395c6
+50000,412589,8.25178,,,,PASS,0.97662,raw_sources/refresh/t4_K50k.stderr,9a78b6376562607f5fe41517685c79e7f883bf106f225982a278d40d70f678f5
+100000,638132,6.38132,0.638156,510.89,800.573,PASS,0.97662,raw_sources/refresh/t4v2.stderr,bfc52fdd7bbd6ccd9f9736ecdfc4e594cfb009a64099610adcb49fc0c9e850c9

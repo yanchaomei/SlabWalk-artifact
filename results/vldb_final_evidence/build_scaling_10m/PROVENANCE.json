@@ -1,0 +1,416 @@
+{
+  "assembled_utc": "2026-07-14T16:58:42.076623+00:00",
+  "assembler_path": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/experiments/sigmetrics/assemble_vldb_10m_build_scaling.py",
+  "assembler_sha256": "323f699c1102af0a23cae4a70cc587076dadf641bb125875dc22a1523a0402f9",
+  "kind": "vldb_10m_build_scaling_provenance_v1",
+  "retained_sources": [
+    {
+      "dataset": "DEEP10M",
+      "kind": "json",
+      "repeat": 1,
+      "retained": "raw/DEEP10M/r1/measurement.json",
+      "sha256": "30d46b13e5d1205c17179f82b4145255236a3e8d89481211a5ea061197748feb",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r1/DEEP10M_slabwalk_expansion_r1_measure_T10_ef48.json"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "stderr",
+      "repeat": 1,
+      "retained": "raw/DEEP10M/r1/measurement.err",
+      "sha256": "7fdb4fc1e62496d841167b531d53d89d7e02b3ef4c5574e706d6e44105be7c2a",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r1/DEEP10M_slabwalk_expansion_r1_measure_T10_ef48.err"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "frontier_csv",
+      "repeat": 1,
+      "retained": "raw/DEEP10M/r1/frontier.csv",
+      "sha256": "f6e986dec2a93b09427dbef18182c38003b180a5437bf8643a448a7b381456fd",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r1/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "json",
+      "repeat": 2,
+      "retained": "raw/DEEP10M/r2/measurement.json",
+      "sha256": "3a81a99f6de6d63f70a1095f75c812acafb50fb038029d8b8dcf6a0210166fe4",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r2/DEEP10M_slabwalk_expansion_r2_measure_T10_ef48.json"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "stderr",
+      "repeat": 2,
+      "retained": "raw/DEEP10M/r2/measurement.err",
+      "sha256": "7ae387b8d1cfe803206184f26ee7522dc6e1cc791f93a3cf21badbf353c6a9b4",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r2/DEEP10M_slabwalk_expansion_r2_measure_T10_ef48.err"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "frontier_csv",
+      "repeat": 2,
+      "retained": "raw/DEEP10M/r2/frontier.csv",
+      "sha256": "8096fe6c23fcb7110ac5ef8ec8cd739bae7eae9d9608f65259484e7223f3ef3a",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r2/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "json",
+      "repeat": 3,
+      "retained": "raw/DEEP10M/r3/measurement.json",
+      "sha256": "d56a0e10cffd249e91865671d4aa934bd1c37fbc6e9906d1fff36a59d9b3579a",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r3/DEEP10M_slabwalk_expansion_r3_measure_T10_ef48.json"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "stderr",
+      "repeat": 3,
+      "retained": "raw/DEEP10M/r3/measurement.err",
+      "sha256": "f15dbc9a48a7d423a0d279722c97074a58a8af161cba72668f8227d5aa8c62f6",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r3/DEEP10M_slabwalk_expansion_r3_measure_T10_ef48.err"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "frontier_csv",
+      "repeat": 3,
+      "retained": "raw/DEEP10M/r3/frontier.csv",
+      "sha256": "daf5eae35fa821859c872ad88ccc07536a661f601107bbfd10181b391e0cf90a",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r3/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "json",
+      "repeat": 4,
+      "retained": "raw/DEEP10M/r4/measurement.json",
+      "sha256": "a0341b98517c82e7b3722e75cd99c8eb09290abf5f243ac84ff7b5a319b22898",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r4/DEEP10M_slabwalk_expansion_r4_measure_T10_ef48.json"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "stderr",
+      "repeat": 4,
+      "retained": "raw/DEEP10M/r4/measurement.err",
+      "sha256": "b3586a032c0029e588ce56179e98e682dc3adc2fc68e0aa342086d4b12d62078",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r4/DEEP10M_slabwalk_expansion_r4_measure_T10_ef48.err"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "frontier_csv",
+      "repeat": 4,
+      "retained": "raw/DEEP10M/r4/frontier.csv",
+      "sha256": "6043db046ca6bbdd0175ac06af08055233d8a9f436d5a1b44faf158a7a48222e",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r4/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "json",
+      "repeat": 5,
+      "retained": "raw/DEEP10M/r5/measurement.json",
+      "sha256": "816430c94b31bc0376dcdbf51d81b132cd6c3c86f0b831d1021d644549043168",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r5/DEEP10M_slabwalk_expansion_r5_measure_T10_ef48.json"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "stderr",
+      "repeat": 5,
+      "retained": "raw/DEEP10M/r5/measurement.err",
+      "sha256": "a2931b10a0728d6fcee846cf6b9e9d13fbe3353e18be505aaeb488c4adcea05d",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r5/DEEP10M_slabwalk_expansion_r5_measure_T10_ef48.err"
+    },
+    {
+      "dataset": "DEEP10M",
+      "kind": "frontier_csv",
+      "repeat": 5,
+      "retained": "raw/DEEP10M/r5/frontier.csv",
+      "sha256": "3e6982b0508efff070e1c8aaafca3c4937c80b4166b7c280b522ac08d61e6568",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713/sw_r5/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "json",
+      "repeat": 1,
+      "retained": "raw/SIFT10M/r1/measurement.json",
+      "sha256": "0806b8e0b40f17e07f38050096046c980b0d7a1764962d0794f964f3309a2fae",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r1/SIFT10M_slabwalk_expansion_r1_measure_T10_ef64.json"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "stderr",
+      "repeat": 1,
+      "retained": "raw/SIFT10M/r1/measurement.err",
+      "sha256": "373de10fa923d6d316a0168b080d8277cebf6c099f9b082c2a45740b1390728f",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r1/SIFT10M_slabwalk_expansion_r1_measure_T10_ef64.err"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "frontier_csv",
+      "repeat": 1,
+      "retained": "raw/SIFT10M/r1/frontier.csv",
+      "sha256": "13b494043e8f1b6bfd04aab3a32d68d954a3a743bb4c4c8e449ac69e60743c35",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r1/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "json",
+      "repeat": 2,
+      "retained": "raw/SIFT10M/r2/measurement.json",
+      "sha256": "7913a4af4ebb7aa5b6b957b28253979f638727ced978097f05ac267af691a9ad",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r2/SIFT10M_slabwalk_expansion_r2_measure_T10_ef64.json"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "stderr",
+      "repeat": 2,
+      "retained": "raw/SIFT10M/r2/measurement.err",
+      "sha256": "e93967c024b19efd6113d6c8fe41d3e8d841c766c0612a183f39cc9fce578ae0",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r2/SIFT10M_slabwalk_expansion_r2_measure_T10_ef64.err"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "frontier_csv",
+      "repeat": 2,
+      "retained": "raw/SIFT10M/r2/frontier.csv",
+      "sha256": "679f3bd778605e5a43716500fb4e4688d7a1fd78a197ba0c3b4417aeefca396e",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r2/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "json",
+      "repeat": 3,
+      "retained": "raw/SIFT10M/r3/measurement.json",
+      "sha256": "210ba2f24e040a624f01aec8790d89b50f6e33856588e52c3b7ebac5d45a9435",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r3/SIFT10M_slabwalk_expansion_r3_measure_T10_ef64.json"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "stderr",
+      "repeat": 3,
+      "retained": "raw/SIFT10M/r3/measurement.err",
+      "sha256": "4180226a982f57e71f0f154f3bea717c882c33402fe692787c1a9ebe1f1cecb9",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r3/SIFT10M_slabwalk_expansion_r3_measure_T10_ef64.err"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "frontier_csv",
+      "repeat": 3,
+      "retained": "raw/SIFT10M/r3/frontier.csv",
+      "sha256": "7871b08f8eee97f8b34db96c0b0e967c8d33d58055f5a5ff1912101b81749f02",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r3/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "json",
+      "repeat": 4,
+      "retained": "raw/SIFT10M/r4/measurement.json",
+      "sha256": "f79d3662c66758a4af0d9d33c16ab56f2ce6154c7c481d9931b0c0fbb0f8ac46",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r4/SIFT10M_slabwalk_expansion_r4_measure_T10_ef64.json"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "stderr",
+      "repeat": 4,
+      "retained": "raw/SIFT10M/r4/measurement.err",
+      "sha256": "4b7080307cc4f61b47895ecba7c2fa45dbd6b5db1109bfc7ee9ba5063590d0c0",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r4/SIFT10M_slabwalk_expansion_r4_measure_T10_ef64.err"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "frontier_csv",
+      "repeat": 4,
+      "retained": "raw/SIFT10M/r4/frontier.csv",
+      "sha256": "5f997170dbc75c3ffb4384856eaf44c2603524464ab3b5f9b6eeed296a230b6c",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r4/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "json",
+      "repeat": 5,
+      "retained": "raw/SIFT10M/r5/measurement.json",
+      "sha256": "c7622ad950ddf0adae3fa6ef162c162bf74c1537e5f2106e5ed87db8e728ff9b",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r5/SIFT10M_slabwalk_expansion_r5_measure_T10_ef64.json"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "stderr",
+      "repeat": 5,
+      "retained": "raw/SIFT10M/r5/measurement.err",
+      "sha256": "b078d27ad72823535232bf4823803068e7c3449da57a89522c9a2b233948450c",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r5/SIFT10M_slabwalk_expansion_r5_measure_T10_ef64.err"
+    },
+    {
+      "dataset": "SIFT10M",
+      "kind": "frontier_csv",
+      "repeat": 5,
+      "retained": "raw/SIFT10M/r5/frontier.csv",
+      "sha256": "bf71625fe6aff5b660379524c5292bac1aa9dcfc8ba010a66d6501f5e19354ff",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r5/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "json",
+      "repeat": 1,
+      "retained": "raw/TTI10M/r1/measurement.json",
+      "sha256": "c1fabd732bb914faaa9f5e5593e22aee426e7805e317948610e1566263e65c80",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r1/TEXT10M_slabwalk_expansion_r1_measure_T10_ef100.json"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "stderr",
+      "repeat": 1,
+      "retained": "raw/TTI10M/r1/measurement.err",
+      "sha256": "deb7d0d12d374294d99a5e732942bc79f7dc90fe016aa328b4908103011a59b6",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r1/TEXT10M_slabwalk_expansion_r1_measure_T10_ef100.err"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "frontier_csv",
+      "repeat": 1,
+      "retained": "raw/TTI10M/r1/frontier.csv",
+      "sha256": "13b494043e8f1b6bfd04aab3a32d68d954a3a743bb4c4c8e449ac69e60743c35",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r1/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "json",
+      "repeat": 2,
+      "retained": "raw/TTI10M/r2/measurement.json",
+      "sha256": "66995344eaa13d1a407e0473b3ca564fe528360e96f5494eb1a7cd5b6d494e61",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r2/TEXT10M_slabwalk_expansion_r2_measure_T10_ef100.json"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "stderr",
+      "repeat": 2,
+      "retained": "raw/TTI10M/r2/measurement.err",
+      "sha256": "b2e14b42c0f5acc1120d2dc7acd2bda9908593d03fa7dcac67fca1b32d7877e3",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r2/TEXT10M_slabwalk_expansion_r2_measure_T10_ef100.err"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "frontier_csv",
+      "repeat": 2,
+      "retained": "raw/TTI10M/r2/frontier.csv",
+      "sha256": "679f3bd778605e5a43716500fb4e4688d7a1fd78a197ba0c3b4417aeefca396e",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r2/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "json",
+      "repeat": 3,
+      "retained": "raw/TTI10M/r3/measurement.json",
+      "sha256": "73c238606f5e045025b283364fb639e72197d7430d1d38c5a4a977efb709ae8d",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r3/TEXT10M_slabwalk_expansion_r3_measure_T10_ef100.json"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "stderr",
+      "repeat": 3,
+      "retained": "raw/TTI10M/r3/measurement.err",
+      "sha256": "4e291c342c4e4500e07250eaf9f02dc1230082e456b4dfe5ecbb033c9479f8b3",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r3/TEXT10M_slabwalk_expansion_r3_measure_T10_ef100.err"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "frontier_csv",
+      "repeat": 3,
+      "retained": "raw/TTI10M/r3/frontier.csv",
+      "sha256": "7871b08f8eee97f8b34db96c0b0e967c8d33d58055f5a5ff1912101b81749f02",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r3/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "json",
+      "repeat": 4,
+      "retained": "raw/TTI10M/r4/measurement.json",
+      "sha256": "03dbdfda9277e0db8ed4bd099df64a65c6bd3e52a5c257daabdec607d184df6a",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r4/TEXT10M_slabwalk_expansion_r4_measure_T10_ef100.json"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "stderr",
+      "repeat": 4,
+      "retained": "raw/TTI10M/r4/measurement.err",
+      "sha256": "1fdb23185f208e4649ea279180b070a462eee0ce7d676e9e3541700eac8b2be9",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r4/TEXT10M_slabwalk_expansion_r4_measure_T10_ef100.err"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "frontier_csv",
+      "repeat": 4,
+      "retained": "raw/TTI10M/r4/frontier.csv",
+      "sha256": "5f997170dbc75c3ffb4384856eaf44c2603524464ab3b5f9b6eeed296a230b6c",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r4/slabwalk_shine_frontier_raw.csv"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "json",
+      "repeat": 5,
+      "retained": "raw/TTI10M/r5/measurement.json",
+      "sha256": "91104ae340f7900909efd79fba5a6343b7945e5f237c05fc302b6bf800627f07",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r5/TEXT10M_slabwalk_expansion_r5_measure_T10_ef100.json"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "stderr",
+      "repeat": 5,
+      "retained": "raw/TTI10M/r5/measurement.err",
+      "sha256": "1438c6417dedbb54ce09adc53d73d2246ae31c8d592983d1fa6012a5313fe23e",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r5/TEXT10M_slabwalk_expansion_r5_measure_T10_ef100.err"
+    },
+    {
+      "dataset": "TTI10M",
+      "kind": "frontier_csv",
+      "repeat": 5,
+      "retained": "raw/TTI10M/r5/frontier.csv",
+      "sha256": "bf71625fe6aff5b660379524c5292bac1aa9dcfc8ba010a66d6501f5e19354ff",
+      "source": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714/sw_r5/slabwalk_shine_frontier_raw.csv"
+    }
+  ],
+  "selection_rule": {
+    "DEEP10M": {
+      "ef": 48,
+      "repeats": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "SIFT10M": {
+      "ef": 64,
+      "repeats": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "TTI10M": {
+      "ef": 100,
+      "repeats": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "source_campaigns": [
+    {
+      "campaign_id": "vldb-frontier-deep10-sw-final-v1-20260713",
+      "name": "deep",
+      "retained_manifest": "provenance/deep/campaign.json",
+      "retained_manifest_sha256": "676705e0947c2dc722ae0721d1a55ea840cef83b273dd6a528de3885a89d5339",
+      "source_root": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_deep10_sw_final_v1_20260713"
+    },
+    {
+      "campaign_id": "vldb-frontier-text-sift-sw-final-v2-20260714",
+      "name": "text_sift",
+      "retained_manifest": "provenance/text_sift/campaign.json",
+      "retained_manifest_sha256": "f29cc8f2bc3e01341464e86226d737c7a914553436a6355dcb3e5d053058c38c",
+      "source_root": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_acceptance_closure_20260713/frontier_text_sift_sw_final_v3_20260714"
+    }
+  ]
+}

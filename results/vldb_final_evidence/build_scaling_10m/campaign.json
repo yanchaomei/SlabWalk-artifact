@@ -1,0 +1,13 @@
+{
+  "assembler_sha256": "323f699c1102af0a23cae4a70cc587076dadf641bb125875dc22a1523a0402f9",
+  "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+  "datasets": [
+    "DEEP10M",
+    "SIFT10M",
+    "TTI10M"
+  ],
+  "kind": "vldb_10m_build_scaling_bundle_v1",
+  "measurement": "one_canonical_frontier_startup_per_dataset_repeat",
+  "provenance_sha256": "d03991f7b1dce4ab15bfc27bef26f7f9b445b4ef40f779f82f1f825753349344",
+  "repeats": 5
+}

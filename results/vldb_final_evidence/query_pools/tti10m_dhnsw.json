@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-13T16:32:53.013057+00:00",
+  "dataset": "TTI10M",
+  "groundtruth": {
+    "bytes": 4040000,
+    "canonical_ids_sha256": "55e07ca3d7bd38ec22dab631ca4272753cad0566c8173dc31839bb62956e7640",
+    "file_sha256": "bd7c75058babf7bea4b31a27d9ac38705e88cd76a3482229cacac3e7609aa6eb",
+    "format": "ivecs",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/dhnsw-text-sift-node7-final-v3/datasets/text10M/groundtruth-u10k.ivecs",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": null,
+  "method": "d-HNSW",
+  "metric": "ip",
+  "query": {
+    "bytes": 8040000,
+    "canonical_sha256": "3a61d70abbd6d12ce46d3dae5650b7ae79828c155b32813d180024d293e3cb85",
+    "dim": 200,
+    "file_sha256": "0e2108fd2a3c1f1b43e6fbe41fbfa2ffdf2ffcb59f1d23a7d67947e87a21d248",
+    "format": "fvecs",
+    "path": "/home/kvgroup/chaomei/graphbeyond-vldb-closure-20260713/dhnsw-text-sift-node7-final-v3/datasets/text10M/query-u10k.fvecs",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

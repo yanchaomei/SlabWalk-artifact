@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-15T15:59:26.149384+00:00",
+  "dataset": "TURING1M",
+  "groundtruth": {
+    "bytes": 4000008,
+    "canonical_ids_sha256": "ae9a13235157723ccf206e68729baaaaf08e1c077523377ac109d168fb460a8c",
+    "file_sha256": "42b0d575e7203e32ed45b5fff1b1f011726381b33eab7ab6ac84f3cce25dbf5d",
+    "format": "bin",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/hnsw-data/turing1m/queries/groundtruth-uniform.bin",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 10000,
+  "method": "SHINE",
+  "metric": "l2",
+  "query": {
+    "bytes": 4000008,
+    "canonical_sha256": "73aa3fac3220f9f273cb15f4fa228ed1cc6b0978d03000e0c170c46ebf8a7fb9",
+    "dim": 100,
+    "file_sha256": "46732f0e6cf81a0e1b97ba982c3c38dd56a81d2c5890e609ac2a0c2a9cef4ad7",
+    "format": "fbin",
+    "path": "/home/kvgroup/chaomei/hnsw-data/turing1m/queries/query-uniform.fbin",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

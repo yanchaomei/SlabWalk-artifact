@@ -1,0 +1,10 @@
+{
+  "amended_manifest_sha256": "ac124a718afef57b8cd9a09bfa62e6e3659eea96d4608096d3c0132335a00275",
+  "amended_utc": "2026-07-13T16:18:09.946051+00:00",
+  "campaign_id": "vldb-worker-scaling-final-node3-v1-20260713",
+  "new_tool_sha256": "2693a49cd1fc2edef5bc3ff9d6ac64d46dbf86865775fdd072d496f2d93fb822",
+  "old_tool_sha256": "5d621f7af2af678ab15e0464219cf51a1f5a87e5f899983fac256020e66f7b1f",
+  "original_manifest_sha256": "3cf2de808c207c3f8cb98e7a8bfad68aa2df7b6d0742c138fbd46fdce316e0e3",
+  "protocol_key": "assembler_sha256",
+  "reason": "Bundle the full parser/runner/assembler amendment chain and the content-addressed failed-run exclusion inside the atomic worker evidence directory; no binary, query, raw run, or measured row changed."
+}

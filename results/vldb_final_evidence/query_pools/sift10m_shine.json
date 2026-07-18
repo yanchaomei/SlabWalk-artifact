@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-13T10:29:45.862864+00:00",
+  "dataset": "SIFT10M",
+  "groundtruth": {
+    "bytes": 40000008,
+    "canonical_ids_sha256": "84007548401b9edd0f307ba28c91af3b8baee1ba1593beb87b6a4008fa212b96",
+    "file_sha256": "cd6340e0c48fa8f825ea8670c74bad9127ee578082a2808b4999858d0aec7c7e",
+    "format": "bin",
+    "k": 1000,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/hnsw-data/sift10m/queries/groundtruth-uniform.bin",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": null,
+  "method": "SHINE",
+  "metric": "l2",
+  "query": {
+    "bytes": 5120008,
+    "canonical_sha256": "6fc3c31f8d2f2020255aada4b39d002ef1525664755b1343e3e426f009e162f0",
+    "dim": 128,
+    "file_sha256": "a2cb2d182b19db70240ebd4bce3b75b8994ea9927a112d4bf0e955815bdac548",
+    "format": "fbin",
+    "path": "/home/kvgroup/chaomei/hnsw-data/sift10m/queries/query-uniform.fbin",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

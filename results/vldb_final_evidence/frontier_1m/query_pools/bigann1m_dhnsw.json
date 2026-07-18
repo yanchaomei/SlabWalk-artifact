@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-15T15:59:25.880862+00:00",
+  "dataset": "BIGANN1M",
+  "groundtruth": {
+    "bytes": 4040000,
+    "canonical_ids_sha256": "a80f5fbbdbaf8a8e79112f56eb3b04436a7615a55cc2bcedd99cf53c9555b8da",
+    "file_sha256": "dd3f09b95b0be07c2366c62b76000255ccd0d7d01c6500ef8536b1d6dc1ad9c8",
+    "format": "ivecs",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw-work/bigann1M/bigann1M_groundtruth.ivecs",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 10000,
+  "method": "d-HNSW",
+  "metric": "l2",
+  "query": {
+    "bytes": 5160000,
+    "canonical_sha256": "6fc3c31f8d2f2020255aada4b39d002ef1525664755b1343e3e426f009e162f0",
+    "dim": 128,
+    "file_sha256": "4e686785082f56916a6422b120ad4c54b4110701195c17fa582391156bcb32cc",
+    "format": "fvecs",
+    "path": "/home/kvgroup/chaomei/vldb-frontier-1m-final-v2-20260715/dhnsw-work/bigann1M/bigann1M_query.fvecs",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}
