@@ -103,5 +103,6 @@ partition-fetch path and record the compatibility patch and runtime bundle.
 
 ## License
 
-The SlabWalk implementation is released under the Apache License 2.0. Dataset
-and baseline licenses remain with their respective authors.
+The packaged implementation is distributed under the MIT License in
+[`LICENSE`](LICENSE). Dataset, baseline, and bundled third-party licenses remain
+with their respective authors.
