@@ -1,0 +1,83 @@
+{
+  "artifacts": {
+    "compute_stderr": {
+      "path": "run.err",
+      "sha256": "60f9a39d10ae21e2c8b44dbf4de9855b6260a8a4add9909f0136465e3ad62e04"
+    },
+    "compute_stdout": {
+      "path": "result.json",
+      "sha256": "18a4aa243af378ec4f9e9729802583867a577a8d0363d347f22ce45302c9e4b4"
+    },
+    "memory_node_stderr": {
+      "path": "mn.err",
+      "sha256": "f30276cffd7fabebad0c15c45e2b72c92c91d0227e4dc1dc023fdf564369703e"
+    },
+    "memory_node_stdout": {
+      "path": "mn.out",
+      "sha256": "353fd706fb325abcc0fb1553e2481fa5a90550e223bf475bc70046c9d38f8e42"
+    }
+  },
+  "budget_bytes": 1073741824,
+  "campaign_id": "vldb-v3-evidence-v2-materialization-policy-20260716T204600Z",
+  "campaign_uuid": "acdd6304-a3eb-4522-872e-8c30fe72a1a0",
+  "dataset": "SIFT1M",
+  "executables": {
+    "compute_node": {
+      "host": "skv-node3",
+      "pid_exe_path": "/home/kvgroup/chaomei/bin/slabwalk-v3-evidence-v2-clean-bf377c5ad52c",
+      "pid_starttime": "436820014",
+      "sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8"
+    },
+    "memory_node": {
+      "host": "skv-node5",
+      "pid_exe_path": "/home/kvgroup/chaomei/bin/slabwalk-v3-evidence-v2-clean-bf377c5ad52c",
+      "pid_starttime": "819041918",
+      "sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8"
+    }
+  },
+  "input_signature": "d1daa707b63b20514946d08ba4e8b307bd894b1203834a4496df2a0da98d1eca",
+  "input_verification": {
+    "post_run": {
+      "groundtruth": {
+        "bytes": 4000008,
+        "dataset": "SIFT1M",
+        "sha256": "4c06dd3d1539b1de50f1b7e98a116833ed5c2f1571d0ef81f383a04541e797e7"
+      },
+      "index_dump": {
+        "bytes": 800573128,
+        "dataset": "SIFT1M",
+        "sha256": "bbfe1fd976ab0fd79ef8575c5256fb24f2a3bcb43c28c8cc8ea9efd72d63f336"
+      },
+      "query": {
+        "bytes": 5120008,
+        "dataset": "SIFT1M",
+        "sha256": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65"
+      }
+    },
+    "pre_run": {
+      "groundtruth": {
+        "bytes": 4000008,
+        "dataset": "SIFT1M",
+        "sha256": "4c06dd3d1539b1de50f1b7e98a116833ed5c2f1571d0ef81f383a04541e797e7"
+      },
+      "index_dump": {
+        "bytes": 800573128,
+        "dataset": "SIFT1M",
+        "sha256": "bbfe1fd976ab0fd79ef8575c5256fb24f2a3bcb43c28c8cc8ea9efd72d63f336"
+      },
+      "query": {
+        "bytes": 5120008,
+        "dataset": "SIFT1M",
+        "sha256": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65"
+      }
+    }
+  },
+  "kind": "r",
+  "phasef_sha256": null,
+  "policy": "indeg",
+  "position": 2,
+  "protocol_fingerprint": "888dc5c97f82e73e4add38763b9a98cbe561884c9879f1f496e523b484c3888f",
+  "repeat": 2,
+  "schema_version": 2,
+  "tcp_port": 21095
+}

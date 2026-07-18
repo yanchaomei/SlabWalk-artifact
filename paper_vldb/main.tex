@@ -16,6 +16,7 @@
 \usepackage{array}
 \usepackage{amsmath}
 \usepackage{placeins}
+\hypersetup{pdfauthor={Chaomei Yan}}
 
 \newcommand{\sys}{SlabWalk}
 \newcommand{\uppergraph}{resident upper graph}
@@ -172,10 +173,11 @@ We make three technical contributions:
   The operator retains authoritative fallback for unmaterialized records.
   \item \textbf{Budgeted, self-describing physical design.}  Partial materialization,
   variable packed records, code guards, and block-cyclic placement bound CN
-  state, MN storage, transfer, and representation error.  Construction derives
-  Slabs and resident navigation from one validated snapshot, and a verified
-  descriptor records the format and placement.  Rematerialization is explicitly
-  offline.
+  state, MN storage, transfer, and representation error.  An offline advisor
+  rejects infeasible measured layouts and selects by the lower 95\% confidence
+  bound on QPS.  Construction derives Slabs and resident navigation from one
+  validated snapshot; a verified descriptor records the selected format and
+  placement.  Rematerialization is explicitly offline.
 \end{itemize}
 At matched high recall on DEEP-10M and SIFT-10M, the integrated path delivers
 \ClaimFrontierQpsMin--\ClaimFrontierQpsMax$\times$ the QPS of same-binary
@@ -334,10 +336,12 @@ compute-side posted-operation capacity,
   \mathrm{Recall}(f,b,R,\ef) &\geq \mathrm{Recall}_{\mathrm{target}}.
   \label{eq:deployment-constraints}
 \end{align}
-These are deployment-feasibility constraints, not an optimizer.  An operator
-measures a small candidate sweep, rejects points that exceed a resource or
-recall target, and records the selected layout metadata.  Section~\ref{sec:eval-index-cost}
-illustrates the procedure with the measured GIST budget sweep.
+These constraints define an offline selection problem over measured candidates.
+The advisor rejects layouts that exceed a resource or recall target, then
+maximizes the lower endpoint of a two-sided Student-$t$ 95\% QPS interval; mean
+QPS and a stable identifier break ties.  It does not extrapolate to unmeasured
+layouts or reconfigure a running index.  Section~\ref{sec:eval-index-cost}
+tests the rule with a held-out split.
 
 \subsection{Build and Query Workflow}
 \label{sec:design-overview}
@@ -685,7 +689,8 @@ the recall--throughput frontier over node/vector and partition-fetch access?
 \textbf{Q2:} Does operation cost explain query throughput, and when do
 concurrency, incomplete records, or deployment topology move the bottleneck?
 \textbf{Q3:} What CN memory, MN storage, and transferred bytes does the physical
-design require?  \textbf{Q4:} What are the cost and supported semantics of
+design require, and can an offline rule select a measured layout under these
+constraints?  \textbf{Q4:} What are the cost and supported semantics of
 construction and offline refresh, and where do compact codes lose recall?  We
 fix query pools and measurement rules across systems while retaining each
 native deployment; Section~\ref{sec:eval-protocol} states the remaining
@@ -798,7 +803,11 @@ cross-format content fingerprint checks the graph-path and d-HNSW inputs before 
 point can enter the figure.  Other labeled endpoints and breakdowns use
 independently repeated medians rather than values copied from a sweep, and state
 their repeat count where it differs.  Tail results use separate 10K-query
-no-batching traces.  Construction uses five independent derived-build runs with
+no-batching traces.  The exact-byte advisor study uses one separately sealed
+builder-policy binary for all 162 rows because byte admission was implemented
+after the query-frontier freeze.  Its policies are compared only within that
+campaign; none of its absolute QPS values enters the system frontier.
+Construction uses five independent derived-build runs with
 20 builder threads and one post-build query worker, and reports the mean with a
 two-sided 95\% Student-$t$ interval.
 For each 10M headline annotation, the evidence gate selects the highest
@@ -958,9 +967,15 @@ choice rather than a free parameter.  On GIST-200K, the 5\% and full policies
 materialize \ClaimBudgetFiveGiB{} and \ClaimBudgetFullGiB{}\,GiB, respectively;
 the companion panel reports QPS and recall for every feasible point.  A
 deployment with fixed MN memory and recall targets can therefore reject
-infeasible points, then choose the highest-throughput retained policy.  This is
-the worked use of Eq.~\ref{eq:deployment-constraints}; SlabWalk does not predict
-unmeasured points or claim an online optimizer.
+infeasible points, then rank the retained policies.  We evaluate that rule on
+sealed SIFT-1M, DEEP-1M, and GIST-1M sweeps at 512\,MiB, 1\,GiB, and 2\,GiB.
+The advisor sees repeats 0--2 and is evaluated once on repeats 3--5.  Across
+\ClaimAdvisorCellCount{} dataset--budget cells it selects the access-benefit
+policy in \ClaimAdvisorBenefitCells{} and in-degree in
+\ClaimAdvisorIndegCells{}; held-out QPS is at least
+\ClaimAdvisorMinPercent\% of the feasible per-cell oracle, with a
+\ClaimAdvisorGeoPercent\% geometric mean.  This is a strict post-hoc split of a
+pre-existing campaign, not prospective prediction or online optimization.
 
 \paragraph{Resident upper graph ($D$).}
 Figure~\ref{fig:eval-index-cost}(c) toggles only exact upper navigation.  At
@@ -1079,8 +1094,10 @@ memory limits.  Code and record format are chosen for the metric and dimension;
 the materialization fraction $f$ is then swept under the MN budget.  For each
 retained point, $\ef$ and $R$ determine the recall--throughput operating range.
 Points that violate recall, resident-memory, Slab-byte, or link constraints in
-Eq.~\ref{eq:deployment-constraints} are discarded.  The GIST budget sweep in
-Figure~\ref{fig:eval-index-cost}(a,b) is one measured instance of this process:
+Eq.~\ref{eq:deployment-constraints} are discarded.  The offline advisor then
+ranks only the retained measured candidates by the lower 95\% QPS bound.  The
+GIST budget sweep in Figure~\ref{fig:eval-index-cost}(a,b) is one instance of
+this process:
 early records remove many accesses, whereas later records consume storage for
 smaller throughput gains.  Increasing $S$ addresses per-MN capacity and load;
 under a shared NIC it should not be interpreted as a throughput setting.  The

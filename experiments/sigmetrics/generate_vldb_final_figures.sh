@@ -14,6 +14,9 @@ EXPECTED_COLOCATION_CAMPAIGN_ID=${EXPECTED_COLOCATION_CAMPAIGN_ID:-vldb-colocati
 EXPECTED_COLOCATION_PROTOCOL_FINGERPRINT=${EXPECTED_COLOCATION_PROTOCOL_FINGERPRINT:-d99de8f75c7153f0182b21a9804e050a45c8c4e60c04ceac37e7071afa4c8bb5}
 EXPECTED_MECHANISM_CAMPAIGN_ID=${EXPECTED_MECHANISM_CAMPAIGN_ID:-vldb-mechanism-controls-final-v6-20260715}
 EXPECTED_MECHANISM_PROTOCOL_FINGERPRINT=${EXPECTED_MECHANISM_PROTOCOL_FINGERPRINT:-d60f2d12f0f23c2bbccecb65db1a2fe074ba819ef11567887c6734768129e31a}
+PHYSICAL_DESIGN_ADVISOR_ROOT=${PHYSICAL_DESIGN_ADVISOR_ROOT:-$EVIDENCE_ROOT/physical_design_advisor}
+EXPECTED_ADVISOR_SOURCE_SHA=${EXPECTED_ADVISOR_SOURCE_SHA:-bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8}
+EXPECTED_ADVISOR_COMPUTE_HOST=${EXPECTED_ADVISOR_COMPUTE_HOST:-skv-node3}
 GATE=${GATE:-$EVIDENCE_ROOT/evidence_gate.json}
 FRONTIER_1M_BUNDLE=${FRONTIER_1M_BUNDLE:-$EVIDENCE_ROOT/frontier_1m}
 FRONTIER_1M_GATE=${FRONTIER_1M_GATE:-$EVIDENCE_ROOT/frontier_1m_gate.json}
@@ -59,6 +62,7 @@ HEADLINES=$(canonical_release_path "$HEADLINES")
 CLAIMS=$(canonical_release_path "$CLAIMS")
 GENERATED_CLAIMS=$(canonical_release_path "$GENERATED_CLAIMS")
 RELEASE_MANIFEST=$(canonical_release_path "$RELEASE_MANIFEST")
+PHYSICAL_DESIGN_ADVISOR_ROOT=$(canonical_release_path "$PHYSICAL_DESIGN_ADVISOR_ROOT")
 
 STAGING=""
 release_published=0
@@ -98,7 +102,9 @@ mkdir -p "$EVIDENCE_ROOT" "$OUT_DIR"
 
 for variable in \
   EXPECTED_COLOCATION_PROTOCOL_FINGERPRINT \
-  EXPECTED_MECHANISM_PROTOCOL_FINGERPRINT; do
+  EXPECTED_MECHANISM_PROTOCOL_FINGERPRINT \
+  EXPECTED_ADVISOR_SOURCE_SHA \
+  EXPECTED_ADVISOR_COMPUTE_HOST; do
   [[ -n ${!variable} ]] || {
     echo "Required final campaign identity is unset: $variable" >&2
     exit 2
@@ -108,6 +114,7 @@ done
 STAGING=$(mktemp -d "$EVIDENCE_ROOT/.release-staging.XXXXXX")
 
 STAGED_GATE_BASE="$STAGING/evidence_gate_base.json"
+STAGED_GATE_FRONTIER_1M="$STAGING/evidence_gate_frontier_1m.json"
 STAGED_GATE="$STAGING/evidence_gate.json"
 STAGED_FRONTIER_1M_GATE="$STAGING/frontier_1m_gate.json"
 STAGED_HEADLINES="$STAGING/headline_candidates.json"
@@ -146,6 +153,14 @@ python3 "$SCRIPT_DIR/validate_vldb_frontier_1m.py" \
 python3 "$SCRIPT_DIR/bind_vldb_frontier_1m_gate.py" \
   --main-gate "$STAGED_GATE_BASE" \
   --frontier-1m-gate "$STAGED_FRONTIER_1M_GATE" \
+  --out "$STAGED_GATE_FRONTIER_1M"
+
+python3 "$SCRIPT_DIR/bind_vldb_physical_design_advisor_gate.py" \
+  --main-gate "$STAGED_GATE_FRONTIER_1M" \
+  --source-bundle "$PHYSICAL_DESIGN_ADVISOR_ROOT/source" \
+  --validation-bundle "$PHYSICAL_DESIGN_ADVISOR_ROOT/validation" \
+  --expected-sha "$EXPECTED_ADVISOR_SOURCE_SHA" \
+  --expected-compute-host "$EXPECTED_ADVISOR_COMPUTE_HOST" \
   --out "$STAGED_GATE"
 
 python3 "$SCRIPT_DIR/summarize_vldb_headlines.py" \
@@ -172,6 +187,7 @@ python3 "$SCRIPT_DIR/assemble_vldb_manuscript_claims.py" \
   --lifecycle-tti "$EVIDENCE_ROOT/lifecycle_controls/tti.csv" \
   --build-summary "$EVIDENCE_ROOT/build_cost/summary.csv" \
   --build-scaling-10m-summary "$EVIDENCE_ROOT/build_scaling_10m/summary.csv" \
+  --physical-design-advisor-report "$PHYSICAL_DESIGN_ADVISOR_ROOT/validation/report.json" \
   --out "$STAGED_CLAIMS"
 
 python3 "$SCRIPT_DIR/render_vldb_claims_tex.py" \

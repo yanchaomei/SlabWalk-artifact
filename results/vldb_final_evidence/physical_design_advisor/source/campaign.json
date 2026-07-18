@@ -1,0 +1,155 @@
+{
+  "campaign_id": "vldb-v3-evidence-v2-materialization-policy-20260716T204600Z",
+  "campaign_uuid": "acdd6304-a3eb-4522-872e-8c30fe72a1a0",
+  "created_utc": "2026-07-16T20:46:34.343073+00:00",
+  "protocol": {
+    "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+    "budget_bytes": [
+      536870912,
+      1073741824,
+      2147483648
+    ],
+    "budget_scope": "aggregate_high_water_across_mns",
+    "build_threads": 20,
+    "campaign_kind": "formal",
+    "capture_phasef": false,
+    "compute_host": "skv-node3",
+    "coroutines": 4,
+    "datasets": [
+      "DEEP1M",
+      "SIFT1M",
+      "GIST1M"
+    ],
+    "harness": {
+      "entries": {
+        "evidence_tool": {
+          "bytes": 11002,
+          "executable": false,
+          "path": "evidence_tool__vldb_evidence_bundle.py",
+          "sha256": "71717138ea056a1af0df2e3c965abf4633cf3892d080434e5f62e0b284168f71",
+          "source_path": "/home/kvgroup/chaomei/graphbeyond-c1-vldb-v2-20260716/experiments/sigmetrics/vldb_evidence_bundle.py"
+        },
+        "runner": {
+          "bytes": 34481,
+          "executable": true,
+          "path": "runner__run_vldb_materialization_policy.sh",
+          "sha256": "72722b61c11b09614789408944a30999ac63c444808ca91a6f7038395947e427",
+          "source_path": "/home/kvgroup/chaomei/graphbeyond-c1-vldb-v2-20260716/experiments/sigmetrics/run_vldb_materialization_policy.sh"
+        },
+        "summarizer": {
+          "bytes": 40029,
+          "executable": false,
+          "path": "summarizer__summarize_vldb_materialization_policy.py",
+          "sha256": "dd9bf974f54b684a6164ae203c4e1991c1c15a936521da081b33da33c0abdb2b",
+          "source_path": "/home/kvgroup/chaomei/graphbeyond-c1-vldb-v2-20260716/experiments/sigmetrics/summarize_vldb_materialization_policy.py"
+        }
+      },
+      "manifest": "harness/harness.json",
+      "manifest_sha256": "e73aad06edefb897a2db9c106f52fe53468964e0907a139908af309d4c3c140d"
+    },
+    "input_signatures": {
+      "DEEP1M": "9a3a08bb2c42513837965f136afdf965f5f29224599dfc845b6c960eb8505703",
+      "GIST1M": "0959b355073bfb34bf87b959c0725bf4c3770bdc62b48cc49fb2eb85d356e814",
+      "SIFT1M": "d1daa707b63b20514946d08ba4e8b307bd894b1203834a4496df2a0da98d1eca"
+    },
+    "inputs": [
+      {
+        "bytes": 3840008,
+        "dataset": "DEEP1M",
+        "path": "/home/kvgroup/chaomei/hnsw-data/deep1m/queries/query-uniform.fbin",
+        "role": "query",
+        "sha256": "8438fc763f14e0f9741fda15b3e11215aef089ce17d1ad47d53b52a7c9fda5bb"
+      },
+      {
+        "bytes": 4000008,
+        "dataset": "DEEP1M",
+        "path": "/home/kvgroup/chaomei/hnsw-data/deep1m/queries/groundtruth-uniform.bin",
+        "role": "groundtruth",
+        "sha256": "40706891f31cac7124935bfff8ba970a72f31946a00f4e65f310c2429b9e9e88"
+      },
+      {
+        "bytes": 672573128,
+        "dataset": "DEEP1M",
+        "path": "/home/kvgroup/chaomei/hnsw-data/deep1m/dump/index_m16_efc100_node1_of1.dat",
+        "role": "index_dump",
+        "sha256": "c0713c48cb3145693c8b2677bc31916872537f20c43317365da2b9257dcc5bcf"
+      },
+      {
+        "bytes": 5120008,
+        "dataset": "SIFT1M",
+        "path": "/home/kvgroup/chaomei/hnsw-data/sift1m/queries/query-uniform.fbin",
+        "role": "query",
+        "sha256": "9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65"
+      },
+      {
+        "bytes": 4000008,
+        "dataset": "SIFT1M",
+        "path": "/home/kvgroup/chaomei/hnsw-data/sift1m/queries/groundtruth-uniform.bin",
+        "role": "groundtruth",
+        "sha256": "4c06dd3d1539b1de50f1b7e98a116833ed5c2f1571d0ef81f383a04541e797e7"
+      },
+      {
+        "bytes": 800573128,
+        "dataset": "SIFT1M",
+        "path": "/home/kvgroup/chaomei/hnsw-data/sift1m/dump/index_m16_efc100_node1_of1.dat",
+        "role": "index_dump",
+        "sha256": "bbfe1fd976ab0fd79ef8575c5256fb24f2a3bcb43c28c8cc8ea9efd72d63f336"
+      },
+      {
+        "bytes": 38400008,
+        "dataset": "GIST1M",
+        "path": "/home/kvgroup/chaomei/hnsw-data/gist1m/queries/query-u10k.fbin",
+        "role": "query",
+        "sha256": "13ec3e9751821cf4ccd0ffcd51e57549aca6af6db3f4e91ef41142760126faa7"
+      },
+      {
+        "bytes": 4000008,
+        "dataset": "GIST1M",
+        "path": "/home/kvgroup/chaomei/hnsw-data/gist1m/queries/groundtruth-u10k.bin",
+        "role": "groundtruth",
+        "sha256": "fd0a321ae4ebeea854f973f00aa6075cfc820366de6e7118d035de9f50599047"
+      },
+      {
+        "bytes": 4128573128,
+        "dataset": "GIST1M",
+        "path": "/home/kvgroup/chaomei/hnsw-data/gist1m/dump/index_m16_efc100_node1_of1.dat",
+        "role": "index_dump",
+        "sha256": "79accf3b6aa19cec3a21e1c21c97ed942509f863de63bbe06b353b67245e9ac7"
+      }
+    ],
+    "memory_node": "skv-node5",
+    "memory_node_binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+    "order": "cyclic_policy_rotation_per_repeat",
+    "policies": [
+      "benefit",
+      "indeg",
+      "hop"
+    ],
+    "port_base": 21000,
+    "query_contexts": 16,
+    "query_pool": "complete_uniform_with_exact_groundtruth",
+    "record_layout": "native_packed_variable",
+    "repeats": 6,
+    "runner_sha256": "72722b61c11b09614789408944a30999ac63c444808ca91a6f7038395947e427",
+    "source": {
+      "file_count": 100,
+      "git_available": false,
+      "git_dirty": null,
+      "git_head": null,
+      "tree_scope": [
+        "graphbeyond/CMakeLists.txt",
+        "graphbeyond/src",
+        "graphbeyond/rdma-library/CMakeLists.txt",
+        "graphbeyond/rdma-library/FindIBVerbs.cmake",
+        "graphbeyond/rdma-library/library",
+        "graphbeyond/thirdparty"
+      ],
+      "tree_sha256": "57976c8bda972c3d2040823766661cb9d790545f2b82a6caa325f6c375aea44c"
+    },
+    "staged_build": true,
+    "summarizer_sha256": "dd9bf974f54b684a6164ae203c4e1991c1c15a936521da081b33da33c0abdb2b",
+    "warmups": 1,
+    "workers": 16
+  },
+  "protocol_fingerprint": "888dc5c97f82e73e4add38763b9a98cbe561884c9879f1f496e523b484c3888f"
+}

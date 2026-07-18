@@ -58,6 +58,12 @@ def fixture() -> dict[str, object]:
             "fraction_05": {"materialized_bytes_mean": 1.5 * 1024**3},
             "full": {"materialized_bytes_mean": 9.0 * 1024**3},
         },
+        "physical_design_advisor": {
+            "selection_cells": 9,
+            "heldout_ratio_min": 0.9908309455587393,
+            "heldout_ratio_geomean": 0.9986928421693378,
+            "selected_policies": {"benefit": 6, "indeg": 3},
+        },
         "worker_scaling": {
             "slabwalk": {
                 "qps_1_worker": 1240.0,
@@ -203,6 +209,11 @@ class RenderVldbClaimsTexTest(unittest.TestCase):
             self.assertIn(r"\newcommand{\ClaimCacheQpsLoss}{23.2}", text)
             self.assertIn(r"\newcommand{\ClaimResidentNodes}{62,529}", text)
             self.assertIn(r"\newcommand{\ClaimResidentBytesMB}{32.0}", text)
+            self.assertIn(r"\newcommand{\ClaimAdvisorCellCount}{9}", text)
+            self.assertIn(r"\newcommand{\ClaimAdvisorMinPercent}{99.08}", text)
+            self.assertIn(r"\newcommand{\ClaimAdvisorGeoPercent}{99.87}", text)
+            self.assertIn(r"\newcommand{\ClaimAdvisorBenefitCells}{6}", text)
+            self.assertIn(r"\newcommand{\ClaimAdvisorIndegCells}{3}", text)
             self.assertIn(r"\newcommand{\ClaimBuildOneMSiftCiSeconds}{0.42}", text)
             self.assertIn(r"\newcommand{\ClaimBuildOneMDeepCiSeconds}{0.31}", text)
             self.assertIn(r"\newcommand{\ClaimBuildOneMGistCiSeconds}{0.55}", text)

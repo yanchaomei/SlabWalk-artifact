@@ -1,0 +1,10 @@
+{
+  "campaign_id": "vldb-physical-design-advisor-vldb-v3-evidence-v2-materialization-policy-20260716T204600Z",
+  "campaign_uuid": "physical-design-ed655a6be1f6ae09974ac357a89b968d",
+  "protocol_fingerprint": "ed655a6be1f6ae09974ac357a89b968d8d31042b52adf5920ee8c39d87343176",
+  "root_manifest": "SHA256SUMS",
+  "root_manifest_sha256": "a95d93c7a0991b057759cecb86fd09bd2c784c4cd53a528e96afab35bab37ea8",
+  "schema_version": 1,
+  "sealed_file_count": 21,
+  "sealed_utc": "2026-07-18T19:56:12.196386+00:00"
+}

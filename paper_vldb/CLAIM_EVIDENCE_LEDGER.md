@@ -11,21 +11,21 @@ a manuscript number.
   `2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6`.
 - Final evidence gate:
   `results/vldb_final_evidence/evidence_gate.json`, SHA-256
-  `3b37f82d0b3a4e952db11409c94f6609dafa2d3975ae4b2865bc88b07ebe72f7`.
+  `34af8abc8c5f3a2c7f77cc57ed1f52118933b0d000136c99ab6d35c1b0a58426`.
   It reports `ready_for_plotting=true` and verifies all 28 files in the
   composite frontier's exact SHA-256 inventory.
 - Gated manuscript claims:
   `results/vldb_final_evidence/manuscript_claims.json`, SHA-256
-  `303d727f51ace839bf8c808754bd4673d9526152876535f6875628baf283d909`.
+  `19c772ed773c03b7df2c47920fbf0df799fb6b10ded234ad652dac3395d5625f`.
 - Atomic release manifest:
   `results/vldb_final_evidence/release_bundle.json`, SHA-256
-  `0578ca4b09f642112091f0df201e97ced8d3ef47955c776afd0da26cd386817c`.
+  `294708232c7fa49721a23c80dcfd3b566eaf0526d3b944bfc9da80fe2a09649b`.
   It binds 20 installed files, including the official PVLDB style, and exactly
   nine publication PDFs.
 - `paper_vldb/generated_claims.tex` is rendered from the gated JSON. Numeric
   prose in `main.tex` consumes those macros rather than copying remote logs or
   intermediate CSV values. Its SHA-256 is
-  `84c240317919bd4a5af8926a2c150ccf5c5a62f01298e70592f705c4eba65513`.
+  `39cea1efdf7d2ed60c9795eb04bc933cd1b57f81e10f16167003b4f3ae8c0b6a`.
 - Primary frontier protocol: Recall@10, ten workers, fixed 10K logical query and
   ground-truth pools, one excluded warmup, and five measured repeats.
 - Primary datasets: DEEP10M, SIFT10M, and TTI10M.
@@ -51,6 +51,7 @@ a manuscript number.
 | 10M build scaling | DEEP10M, SIFT10M, TTI10M; 15 runs and 45 sources | Exactly one canonical packed-variable startup per dataset and repeat; search widths are not pseudo-replicates |
 | Graph construction | SIFT10M and TTI10M hnswlib-0.8.0 build/conversion records | Full graph-preserving checks cover vectors, levels, neighbor IDs, pointers, padding, hashes, time, RSS, and return codes |
 | Lifecycle boundaries | Four offline replay cells and eight TTI representation cells | Each row is rederived from one retained source; no online-update or crash-recovery claim is admitted |
+| Physical-design advisor | 162 source rows; three datasets by three byte budgets by three policies by six repeats; nine fixed held-out selections | Repeats 0--2 select among feasible measured candidates; repeats 3--5 must retain feasibility, per-cell QPS/oracle ratio at least 0.98, and nine-cell geometric mean at least 0.99 |
 
 The two final causal campaign identities are:
 
@@ -75,6 +76,7 @@ The two final causal campaign identities are:
 | Q3 degree budget | `materialization_budget.fraction_05`, `full`, `recall_mean_span` | Describe the measured storage/quality guardrail under the fixed campaign; do not reuse historical one-run sweeps |
 | Q3 resident upper graph | `resident_upper_graph.ef50`, `ef100`, `ef200`, `cells` | Attribute only upper-descent post removal and its measured QPS change to residency |
 | Q3 physical accounting and striping | `resource_ledger.variable_scale`, `five_mn` | Report measured storage amplification, sidecar bytes, CN/MN RSS, QPS, and read-byte balance; never substitute nominal region-size arithmetic |
+| Q3 offline physical-design advisor | `physical_design_advisor` | Report nine fixed 0--2 training / 3--5 held-out selections, minimum and geometric-mean held-out ratios, and policy counts; state that it selects only among measured candidates and that its separate builder-policy binary contributes no absolute QPS to the frontier |
 | Q4 1M derivation cost | `build_cost.SIFT1M`, `DEEP1M`, `GIST1M` | Report five-repeat means and 95% intervals from the promoted fixed-layout build bundle |
 | Q4 10M derivation scaling | `build_scaling_10m.DEEP10M`, `SIFT10M`, `TTI10M` | Report five independent canonical startups per dataset, separate from the 1M fixed-layout experiment |
 | Q4 offline replay | `lifecycle_refresh.cells` | Report fixed-stride selected records, authoritative bytes read, and rewrite amplification under paused serving; do not imply online insertion or atomic publication |
@@ -118,6 +120,12 @@ passes; direct manual replacement is outside the release contract.
   compression causality.
 - Queue-safe rerank is a correctness and completion boundary, not a claimed
   throughput optimization.
+- The physical-design advisor is a strict post-hoc split over one pre-existing
+  sealed campaign. It supports auditable offline configuration among measured
+  candidates, not unseen-layout prediction, online learning, or reconfiguration.
+- All 162 advisor-source rows use candidate binary
+  `bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8`.
+  No absolute QPS from that source is mixed into the frozen system frontier.
 
 ## Lifecycle and Exclusions
 

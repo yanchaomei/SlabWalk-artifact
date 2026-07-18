@@ -64,6 +64,7 @@ GATED_SOURCE_NAMES = (
     "lifecycle_tti",
     "build_summary",
     "build_scaling_10m_summary",
+    "physical_design_advisor_report",
 )
 GATE_HASH_FIELDS = {
     "headline_source_summary": ("frontier", "summary_sha256"),
@@ -82,6 +83,10 @@ GATE_HASH_FIELDS = {
     "lifecycle_tti": ("lifecycle_controls", "tti_sha256"),
     "build_summary": ("build_cost", "summary_sha256"),
     "build_scaling_10m_summary": ("build_scaling_10m", "summary_sha256"),
+    "physical_design_advisor_report": (
+        "physical_design_advisor",
+        "report_sha256",
+    ),
 }
 
 
@@ -590,6 +595,69 @@ def load_materialization_budget(path: Path) -> dict[str, Any]:
     return output
 
 
+def load_physical_design_advisor(path: Path) -> dict[str, Any]:
+    if not path.is_file() or path.is_symlink():
+        raise ValueError(f"missing physical-design advisor report: {path}")
+    try:
+        report = json.loads(path.read_text())
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise ValueError(f"invalid physical-design advisor report: {path}") from exc
+    if (
+        not isinstance(report, dict)
+        or report.get("kind") != "vldb_physical_design_advisor_validation"
+    ):
+        raise ValueError("physical-design advisor report kind mismatch")
+    if report.get("promotion_ready") is not True or report.get(
+        "promotion_failures"
+    ) != []:
+        raise ValueError("physical-design advisor report is not promotion-ready")
+    thresholds = report.get("thresholds")
+    expected_thresholds = {
+        "recall_min": 0.90,
+        "heldout_min_qps_ratio": 0.98,
+        "heldout_geomean_qps_ratio": 0.99,
+    }
+    if thresholds != expected_thresholds:
+        raise ValueError("physical-design advisor threshold drift")
+    if report.get("training_repeats") != [0, 1, 2] or report.get(
+        "heldout_repeats"
+    ) != [3, 4, 5]:
+        raise ValueError("physical-design advisor split drift")
+    if report.get("measured_rows") != 162 or report.get("selection_cells") != 9:
+        raise ValueError("physical-design advisor matrix drift")
+    selected = report.get("selected_policies")
+    if (
+        not isinstance(selected, dict)
+        or set(selected) - {"benefit", "indeg", "hop"}
+        or any(not isinstance(count, int) or count < 0 for count in selected.values())
+        or sum(selected.values()) != 9
+    ):
+        raise ValueError("physical-design advisor selection-count drift")
+    ratio_min = report.get("heldout_ratio_min")
+    ratio_geomean = report.get("heldout_ratio_geomean")
+    if not isinstance(ratio_min, (int, float)) or not math.isfinite(float(ratio_min)):
+        raise ValueError("invalid physical-design advisor minimum ratio")
+    if not isinstance(ratio_geomean, (int, float)) or not math.isfinite(
+        float(ratio_geomean)
+    ):
+        raise ValueError("invalid physical-design advisor geometric-mean ratio")
+    if float(ratio_min) < 0.98 or float(ratio_geomean) < 0.99:
+        raise ValueError("physical-design advisor held-out gate is inconsistent")
+    return {
+        "campaign_id": str(report.get("campaign_id", "")),
+        "protocol_fingerprint": str(report.get("protocol_fingerprint", "")),
+        "measured_rows": 162,
+        "selection_cells": 9,
+        "training_repeats": [0, 1, 2],
+        "heldout_repeats": [3, 4, 5],
+        "thresholds": expected_thresholds,
+        "selected_policies": dict(sorted(selected.items())),
+        "heldout_ratio_min": float(ratio_min),
+        "heldout_ratio_geomean": float(ratio_geomean),
+        "claim_boundary": str(report.get("claim_boundary", "")),
+    }
+
+
 def load_resident_upper(path: Path) -> dict[str, Any]:
     rows = load_csv(path)
     by_cell: dict[tuple[str, int], dict[str, str]] = {}
@@ -1094,6 +1162,7 @@ def assemble(
     lifecycle_tti: Path,
     build_summary: Path,
     build_scaling_10m_summary: Path,
+    physical_design_advisor_report: Path,
     out: Path,
 ) -> None:
     sources = {
@@ -1114,6 +1183,7 @@ def assemble(
         "lifecycle_tti": lifecycle_tti,
         "build_summary": build_summary,
         "build_scaling_10m_summary": build_scaling_10m_summary,
+        "physical_design_advisor_report": physical_design_advisor_report,
     }
     gate_report, gate_digest = load_gate(gate)
     observed_source_sha = verify_gated_sources(sources, gate_report)
@@ -1152,6 +1222,9 @@ def assemble(
         ),
         "build_cost": load_build(build_summary),
         "build_scaling_10m": load_build_scaling_10m(build_scaling_10m_summary),
+        "physical_design_advisor": load_physical_design_advisor(
+            physical_design_advisor_report
+        ),
     }
     out.parent.mkdir(parents=True, exist_ok=True)
     temporary = out.with_name(f".{out.name}.tmp.{os.getpid()}")
@@ -1186,6 +1259,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--lifecycle-tti", type=Path, required=True)
     parser.add_argument("--build-summary", type=Path, required=True)
     parser.add_argument("--build-scaling-10m-summary", type=Path, required=True)
+    parser.add_argument("--physical-design-advisor-report", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
     return parser.parse_args(argv)
 
@@ -1211,6 +1285,7 @@ def main(argv: list[str] | None = None) -> int:
         lifecycle_tti=args.lifecycle_tti,
         build_summary=args.build_summary,
         build_scaling_10m_summary=args.build_scaling_10m_summary,
+        physical_design_advisor_report=args.physical_design_advisor_report,
         out=args.out,
     )
     print(f"wrote {args.out}")

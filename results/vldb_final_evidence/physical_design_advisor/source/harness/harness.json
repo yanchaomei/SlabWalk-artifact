@@ -1,0 +1,26 @@
+{
+  "entries": {
+    "evidence_tool": {
+      "bytes": 11002,
+      "executable": false,
+      "path": "evidence_tool__vldb_evidence_bundle.py",
+      "sha256": "71717138ea056a1af0df2e3c965abf4633cf3892d080434e5f62e0b284168f71",
+      "source_path": "/home/kvgroup/chaomei/graphbeyond-c1-vldb-v2-20260716/experiments/sigmetrics/vldb_evidence_bundle.py"
+    },
+    "runner": {
+      "bytes": 34481,
+      "executable": true,
+      "path": "runner__run_vldb_materialization_policy.sh",
+      "sha256": "72722b61c11b09614789408944a30999ac63c444808ca91a6f7038395947e427",
+      "source_path": "/home/kvgroup/chaomei/graphbeyond-c1-vldb-v2-20260716/experiments/sigmetrics/run_vldb_materialization_policy.sh"
+    },
+    "summarizer": {
+      "bytes": 40029,
+      "executable": false,
+      "path": "summarizer__summarize_vldb_materialization_policy.py",
+      "sha256": "dd9bf974f54b684a6164ae203c4e1991c1c15a936521da081b33da33c0abdb2b",
+      "source_path": "/home/kvgroup/chaomei/graphbeyond-c1-vldb-v2-20260716/experiments/sigmetrics/summarize_vldb_materialization_policy.py"
+    }
+  },
+  "schema_version": 1
+}

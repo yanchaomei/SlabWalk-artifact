@@ -1,0 +1,10 @@
+{
+  "campaign_id": "vldb-v3-evidence-v2-materialization-policy-20260716T204600Z",
+  "campaign_uuid": "acdd6304-a3eb-4522-872e-8c30fe72a1a0",
+  "protocol_fingerprint": "888dc5c97f82e73e4add38763b9a98cbe561884c9879f1f496e523b484c3888f",
+  "root_manifest": "SHA256SUMS",
+  "root_manifest_sha256": "d17d5870747ae25d8fdb27ebff1772228007b610f0b46fd553f46ba98cd7f8d6",
+  "schema_version": 1,
+  "sealed_file_count": 1143,
+  "sealed_utc": "2026-07-17T00:13:07.904063+00:00"
+}

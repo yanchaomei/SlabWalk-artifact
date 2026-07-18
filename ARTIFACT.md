@@ -70,9 +70,10 @@ post-closure harness additions, the complete suite on 2026-07-16 completed 526
 tests in 65.518 seconds with `OK`. After adding the fixed-stride publication,
 snapshot-reuse, rotation-reuse, and formal-frontier launcher contracts, the
 complete suite on 2026-07-17 completed 538 tests in 68.782 seconds with `OK`.
-All experiment shell scripts must also pass `bash -n` before a
-replacement release. These counts describe named tree snapshots and must be
-refreshed after source changes.
+The final 2026-07-19 closure run completed 684 tests in 70.605 seconds with
+`OK`; all 47 experiment shell scripts passed `bash -n`, and `git diff --check`
+passed. These counts describe named tree snapshots and must be refreshed after
+source changes.
 
 ### Query-path optimization decisions
 
@@ -115,6 +116,7 @@ the scripts that derived its summaries.  The gate expects these components:
 | `build_scaling_10m/` | One canonical packed-variable frontier startup per 10M dataset and repeat |
 | `index_construction/` | Graph-preserving SIFT10M and TTI10M construction records |
 | `lifecycle_controls/` | Offline replay and TTI representation-boundary sources |
+| `physical_design_advisor/` | Sealed 162-row policy source plus a fixed 0--2 training / 3--5 held-out advisor validation |
 
 Warmups, partial runs, failed builders, OOM campaigns, and superseded parser
 outputs remain retained under `results/vldb_acceptance_closure_20260713/`, but
@@ -181,6 +183,35 @@ Its semantic pass reconstructs the cyclic policy schedule, verifies every
 cell's executable, input, and raw-artifact provenance, and then regenerates
 both the per-run and confidence-summary tables. Hash validity alone is not a
 promotion condition.
+
+### Physical-design advisor validation
+
+The advisor is derived from the same sealed 162-row matched-byte campaign, but
+its source and validation are independently sealed under
+`results/vldb_final_evidence/physical_design_advisor/`. Build or reproduce the
+validation with:
+
+```bash
+python3 experiments/sigmetrics/validate_vldb_physical_design_advisor.py build \
+  --bundle results/vldb_v3_evidence_v2_node3_materialization_policy_formal_20260716T204600Z \
+  --out results/vldb_physical_design_advisor_20260719 \
+  --expected-sha bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8 \
+  --expected-compute-host skv-node3
+python3 experiments/sigmetrics/validate_vldb_physical_design_advisor.py verify \
+  --bundle results/vldb_v3_evidence_v2_node3_materialization_policy_formal_20260716T204600Z \
+  --validation results/vldb_physical_design_advisor_20260719 \
+  --expected-sha bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8 \
+  --expected-compute-host skv-node3
+```
+
+The builder fixes repeats 0--2 as the selection sample and repeats 3--5 as the
+held-out sample before applying the gate. For each dataset and byte budget, it
+rejects candidates below Recall@10 0.90 or above the requested MN bytes, then
+maximizes the two-sided Student-t 95% lower confidence bound on QPS. Promotion
+requires every selected layout to remain feasible, every held-out QPS ratio to
+the feasible oracle to be at least 0.98, and the nine-cell geometric mean to be
+at least 0.99. This is a strict post-hoc split over an existing campaign, not a
+prospective predictor or online reconfiguration mechanism.
 
 ## 4. Query-pool and frontier promotion
 

@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# C/C++ build
+build/
+*.o
+*.a
+*.dylib
+*.dll
+
+# Data files (too big for git)
+*.fvecs
+*.ivecs
+*.bvecs
+*.bin
+data/
+datasets/
+
+# Large experiment outputs
+results/**/raw/*.json
+results/**/*.csv.gz
+*.parquet
+*.h5
+
+# Per-query JSON dumps can be huge
+**/perquery_*.json
+!**/perquery_ef10.json
+!**/perquery_ef100.json
+!**/perquery_ef1000.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+logs/
+nohup.out
+
+# Tmux dumps
+tmux_*.txt
+.gstack/
+
+# LaTeX build artifacts
+*.aux
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.toc
+*.synctex.gz
+paper/main.out

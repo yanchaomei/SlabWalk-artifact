@@ -14,8 +14,11 @@ import tempfile
 from pathlib import Path, PurePosixPath
 from typing import Iterable
 
+import vldb_evidence_bundle as evidence_bundle
+
 
 ROOT_FILES = {
+    ".gitignore": ".gitignore",
     "PUBLIC_ARTIFACT_README.md": "README.md",
     "ARTIFACT.md": "ARTIFACT.md",
     "requirements.txt": "requirements.txt",
@@ -38,6 +41,7 @@ PAPER_FILES = (
     "paper_vldb/generated_claims.tex",
     "paper_vldb/CLAIM_EVIDENCE_LEDGER.md",
     "paper_vldb/PVLDB_SCOPE_SELF_ASSESSMENT.md",
+    "paper_vldb/figs/gen_vldb_design_figures.py",
 )
 
 IGNORED_DIRECTORY_NAMES = {
@@ -88,16 +92,29 @@ def ignored(path: Path, tree_root: Path) -> bool:
     return path.name in IGNORED_FILE_NAMES or path.suffix in IGNORED_SUFFIXES
 
 
-def regular_files(tree_root: Path) -> Iterable[Path]:
+def regular_files(
+    tree_root: Path, *, preserve_ignored: bool = False
+) -> Iterable[Path]:
     if tree_root.is_symlink() or not tree_root.is_dir():
         raise ValueError(f"missing regular artifact directory: {tree_root}")
     for path in sorted(tree_root.rglob("*")):
-        if ignored(path, tree_root):
+        if not preserve_ignored and ignored(path, tree_root):
             continue
         if path.is_symlink():
             raise ValueError(f"symbolic link in public artifact input: {path}")
         if path.is_file():
             yield path
+
+
+def verify_sealed_evidence(tree_root: Path) -> None:
+    """Require every nested evidence seal to remain recursively complete."""
+    for seal in sorted(tree_root.rglob("SEALED.json")):
+        bundle = seal.parent
+        if not (bundle / "SHA256SUMS").is_file() or not (
+            bundle / "campaign.json"
+        ).is_file():
+            raise ValueError(f"incomplete sealed evidence bundle: {bundle}")
+        evidence_bundle.verify_bundle(bundle)
 
 
 def require_regular(path: Path) -> Path:
@@ -149,7 +166,10 @@ def collect_sources(repo_root: Path) -> dict[str, Path]:
 
     for tree_name in TREE_ROOTS:
         tree_root = repo_root / tree_name
-        for source in regular_files(tree_root):
+        preserve_ignored = tree_name == "results/vldb_final_evidence"
+        if preserve_ignored:
+            verify_sealed_evidence(tree_root)
+        for source in regular_files(tree_root, preserve_ignored=preserve_ignored):
             add(canonical_relative(source, repo_root), source)
 
     for relative in PAPER_FILES:
@@ -251,6 +271,7 @@ def build_public_artifact(
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(data)
             target.chmod(0o755 if os.access(sources[relative], os.X_OK) else 0o644)
+        verify_sealed_evidence(temporary / "results/vldb_final_evidence")
         (temporary / "SHA256SUMS").write_bytes(checksums)
         (temporary / "artifact_manifest.json").write_bytes(manifest_bytes)
         if output.exists():

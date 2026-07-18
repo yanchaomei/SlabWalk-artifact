@@ -1,0 +1,83 @@
+{
+  "artifacts": {
+    "compute_stderr": {
+      "path": "run.err",
+      "sha256": "b49e5a5b5ff81a1534251c6aaabcc57673b93a31af1fd4dcb06254ddaa961c4b"
+    },
+    "compute_stdout": {
+      "path": "result.json",
+      "sha256": "eff3456c2d3e8617d54b0706f61c24d1459a74f8802d8cde2589f92a1ff4bc12"
+    },
+    "memory_node_stderr": {
+      "path": "mn.err",
+      "sha256": "bd6b293894a94336af68ea33acec09c875a204ff72766e9600fa8bd80ad92c49"
+    },
+    "memory_node_stdout": {
+      "path": "mn.out",
+      "sha256": "21353a32cff887eaf457b2034f9b250debe76b64a91eb48736e26dc6034e97f8"
+    }
+  },
+  "budget_bytes": 2147483648,
+  "campaign_id": "vldb-v3-evidence-v2-materialization-policy-20260716T204600Z",
+  "campaign_uuid": "acdd6304-a3eb-4522-872e-8c30fe72a1a0",
+  "dataset": "DEEP1M",
+  "executables": {
+    "compute_node": {
+      "host": "skv-node3",
+      "pid_exe_path": "/home/kvgroup/chaomei/bin/slabwalk-v3-evidence-v2-clean-bf377c5ad52c",
+      "pid_starttime": "436630877",
+      "sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8"
+    },
+    "memory_node": {
+      "host": "skv-node5",
+      "pid_exe_path": "/home/kvgroup/chaomei/bin/slabwalk-v3-evidence-v2-clean-bf377c5ad52c",
+      "pid_starttime": "818852781",
+      "sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8"
+    }
+  },
+  "input_signature": "9a3a08bb2c42513837965f136afdf965f5f29224599dfc845b6c960eb8505703",
+  "input_verification": {
+    "post_run": {
+      "groundtruth": {
+        "bytes": 4000008,
+        "dataset": "DEEP1M",
+        "sha256": "40706891f31cac7124935bfff8ba970a72f31946a00f4e65f310c2429b9e9e88"
+      },
+      "index_dump": {
+        "bytes": 672573128,
+        "dataset": "DEEP1M",
+        "sha256": "c0713c48cb3145693c8b2677bc31916872537f20c43317365da2b9257dcc5bcf"
+      },
+      "query": {
+        "bytes": 3840008,
+        "dataset": "DEEP1M",
+        "sha256": "8438fc763f14e0f9741fda15b3e11215aef089ce17d1ad47d53b52a7c9fda5bb"
+      }
+    },
+    "pre_run": {
+      "groundtruth": {
+        "bytes": 4000008,
+        "dataset": "DEEP1M",
+        "sha256": "40706891f31cac7124935bfff8ba970a72f31946a00f4e65f310c2429b9e9e88"
+      },
+      "index_dump": {
+        "bytes": 672573128,
+        "dataset": "DEEP1M",
+        "sha256": "c0713c48cb3145693c8b2677bc31916872537f20c43317365da2b9257dcc5bcf"
+      },
+      "query": {
+        "bytes": 3840008,
+        "dataset": "DEEP1M",
+        "sha256": "8438fc763f14e0f9741fda15b3e11215aef089ce17d1ad47d53b52a7c9fda5bb"
+      }
+    }
+  },
+  "kind": "r",
+  "phasef_sha256": null,
+  "policy": "benefit",
+  "position": 2,
+  "protocol_fingerprint": "888dc5c97f82e73e4add38763b9a98cbe561884c9879f1f496e523b484c3888f",
+  "repeat": 1,
+  "schema_version": 2,
+  "tcp_port": 21050
+}

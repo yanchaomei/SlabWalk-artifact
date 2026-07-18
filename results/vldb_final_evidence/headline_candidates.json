@@ -338,7 +338,7 @@
     }
   },
   "gate": "evidence_gate.json",
-  "gate_sha256": "fea1f82f79120a94c7327a1e3009a4b3163b00a8e4c8ae0e3a0a926e04fdfbdd",
+  "gate_sha256": "34af8abc8c5f3a2c7f77cc57ed1f52118933b0d000136c99ab6d35c1b0a58426",
   "headline_ranges": {
     "high_recall_post_reduction_max": 27.222950535332437,
     "high_recall_post_reduction_min": 17.134388898619314,

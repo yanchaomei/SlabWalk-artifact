@@ -96,6 +96,7 @@ class ManuscriptClaimsTest(unittest.TestCase):
         self.lifecycle_tti = self.root / "lifecycle_tti.csv"
         self.build = self.root / "build.csv"
         self.build_scaling_10m = self.root / "build_scaling_10m.csv"
+        self.physical_design_advisor = self.root / "physical_design_advisor.json"
         self.gate = self.root / "evidence_gate.json"
         self.out = self.root / "claims.json"
 
@@ -424,6 +425,35 @@ class ManuscriptClaimsTest(unittest.TestCase):
                 ("TTI10M", 100, 344.8, 6.0, 2.8, 40.0, 38.20),
             )
         ])
+        self.physical_design_advisor.write_text(
+            json.dumps(
+                {
+                    "kind": "vldb_physical_design_advisor_validation",
+                    "campaign_id": "materialization-fixture",
+                    "protocol_fingerprint": "e" * 64,
+                    "measured_rows": 162,
+                    "selection_cells": 9,
+                    "training_repeats": [0, 1, 2],
+                    "heldout_repeats": [3, 4, 5],
+                    "thresholds": {
+                        "recall_min": 0.90,
+                        "heldout_min_qps_ratio": 0.98,
+                        "heldout_geomean_qps_ratio": 0.99,
+                    },
+                    "selected_policies": {"benefit": 6, "indeg": 3},
+                    "heldout_ratio_min": 0.9908309455587393,
+                    "heldout_ratio_geomean": 0.9986928421693378,
+                    "promotion_ready": True,
+                    "promotion_failures": [],
+                    "claim_boundary": (
+                        "strict post-hoc split over a pre-existing sealed campaign; "
+                        "this is an auditable offline deployment policy, not a "
+                        "prospective or online optimizer"
+                    ),
+                },
+                sort_keys=True,
+            )
+        )
         self.refresh_gate()
 
     def refresh_gate(self) -> None:
@@ -461,6 +491,9 @@ class ManuscriptClaimsTest(unittest.TestCase):
             "build_cost": {"summary_sha256": claims.sha256(self.build)},
             "build_scaling_10m": {
                 "summary_sha256": claims.sha256(self.build_scaling_10m)
+            },
+            "physical_design_advisor": {
+                "report_sha256": claims.sha256(self.physical_design_advisor)
             },
         }
         gate["campaign_identities"] = {
@@ -500,6 +533,9 @@ class ManuscriptClaimsTest(unittest.TestCase):
             "build_scaling_10m_summary": gate["build_scaling_10m"][
                 "summary_sha256"
             ],
+            "physical_design_advisor_report": gate[
+                "physical_design_advisor"
+            ]["report_sha256"],
         }
         self.gate.write_text(json.dumps(gate, indent=2, sort_keys=True) + "\n")
         headline_summary.summarize(
@@ -533,6 +569,7 @@ class ManuscriptClaimsTest(unittest.TestCase):
             lifecycle_tti=self.lifecycle_tti,
             build_summary=self.build,
             build_scaling_10m_summary=self.build_scaling_10m,
+            physical_design_advisor_report=self.physical_design_advisor,
             out=self.out,
         )
         return json.loads(self.out.read_text())
@@ -554,6 +591,14 @@ class ManuscriptClaimsTest(unittest.TestCase):
         self.assertEqual(report["frontier"]["matched_datasets"], ["DEEP10M", "SIFT10M"])
         self.assertEqual(report["frontier"]["recall_floor"], 0.90)
         self.assertEqual(report["frontier"]["recall_tolerance"], 0.002)
+        self.assertAlmostEqual(
+            report["physical_design_advisor"]["heldout_ratio_min"],
+            0.9908309455587393,
+        )
+        self.assertEqual(
+            report["physical_design_advisor"]["selected_policies"],
+            {"benefit": 6, "indeg": 3},
+        )
         self.assertEqual(
             set(report["frontier"]["high_recall_matched_pairs"]),
             {"DEEP10M", "SIFT10M"},
@@ -635,6 +680,7 @@ class ManuscriptClaimsTest(unittest.TestCase):
             "resource_summary", "resource_runs", "worker_runs", "build_summary",
             "build_scaling_10m_summary", "rdma_runs", "robustness_runs",
             "topology_summary", "lifecycle_refresh", "lifecycle_tti",
+            "physical_design_advisor_report",
         })
 
     def test_rejects_incomplete_resource_matrix(self) -> None:

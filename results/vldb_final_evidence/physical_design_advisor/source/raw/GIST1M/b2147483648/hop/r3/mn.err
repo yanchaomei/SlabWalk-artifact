@@ -1,0 +1,49 @@
+============================================================
+                        SERVER
+============================================================
+num clients:                  1
+TCP port:                     21182
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           8589934592
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.65)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+pairing: 21921 -- 17708
+[STATUS]: pinned main thread to core 20
+[STATUS]: query QP/CQ contexts per compute node=16
+[STATUS]: LAVD neighborhood region: resolved bytes=8589934592
+allocation size: 8589934592
+allocated ALIGNED MEM (no hugepage) at 140711079469120 with buffer size 8589934592
+allocated ALIGNED MEM (no hugepage) at 140702489530432 with buffer size 8589934592
+[STATUS]: LAVD neighborhood region: allocated bytes=8589934592
+[STATUS]: register memory and distribute access token
+[STATUS]: LAVD neighborhood region: registered bytes=8589934592
+[STATUS]: connect QPs of compute threads
+pairing: 21922 -- 17709
+pairing: 21923 -- 17710
+pairing: 21924 -- 17711
+pairing: 21925 -- 17712
+pairing: 21926 -- 17713
+pairing: 21927 -- 17714
+pairing: 21928 -- 17715
+pairing: 21929 -- 17716
+pairing: 21930 -- 17717
+pairing: 21931 -- 17718
+pairing: 21932 -- 17719
+pairing: 21933 -- 17720
+pairing: 21934 -- 17721
+pairing: 21935 -- 17722
+pairing: 21936 -- 17723
+pairing: 21937 -- 17724
+[STATUS]: idle: index construction
+[STATUS]: loading index (4128573128 Bytes) from /home/kvgroup/chaomei/hnsw-data/gist1m/dump/index_m16_efc100_node1_of1.dat
+[STATUS]: query processing
+[STATUS]: idle: queries

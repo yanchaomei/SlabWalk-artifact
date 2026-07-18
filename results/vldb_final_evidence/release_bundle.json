@@ -1,5 +1,5 @@
 {
-  "claims_sha256": "8297ca77006fcab836ed0d0f0c351127f7dac768804fd68fd597275e66bfe17b",
+  "claims_sha256": "19c772ed773c03b7df2c47920fbf0df799fb6b10ded234ad652dac3395d5625f",
   "claims_target": "results/vldb_final_evidence/manuscript_claims.json",
   "entries": {
     "paper_vldb/ACM-Reference-Format.bst": {
@@ -51,12 +51,12 @@
       "size_bytes": 20753
     },
     "paper_vldb/generated_claims.tex": {
-      "sha256": "d6fc9f47c05928591ecb4afe5d8f5fab6fdf012b8349813d7af95ca696677b55",
-      "size_bytes": 4494
+      "sha256": "39cea1efdf7d2ed60c9795eb04bc933cd1b57f81e10f16167003b4f3ae8c0b6a",
+      "size_bytes": 4703
     },
     "paper_vldb/main.tex": {
-      "sha256": "a959d58f4c54565f3ef3208b05285585424012cbfbacb582f3158e63f477eac2",
-      "size_bytes": 65831
+      "sha256": "a4dbb8f69697f0527da7fea0e808e08bd9ed176b4078a4c3c3c844bba76a3f25",
+      "size_bytes": 66977
     },
     "paper_vldb/pvldb.sty": {
       "sha256": "52ad3948f3231b31d2ac90f470c1759e7f96add7b577ec4e267dfbdc87fc4eb2",
@@ -67,23 +67,23 @@
       "size_bytes": 17172
     },
     "results/vldb_final_evidence/evidence_gate.json": {
-      "sha256": "fea1f82f79120a94c7327a1e3009a4b3163b00a8e4c8ae0e3a0a926e04fdfbdd",
-      "size_bytes": 26350
+      "sha256": "34af8abc8c5f3a2c7f77cc57ed1f52118933b0d000136c99ab6d35c1b0a58426",
+      "size_bytes": 27583
     },
     "results/vldb_final_evidence/frontier_1m_gate.json": {
       "sha256": "7ca88aebec78e216a69d1abfedb367b6ccabdb20bd435cfb0ddab60b35085510",
       "size_bytes": 1004
     },
     "results/vldb_final_evidence/headline_candidates.json": {
-      "sha256": "b45d4d3d9cb06d8875c8923a6a02ee617361bc8531362e0b028077ed00afb88b",
+      "sha256": "e348bbd05e7d96944d47a85fc261fec3a89e18776517c9e9e3381f1650640cc1",
       "size_bytes": 12760
     },
     "results/vldb_final_evidence/manuscript_claims.json": {
-      "sha256": "8297ca77006fcab836ed0d0f0c351127f7dac768804fd68fd597275e66bfe17b",
-      "size_bytes": 32252
+      "sha256": "19c772ed773c03b7df2c47920fbf0df799fb6b10ded234ad652dac3395d5625f",
+      "size_bytes": 33204
     }
   },
-  "gate_sha256": "fea1f82f79120a94c7327a1e3009a4b3163b00a8e4c8ae0e3a0a926e04fdfbdd",
+  "gate_sha256": "34af8abc8c5f3a2c7f77cc57ed1f52118933b0d000136c99ab6d35c1b0a58426",
   "gate_target": "results/vldb_final_evidence/evidence_gate.json",
   "generated_claims_target": "paper_vldb/generated_claims.tex",
   "kind": "vldb_release_bundle",

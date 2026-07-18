@@ -7,6 +7,7 @@ import unittest
 from pathlib import Path
 
 import package_public_artifact as artifact
+import vldb_evidence_bundle as evidence_bundle
 
 
 def write(path: Path, data: bytes | str = b"fixture\n") -> None:
@@ -19,6 +20,7 @@ def write(path: Path, data: bytes | str = b"fixture\n") -> None:
 
 class PackagePublicArtifactTest(unittest.TestCase):
     def make_repo(self, root: Path) -> None:
+        write(root / ".gitignore", "__pycache__/\n*.py[cod]\n")
         write(root / "PUBLIC_ARTIFACT_README.md", "# Public artifact\n")
         write(root / "ARTIFACT.md", "# Workflow\n")
         write(root / "requirements.txt", "matplotlib\n")
@@ -39,6 +41,10 @@ class PackagePublicArtifactTest(unittest.TestCase):
         write(root / "paper_vldb/ACM-Reference-Format.bst", "bst\n")
         write(root / "paper_vldb/generated_claims.tex", "claims\n")
         write(root / "paper_vldb/CLAIM_EVIDENCE_LEDGER.md", "ledger\n")
+        write(
+            root / "paper_vldb/figs/gen_vldb_design_figures.py",
+            "def build_all():\n    return None\n",
+        )
         write(root / "paper_vldb/figs/figure.pdf", b"%PDF-1.4\nfixture")
         release = {
             "kind": "vldb_release_bundle",
@@ -58,9 +64,15 @@ class PackagePublicArtifactTest(unittest.TestCase):
             report = artifact.build_public_artifact(root, out)
 
             self.assertEqual((out / "README.md").read_text(), "# Public artifact\n")
+            self.assertEqual(
+                (out / ".gitignore").read_text(), "__pycache__/\n*.py[cod]\n"
+            )
             self.assertTrue((out / "graphbeyond/src/index.cc").is_file())
             self.assertTrue((out / "results/vldb_final_evidence/raw/run.stderr").is_file())
             self.assertTrue((out / "paper_vldb/figs/figure.pdf").is_file())
+            self.assertTrue(
+                (out / "paper_vldb/figs/gen_vldb_design_figures.py").is_file()
+            )
             self.assertTrue((out / "paper_vldb/acmart.cls").is_file())
             self.assertTrue((out / "paper_vldb/pvldb.sty").is_file())
             self.assertTrue(
@@ -85,6 +97,29 @@ class PackagePublicArtifactTest(unittest.TestCase):
             checksums = (out / "SHA256SUMS").read_text().splitlines()
             self.assertEqual(len(checksums), manifest["file_count"])
             self.assertEqual(checksums, sorted(checksums, key=lambda line: line[66:]))
+
+    def test_preserves_complete_sealed_evidence_despite_generic_ignores(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "source"
+            out = Path(tmp) / "public"
+            self.make_repo(root)
+            bundle = root / "results/vldb_final_evidence/sealed_policy"
+            campaign = {
+                "campaign_id": "sealed-policy-fixture",
+                "campaign_uuid": "5d51d1d3-b27b-40ab-a30b-0cf48841279b",
+                "protocol_fingerprint": "1" * 64,
+            }
+            write(bundle / "campaign.json", json.dumps(campaign) + "\n")
+            write(bundle / "harness/__pycache__/tool.cpython-38.pyc", b"sealed-pyc")
+            evidence_bundle.seal_bundle(bundle, bundle / "campaign.json")
+
+            artifact.build_public_artifact(root, out)
+
+            copied = out / "results/vldb_final_evidence/sealed_policy"
+            self.assertTrue(
+                (copied / "harness/__pycache__/tool.cpython-38.pyc").is_file()
+            )
+            evidence_bundle.verify_bundle(copied)
 
     def test_rejects_public_ip_or_private_key_material(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

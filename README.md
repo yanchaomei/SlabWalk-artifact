@@ -7,9 +7,10 @@ one level-0 graph expansion with one remote read.
 
 The artifact contains the implementation, experiment harnesses, promoted raw
 measurements, aggregate tables, query-pool fingerprints, generated claim
-macros, and the nine figures bound to the manuscript release. Datasets and
-d-HNSW are not redistributed; their preparation and pinned baseline workflow
-are documented in [`experiments/README.md`](experiments/README.md).
+macros, the sealed physical-design-advisor split, and the nine figures bound to
+the manuscript release. Datasets and d-HNSW are not redistributed; their
+preparation and pinned baseline workflow are documented in
+[`experiments/README.md`](experiments/README.md).
 
 ## Integrity check
 
@@ -52,6 +53,13 @@ incomplete matrix, query-pool mismatch, unverified PDF, or stale publication
 input. See [`ARTIFACT.md`](ARTIFACT.md) for the expanded command, source
 ownership rules, and the distinction between a completed run and promoted
 paper evidence.
+
+The advisor evidence is under
+`results/vldb_final_evidence/physical_design_advisor/`. Revalidation reconstructs
+its 162-row source matrix, repeats the fixed 0--2 training / 3--5 held-out
+split, and checks both the per-cell and geometric-mean held-out gates. It is an
+offline selector over measured candidates; it is not an online or predictive
+optimizer.
 
 ## Building SlabWalk
 
@@ -97,9 +105,10 @@ partition-fetch path and record the compatibility patch and runtime bundle.
 - Derived-state refresh is evaluated offline with serving paused.
 - Compact scoring can alter beam order; the retained TTI experiment is a
   representation boundary, not a compression-only causal claim.
-- Multi-host measurements report aggregate throughput and per-CN fairness;
-  latency is reported only where the protocol measures a complete logical
-  query distribution.
+- The promoted release does not claim aggregate multi-CN scale-out. A separate
+  fixed-gate multi-CN campaign is retained as diagnostic evidence and may enter
+  the paper only if its complete sealed matrix passes the preregistered scaling,
+  recall-drift, and per-CN-fairness thresholds.
 
 ## License
 

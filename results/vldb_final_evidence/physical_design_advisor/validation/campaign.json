@@ -1,0 +1,28 @@
+{
+  "campaign_id": "vldb-physical-design-advisor-vldb-v3-evidence-v2-materialization-policy-20260716T204600Z",
+  "campaign_uuid": "physical-design-ed655a6be1f6ae09974ac357a89b968d",
+  "protocol": {
+    "advisor_sha256": "00c611dba5828e04d0fba26ced7a93faf193a3fe42eda615bf63d550ce2b2d84",
+    "heldout_repeats": [
+      3,
+      4,
+      5
+    ],
+    "source_campaign_id": "vldb-v3-evidence-v2-materialization-policy-20260716T204600Z",
+    "source_protocol_fingerprint": "888dc5c97f82e73e4add38763b9a98cbe561884c9879f1f496e523b484c3888f",
+    "source_runs_sha256": "be065a413e24e2b586ad0f23ed9f7e255a7586c511ac78c2950c7d00ff2d88e2",
+    "source_seal_sha256": "7b051e179be80bec9881d4d47c721330185e1f947e37059d47e0ee371f4e394e",
+    "thresholds": {
+      "heldout_geomean_qps_ratio": 0.99,
+      "heldout_min_qps_ratio": 0.98,
+      "recall_min": 0.9
+    },
+    "training_repeats": [
+      0,
+      1,
+      2
+    ],
+    "validator_sha256": "424ba68152b46adf5795c8938b083884126fdfdd2a9bc8856fff5e7205e0bfd2"
+  },
+  "protocol_fingerprint": "ed655a6be1f6ae09974ac357a89b968d8d31042b52adf5920ee8c39d87343176"
+}

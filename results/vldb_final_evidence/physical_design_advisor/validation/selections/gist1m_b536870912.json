@@ -1,0 +1,166 @@
+{
+  "advisor_sha256": "00c611dba5828e04d0fba26ced7a93faf193a3fe42eda615bf63d550ce2b2d84",
+  "candidates": [
+    {
+      "candidate_id": "benefit",
+      "configuration": {
+        "dataset": "GIST1M",
+        "materialization_policy": "benefit",
+        "requested_bytes": 536870912
+      },
+      "feasible": true,
+      "provenance": {
+        "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+        "input_signature": "0959b355073bfb34bf87b959c0725bf4c3770bdc62b48cc49fb2eb85d356e814",
+        "physical_signature": "516642481e01db5faf85cac40cb660e2a2dc2f370e0f3abd0331882daa9a825f",
+        "selection_hash": "15086623554454968345",
+        "training_repeats": [
+          0,
+          1,
+          2
+        ]
+      },
+      "qps_ci95": 0.0,
+      "qps_ci95_high": 596.0,
+      "qps_ci95_low": 596.0,
+      "qps_mean": 596.0,
+      "qps_n": 3,
+      "qps_samples": [
+        596.0,
+        596.0,
+        596.0
+      ],
+      "recall": 0.9276,
+      "rejection_reasons": [],
+      "resources": {
+        "bytes_per_query": 19231353.932,
+        "mn_bytes": 536870112.0,
+        "posts_per_query": 736.855
+      }
+    },
+    {
+      "candidate_id": "hop",
+      "configuration": {
+        "dataset": "GIST1M",
+        "materialization_policy": "hop",
+        "requested_bytes": 536870912
+      },
+      "feasible": true,
+      "provenance": {
+        "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+        "input_signature": "0959b355073bfb34bf87b959c0725bf4c3770bdc62b48cc49fb2eb85d356e814",
+        "physical_signature": "b356cb8d60a589d782991657f29b3616e774dbd0224554aa8f920595dd455606",
+        "selection_hash": "7232205066072187407",
+        "training_repeats": [
+          0,
+          1,
+          2
+        ]
+      },
+      "qps_ci95": 1.4343333333333332,
+      "qps_ci95_high": 523.7676666666667,
+      "qps_ci95_low": 520.899,
+      "qps_mean": 522.3333333333334,
+      "qps_n": 3,
+      "qps_samples": [
+        522.0,
+        523.0,
+        522.0
+      ],
+      "recall": 0.9276,
+      "rejection_reasons": [],
+      "resources": {
+        "bytes_per_query": 21905959.596,
+        "mn_bytes": 536870240.0,
+        "posts_per_query": 774.165
+      }
+    },
+    {
+      "candidate_id": "indeg",
+      "configuration": {
+        "dataset": "GIST1M",
+        "materialization_policy": "indeg",
+        "requested_bytes": 536870912
+      },
+      "feasible": true,
+      "provenance": {
+        "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+        "input_signature": "0959b355073bfb34bf87b959c0725bf4c3770bdc62b48cc49fb2eb85d356e814",
+        "physical_signature": "351e1f63e2405dcbc184412acd7d201e5a28a2929ad1b0d7fc30dbd9b1b66fb4",
+        "selection_hash": "13625151374250237600",
+        "training_repeats": [
+          0,
+          1,
+          2
+        ]
+      },
+      "qps_ci95": 1.4343333333333332,
+      "qps_ci95_high": 597.101,
+      "qps_ci95_low": 594.2323333333333,
+      "qps_mean": 595.6666666666666,
+      "qps_n": 3,
+      "qps_samples": [
+        595.0,
+        596.0,
+        596.0
+      ],
+      "recall": 0.9276,
+      "rejection_reasons": [],
+      "resources": {
+        "bytes_per_query": 19231347.056,
+        "mn_bytes": 536870152.0,
+        "posts_per_query": 736.85
+      }
+    }
+  ],
+  "constraints": {
+    "recall_min": 0.9,
+    "resources_max": {
+      "mn_bytes": 536870912.0
+    }
+  },
+  "failures": [],
+  "input_sha256": "187201f0c00a506bff1522a59a6e56823dfbc6d5ac777aaa29304fedc47f450a",
+  "kind": "slabwalk_physical_design_selection",
+  "objective": "qps_ci95_low",
+  "provenance": {
+    "campaign_id": "vldb-v3-evidence-v2-materialization-policy-20260716T204600Z",
+    "input_seal_sha256": "7b051e179be80bec9881d4d47c721330185e1f947e37059d47e0ee371f4e394e",
+    "protocol_fingerprint": "888dc5c97f82e73e4add38763b9a98cbe561884c9879f1f496e523b484c3888f",
+    "split": "repeats_0_2_train__3_5_heldout"
+  },
+  "schema_version": 1,
+  "selected": {
+    "candidate_id": "benefit",
+    "configuration": {
+      "dataset": "GIST1M",
+      "materialization_policy": "benefit",
+      "requested_bytes": 536870912
+    },
+    "provenance": {
+      "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+      "input_signature": "0959b355073bfb34bf87b959c0725bf4c3770bdc62b48cc49fb2eb85d356e814",
+      "physical_signature": "516642481e01db5faf85cac40cb660e2a2dc2f370e0f3abd0331882daa9a825f",
+      "selection_hash": "15086623554454968345",
+      "training_repeats": [
+        0,
+        1,
+        2
+      ]
+    },
+    "qps_ci95": 0.0,
+    "qps_ci95_high": 596.0,
+    "qps_ci95_low": 596.0,
+    "qps_mean": 596.0,
+    "qps_n": 3,
+    "recall": 0.9276,
+    "resources": {
+      "bytes_per_query": 19231353.932,
+      "mn_bytes": 536870112.0,
+      "posts_per_query": 736.855
+    }
+  },
+  "selection_id": "GIST1M-b536870912",
+  "selection_ready": true,
+  "selection_rule": "maximize two-sided Student-t 95% QPS lower bound, then mean QPS, then lexical candidate_id"
+}

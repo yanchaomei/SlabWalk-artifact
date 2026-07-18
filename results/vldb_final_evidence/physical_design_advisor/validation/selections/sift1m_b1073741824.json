@@ -1,0 +1,166 @@
+{
+  "advisor_sha256": "00c611dba5828e04d0fba26ced7a93faf193a3fe42eda615bf63d550ce2b2d84",
+  "candidates": [
+    {
+      "candidate_id": "benefit",
+      "configuration": {
+        "dataset": "SIFT1M",
+        "materialization_policy": "benefit",
+        "requested_bytes": 1073741824
+      },
+      "feasible": true,
+      "provenance": {
+        "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+        "input_signature": "d1daa707b63b20514946d08ba4e8b307bd894b1203834a4496df2a0da98d1eca",
+        "physical_signature": "8c16bd1b63ef6481f12c1c9bc340550c598ff274618060c8daafb7b10ef4c9dd",
+        "selection_hash": "6065568491132026709",
+        "training_repeats": [
+          0,
+          1,
+          2
+        ]
+      },
+      "qps_ci95": 37.37532506138836,
+      "qps_ci95_high": 7193.041991728055,
+      "qps_ci95_low": 7118.291341605279,
+      "qps_mean": 7155.666666666667,
+      "qps_n": 3,
+      "qps_samples": [
+        7146.0,
+        7148.0,
+        7173.0
+      ],
+      "recall": 0.99222,
+      "rejection_reasons": [],
+      "resources": {
+        "bytes_per_query": 1047424.016,
+        "mn_bytes": 1073741712.0,
+        "posts_per_query": 319.9807
+      }
+    },
+    {
+      "candidate_id": "hop",
+      "configuration": {
+        "dataset": "SIFT1M",
+        "materialization_policy": "hop",
+        "requested_bytes": 1073741824
+      },
+      "feasible": true,
+      "provenance": {
+        "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+        "input_signature": "d1daa707b63b20514946d08ba4e8b307bd894b1203834a4496df2a0da98d1eca",
+        "physical_signature": "52974d2ecc2fe63fd3ecbc6511a83f3a14d2abca5672f271e81d10bb00187d47",
+        "selection_hash": "16070688999899705701",
+        "training_repeats": [
+          0,
+          1,
+          2
+        ]
+      },
+      "qps_ci95": 38.192070993568514,
+      "qps_ci95_high": 6023.858737660235,
+      "qps_ci95_low": 5947.4745956730985,
+      "qps_mean": 5985.666666666667,
+      "qps_n": 3,
+      "qps_samples": [
+        5968.0,
+        5996.0,
+        5993.0
+      ],
+      "recall": 0.99222,
+      "rejection_reasons": [],
+      "resources": {
+        "bytes_per_query": 1214440.7948,
+        "mn_bytes": 1073741816.0,
+        "posts_per_query": 334.3826
+      }
+    },
+    {
+      "candidate_id": "indeg",
+      "configuration": {
+        "dataset": "SIFT1M",
+        "materialization_policy": "indeg",
+        "requested_bytes": 1073741824
+      },
+      "feasible": true,
+      "provenance": {
+        "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+        "input_signature": "d1daa707b63b20514946d08ba4e8b307bd894b1203834a4496df2a0da98d1eca",
+        "physical_signature": "0b6d19bf90196f346975bff32b80cc8d143fc02ef08746d4157a44d1caa7a280",
+        "selection_hash": "840385861271883112",
+        "training_repeats": [
+          0,
+          1,
+          2
+        ]
+      },
+      "qps_ci95": 7.589778594340623,
+      "qps_ci95_high": 7132.256445261008,
+      "qps_ci95_low": 7117.076888072326,
+      "qps_mean": 7124.666666666667,
+      "qps_n": 3,
+      "qps_samples": [
+        7124.0,
+        7122.0,
+        7128.0
+      ],
+      "recall": 0.99222,
+      "rejection_reasons": [],
+      "resources": {
+        "bytes_per_query": 1049781.9956,
+        "mn_bytes": 1073741680.0,
+        "posts_per_query": 320.1909
+      }
+    }
+  ],
+  "constraints": {
+    "recall_min": 0.9,
+    "resources_max": {
+      "mn_bytes": 1073741824.0
+    }
+  },
+  "failures": [],
+  "input_sha256": "d7a44a66cdc516806700560aec8d2b7edf799be812f2a00a0217c98c05e55d7e",
+  "kind": "slabwalk_physical_design_selection",
+  "objective": "qps_ci95_low",
+  "provenance": {
+    "campaign_id": "vldb-v3-evidence-v2-materialization-policy-20260716T204600Z",
+    "input_seal_sha256": "7b051e179be80bec9881d4d47c721330185e1f947e37059d47e0ee371f4e394e",
+    "protocol_fingerprint": "888dc5c97f82e73e4add38763b9a98cbe561884c9879f1f496e523b484c3888f",
+    "split": "repeats_0_2_train__3_5_heldout"
+  },
+  "schema_version": 1,
+  "selected": {
+    "candidate_id": "benefit",
+    "configuration": {
+      "dataset": "SIFT1M",
+      "materialization_policy": "benefit",
+      "requested_bytes": 1073741824
+    },
+    "provenance": {
+      "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+      "input_signature": "d1daa707b63b20514946d08ba4e8b307bd894b1203834a4496df2a0da98d1eca",
+      "physical_signature": "8c16bd1b63ef6481f12c1c9bc340550c598ff274618060c8daafb7b10ef4c9dd",
+      "selection_hash": "6065568491132026709",
+      "training_repeats": [
+        0,
+        1,
+        2
+      ]
+    },
+    "qps_ci95": 37.37532506138836,
+    "qps_ci95_high": 7193.041991728055,
+    "qps_ci95_low": 7118.291341605279,
+    "qps_mean": 7155.666666666667,
+    "qps_n": 3,
+    "recall": 0.99222,
+    "resources": {
+      "bytes_per_query": 1047424.016,
+      "mn_bytes": 1073741712.0,
+      "posts_per_query": 319.9807
+    }
+  },
+  "selection_id": "SIFT1M-b1073741824",
+  "selection_ready": true,
+  "selection_rule": "maximize two-sided Student-t 95% QPS lower bound, then mean QPS, then lexical candidate_id"
+}

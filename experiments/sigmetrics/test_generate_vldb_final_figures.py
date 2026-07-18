@@ -1,5 +1,6 @@
 import json
 import os
+import shutil
 import signal
 import subprocess
 import sys
@@ -182,6 +183,16 @@ class FinalFigurePipelineTest(unittest.TestCase):
             write_cache_control_evidence(evidence / "cache_control")
             write_colocation_control_evidence(evidence / "colocation_control")
             write_mechanism_control_evidence(evidence / "mechanism_controls")
+            advisor_fixture = (
+                Path(__file__).resolve().parents[2]
+                / "results"
+                / "vldb_final_evidence"
+                / "physical_design_advisor"
+            )
+            shutil.copytree(
+                advisor_fixture,
+                evidence / "physical_design_advisor",
+            )
             colocation_campaign = json.loads(
                 (evidence / "colocation_control" / "campaign.json").read_text()
             )
@@ -304,6 +315,12 @@ class FinalFigurePipelineTest(unittest.TestCase):
                 json.loads((evidence / "evidence_gate.json").read_text())["query_profile"]["query_rows"],
                 200000,
             )
+            self.assertEqual(
+                json.loads((evidence / "evidence_gate.json").read_text())[
+                    "physical_design_advisor"
+                ]["selection_cells"],
+                9,
+            )
             headline = json.loads((evidence / "headline_candidates.json").read_text())
             self.assertEqual(headline["kind"], "vldb_headline_candidates")
             self.assertEqual(set(headline["datasets"]), {"DEEP10M", "SIFT10M", "TTI10M"})
@@ -324,6 +341,10 @@ class FinalFigurePipelineTest(unittest.TestCase):
                 set(claims["build_scaling_10m"]),
                 {"DEEP10M", "SIFT10M", "TTI10M"},
             )
+            self.assertAlmostEqual(
+                claims["physical_design_advisor"]["heldout_ratio_min"],
+                0.9908309455587393,
+            )
             for name in (
                 "fig_physical_units.pdf",
                 "eval_frontier_curves.pdf",
@@ -336,6 +357,10 @@ class FinalFigurePipelineTest(unittest.TestCase):
             generated_claims = paper / "generated_claims.tex"
             self.assertIn(
                 f"% gate-sha256: {release.sha256(gate_path)}",
+                generated_claims.read_text(),
+            )
+            self.assertIn(
+                r"\newcommand{\ClaimAdvisorGeoPercent}{99.87}",
                 generated_claims.read_text(),
             )
             verification = release.verify_release(root, release_manifest)

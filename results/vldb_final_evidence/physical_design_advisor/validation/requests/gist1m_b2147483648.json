@@ -1,0 +1,109 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "benefit",
+      "configuration": {
+        "dataset": "GIST1M",
+        "materialization_policy": "benefit",
+        "requested_bytes": 2147483648
+      },
+      "provenance": {
+        "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+        "input_signature": "0959b355073bfb34bf87b959c0725bf4c3770bdc62b48cc49fb2eb85d356e814",
+        "physical_signature": "3f1ed30ea8cc08f91f55537b006d1c1ad8e13a965e8c1d2ee358a4b67795c0b7",
+        "selection_hash": "352593320118185714",
+        "training_repeats": [
+          0,
+          1,
+          2
+        ]
+      },
+      "qps_samples": [
+        802.0,
+        802.0,
+        802.0
+      ],
+      "recall": 0.9276,
+      "resources": {
+        "bytes_per_query": 14313858.236,
+        "mn_bytes": 2147483568,
+        "posts_per_query": 648.625
+      }
+    },
+    {
+      "candidate_id": "indeg",
+      "configuration": {
+        "dataset": "GIST1M",
+        "materialization_policy": "indeg",
+        "requested_bytes": 2147483648
+      },
+      "provenance": {
+        "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+        "input_signature": "0959b355073bfb34bf87b959c0725bf4c3770bdc62b48cc49fb2eb85d356e814",
+        "physical_signature": "6aeac550a8c343fa09729c3a7f582718b49d9d2dc42b7d58c1f383f9010e1fc5",
+        "selection_hash": "6699602598500427910",
+        "training_repeats": [
+          0,
+          1,
+          2
+        ]
+      },
+      "qps_samples": [
+        801.0,
+        801.0,
+        801.0
+      ],
+      "recall": 0.9276,
+      "resources": {
+        "bytes_per_query": 14338748.896,
+        "mn_bytes": 2147482696,
+        "posts_per_query": 649.004
+      }
+    },
+    {
+      "candidate_id": "hop",
+      "configuration": {
+        "dataset": "GIST1M",
+        "materialization_policy": "hop",
+        "requested_bytes": 2147483648
+      },
+      "provenance": {
+        "binary_sha256": "bf377c5ad52c743759777a38a0fe6d764b8aced6f81b528f80091621e61e8ac8",
+        "input_signature": "0959b355073bfb34bf87b959c0725bf4c3770bdc62b48cc49fb2eb85d356e814",
+        "physical_signature": "629836baf120753186c6b81b08f9b6f42eeb6dff6b97475f939ab2e4587b8859",
+        "selection_hash": "2631781111843267204",
+        "training_repeats": [
+          0,
+          1,
+          2
+        ]
+      },
+      "qps_samples": [
+        638.0,
+        638.0,
+        639.0
+      ],
+      "recall": 0.9276,
+      "resources": {
+        "bytes_per_query": 17956931.404,
+        "mn_bytes": 2147483072,
+        "posts_per_query": 691.391
+      }
+    }
+  ],
+  "constraints": {
+    "recall_min": 0.9,
+    "resources_max": {
+      "mn_bytes": 2147483648.0
+    }
+  },
+  "objective": "qps_ci95_low",
+  "provenance": {
+    "campaign_id": "vldb-v3-evidence-v2-materialization-policy-20260716T204600Z",
+    "input_seal_sha256": "7b051e179be80bec9881d4d47c721330185e1f947e37059d47e0ee371f4e394e",
+    "protocol_fingerprint": "888dc5c97f82e73e4add38763b9a98cbe561884c9879f1f496e523b484c3888f",
+    "split": "repeats_0_2_train__3_5_heldout"
+  },
+  "schema_version": 1,
+  "selection_id": "GIST1M-b2147483648"
+}

@@ -1,0 +1,9 @@
+DEEP1M	query	/home/kvgroup/chaomei/hnsw-data/deep1m/queries/query-uniform.fbin	3840008	8438fc763f14e0f9741fda15b3e11215aef089ce17d1ad47d53b52a7c9fda5bb
+DEEP1M	groundtruth	/home/kvgroup/chaomei/hnsw-data/deep1m/queries/groundtruth-uniform.bin	4000008	40706891f31cac7124935bfff8ba970a72f31946a00f4e65f310c2429b9e9e88
+DEEP1M	index_dump	/home/kvgroup/chaomei/hnsw-data/deep1m/dump/index_m16_efc100_node1_of1.dat	672573128	c0713c48cb3145693c8b2677bc31916872537f20c43317365da2b9257dcc5bcf
+SIFT1M	query	/home/kvgroup/chaomei/hnsw-data/sift1m/queries/query-uniform.fbin	5120008	9b0082b67d0ac55b4c7d42216560344567ad87ce3e75a9d5214a0762f1c15d65
+SIFT1M	groundtruth	/home/kvgroup/chaomei/hnsw-data/sift1m/queries/groundtruth-uniform.bin	4000008	4c06dd3d1539b1de50f1b7e98a116833ed5c2f1571d0ef81f383a04541e797e7
+SIFT1M	index_dump	/home/kvgroup/chaomei/hnsw-data/sift1m/dump/index_m16_efc100_node1_of1.dat	800573128	bbfe1fd976ab0fd79ef8575c5256fb24f2a3bcb43c28c8cc8ea9efd72d63f336
+GIST1M	query	/home/kvgroup/chaomei/hnsw-data/gist1m/queries/query-u10k.fbin	38400008	13ec3e9751821cf4ccd0ffcd51e57549aca6af6db3f4e91ef41142760126faa7
+GIST1M	groundtruth	/home/kvgroup/chaomei/hnsw-data/gist1m/queries/groundtruth-u10k.bin	4000008	fd0a321ae4ebeea854f973f00aa6075cfc820366de6e7118d035de9f50599047
+GIST1M	index_dump	/home/kvgroup/chaomei/hnsw-data/gist1m/dump/index_m16_efc100_node1_of1.dat	4128573128	79accf3b6aa19cec3a21e1c21c97ed942509f863de63bbe06b353b67245e9ac7
