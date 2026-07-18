@@ -70,7 +70,7 @@ post-closure harness additions, the complete suite on 2026-07-16 completed 526
 tests in 65.518 seconds with `OK`. After adding the fixed-stride publication,
 snapshot-reuse, rotation-reuse, and formal-frontier launcher contracts, the
 complete suite on 2026-07-17 completed 538 tests in 68.782 seconds with `OK`.
-The final 2026-07-19 closure run completed 684 tests in 70.605 seconds with
+The final 2026-07-19 closure run completed 684 tests in 72.102 seconds with
 `OK`; all 47 experiment shell scripts passed `bash -n`, and `git diff --check`
 passed. These counts describe named tree snapshots and must be refreshed after
 source changes.
