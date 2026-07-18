@@ -145,7 +145,9 @@ SHAPE_RE = re.compile(
     re.MULTILINE,
 )
 THREAD_RESULT_RE = re.compile(
-    r"^(?P<interleaved_thread_prefix>Thread )?"
+    r"^(?:(?P<interleaved_thread_prefix>Thread )|"
+    r"(?P<interleaved_metric_value_prefix>[-+]?(?:\d+(?:\.\d*)?|\.\d+)"
+    r"(?:[eE][-+]?\d+)?))?"
     r"FRONTIER_THREAD_RESULT ef=(?P<ef>\d+) thread=(?P<thread>\d+) "
     r"queries=(?P<queries>\d+) elapsed_s=(?P<elapsed>[-+0-9.eE]+) "
     r"recall=(?P<recall>[-+0-9.eE]+)$",
@@ -182,7 +184,10 @@ def parse_fixed_pool_result(text: str, ef: int, expected_threads: int) -> dict[s
         queries_raw = match.group("queries")
         elapsed_raw = match.group("elapsed")
         recall_raw = match.group("recall")
-        prefix_interleavings += int(match.group("interleaved_thread_prefix") is not None)
+        prefix_interleavings += int(
+            match.group("interleaved_thread_prefix") is not None
+            or match.group("interleaved_metric_value_prefix") is not None
+        )
         if int(ef_raw) != ef:
             raise ValueError(f"unexpected ef={ef_raw} in fixed-pool result for ef={ef}")
         result = {

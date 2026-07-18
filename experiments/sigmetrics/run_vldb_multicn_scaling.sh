@@ -467,7 +467,7 @@ protocol = {
     },
     "dhnsw_throughput_aggregation": "sum_of_concurrent_disjoint_client_shards",
     "dhnsw_required_metrics": "atomic_FRONTIER_THREAD_RESULT_fixed_pool_query_coverage_qps_recall",
-    "dhnsw_machine_record_recovery": "exact_complete_sentinel_with_optional_known_Thread_prefix_interleaving",
+    "dhnsw_machine_record_recovery": "exact_complete_sentinel_with_optional_known_Thread_or_numeric_metric_value_prefix_interleaving",
     "dhnsw_detail_metrics": "best_effort_non_gating_human_readable_per_thread_breakdown",
     "slabwalk_binary_sha256": slab_sha,
     "dhnsw_client_binary_sha256": dh_client_sha,

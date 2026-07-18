@@ -54,6 +54,10 @@ class MultiCnRunnerScriptTest(unittest.TestCase):
         self.assertIn('"tool_sha256": tool_sha256', self.text)
         self.assertIn('"dhnsw_required_metrics"', self.text)
         self.assertIn('"dhnsw_machine_record_recovery"', self.text)
+        self.assertIn(
+            "optional_known_Thread_or_numeric_metric_value_prefix_interleaving",
+            self.text,
+        )
         self.assertIn('"dhnsw_detail_metrics"', self.text)
         self.assertIn("atomic_FRONTIER_THREAD_RESULT", self.text)
         self.assertIn("best_effort_non_gating", self.text)

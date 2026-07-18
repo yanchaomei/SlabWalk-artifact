@@ -68,6 +68,23 @@ class DhnswFrontierParserTest(unittest.TestCase):
         self.assertEqual(result["machine_record_prefix_interleavings"], 1)
         self.assertTrue(math.isclose(result["qps"], 4000.0))
 
+    def test_fixed_pool_parser_accepts_complete_sentinel_after_metric_value_prefix(self):
+        text = "\n".join(
+            [
+                "QUERY_GT_SHAPE query_rows=10000 ground_truth_rows=10000 query_rows_per_ground_truth=1",
+                "FRONTIER_QUERY_POOL total_queries=10000 threads=2 top_k=10 fixed=1",
+                "FRONTIER_THREAD_RESULT ef=200 thread=0 queries=5000 elapsed_s=2.0 recall=0.90",
+                "2130.33FRONTIER_THREAD_RESULT ef=200 thread=1 queries=5000 elapsed_s=2.5 recall=0.92",
+                " us",
+            ]
+        )
+
+        result = parser.parse_fixed_pool_result(text, ef=200, expected_threads=2)
+
+        self.assertEqual(result["processed_queries"], 10000)
+        self.assertEqual(result["machine_record_prefix_interleavings"], 1)
+        self.assertTrue(math.isclose(result["qps"], 4000.0))
+
     def test_fixed_pool_parser_rejects_unknown_sentinel_prefix(self):
         text = "\n".join(
             [

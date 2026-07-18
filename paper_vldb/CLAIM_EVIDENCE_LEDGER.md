@@ -154,7 +154,7 @@ query-pool drift, binary drift, unadmitted figure, or claim-binding mismatch
 must fail before manuscript installation.
 
 The current PDF and Overleaf archive are internally certified against this
-contract. Author metadata and the artifact URL are present; publication of the
-audited package at that URL, disclosure sign-off, and CMT declarations remain
-external submission blockers listed only in `SUBMISSION_PREFLIGHT.md`. They are
+contract. Author metadata, the artifact URL, and its anonymously accessible
+audited package are present. Disclosure sign-off and CMT declarations remain
+external submission blockers listed only in `SUBMISSION_PREFLIGHT.md`; they are
 not experimental evidence states.

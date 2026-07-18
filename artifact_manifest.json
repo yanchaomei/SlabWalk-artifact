@@ -158,8 +158,8 @@
       "sha256": "8e157f9b6ce2a15d29d51bbcae67aed706f083709d1be3976b95420db4d0183e"
     },
     "experiments/sigmetrics/parse_dhnsw_frontier.py": {
-      "bytes": 16696,
-      "sha256": "4d3f814f75ffcf8936c7336074198c262f3f4bb77ba874a89a20449f31dc5627"
+      "bytes": 16895,
+      "sha256": "e4e19783c35c0c8ecdefe16b87a7540c86c3235aff476264d6154f1b650c1792"
     },
     "experiments/sigmetrics/parse_dhnsw_worker_scaling.py": {
       "bytes": 2632,
@@ -362,8 +362,8 @@
       "sha256": "d4cd6470d805bc534df26e59edd965cc84d47f6e4fbf138010d9a241938b183f"
     },
     "experiments/sigmetrics/run_vldb_multicn_scaling.sh": {
-      "bytes": 34856,
-      "sha256": "8f272bad8e42c305fd1e2dd927fc11a1157744b672f72217f14739fee77fab3c"
+      "bytes": 34880,
+      "sha256": "362df6530cc84aed9fb0b618f00bcf880a064e76b744e951ef85c971a098f376"
     },
     "experiments/sigmetrics/run_vldb_query_profile.sh": {
       "bytes": 30809,
@@ -582,8 +582,8 @@
       "sha256": "a72807d4f96c3f3c4aad600cdd1b76842e46217bcdc7a2284266473222252a3c"
     },
     "experiments/sigmetrics/test_parse_dhnsw_frontier.py": {
-      "bytes": 7693,
-      "sha256": "d3fa97876efee254d01b87f7cca4600351bb8bb0d4cf5d2c5fd6d2a57bbdb3dc"
+      "bytes": 8544,
+      "sha256": "556c015c0d77fcfa96b8d220f25444ea120231c6850b23f2d73a36bde93c8dd9"
     },
     "experiments/sigmetrics/test_plot_vldb_build_pipeline.py": {
       "bytes": 1505,
@@ -714,8 +714,8 @@
       "sha256": "17d02b21dfb241585476438ab7379cc7e866e167c2ec3208085d12e003e39f4f"
     },
     "experiments/sigmetrics/test_run_vldb_multicn_scaling_script.py": {
-      "bytes": 3403,
-      "sha256": "332bba231cf0d1fb63828d009877458f012d0bb7455ec627cfb2731354e994bd"
+      "bytes": 3540,
+      "sha256": "a4f736dd79c55d2542dd1a455ab708122e888b488b72a05e7e3a459b5ff13127"
     },
     "experiments/sigmetrics/test_run_vldb_query_profile.py": {
       "bytes": 6757,
@@ -1586,8 +1586,8 @@
       "sha256": "0590db3b8d255a3af91982ab710f3ace5fcaa52434020c9af8a4f141b00b68f3"
     },
     "paper_vldb/CLAIM_EVIDENCE_LEDGER.md": {
-      "bytes": 13005,
-      "sha256": "c6e1390551967b1450a919735871a554a2a0ac63fdacb769a93520779d2f6871"
+      "bytes": 13001,
+      "sha256": "b9fea85850997c207fd730a5000aea786af563899ab38f8f59f522b149d0f2c5"
     },
     "paper_vldb/PVLDB_SCOPE_SELF_ASSESSMENT.md": {
       "bytes": 3266,
