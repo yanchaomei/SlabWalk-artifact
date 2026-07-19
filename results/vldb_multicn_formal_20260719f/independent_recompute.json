@@ -1,0 +1,15 @@
+{
+  "assembler_sha256": "5bb51dc8c6c88da70043a6e29b162c0e022661aa2e4e54ff18cee3caa8463aee",
+  "byte_identical": true,
+  "campaign_id": "vldb-multicn-formal-20260719f",
+  "compared_files": {
+    "campaign.json": "0aca55d3a43b0f16a11992150a5bff58e577cd6035096ffc39f3e05940f3152c",
+    "gate.json": "1bfcbfe884041c3343c672ba8783b4403b67bf95a7f13a82a93040b05a13fb22",
+    "runs.csv": "327bed3d52cf94d14404b263c136db338feb7960097f17f47ce7dab4d97dd3f0",
+    "summary.csv": "afde9c2fbd0c3693732d167d4d00799856511c22bb1a1e7aec5338ec80fdd06b"
+  },
+  "input_manifest_sha256": "5a959e2e9f11c97972c73179d0ba91e96660024f15ee24910a7f7fe767bc6d6a",
+  "input_runs_sha256": "327bed3d52cf94d14404b263c136db338feb7960097f17f47ce7dab4d97dd3f0",
+  "kind": "vldb_multicn_independent_recompute",
+  "verified_utc": "2026-07-19T05:16:06.178273+00:00"
+}

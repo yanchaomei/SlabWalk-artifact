@@ -1,0 +1,54 @@
+{
+  "campaign_id": "vldb-multicn-formal-20260719f",
+  "cells": 27,
+  "dataset_checks": [
+    {
+      "dataset": "SIFT1M",
+      "slabwalk_3cn_scale_ci95_low": 1.872698813080554,
+      "slabwalk_3cn_scale_mean": 1.8964450660915186,
+      "slabwalk_fairness_ci95_low": {
+        "2": 0.9996626633037111,
+        "3": 0.9498023646509522
+      },
+      "slabwalk_max_recall_drift": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "DEEP1M",
+      "slabwalk_3cn_scale_ci95_low": 2.076518019556519,
+      "slabwalk_3cn_scale_mean": 2.095952483399171,
+      "slabwalk_fairness_ci95_low": {
+        "2": 0.9998938433222105,
+        "3": 0.9680823268551526
+      },
+      "slabwalk_max_recall_drift": 1.1102230246251565e-16
+    },
+    {
+      "dataset": "GIST1M",
+      "slabwalk_3cn_scale_ci95_low": 1.6598251132058683,
+      "slabwalk_3cn_scale_mean": 1.6872927193262732,
+      "slabwalk_fairness_ci95_low": {
+        "2": 0.9998190836437347,
+        "3": 0.9316401238059293
+      },
+      "slabwalk_max_recall_drift": 0.0
+    }
+  ],
+  "dhnsw_role": "reported as a measured partition-fetch endpoint; its recall is not silently matched or used to waive the SlabWalk scaling gate",
+  "kind": "vldb_multicn_promotion_gate",
+  "measured_rows": 135,
+  "promotion_failures": [
+    "SlabWalk SIFT1M 3-CN scale CI lower bound 1.873 is below 2.30",
+    "SlabWalk SIFT1M 3-CN fairness CI lower bound 0.950 is below 0.95",
+    "SlabWalk DEEP1M 3-CN scale CI lower bound 2.077 is below 2.30",
+    "SlabWalk GIST1M 3-CN scale CI lower bound 1.660 is below 2.30",
+    "SlabWalk GIST1M 3-CN fairness CI lower bound 0.932 is below 0.95"
+  ],
+  "promotion_ready": false,
+  "protocol_fingerprint": "3d307e42c0d412aafe221f2973d2a55b78b46ea919fe76421e3080367d3b17ec",
+  "source_files_verified": 135,
+  "thresholds": {
+    "slabwalk_max_recall_drift": 0.005,
+    "slabwalk_min_3cn_scale_ci95_low": 2.3,
+    "slabwalk_min_multicn_fairness_ci95_low": 0.95
+  }
+}

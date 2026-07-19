@@ -1,0 +1,161 @@
+{
+  "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+  "campaign_id": "vldb-multicn-formal-20260719f",
+  "cn_count": 2,
+  "dataset": "SIFT1M",
+  "groundtruth_canonical_sha256": "c1130328dffc9ac74262669f0879856786eb15dba7cb2d72d0af7d51efa680a6",
+  "initiator_local_latency": {
+    "p50_us": 10518.575,
+    "p99_us": 16631.791,
+    "samples": 5000
+  },
+  "kind": "vldb_multicn_raw_source",
+  "latency_scope": "not_reported_cross_cn_frozen_binary_boundary",
+  "metrics": {
+    "bytes_per_query": 898273.6892,
+    "expected_queries": 10000,
+    "failed_queries": 0,
+    "fairness": 0.9999569248334005,
+    "p50_us": null,
+    "p99_us": null,
+    "posts_per_query": 1760.152,
+    "processed_queries": 10000,
+    "qps": 3855.0,
+    "recall": 0.97661
+  },
+  "per_cn_qps": [
+    1953.2960087765498,
+    1927.8230261361455
+  ],
+  "protocol_fingerprint": "3d307e42c0d412aafe221f2973d2a55b78b46ea919fe76421e3080367d3b17ec",
+  "query_canonical_sha256": "bf4c4c9db385017e63e7b0a9ccd8e3aab3744a02e053c135e000fa0b1dea2d6f",
+  "raw_measurements": [
+    {
+      "client_id": 0,
+      "kind": "initiator_json",
+      "path": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/raw/graph/SIFT1M_SHINE_2cn_r4/c0.json",
+      "payload": {
+        "actual_total_local_buffer_size": 12419712,
+        "allocated_local_buffer_size": 4294967296,
+        "build": {
+          "dist_comps": 0,
+          "index_size": 0,
+          "max_level": 0,
+          "rdma_reads_in_bytes": 0,
+          "rdma_writes_in_bytes": 0,
+          "remote_allocations": 0
+        },
+        "cache": {
+          "cache_buckets_size": 3018160,
+          "cached_nodes": 0,
+          "hit_rate": 0.0,
+          "hits_total": 0,
+          "local_hit_rates": {
+            "c0": 0.0,
+            "c1": 0.0
+          },
+          "local_size": 0,
+          "misses_total": 0,
+          "num_cache_buckets": 75454,
+          "num_cooling_table_buckets": 1258
+        },
+        "distance": "squared_l2",
+        "estimated_total_index_size": 796799780,
+        "hnsw_parameters": {
+          "ef_construction": 100,
+          "ef_search": 100,
+          "k": 10,
+          "m": 16
+        },
+        "lavd_region_registered_bytes_per_mn": 0,
+        "lavd_region_registered_bytes_total": 0,
+        "lavd_region_requested_bytes": 0,
+        "lavd_region_resolved_bytes": 6442450944,
+        "meta": {
+          "compute_nodes": 2,
+          "compute_threads": 20,
+          "coroutines_per_thread": 2,
+          "dataset": "sift1m",
+          "hyperthreading": "true",
+          "label": "SIFT1M_SHINE_2cn_r4",
+          "memory_nodes": 1,
+          "query_suffix": "uniform",
+          "threads_pinned": "true",
+          "timestamp": {
+            "$date": "2026-07-19T02:00:19Z"
+          },
+          "zipf_parameter": "niform"
+        },
+        "neighborlist_size": 132,
+        "neighborlist_size_l0": 260,
+        "node_size": 528,
+        "num_queries": 10000,
+        "num_vectors": 1000000,
+        "queries": {
+          "compute_recall": "true",
+          "cwc_batched_reads": 0,
+          "cwc_batches": 0,
+          "dist_comps": 16499741,
+          "local_cn_read_bytes_gini": 0.0,
+          "local_cn_read_bytes_per_mn": [
+            4501074644
+          ],
+          "local_cn_read_submits_gini": 0.0,
+          "local_cn_read_submits_per_mn": [
+            8819227
+          ],
+          "local_cn_read_wrs_gini": 0.0,
+          "local_cn_read_wrs_per_mn": [
+            8819227
+          ],
+          "local_latency_p50_us": 10518.575,
+          "local_latency_p95_us": 12847.068000000001,
+          "local_latency_p99_us": 16631.791,
+          "local_latency_samples": 5000,
+          "posts_l0": 0,
+          "posts_rerank": 0,
+          "posts_upnav": 0,
+          "processed": 10000,
+          "processed_local": {
+            "c0": 5000,
+            "c1": 5000
+          },
+          "queries_per_sec": 3855,
+          "rdma_cqes": 17601520,
+          "rdma_posts": 17601520,
+          "rdma_reads_in_bytes": 8982736892,
+          "rdma_writes_in_bytes": 0,
+          "rdma_wrs": 17601520,
+          "recall": 0.97661,
+          "rerank_chunks": 0,
+          "visited_neighborlists": 1111739,
+          "visited_nodes": 1122172,
+          "visited_nodes_l0": 15367569
+        },
+        "query_contexts": 10,
+        "timings": {
+          "build_c0": 0.0,
+          "build_c1": 0.0,
+          "build_max": 0.0,
+          "placement_fetch": 42.043406999999995,
+          "placement_kmeans": 30.486207999999998,
+          "query_c0": 2559.775875,
+          "query_c1": 2593.5990659999998,
+          "query_max": 2593.5990659999998,
+          "routing": 0.0
+        }
+      },
+      "sha256": "5c2d74f491e5059a1259d626da2a24c7c9d7cb6c0ab9858946181307e2fb8596"
+    },
+    {
+      "client_id": 1,
+      "kind": "noninitiator_stderr",
+      "log": "============================================================\n                        CLIENT\n============================================================\nconnect to:                   [skv-node4, \b\b]\nis initiator:                 false\nTCP port:                     14224\nIB port:                      1\nmax outstanding CQEs:         16\nmax send work requests:       1024\nmax receive work requests:    1024\n============================================================\nindex region bytes:           4294967296\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\nnum_cores: 80\nphysical cores per socket: 20\nhyperthreading enabled\ninterleaved policy\n[STATUS]: LAVD neighborhood region: requested bytes=0, resolved bytes=6442450944\nconnect to initiator\npairing: 10108 -- 212297\nclient id: 1\nnumber of clients: 2\nconnect to server skv-node4\npairing: 10109 -- 10650\n[STATUS]: pinned main thread to core 20\n[STATUS]: receive access tokens of remote memory regions\n[STATUS]: LAVD neighborhood region: registered bytes per MN=0\nreading input data... (dim=128, num vectors=5000/10000, filesize=5120008)\nreading input data... (dim=100, num vectors=10000/10000, filesize=4000008)\n[STATUS]: allocate worker threads and read buffers\nallocated ALIGNED MEM (no hugepage) at 139836639502400 with buffer size 4294967296\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10110 -- 10662\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10111 -- 10663\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10112 -- 10664\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10113 -- 10665\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10114 -- 10666\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10115 -- 10667\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10116 -- 10668\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10117 -- 10669\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10118 -- 10670\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10119 -- 10671\n[STATUS]: synchronize compute nodes\n[STATUS]: construct placement datastructure\n  fetched 20 nodes on level 4\n  fetched 259 nodes on level 3\n  fetched 3923 nodes on level 2\n[STATUS]: run balanced k-means\nrun kmeans\ncluster sizes:\n  cluster 0: 1920\n  cluster 1: 2003\n  final iteration: 5, final error: 0\nrun balanced kmeans\nnum iterations: 75\nreported cluster sizes:\n  cluster 0: 1961\n  cluster 1: 1962\nactual cluster sizes:\n  cluster 0: 1922\n  cluster 1: 2001\nfinal cluster sizes:\n  cluster 0: 1922\n  cluster 1: 2001\nfinal mapping: 0 1 \n[STATUS]: synchronize compute nodes\n[STATUS]: run queries\nallocated ALIGNED MEM (no hugepage) at 139836627132480 with buffer size 832000\nrouting buffer size: 832000\n[STATUS]: **QUERY**: running worker threads...\n[STATUS]: pinned thread 1 to core 0\n[STATUS]: pinned thread 2 to core 21\n[STATUS]: pinned thread 3 to core 1\n[STATUS]: pinned thread 4 to core 22\n[STATUS]: pinned thread 5 to core 2\n[STATUS]: pinned thread 6 to core 23\n[STATUS]: pinned thread 7 to core 3\n[STATUS]: pinned thread 8 to core 24\n[STATUS]: pinned thread 9 to core 4\nquery 1/10000\nquery 2001/10000\nquery 4001/10000\nquery 6001/10000\nquery 8001/10000\n[STATUS]: join compute threads\nt0 processed: 512, CHR: 0\nt1 processed: 488, CHR: 0\nt2 processed: 521, CHR: 0\nt3 processed: 493, CHR: 0\nt4 processed: 490, CHR: 0\nt5 processed: 487, CHR: 0\nt6 processed: 514, CHR: 0\nt7 processed: 528, CHR: 0\nt8 processed: 488, CHR: 0\nt9 processed: 479, CHR: 0\n[STATUS]: processed queries: 5000\n[STATUS]: local recall: 0.976060\n[STATUS]: collect statistics and timings from compute nodes\n{\"build_c0\":0.0,\"placement_fetch\":42.042867,\"placement_kmeans\":32.605751,\"query_c0\":2593.5990659999998,\"routing\":0.0}\ncache histogram\n  size: 0 | freq: 75454\ntotal entries: 0\ncooling table histogram\n  size: 0 | freq: 1258\n  size: 1 | freq: 0\n  size: 2 | freq: 0\n  size: 3 | freq: 0\n  size: 4 | freq: 0\n  size: 5 | freq: 0\n  size: 6 | freq: 0\nCT total entries: 0\n",
+      "path": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/raw/graph/SIFT1M_SHINE_2cn_r4/c1.stderr",
+      "processed_queries": 5000,
+      "sha256": "3804760c78cc9298a78ee69f26e4195a9a962b16004bac8a95751cf054858eaf"
+    }
+  ],
+  "repeat": 4,
+  "system": "SHINE"
+}

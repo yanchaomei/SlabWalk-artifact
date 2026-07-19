@@ -15,6 +15,7 @@ from pathlib import Path, PurePosixPath
 from typing import Iterable
 
 import vldb_evidence_bundle as evidence_bundle
+import seal_vldb_multicn_campaign as multicn_seal
 
 
 ROOT_FILES = {
@@ -30,6 +31,10 @@ TREE_ROOTS = (
     "experiments/sigmetrics",
     "experiments/tools",
     "results/vldb_final_evidence",
+)
+
+OPTIONAL_SEALED_MULTICN_ROOTS = (
+    "results/vldb_multicn_formal_20260719f",
 )
 
 PAPER_FILES = (
@@ -125,26 +130,51 @@ def require_regular(path: Path) -> Path:
     return path
 
 
-def release_pdf_paths(repo_root: Path) -> list[Path]:
+def release_entry_paths(repo_root: Path) -> list[Path]:
     manifest_path = require_regular(
         repo_root / "results/vldb_final_evidence/release_bundle.json"
     )
     manifest = json.loads(manifest_path.read_text())
     if manifest.get("kind") != "vldb_release_bundle":
         raise ValueError("release manifest kind mismatch")
+    entries = manifest.get("entries")
     targets = manifest.get("publication_pdf_targets")
+    if not isinstance(entries, dict) or not entries:
+        raise ValueError("release manifest has no entries")
     if not isinstance(targets, list) or not targets:
         raise ValueError("release manifest has no publication PDF targets")
-    paths: list[Path] = []
-    for raw in targets:
-        if not isinstance(raw, str) or PurePosixPath(raw).suffix.lower() != ".pdf":
-            raise ValueError(f"invalid publication PDF target: {raw!r}")
-        path = require_regular(repo_root / PurePosixPath(raw))
+    paths: dict[str, Path] = {}
+    for raw, record in entries.items():
+        relative = PurePosixPath(raw) if isinstance(raw, str) else None
+        if (
+            relative is None
+            or relative.is_absolute()
+            or ".." in relative.parts
+            or relative.as_posix() != raw
+            or not isinstance(record, dict)
+        ):
+            raise ValueError(f"invalid release entry: {raw!r}")
+        path = require_regular(repo_root / relative)
         path.resolve(strict=True).relative_to(repo_root)
-        paths.append(path)
-    if len(paths) != len(set(paths)):
+        data = path.read_bytes()
+        if (
+            record.get("sha256") != sha256_bytes(data)
+            or record.get("size_bytes") != len(data)
+        ):
+            raise ValueError(f"release entry digest or size mismatch: {raw}")
+        paths[raw] = path
+    if len(paths) != len(entries):
+        raise ValueError("duplicate release entry")
+    for raw in targets:
+        if (
+            not isinstance(raw, str)
+            or PurePosixPath(raw).suffix.lower() != ".pdf"
+            or raw not in paths
+        ):
+            raise ValueError(f"invalid publication PDF target: {raw!r}")
+    if len(targets) != len(set(targets)):
         raise ValueError("duplicate publication PDF target")
-    return paths
+    return list(paths.values())
 
 
 def collect_sources(repo_root: Path) -> dict[str, Path]:
@@ -172,11 +202,19 @@ def collect_sources(repo_root: Path) -> dict[str, Path]:
         for source in regular_files(tree_root, preserve_ignored=preserve_ignored):
             add(canonical_relative(source, repo_root), source)
 
+    for tree_name in OPTIONAL_SEALED_MULTICN_ROOTS:
+        tree_root = repo_root / tree_name
+        if not tree_root.exists():
+            continue
+        multicn_seal.verify_campaign(tree_root)
+        for source in regular_files(tree_root, preserve_ignored=True):
+            add(canonical_relative(source, repo_root), source)
+
     for relative in PAPER_FILES:
         path = repo_root / relative
         if path.exists():
             add(relative, path)
-    for path in release_pdf_paths(repo_root):
+    for path in release_entry_paths(repo_root):
         add(canonical_relative(path, repo_root), path)
 
     return dict(sorted(sources.items()))
@@ -235,6 +273,11 @@ def build_public_artifact(
         raise ValueError("public artifact output must be outside the source repository")
 
     if output.exists():
+        git_metadata = output / ".git"
+        if git_metadata.exists() or git_metadata.is_symlink():
+            raise ValueError(
+                f"refusing to replace Git checkout; build into a staging path: {output}"
+            )
         if not force:
             raise FileExistsError(f"artifact output already exists: {output}")
         if not safe_existing_artifact(output):
@@ -248,7 +291,22 @@ def build_public_artifact(
         for relative, data in payloads.items()
     }
     release_manifest = payloads["results/vldb_final_evidence/release_bundle.json"]
+    diagnostic_campaigns = []
+    for tree_name in OPTIONAL_SEALED_MULTICN_ROOTS:
+        seal_name = f"{tree_name}/{multicn_seal.SEAL_NAME}"
+        if seal_name not in payloads:
+            continue
+        seal = json.loads(payloads[seal_name])
+        diagnostic_campaigns.append(
+            {
+                "campaign_id": seal["campaign_id"],
+                "path": tree_name,
+                "promotion_ready": seal["promotion_ready"],
+                "seal_sha256": sha256_bytes(payloads[seal_name]),
+            }
+        )
     manifest = {
+        "diagnostic_multicn_campaigns": diagnostic_campaigns,
         "file_count": len(records),
         "files": records,
         "kind": "slabwalk_public_artifact",
@@ -272,6 +330,10 @@ def build_public_artifact(
             target.write_bytes(data)
             target.chmod(0o755 if os.access(sources[relative], os.X_OK) else 0o644)
         verify_sealed_evidence(temporary / "results/vldb_final_evidence")
+        for tree_name in OPTIONAL_SEALED_MULTICN_ROOTS:
+            tree_root = temporary / tree_name
+            if tree_root.exists():
+                multicn_seal.verify_campaign(tree_root)
         (temporary / "SHA256SUMS").write_bytes(checksums)
         (temporary / "artifact_manifest.json").write_bytes(manifest_bytes)
         if output.exists():

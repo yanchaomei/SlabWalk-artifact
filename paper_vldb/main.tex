@@ -1138,10 +1138,12 @@ and the replay control rewrites fixed-stride records only while service is
 paused.  It does not establish concurrent insertion, reader isolation, atomic
 version switching, or failure recovery.  Multi-CN deployment has a similarly
 clear boundary: each CN replicates the resident upper graph and address tables,
-while all CNs can compute a Slab owner from the descriptor.  Our experiments
-measure one issuing CN and passive-MN striping; they do not establish aggregate
-multi-CN throughput scaling.  Online maintenance and coordinated version
-admission remain separate database responsibilities.
+while all CNs can compute a Slab owner from the descriptor.  A separate
+fixed-pool diagnostic across SIFT, DEEP, and GIST preserved recall but failed
+its preregistered three-CN scaling gate on all three datasets and its fairness
+gate on SIFT and GIST.  We retain that complete negative campaign in the
+artifact and make no aggregate multi-CN throughput claim.  Online maintenance
+and coordinated version admission remain separate database responsibilities.
 
 %================================================================
 \section{Related Work}

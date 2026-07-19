@@ -303,7 +303,7 @@
     "recall_floor": 0.9,
     "recall_tolerance": 0.002
   },
-  "gate_sha256": "34af8abc8c5f3a2c7f77cc57ed1f52118933b0d000136c99ab6d35c1b0a58426",
+  "gate_sha256": "899493c0dd96cbf6aecc26945622e872bc142dbc4d46812d58cf920cfd0555ce",
   "kind": "vldb_manuscript_claims",
   "lifecycle_boundaries": {
     "refresh": {
@@ -892,7 +892,7 @@
     "cache_summary": "e127ea23882e1e179e7b3e305cb13db6683f5b81c4ab18afe7c8f5f74d4f0474",
     "colocation_summary": "2ec6f3423e083e37e72d0b635474e242e76b2d5ef83eb7feca894294b3024024",
     "frontier_summary": "1af538c8f7f66857d3c932727c9ff8dda44c0c0757bf041aae8b1633de091304",
-    "headline": "e348bbd05e7d96944d47a85fc261fec3a89e18776517c9e9e3381f1650640cc1",
+    "headline": "62142cc4d409e96abceeb0e1993ec5eb9cf6438b676c49710e250050f2174427",
     "lifecycle_refresh": "7577f2d82eb1f2dddcf6025c474f31e7f117f4835ff0911f7b13652ed71075d0",
     "lifecycle_tti": "4f00909dac644acb14a930591fc293ad721435983b55089d2062b1fc6e3a6f16",
     "physical_design_advisor_report": "af374020e15ae5a481a2cff07e720d8bbee2c0bba4aa5c22a146d04068dab030",

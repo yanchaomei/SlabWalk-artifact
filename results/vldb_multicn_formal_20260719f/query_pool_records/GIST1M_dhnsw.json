@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-19T04:53:21.329671+00:00",
+  "dataset": "GIST1M",
+  "groundtruth": {
+    "bytes": 404000,
+    "canonical_ids_sha256": "3e0d1ab10df27c25f964992fec6c60a883d2ca627b481388b677c2d62aaa8212",
+    "file_sha256": "01f7eda9dc98600c6288f606e55f94f13ae95f8b07d818572260440062d609f6",
+    "format": "ivecs",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/hnsw-data/gist/gist_groundtruth.ivecs",
+    "rows": 1000,
+    "source_rows": 1000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 1000,
+  "method": "d-HNSW",
+  "metric": "l2",
+  "query": {
+    "bytes": 3844000,
+    "canonical_sha256": "5779751c3b63bee0a0c52a0017232ca2340af0527eb0f79270ae09c010423eea",
+    "dim": 960,
+    "file_sha256": "0d1d620049de12da455ed7201e97cbab372c4d54d0e6dedbc8c503f62c911299",
+    "format": "fvecs",
+    "path": "/home/kvgroup/chaomei/hnsw-data/gist/gist_query.fvecs",
+    "rows": 1000,
+    "source_rows": 1000
+  }
+}

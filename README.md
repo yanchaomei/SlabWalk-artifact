@@ -7,8 +7,9 @@ one level-0 graph expansion with one remote read.
 
 The artifact contains the implementation, experiment harnesses, promoted raw
 measurements, aggregate tables, query-pool fingerprints, generated claim
-macros, the sealed physical-design-advisor split, and the nine figures bound to
-the manuscript release. Datasets and d-HNSW are not redistributed; their
+macros, the sealed physical-design-advisor split, the complete negative
+multi-CN diagnostic, and the nine figures bound to the manuscript release.
+Datasets and d-HNSW are not redistributed; their
 preparation and pinned baseline workflow are documented in
 [`experiments/README.md`](experiments/README.md).
 
@@ -61,6 +62,21 @@ split, and checks both the per-cell and geometric-mean held-out gates. It is an
 offline selector over measured candidates; it is not an online or predictive
 optimizer.
 
+The non-promoted multi-CN diagnostic is under
+`results/vldb_multicn_formal_20260719f/`. Its 135-cell matrix failed the fixed
+SlabWalk scaling/fairness gate and is retained as a boundary result. Verify its
+complete relocated tree with:
+
+```bash
+python3 experiments/sigmetrics/seal_vldb_multicn_campaign.py verify \
+  --root results/vldb_multicn_formal_20260719f
+```
+
+Its `MULTICN_SEALED.json` SHA-256 is
+`88ecc25d1228af5f6331b728c1084b6d8d1f13db4f960040f0334a3d20d61356`.
+The top-level artifact manifest records this campaign separately with
+`promotion_ready=false`; it is not a publication-release input.
+
 ## Building SlabWalk
 
 The implementation targets Linux with GCC 12, CMake, a C++20 standard library,
@@ -105,10 +121,10 @@ partition-fetch path and record the compatibility patch and runtime bundle.
 - Derived-state refresh is evaluated offline with serving paused.
 - Compact scoring can alter beam order; the retained TTI experiment is a
   representation boundary, not a compression-only causal claim.
-- The promoted release does not claim aggregate multi-CN scale-out. A separate
-  fixed-gate multi-CN campaign is retained as diagnostic evidence and may enter
-  the paper only if its complete sealed matrix passes the preregistered scaling,
-  recall-drift, and per-CN-fairness thresholds.
+- The promoted release does not claim aggregate multi-CN scale-out. The complete
+  fixed-gate campaign preserves SlabWalk recall but fails the preregistered
+  three-CN scaling gate on SIFT, DEEP, and GIST and the fairness gate on SIFT
+  and GIST. It remains sealed diagnostic evidence outside the release bundle.
 
 ## License
 

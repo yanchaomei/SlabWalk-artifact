@@ -16,6 +16,7 @@ from matplotlib.figure import Figure
 import aggregate_frontier_repeats as aggregate
 import assemble_vldb_query_profile as query_profile_assembler
 import assemble_vldb_lifecycle_controls as lifecycle_assembler
+import publication_metadata
 import publish_vldb_release as release
 import summarize_vldb_resource_ledger as resource_summary
 from test_assemble_vldb_query_profile import QueryProfileAssemblerTest
@@ -56,6 +57,44 @@ def write_valid_landscape_pdf(path: Path, label: str) -> None:
 
 
 class FinalFigurePipelineTest(unittest.TestCase):
+    def test_publication_paths_are_stable_after_relocation(self) -> None:
+        with (
+            tempfile.TemporaryDirectory() as first_tmp,
+            tempfile.TemporaryDirectory() as second_tmp,
+        ):
+            first = Path(first_tmp)
+            second = Path(second_tmp)
+            first_report = {
+                "directory": str(first / "results/evidence/frontier"),
+                "nested": [
+                    {"runs_csv": str(first / "results/evidence/runs.csv")},
+                    "/home/kvgroup/chaomei/query.fbin",
+                ],
+            }
+            second_report = {
+                "directory": str(second / "results/evidence/frontier"),
+                "nested": [
+                    {"runs_csv": str(second / "results/evidence/runs.csv")},
+                    "/home/kvgroup/chaomei/query.fbin",
+                ],
+            }
+
+            normalized_first = publication_metadata.normalize_publication_paths(
+                first_report, first
+            )
+            normalized_second = publication_metadata.normalize_publication_paths(
+                second_report, second
+            )
+
+            self.assertEqual(normalized_first, normalized_second)
+            self.assertEqual(
+                normalized_first["directory"], "results/evidence/frontier"
+            )
+            self.assertEqual(
+                normalized_first["nested"][1],
+                "/home/kvgroup/chaomei/query.fbin",
+            )
+
     def test_release_defaults_to_verified_auto_renderer(self) -> None:
         script = Path(__file__).with_name("generate_vldb_final_figures.sh")
         self.assertIn(

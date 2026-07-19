@@ -1,0 +1,25 @@
+{
+  "campaign_id": "vldb-multicn-formal-20260719f",
+  "campaign_sha256": "5a959e2e9f11c97972c73179d0ba91e96660024f15ee24910a7f7fe767bc6d6a",
+  "cells": 27,
+  "gate_sha256": "1bfcbfe884041c3343c672ba8783b4403b67bf95a7f13a82a93040b05a13fb22",
+  "harness_manifest_sha256": "de6c93534ae81799f623ce70a3182bc706ac159cc90d2d48f90ae8f5812a4ef2",
+  "inventory": "MULTICN_SHA256SUMS",
+  "inventory_sha256": "18170798616ab369acc587ff41c625bea22fdbfa2a43322d81ee95f175fd1823",
+  "kind": "vldb_multicn_campaign_seal",
+  "measured_rows": 135,
+  "promotion_failures": [
+    "SlabWalk SIFT1M 3-CN scale CI lower bound 1.873 is below 2.30",
+    "SlabWalk SIFT1M 3-CN fairness CI lower bound 0.950 is below 0.95",
+    "SlabWalk DEEP1M 3-CN scale CI lower bound 2.077 is below 2.30",
+    "SlabWalk GIST1M 3-CN scale CI lower bound 1.660 is below 2.30",
+    "SlabWalk GIST1M 3-CN fairness CI lower bound 0.932 is below 0.95"
+  ],
+  "promotion_ready": false,
+  "protocol_fingerprint": "3d307e42c0d412aafe221f2973d2a55b78b46ea919fe76421e3080367d3b17ec",
+  "runner_log_sha256": "22a7efcc2bee5e137d850a4dbaf765d31db7b1b432dae5155912c104f9f6acad",
+  "schema_version": 1,
+  "sealed_file_count": 734,
+  "sealed_utc": "2026-07-19T05:16:46.774970+00:00",
+  "source_files_verified": 135
+}

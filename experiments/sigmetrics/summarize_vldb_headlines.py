@@ -12,7 +12,7 @@ import os
 from pathlib import Path
 
 import plot_vldb_frontier_10m as frontier_plot
-from publication_metadata import publication_timestamp
+from publication_metadata import normalize_publication_paths, publication_timestamp
 
 
 def file_sha256(path: Path) -> str:
@@ -191,6 +191,7 @@ def summarize(
     *,
     recall_tolerance: float = 0.002,
     recall_floor: float = 0.90,
+    path_root: Path | None = None,
 ) -> None:
     report = derive(
         summary,
@@ -198,6 +199,8 @@ def summarize(
         recall_tolerance=recall_tolerance,
         recall_floor=recall_floor,
     )
+    if path_root is not None:
+        report = normalize_publication_paths(report, path_root)
     out.parent.mkdir(parents=True, exist_ok=True)
     temporary = out.with_name(f".{out.name}.tmp.{os.getpid()}")
     try:
@@ -217,6 +220,7 @@ def main() -> None:
     parser.add_argument("--gate", type=Path, required=True)
     parser.add_argument("--recall-tolerance", type=float, default=0.002)
     parser.add_argument("--recall-floor", type=float, default=0.90)
+    parser.add_argument("--path-root", type=Path)
     parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()
     summarize(
@@ -225,6 +229,7 @@ def main() -> None:
         args.out,
         recall_tolerance=args.recall_tolerance,
         recall_floor=args.recall_floor,
+        path_root=args.path_root,
     )
     print(f"wrote {args.out}")
 

@@ -1,0 +1,336 @@
+query_data_path: ../datasets/gist/gist_query.fvecs
+Reading from vector 1 to -1
+Seekg position: 0 bytes
+Each vector size: 3844 bytes (dim=960)
+Reading 1000 vectors
+Reading 1000 vectors
+QUERY_GT_SHAPE query_rows=1000 ground_truth_rows=1000 query_rows_per_ground_truth=1
+original_n_query_data = 1000
+sampling_mod = 1, sampling_count = 0
+query_data.size(): 960000
+ground_truth.size(): 100000
+FRONTIER_QUERY_POOL total_queries=1000 threads=10 top_k=10 fixed=1
+queries_per_thread: 100
+ground_truth.size(): 100000
+Using physical cores only (skipping hyperthreads)
+[35m[search_client_pipelined_reuse_thread.cc:234] Thread 0 fetch QP authentication key: 1102520059
+[0m[35m[search_client_pipelined_reuse_thread.cc:238] Thread 0 RDMA resources initialized
+[0m[35m[search_client_pipelined_reuse_thread.cc:234] Thread 1 fetch QP authentication key: 2044897763
+[0m[35m[search_client_pipelined_reuse_thread.cc:238] Thread 1 RDMA resources initialized
+[0m[35m[search_client_pipelined_reuse_thread.cc:234] Thread 2 fetch QP authentication key: 1967513926
+[0m[35m[search_client_pipelined_reuse_thread.cc:238] Thread 2 RDMA resources initialized
+[0m[35m[search_client_pipelined_reuse_thread.cc:234] Thread 3 fetch QP authentication key: 1365180540
+[0m[35m[search_client_pipelined_reuse_thread.cc:238] Thread 3 RDMA resources initialized
+[0m[35m[search_client_pipelined_reuse_thread.cc:234] Thread 4 fetch QP authentication key: 1540383426
+[0m[35m[search_client_pipelined_reuse_thread.cc:238] Thread 4 RDMA resources initialized
+[0m[35m[search_client_pipelined_reuse_thread.cc:234] Thread 5 fetch QP authentication key: 304089172
+[0m[35m[search_client_pipelined_reuse_thread.cc:238] Thread 5 RDMA resources initialized
+[0m[35m[search_client_pipelined_reuse_thread.cc:234] Thread 6 fetch QP authentication key: 1303455736
+[0m[35m[search_client_pipelined_reuse_thread.cc:238] Thread 6 RDMA resources initialized
+[0m[35m[search_client_pipelined_reuse_thread.cc:234] Thread 7 fetch QP authentication key: 35005211
+[0m[35m[search_client_pipelined_reuse_thread.cc:238] Thread 7 RDMA resources initialized
+[0m[35m[search_client_pipelined_reuse_thread.cc:234] Thread 8 fetch QP authentication key: 521595368
+[0m[35m[search_client_pipelined_reuse_thread.cc:238] Thread 8 RDMA resources initialized
+[0m[35m[search_client_pipelined_reuse_thread.cc:234] Thread 9 fetch QP authentication key: 294702567
+[0m[35m[search_client_pipelined_reuse_thread.cc:238] Thread 9 RDMA resources initialized
+[0m=== gRPC Service Parameters Debug ===
+epoch: 0
+rdma_base_offset: 0
+serialized_meta_hnsw size: 493450 bytes
+offset size: 240 elements
+offset_para size: 1080 elements
+overflow size: 360 elements
+mapping size: 120 elements
+Thread 0 local_hnsw mapping size: === gRPC Service Parameters Debug ===
+epoch: 0
+rdma_base_offset: 0
+serialized_meta_hnsw size: 493450 bytes
+offset size: 240 elements
+offset_para size: 1080 elements
+overflow size: 360 elements
+mapping size: 120 elements
+Thread 1 local_hnsw mapping size: 120
+fetch_worker start
+=== Thread 0 testing EF = 300 for 20 seconds ===
+search_worker start
+deserialize_worker start
+120
+fetch_worker start
+deserialize_worker start
+=== gRPC Service Parameters Debug ===
+epoch: 0
+rdma_base_offset: 0
+serialized_meta_hnsw size: 493450 bytes
+offset size: 240 elements
+offset_para size: 1080 elements
+overflow size: 360 elements
+mapping size: 120 elements
+Thread 2 local_hnsw mapping size: search_worker start
+=== Thread 1 testing EF = 300 for 20 seconds ===
+120
+fetch_worker start
+deserialize_worker start
+=== Thread 2 testing EF = 300 for 20 seconds ===
+search_worker start
+=== gRPC Service Parameters Debug ===
+epoch: 0
+rdma_base_offset: 0
+serialized_meta_hnsw size: 493450 bytes
+offset size: 240 elements
+offset_para size: 1080 elements
+overflow size: 360 elements
+mapping size: 120 elements
+Thread 3 local_hnsw mapping size: 120
+fetch_worker start
+deserialize_worker start
+search_worker start
+=== Thread 3 testing EF = 300 for 20 seconds ===
+=== gRPC Service Parameters Debug ===
+epoch: 0
+rdma_base_offset: 0
+serialized_meta_hnsw size: 493450 bytes
+offset size: 240 elements
+offset_para size: 1080 elements
+overflow size: 360 elements
+mapping size: 120 elements
+Thread 4 local_hnsw mapping size: 120
+fetch_worker start
+deserialize_worker start
+search_worker start
+=== Thread 4 testing EF = 300 for 20 seconds ===
+=== gRPC Service Parameters Debug ===
+epoch: 0
+rdma_base_offset: 0
+serialized_meta_hnsw size: 493450 bytes
+offset size: 240 elements
+offset_para size: 1080 elements
+overflow size: 360 elements
+mapping size: 120 elements
+Thread 5 local_hnsw mapping size: 120
+fetch_worker start
+deserialize_worker start
+=== Thread 5 testing EF = 300 for 20 seconds ===
+search_worker start
+=== gRPC Service Parameters Debug ===
+epoch: 0
+rdma_base_offset: 0
+serialized_meta_hnsw size: 493450 bytes
+offset size: 240 elements
+offset_para size: 1080 elements
+overflow size: 360 elements
+mapping size: 120 elements
+Thread 6 local_hnsw mapping size: 120
+fetch_worker start
+deserialize_worker start
+search_worker start
+=== Thread 6 testing EF = 300 for 20 seconds ===
+=== gRPC Service Parameters Debug ===
+epoch: 0
+rdma_base_offset: 0
+serialized_meta_hnsw size: 493450 bytes
+offset size: 240 elements
+offset_para size: 1080 elements
+overflow size: 360 elements
+mapping size: 120 elements
+Thread 7 local_hnsw mapping size: 120
+fetch_worker start
+deserialize_worker start
+=== Thread 7 testing EF = 300 for 20 seconds ===
+search_worker start
+=== gRPC Service Parameters Debug ===
+epoch: 0
+rdma_base_offset: 0
+serialized_meta_hnsw size: 493450 bytes
+offset size: 240 elements
+offset_para size: 1080 elements
+overflow size: 360 elements
+mapping size: 120 elements
+Thread 8 local_hnsw mapping size: 120
+fetch_worker start
+deserialize_worker start
+search_worker start
+=== Thread 8 testing EF = 300 for 20 seconds ===
+=== gRPC Service Parameters Debug ===
+epoch: 0
+rdma_base_offset: 0
+serialized_meta_hnsw size: 493450 bytes
+offset size: 240 elements
+offset_para size: 1080 elements
+overflow size: 360 elements
+mapping size: 120 elements
+Thread 9 local_hnsw mapping size: 120
+fetch_worker start
+deserialize_worker start
+search_worker start
+=== Thread 9 testing EF = 300 for 20 seconds ===
+[39m[reporter.hh:42] [Batch 0] Compute: 4,187,633.00 ms, Network: 565,151.00 ms, Deserialize: 2,708,722.00 ms, Meta Search: 3,004.00 ms, Throughput: 16.10 qps, Total Time: 6,210,629.00 ms
+[0mThread 2 EF 300 benchmark:
+  Queries executed: 100
+  Avg total latency: 62106.3 us
+  Avg meta search latency: 30.04 us
+  Avg compute time: 41876.3 us
+  Avg network latency: 5651.51 us
+  Avg deserialize time: 27087.2 us
+  Recall: 0.723
+  Throughput: 16.0934 QPS
+FRONTIER_THREAD_RESULT ef=300 thread=2 queries=100 elapsed_s=6.213736139 recall=0.722999990
+[35m[search_client_pipelined_reuse_thread.cc:581] Thread 2 returns
+[0m[39m[reporter.hh:42] [Batch 0] Compute: 4,138,723.00 ms, Network: 580,739.00 ms, Deserialize: 2,786,617.00 ms, Meta Search: 3,991.00 ms, Throughput: 16.08 qps, Total Time: 6,219,516.00 ms
+[0mThread 1 EF 300 benchmark:
+  Queries executed: 100
+  Avg total latency: 62195.2 us
+  Avg meta search latency: 39.91 us
+  Avg compute time: 41387.2 us
+  Avg network latency: 5807.39 us
+  Avg deserialize time: 27866.2 us
+  Recall: 0.795
+  Throughput: 16.0713 QPS
+FRONTIER_THREAD_RESULT ef=300 thread=1 queries=100 elapsed_s=6.222253930 recall=0.795000017
+[35m[search_client_pipelined_reuse_thread.cc:581] Thread 1 returns
+[0m[39m[reporter.hh:42] [Batch 0] Compute: 4,286,595.00 ms, Network: 554,497.00 ms, Deserialize: 3,215,347.00 ms, Meta Search: 9,999.00 ms, Throughput: 15.68 qps, Total Time: 6,378,572.00 ms
+[0mThread 0 EF 300 benchmark:
+  Queries executed: 100
+  Avg total latency: 63785.7 us
+  Avg meta search latency: 99.99 us
+  Avg compute time: 42866 us
+  Avg network latency: 5544.97 us
+  Avg deserialize time: 32153.5 us
+  Recall: 0.835
+  Throughput: 15.6706 QPS
+FRONTIER_THREAD_RESULT ef=300 thread=0 queries=100 elapsed_s=6.381390766 recall=0.834999979
+[35m[search_client_pipelined_reuse_thread.cc:581] Thread 0 returns
+[0m[39m[reporter.hh:42] [Batch 0] Compute: 4,370,467.00 ms, Network: 584,320.00 ms, Deserialize: 4,897,783.00 ms, Meta Search: 11,013.00 ms, Throughput: 11.27 qps, Total Time: 8,870,508.00 ms
+[0m[39m[reporter.hh:42] [Batch 0] Compute: 4,236,750.00 ms, Network: 594,320.00 ms, Deserialize: 4,890,235.00 ms, Meta Search: 10,382.00 ms, Throughput: 11.27 qps, Total Time: 8,874,539.00 ms
+[0mThread 5 EF 300 benchmark:
+  Queries executed: 100
+  Avg total latency: 88705.1 us
+  Avg meta search latency: 110.13 us
+  Avg compute time: 43704.7 us
+  Avg network latency: 5843.2 us
+  Avg deserialize time: 48977.8 us
+  Recall: 0.759
+  Throughput: 11.2663 QPS
+FRONTIER_THREAD_RESULT ef=300 thread=5 queries=100 elapsed_s=8.876036081 recall=0.759000003
+[35m[search_client_pipelined_reuse_thread.cc:581] Thread 5 returns
+[0mThread 7 EF 300 benchmark:
+  Queries executed: 100
+  Avg total latency: 88745.4 us
+  Avg meta search latency: 103.82 us
+  Avg compute time: 42367.5 us
+  Avg network latency: 5943.2 us
+  Avg deserialize time: 48902.3 us
+  Recall: 0.745
+  Throughput: 11.2619 QPS
+FRONTIER_THREAD_RESULT ef=300 thread=7 queries=100 elapsed_s=8.879459102 recall=0.745000005
+[35m[search_client_pipelined_reuse_thread.cc:581] Thread 7 returns
+[0m[39m[reporter.hh:42] [Batch 0] Compute: 4,086,965.00 ms, Network: 6,880,646.00 ms, Deserialize: 4,788,067.00 ms, Meta Search: 3,107.00 ms, Throughput: 7.09 qps, Total Time: 14,098,361.00 ms
+[0mThread 6 EF 300 benchmark:
+  Queries executed: 100
+  Avg total latency: 140984 us
+  Avg meta search latency: 31.07 us
+  Avg compute time: 40869.7 us
+  Avg network latency: 68806.5 us
+  Avg deserialize time: 47880.7 us
+  Recall: 0.791
+  Throughput: 7.09084 QPS
+FRONTIER_THREAD_RESULT ef=300 thread=6 queries=100 elapsed_s=14.102703003 recall=0.791000009
+[35m[search_client_pipelined_reuse_thread.cc:581] Thread 6 returns
+[0m[39m[reporter.hh:42] [Batch 0] Compute: 4,181,075.00 ms, Network: 7,068,694.00 ms, Deserialize: 4,512,374.00 ms, Meta Search: 3,989.00 ms, Throughput: 7.04 qps, Total Time: 14,205,448.00 ms
+[0mThread 8 EF 300 benchmark:
+  Queries executed: 100
+  Avg total latency: 142054 us
+  Avg meta search latency: 39.89 us
+  Avg compute time: 41810.8 us
+  Avg network latency: 70686.9 us
+  Avg deserialize time: 45123.7 us
+  Recall: 0.759
+  Throughput: 7.03753 QPS
+FRONTIER_THREAD_RESULT ef=300 thread=8 queries=100 elapsed_s=14.209527757 recall=0.759000003
+[35m[search_client_pipelined_reuse_thread.cc:581] Thread 8 returns
+[0m[39m[reporter.hh:42] [Batch 0] Compute: 3,950,668.00 ms, Network: 5,933,838.00 ms, Deserialize: 6,069,714.00 ms, Meta Search: 9,073.00 ms, Throughput: 6.48 qps, Total Time: 15,441,356.00 ms
+[0mThread 9 EF 300 benchmark:
+  Queries executed: 100
+  Avg total latency: 154414 us
+  Avg meta search latency: 90.73 us
+  Avg compute time: 39506.7 us
+  Avg network latency: 59338.4 us
+  Avg deserialize time: 60697.1 us
+  Recall: 0.744
+  Throughput: 6.47442 QPS
+FRONTIER_THREAD_RESULT ef=300 thread=9 queries=100 elapsed_s=15.445400313 recall=0.744000018
+[35m[search_client_pipelined_reuse_thread.cc:581] Thread 9 returns
+[0m[39m[reporter.hh:42] [Batch 0] Compute: 4,222,831.00 ms, Network: 8,449,390.00 ms, Deserialize: 5,754,537.00 ms, Meta Search: 8,696.00 ms, Throughput: 5.67 qps, Total Time: 17,621,627.00 ms
+[0mThread 4 EF 300 benchmark:
+  Queries executed: 100
+  Avg total latency: 176216 us
+  Avg meta search latency: 86.96 us
+  Avg compute time: 42228.3 us
+  Avg network latency: 84493.9 us
+  Avg deserialize time: 57545.4 us
+  Recall: 0.719
+  Throughput: 5.67374 QPS
+FRONTIER_THREAD_RESULT ef=300 thread=4 queries=100 elapsed_s=17.625060411 recall=0.718999982
+[35m[search_client_pipelined_reuse_thread.cc:581] Thread 4 returns
+[0m[39m[reporter.hh:42] [Batch 0] Compute: 4,199,642.00 ms, Network: 15,374,430.00 ms, Deserialize: 2,504,918.00 ms, Meta Search: 13,290.00 ms, Throughput: 5.07 qps, Total Time: 19,710,442.00 ms
+[0mThread 3 EF 300 benchmark:
+  Queries executed: 100
+  Avg total latency: 197104 us
+  Avg meta search latency: 132.9 us
+  Avg compute time: 41996.4 us
+  Avg network latency: 153744 us
+  Avg deserialize time: 25049.2 us
+  Recall: 0.825
+  Throughput: 5.07289 QPS
+FRONTIER_THREAD_RESULT ef=300 thread=3 queries=100 elapsed_s=19.712630759 recall=0.824999988
+[35m[search_client_pipelined_reuse_thread.cc:581] Thread 3 returns
+[0mEF: 300
+Thread 0 recall: 0.835
+Thread 0 latency: 63785.7
+Thread 0 network latency: 5544.97
+Thread 0 duration_meta_search: 99.99
+Thread 0 compute time: 42866
+Thread 1 recall: 0.795
+Thread 1 latency: 62195.2
+Thread 1 network latency: 5807.39
+Thread 1 duration_meta_search: 39.91
+Thread 1 compute time: 41387.2
+Thread 2 recall: 0.723
+Thread 2 latency: 62106.3
+Thread 2 network latency: 5651.51
+Thread 2 duration_meta_search: 30.04
+Thread 2 compute time: 41876.3
+Thread 3 recall: 0.825
+Thread 3 latency: 197104
+Thread 3 network latency: 153744
+Thread 3 duration_meta_search: 132.9
+Thread 3 compute time: 41996.4
+Thread 4 recall: 0.719
+Thread 4 latency: 176216
+Thread 4 network latency: 84493.9
+Thread 4 duration_meta_search: 86.96
+Thread 4 compute time: 42228.3
+Thread 5 recall: 0.759
+Thread 5 latency: 88705.1
+Thread 5 network latency: 5843.2
+Thread 5 duration_meta_search: 110.13
+Thread 5 compute time: 43704.7
+Thread 6 recall: 0.791
+Thread 6 latency: 140984
+Thread 6 network latency: 68806.5
+Thread 6 duration_meta_search: 31.07
+Thread 6 compute time: 40869.7
+Thread 7 recall: 0.745
+Thread 7 latency: 88745.4
+Thread 7 network latency: 5943.2
+Thread 7 duration_meta_search: 103.82
+Thread 7 compute time: 42367.5
+Thread 8 recall: 0.759
+Thread 8 latency: 142054
+Thread 8 network latency: 70686.9
+Thread 8 duration_meta_search: 39.89
+Thread 8 compute time: 41810.8
+Thread 9 recall: 0.744
+Thread 9 latency: 154414
+Thread 9 network latency: 59338.4
+Thread 9 duration_meta_search: 90.73
+Thread 9 compute time: 39506.7

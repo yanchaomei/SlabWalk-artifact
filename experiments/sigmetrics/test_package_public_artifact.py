@@ -7,7 +7,9 @@ import unittest
 from pathlib import Path
 
 import package_public_artifact as artifact
+import seal_vldb_multicn_campaign as multicn_seal
 import vldb_evidence_bundle as evidence_bundle
+from test_seal_vldb_multicn_campaign import make_campaign
 
 
 def write(path: Path, data: bytes | str = b"fixture\n") -> None:
@@ -48,6 +50,14 @@ class PackagePublicArtifactTest(unittest.TestCase):
         write(root / "paper_vldb/figs/figure.pdf", b"%PDF-1.4\nfixture")
         release = {
             "kind": "vldb_release_bundle",
+            "entries": {
+                "paper_vldb/figs/figure.pdf": {
+                    "sha256": hashlib.sha256(
+                        (root / "paper_vldb/figs/figure.pdf").read_bytes()
+                    ).hexdigest(),
+                    "size_bytes": (root / "paper_vldb/figs/figure.pdf").stat().st_size,
+                }
+            },
             "publication_pdf_targets": ["paper_vldb/figs/figure.pdf"],
         }
         write(
@@ -121,6 +131,67 @@ class PackagePublicArtifactTest(unittest.TestCase):
             )
             evidence_bundle.verify_bundle(copied)
 
+    def test_packages_complete_sealed_multicn_diagnostic_tree(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "source"
+            out = Path(tmp) / "public"
+            self.make_repo(root)
+            campaign = make_campaign(
+                root / "results/vldb_multicn_formal_20260719f"
+            )
+            write(campaign / "raw/__pycache__/trace.pyc", b"sealed-diagnostic")
+            multicn_seal.seal_campaign(campaign)
+
+            artifact.build_public_artifact(root, out)
+
+            copied = out / "results/vldb_multicn_formal_20260719f"
+            self.assertTrue((copied / "raw/__pycache__/trace.pyc").is_file())
+            multicn_seal.verify_campaign(copied)
+            manifest = json.loads((out / "artifact_manifest.json").read_text())
+            self.assertEqual(
+                manifest["diagnostic_multicn_campaigns"],
+                [
+                    {
+                        "campaign_id": "formal-test",
+                        "path": "results/vldb_multicn_formal_20260719f",
+                        "promotion_ready": False,
+                        "seal_sha256": hashlib.sha256(
+                            (copied / multicn_seal.SEAL_NAME).read_bytes()
+                        ).hexdigest(),
+                    }
+                ],
+            )
+
+    def test_packages_every_release_manifest_entry(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "source"
+            out = Path(tmp) / "public"
+            self.make_repo(root)
+            svg = root / "paper_vldb/figs/figure.svg"
+            write(svg, "<svg/>\n")
+            release_path = root / "results/vldb_final_evidence/release_bundle.json"
+            release = json.loads(release_path.read_text())
+            release["entries"]["paper_vldb/figs/figure.svg"] = {
+                "sha256": hashlib.sha256(svg.read_bytes()).hexdigest(),
+                "size_bytes": svg.stat().st_size,
+            }
+            release_path.write_text(json.dumps(release))
+
+            artifact.build_public_artifact(root, out)
+
+            self.assertEqual(
+                (out / "paper_vldb/figs/figure.svg").read_text(), "<svg/>\n"
+            )
+
+    def test_rejects_release_entry_digest_mismatch(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "source"
+            self.make_repo(root)
+            write(root / "paper_vldb/figs/figure.pdf", b"changed after release")
+
+            with self.assertRaisesRegex(ValueError, "release entry"):
+                artifact.build_public_artifact(root, Path(tmp) / "public")
+
     def test_rejects_public_ip_or_private_key_material(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp) / "source"
@@ -157,6 +228,21 @@ class PackagePublicArtifactTest(unittest.TestCase):
 
             with self.assertRaisesRegex(ValueError, "symbolic link"):
                 artifact.build_public_artifact(root, Path(tmp) / "public")
+
+    def test_force_refuses_to_replace_git_checkout(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "source"
+            out = Path(tmp) / "public"
+            self.make_repo(root)
+            artifact.build_public_artifact(root, out)
+            write(out / ".git/HEAD", "ref: refs/heads/main\n")
+
+            with self.assertRaisesRegex(ValueError, "Git checkout"):
+                artifact.build_public_artifact(root, out, force=True)
+
+            self.assertEqual(
+                (out / ".git/HEAD").read_text(), "ref: refs/heads/main\n"
+            )
 
 
 if __name__ == "__main__":

@@ -70,7 +70,7 @@ post-closure harness additions, the complete suite on 2026-07-16 completed 526
 tests in 65.518 seconds with `OK`. After adding the fixed-stride publication,
 snapshot-reuse, rotation-reuse, and formal-frontier launcher contracts, the
 complete suite on 2026-07-17 completed 538 tests in 68.782 seconds with `OK`.
-The final 2026-07-19 closure run completed 684 tests in 72.102 seconds with
+The final 2026-07-19 closure run completed 689 tests in 79.363 seconds with
 `OK`; all 47 experiment shell scripts passed `bash -n`, and `git diff --check`
 passed. These counts describe named tree snapshots and must be refreshed after
 source changes.
@@ -212,6 +212,29 @@ requires every selected layout to remain feasible, every held-out QPS ratio to
 the feasible oracle to be at least 0.98, and the nine-cell geometric mean to be
 at least 0.99. This is a strict post-hoc split over an existing campaign, not a
 prospective predictor or online reconfiguration mechanism.
+
+### Multi-CN negative diagnostic
+
+`results/vldb_multicn_formal_20260719f/` is deliberately outside
+`results/vldb_final_evidence/`. It contains the complete 135-row fixed-pool
+matrix for SHINE-derived, SlabWalk, and d-HNSW at one, two, and three CNs. Its
+promotion thresholds were fixed before aggregation and were not changed after
+measurement. Verify both the complete-file inventory and semantic matrix with:
+
+```bash
+python3 experiments/sigmetrics/seal_vldb_multicn_campaign.py verify \
+  --root results/vldb_multicn_formal_20260719f
+```
+
+The campaign has protocol fingerprint
+`3d307e42c0d412aafe221f2973d2a55b78b46ea919fe76421e3080367d3b17ec`
+and `MULTICN_SEALED.json` SHA-256
+`88ecc25d1228af5f6331b728c1084b6d8d1f13db4f960040f0334a3d20d61356`.
+SlabWalk preserves recall, but its 3CN/1CN QPS CI-lows are 1.87270, 2.07652,
+and 1.65983 for SIFT, DEEP, and GIST, all below 2.30. The 3CN fairness CI-low
+also falls below 0.95 on SIFT (0.94980) and GIST (0.93164). The seal therefore
+records `promotion_ready=false`. The public artifact manifest lists this tree
+as a diagnostic campaign; the publication release manifest does not admit it.
 
 ## 4. Query-pool and frontier promotion
 

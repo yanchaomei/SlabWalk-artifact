@@ -1,0 +1,168 @@
+============================================================
+                        CLIENT
+============================================================
+connect to:                   [skv-node4, ]
+is initiator:                 true
+client nodes:                 [skv-node2, ]
+TCP port:                     14464
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           4294967296
+data path:                    "/home/kvgroup/chaomei/hnsw-data/gist1m"
+query suffix:                 uniform
+number of threads:            10
+number of coroutines:         2
+query QP/CQ contexts:         10
+threads pinned:               true
+seed:                         1234
+------------------------------------------------------------
+K:                            10
+M:                            16
+ef search:                    300
+ef construction:              100
+spec-k (GraphBeyond C1):      1
+============================================================
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+[STATUS]: LAVD neighborhood region: requested bytes=9663676416, resolved bytes=9663676416
+connect to client skv-node2
+pairing: 213510 -- 10920
+client id: 0
+number of clients: 2
+connect to server skv-node4
+pairing: 213511 -- 12325
+[STATUS]: pinned main thread to core 20
+[STATUS]: receive access tokens of remote memory regions
+[STATUS]: LAVD neighborhood region: registered bytes per MN=9663676416
+reading input data... (dim=960, num vectors=500/1000, filesize=3840008)
+reading input data... (dim=100, num vectors=1000/1000, filesize=400008)
+[STATUS]: allocate worker threads and read buffers
+allocated ALIGNED MEM (no hugepage) at 139648702128192 with buffer size 4294967296
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 213512 -- 12326
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 213513 -- 12327
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 213514 -- 12328
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 213515 -- 12329
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 213516 -- 12330
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 213517 -- 12331
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 213518 -- 12332
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 213519 -- 12333
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 213520 -- 12334
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.61)
+pairing: 213521 -- 12335
+[STATUS]: synchronize compute nodes
+[STATUS]: LAVD: building neighborhood region
+[LAVD][rabitq] B=2 code_bytes=240 payload_bytes=248 (scalar would be 960 B) stride=8456 build_threads=20
+[LAVD] build done: N=1000000 m_max0=32 bits=8 stride=8456 budget_f=1 blocks=1000000/1000000 region=8456000000B avg_deg=9.79474
+[LAVD][build-profile] peak_rss_kb=8884232
+[LAVD][selftest] checked=64 fails=0 coloc_d=32  PASS
+[STATUS]: synchronize compute nodes
+[LAVD][rabitq] CN reconstructed encoder from header: B=2 dim=960 code_bytes=240
+[STATUS]: LAVD: config ready (bits=8 stride=8456 rerank=150)
+[STATUS]: CRANE: building CN-resident upper-nav cache
+[CRANE] upper cache built: U=62529 (960-d) comp=240111360B entry_uid=1325
+[STATUS]: construct placement datastructure
+  fetched 20 nodes on level 4
+  fetched 257 nodes on level 3
+  fetched 3832 nodes on level 2
+[STATUS]: run balanced k-means
+run kmeans
+cluster sizes:
+  cluster 0: 3831
+  cluster 1: 1
+  final iteration: 3, final error: 0
+run balanced kmeans
+num iterations: 64
+reported cluster sizes:
+  cluster 0: 1916
+  cluster 1: 1916
+actual cluster sizes:
+  cluster 0: 2007
+  cluster 1: 1825
+final cluster sizes:
+  cluster 0: 2007
+  cluster 1: 1825
+final mapping: 0 1 
+[STATUS]: synchronize compute nodes
+[STATUS]: run queries
+allocated ALIGNED MEM (no hugepage) at 93905375299072 with buffer size 6156800
+routing buffer size: 6156800
+[STATUS]: **QUERY**: running worker threads...
+[STATUS]: pinned thread 1 to core 0
+[STATUS]: pinned thread 2 to core 21
+[STATUS]: pinned thread 3 to core 1
+[STATUS]: pinned thread 4 to core 22
+[STATUS]: pinned thread 5 to core 2
+[STATUS]: pinned thread 6 to core 23
+[STATUS]: pinned thread 7 to core 3
+[STATUS]: pinned thread 8 to core 24
+[STATUS]: pinned thread 9 to core 4
+query 0/1000
+query 200/1000
+query 400/1000
+query 600/1000
+query 800/1000
+[STATUS]: join compute threads
+t0 processed: 52, CHR: 0
+t1 processed: 49, CHR: 0
+t2 processed: 49, CHR: 0
+t3 processed: 49, CHR: 0
+t4 processed: 50, CHR: 0
+t5 processed: 50, CHR: 0
+t6 processed: 51, CHR: 0
+t7 processed: 52, CHR: 0
+t8 processed: 49, CHR: 0
+t9 processed: 49, CHR: 0
+[STATUS]: processed queries: 500
+[STATUS]: local recall: 0.909200
+[STATUS]: collect statistics and timings from compute nodes
+
+statistics:
+cache histogram
+  size: 0 | freq: 53485
+total entries: 0
+cooling table histogram
+  size: 0 | freq: 892
+  size: 1 | freq: 0
+  size: 2 | freq: 0
+  size: 3 | freq: 0
+  size: 4 | freq: 0
+  size: 5 | freq: 0
+  size: 6 | freq: 0
+CT total entries: 0

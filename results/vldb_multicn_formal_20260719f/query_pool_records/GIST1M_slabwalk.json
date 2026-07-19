@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-19T04:53:21.258902+00:00",
+  "dataset": "GIST1M",
+  "groundtruth": {
+    "bytes": 400008,
+    "canonical_ids_sha256": "3e0d1ab10df27c25f964992fec6c60a883d2ca627b481388b677c2d62aaa8212",
+    "file_sha256": "2230c08720dac5492e6725ec3e3c91206fc433f24dc55f8ceeae140ad2483530",
+    "format": "bin",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/hnsw-data/gist1m/queries/groundtruth-uniform.bin",
+    "rows": 1000,
+    "source_rows": 1000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 1000,
+  "method": "SlabWalk",
+  "metric": "l2",
+  "query": {
+    "bytes": 3840008,
+    "canonical_sha256": "5779751c3b63bee0a0c52a0017232ca2340af0527eb0f79270ae09c010423eea",
+    "dim": 960,
+    "file_sha256": "220465f0ab851de6890d87ab1dd5081f526da8d214aa7a3849e738e63cad6775",
+    "format": "fbin",
+    "path": "/home/kvgroup/chaomei/hnsw-data/gist1m/queries/query-uniform.fbin",
+    "rows": 1000,
+    "source_rows": 1000
+  }
+}

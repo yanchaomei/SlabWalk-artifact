@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Any
 
 import summarize_vldb_headlines as headline_summary
-from publication_metadata import publication_timestamp
+from publication_metadata import normalize_publication_paths, publication_timestamp
 
 
 DATASETS = ("DEEP10M", "SIFT10M", "TTI10M")
@@ -259,8 +259,11 @@ def verify_recomputed_headline(
     *,
     frontier_summary: Path,
     gate: Path,
+    path_root: Path | None = None,
 ) -> None:
     expected = headline_summary.derive(frontier_summary, gate)
+    if path_root is not None:
+        expected = normalize_publication_paths(expected, path_root)
     if canonical_headline_payload(headline) != canonical_headline_payload(expected):
         raise ValueError(
             "headline payload mismatch against recomputed frontier summary"
@@ -1164,6 +1167,7 @@ def assemble(
     build_scaling_10m_summary: Path,
     physical_design_advisor_report: Path,
     out: Path,
+    path_root: Path | None = None,
 ) -> None:
     sources = {
         "headline": headline,
@@ -1197,6 +1201,7 @@ def assemble(
         headline_payload,
         frontier_summary=frontier_summary,
         gate=gate,
+        path_root=path_root,
     )
     observed_source_sha["headline"] = headline_digest
     identities = campaign_identities(gate_report)
@@ -1260,6 +1265,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--build-summary", type=Path, required=True)
     parser.add_argument("--build-scaling-10m-summary", type=Path, required=True)
     parser.add_argument("--physical-design-advisor-report", type=Path, required=True)
+    parser.add_argument("--path-root", type=Path)
     parser.add_argument("--out", type=Path, required=True)
     return parser.parse_args(argv)
 
@@ -1287,6 +1293,7 @@ def main(argv: list[str] | None = None) -> int:
         build_scaling_10m_summary=args.build_scaling_10m_summary,
         physical_design_advisor_report=args.physical_design_advisor_report,
         out=args.out,
+        path_root=args.path_root,
     )
     print(f"wrote {args.out}")
     return 0

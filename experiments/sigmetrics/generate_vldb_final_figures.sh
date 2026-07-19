@@ -143,6 +143,7 @@ python3 "$SCRIPT_DIR/validate_vldb_final_evidence.py" \
   --expected-colocation-protocol-fingerprint "$EXPECTED_COLOCATION_PROTOCOL_FINGERPRINT" \
   --expected-mechanism-campaign-id "$EXPECTED_MECHANISM_CAMPAIGN_ID" \
   --expected-mechanism-protocol-fingerprint "$EXPECTED_MECHANISM_PROTOCOL_FINGERPRINT" \
+  --path-root "$PUBLICATION_ROOT" \
   --out "$STAGED_GATE_BASE"
 
 python3 "$SCRIPT_DIR/validate_vldb_frontier_1m.py" \
@@ -166,6 +167,7 @@ python3 "$SCRIPT_DIR/bind_vldb_physical_design_advisor_gate.py" \
 python3 "$SCRIPT_DIR/summarize_vldb_headlines.py" \
   --summary "$EVIDENCE_ROOT/frontier/frontier_summary.csv" \
   --gate "$STAGED_GATE" \
+  --path-root "$PUBLICATION_ROOT" \
   --out "$STAGED_HEADLINES"
 
 python3 "$SCRIPT_DIR/assemble_vldb_manuscript_claims.py" \
@@ -188,6 +190,7 @@ python3 "$SCRIPT_DIR/assemble_vldb_manuscript_claims.py" \
   --build-summary "$EVIDENCE_ROOT/build_cost/summary.csv" \
   --build-scaling-10m-summary "$EVIDENCE_ROOT/build_scaling_10m/summary.csv" \
   --physical-design-advisor-report "$PHYSICAL_DESIGN_ADVISOR_ROOT/validation/report.json" \
+  --path-root "$PUBLICATION_ROOT" \
   --out "$STAGED_CLAIMS"
 
 python3 "$SCRIPT_DIR/render_vldb_claims_tex.py" \

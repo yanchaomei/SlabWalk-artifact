@@ -1,0 +1,130 @@
+{
+  "campaign_id": "vldb-multicn-formal-20260719f",
+  "cn_counts": [
+    1,
+    2,
+    3
+  ],
+  "created_utc": "2026-07-18T17:55:24.906685+00:00",
+  "datasets": [
+    "SIFT1M",
+    "DEEP1M",
+    "GIST1M"
+  ],
+  "dhnsw_binary_sha256": "8e9bcba566e474ce7a2ab6d2a503f1d7ace02d0f8b6c4e65848379d852567ad5",
+  "dhnsw_runtime_manifest_sha256": "f18919417ce642a4bd1be27cbafa43734df5a0503340b1b3202c14ca493dcb7b",
+  "expected_queries": {
+    "DEEP1M": 10000,
+    "GIST1M": 1000,
+    "SIFT1M": 10000
+  },
+  "input_manifest": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/campaign.json",
+  "input_manifest_sha256": "5a959e2e9f11c97972c73179d0ba91e96660024f15ee24910a7f7fe767bc6d6a",
+  "input_runs": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/runs.csv",
+  "input_runs_sha256": "327bed3d52cf94d14404b263c136db338feb7960097f17f47ce7dab4d97dd3f0",
+  "kind": "vldb_multicn_campaign",
+  "protocol": {
+    "cn_counts": [
+      1,
+      2,
+      3
+    ],
+    "datasets": [
+      "SIFT1M",
+      "DEEP1M",
+      "GIST1M"
+    ],
+    "dhnsw_client_binary_sha256": "8e9bcba566e474ce7a2ab6d2a503f1d7ace02d0f8b6c4e65848379d852567ad5",
+    "dhnsw_detail_metrics": "best_effort_non_gating_human_readable_per_thread_breakdown",
+    "dhnsw_ef": {
+      "DEEP1M": 200,
+      "GIST1M": 300,
+      "SIFT1M": 100
+    },
+    "dhnsw_hosts": {
+      "clients": [
+        "skv-node1",
+        "skv-node2",
+        "skv-node3"
+      ],
+      "server": "skv-node5"
+    },
+    "dhnsw_machine_record_recovery": "exact_complete_sentinel_with_optional_known_Thread_or_numeric_metric_value_prefix_interleaving",
+    "dhnsw_required_metrics": "atomic_FRONTIER_THREAD_RESULT_fixed_pool_query_coverage_qps_recall",
+    "dhnsw_runtime_manifest_sha256": "f18919417ce642a4bd1be27cbafa43734df5a0503340b1b3202c14ca493dcb7b",
+    "dhnsw_server_binary_sha256": "71c95f84af1889140b621964ded3f2f9c609eededa8bd85bf5ef6f915a1f5d96",
+    "dhnsw_throughput_aggregation": "sum_of_concurrent_disjoint_client_shards",
+    "graph_coroutines": 2,
+    "graph_ef": {
+      "DEEP1M": 200,
+      "GIST1M": 300,
+      "SIFT1M": 100
+    },
+    "graph_hosts": {
+      "clients": [
+        "skv-node1",
+        "skv-node2",
+        "skv-node3"
+      ],
+      "memory": "skv-node4"
+    },
+    "graph_latency_scope": {
+      "1cn": "all_queries_single_cn",
+      "multi_cn": "not_reported_cross_cn_frozen_binary_boundary"
+    },
+    "measurement_mode": "one_fixed_logical_query_pool_partitioned_across_cns",
+    "query_pools": {
+      "DEEP1M": {
+        "dhnsw_record": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/query_pool_records/DEEP1M_dhnsw.json",
+        "expected_queries": 10000,
+        "graph_record": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/query_pool_records/DEEP1M_slabwalk.json",
+        "groundtruth_canonical_sha256": "edce835964026fe3161d1c3c0a9fdf5144fae22ee30d9b55585bebfca0117ce5",
+        "query_canonical_sha256": "68973a8fa5af6691d904c0f5a292136be6e3f21fed6b28154a1bfbdb1c93db57"
+      },
+      "GIST1M": {
+        "dhnsw_record": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/query_pool_records/GIST1M_dhnsw.json",
+        "expected_queries": 1000,
+        "graph_record": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/query_pool_records/GIST1M_slabwalk.json",
+        "groundtruth_canonical_sha256": "3e0d1ab10df27c25f964992fec6c60a883d2ca627b481388b677c2d62aaa8212",
+        "query_canonical_sha256": "5779751c3b63bee0a0c52a0017232ca2340af0527eb0f79270ae09c010423eea"
+      },
+      "SIFT1M": {
+        "dhnsw_record": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/query_pool_records/SIFT1M_dhnsw.json",
+        "expected_queries": 10000,
+        "graph_record": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/query_pool_records/SIFT1M_slabwalk.json",
+        "groundtruth_canonical_sha256": "c1130328dffc9ac74262669f0879856786eb15dba7cb2d72d0af7d51efa680a6",
+        "query_canonical_sha256": "bf4c4c9db385017e63e7b0a9ccd8e3aab3744a02e053c135e000fa0b1dea2d6f"
+      }
+    },
+    "repeats": 5,
+    "slabwalk_binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+    "systems": [
+      "SHINE",
+      "SlabWalk",
+      "d-HNSW"
+    ],
+    "threads_per_cn": 10,
+    "tool_sha256": {
+      "assembler": "5bb51dc8c6c88da70043a6e29b162c0e022661aa2e4e54ff18cee3caa8463aee",
+      "dhnsw_parser": "e4e19783c35c0c8ecdefe16b87a7540c86c3235aff476264d6154f1b650c1792",
+      "query_fingerprinter": "80e588f99e34450a6c238d94c7b459027b4d5c02184581fcc30c261305d25eb3",
+      "recorder": "8ffd1e990633c1c787c01ae3ef67adf922d35e6f8810701c2a0af53623cc1025",
+      "runner": "362df6530cc84aed9fb0b618f00bcf880a064e76b744e951ef85c971a098f376"
+    }
+  },
+  "protocol_fingerprint": "3d307e42c0d412aafe221f2973d2a55b78b46ea919fe76421e3080367d3b17ec",
+  "repeats": 5,
+  "slabwalk_binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+  "systems": [
+    "SHINE",
+    "SlabWalk",
+    "d-HNSW"
+  ],
+  "tool_sha256": {
+    "assembler": "5bb51dc8c6c88da70043a6e29b162c0e022661aa2e4e54ff18cee3caa8463aee",
+    "dhnsw_parser": "e4e19783c35c0c8ecdefe16b87a7540c86c3235aff476264d6154f1b650c1792",
+    "query_fingerprinter": "80e588f99e34450a6c238d94c7b459027b4d5c02184581fcc30c261305d25eb3",
+    "recorder": "8ffd1e990633c1c787c01ae3ef67adf922d35e6f8810701c2a0af53623cc1025",
+    "runner": "362df6530cc84aed9fb0b618f00bcf880a064e76b744e951ef85c971a098f376"
+  }
+}

@@ -338,7 +338,7 @@
     }
   },
   "gate": "evidence_gate.json",
-  "gate_sha256": "34af8abc8c5f3a2c7f77cc57ed1f52118933b0d000136c99ab6d35c1b0a58426",
+  "gate_sha256": "899493c0dd96cbf6aecc26945622e872bc142dbc4d46812d58cf920cfd0555ce",
   "headline_ranges": {
     "high_recall_post_reduction_max": 27.222950535332437,
     "high_recall_post_reduction_min": 17.134388898619314,
@@ -352,6 +352,6 @@
   "kind": "vldb_headline_candidates",
   "recall_floor": 0.9,
   "recall_tolerance": 0.002,
-  "summary": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/frontier/frontier_summary.csv",
+  "summary": "results/vldb_final_evidence/frontier/frontier_summary.csv",
   "summary_sha256": "1af538c8f7f66857d3c932727c9ff8dda44c0c0757bf041aae8b1633de091304"
 }

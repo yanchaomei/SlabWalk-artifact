@@ -1,0 +1,16 @@
+{
+  "campaign_id": "vldb-multicn-formal-20260719f",
+  "completed_cells_reused": 120,
+  "diagnosed_condition": "The prior RESUME=1 invocation used PREPARE_DHNSW=0 while the GIST1M d-HNSW client and server deployment was absent; it exited during the pre-measurement deployment completeness check.",
+  "final_measured_rows": 135,
+  "fixed_thresholds_changed": false,
+  "kind": "vldb_multicn_resume_context",
+  "new_cells_measured": 15,
+  "recorded_utc": "2026-07-19T05:16:28.407219+00:00",
+  "resume_environment": {
+    "PREPARE_DHNSW": "1",
+    "RESUME": "1"
+  },
+  "reuse_rule": "A completed cell was skipped only when runs.csv contained one matching identity and its source file still matched the recorded SHA-256.",
+  "runner_log_sha256": "22a7efcc2bee5e137d850a4dbaf765d31db7b1b432dae5155912c104f9f6acad"
+}

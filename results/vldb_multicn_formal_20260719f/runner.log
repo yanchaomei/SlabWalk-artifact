@@ -1,0 +1,379 @@
+{"bytes_per_query": 898273.6732, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 10600.682, "p99_us": 15548.512, "posts_per_query": 1760.15, "processed_queries": 10000, "qps": 1938.0, "recall": 0.97661}
+{"bytes_per_query": 898273.6732, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 10552.16, "p99_us": 16396.397, "posts_per_query": 1760.15, "processed_queries": 10000, "qps": 1943.0, "recall": 0.97661}
+{"bytes_per_query": 898273.6732, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 10608.122, "p99_us": 16350.248, "posts_per_query": 1760.15, "processed_queries": 10000, "qps": 1935.0, "recall": 0.97661}
+{"bytes_per_query": 898273.6732, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 10575.188, "p99_us": 16556.678, "posts_per_query": 1760.15, "processed_queries": 10000, "qps": 1938.0, "recall": 0.97661}
+{"bytes_per_query": 898273.6732, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 10572.743, "p99_us": 16841.953, "posts_per_query": 1760.15, "processed_queries": 10000, "qps": 1940.0, "recall": 0.97661}
+{"bytes_per_query": 898273.6892, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999572940298472, "p50_us": null, "p99_us": null, "posts_per_query": 1760.152, "processed_queries": 10000, "qps": 3869.0, "recall": 0.97661}
+{"bytes_per_query": 898273.6892, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999745559495398, "p50_us": null, "p99_us": null, "posts_per_query": 1760.152, "processed_queries": 10000, "qps": 3860.0, "recall": 0.97661}
+{"bytes_per_query": 898273.6892, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999491261511034, "p50_us": null, "p99_us": null, "posts_per_query": 1760.152, "processed_queries": 10000, "qps": 3858.0, "recall": 0.97661}
+{"bytes_per_query": 898273.6892, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999714239701802, "p50_us": null, "p99_us": null, "posts_per_query": 1760.152, "processed_queries": 10000, "qps": 3871.0, "recall": 0.97661}
+{"bytes_per_query": 898273.6892, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999569248334005, "p50_us": null, "p99_us": null, "posts_per_query": 1760.152, "processed_queries": 10000, "qps": 3855.0, "recall": 0.97661}
+{"bytes_per_query": 898273.7052, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.999962944935956, "p50_us": null, "p99_us": null, "posts_per_query": 1760.154, "processed_queries": 10000, "qps": 5705.0, "recall": 0.97661}
+{"bytes_per_query": 898273.7052, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.999943363931492, "p50_us": null, "p99_us": null, "posts_per_query": 1760.154, "processed_queries": 10000, "qps": 5679.0, "recall": 0.97661}
+{"bytes_per_query": 898273.7052, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999472229440702, "p50_us": null, "p99_us": null, "posts_per_query": 1760.154, "processed_queries": 10000, "qps": 5687.0, "recall": 0.97661}
+{"bytes_per_query": 898273.7052, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999837676552445, "p50_us": null, "p99_us": null, "posts_per_query": 1760.154, "processed_queries": 10000, "qps": 5704.0, "recall": 0.97661}
+{"bytes_per_query": 898273.7052, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.999989423862491, "p50_us": null, "p99_us": null, "posts_per_query": 1760.154, "processed_queries": 10000, "qps": 5709.0, "recall": 0.97661}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 1082.294, "p99_us": 1476.52, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 17986.0, "recall": 0.97662}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 1083.472, "p99_us": 1441.201, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 17967.0, "recall": 0.97662}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 1081.476, "p99_us": 1208.814, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 18271.0, "recall": 0.97662}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 1084.002, "p99_us": 1471.801, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 17844.0, "recall": 0.97662}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 1083.527, "p99_us": 1324.394, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 17977.0, "recall": 0.97662}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999658583724842, "p50_us": null, "p99_us": null, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 22988.0, "recall": 0.97662}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999851117980499, "p50_us": null, "p99_us": null, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 23022.0, "recall": 0.97662}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9996545009212822, "p50_us": null, "p99_us": null, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 22757.0, "recall": 0.97662}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9998697815250115, "p50_us": null, "p99_us": null, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 22880.0, "recall": 0.97662}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9997342061104947, "p50_us": null, "p99_us": null, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 22769.0, "recall": 0.97662}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9500025100556032, "p50_us": null, "p99_us": null, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 34361.0, "recall": 0.9766199999999999}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9509002280370065, "p50_us": null, "p99_us": null, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 34027.0, "recall": 0.9766199999999999}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9497767922021098, "p50_us": null, "p99_us": null, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 34062.0, "recall": 0.9766199999999999}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9508470371628156, "p50_us": null, "p99_us": null, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 33986.0, "recall": 0.9766199999999999}
+{"bytes_per_query": 493012.5144, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.95090360265464, "p50_us": null, "p99_us": null, "posts_per_query": 102.0859, "processed_queries": 10000, "qps": 34319.0, "recall": 0.9766199999999999}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 880.8683024483299, "recall": 0.8981599987000002}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 814.633024664112, "recall": 0.8981599987}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 776.3340646237451, "recall": 0.8981599987}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 787.1971171496408, "recall": 0.8981599987}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 923.0711651862122, "recall": 0.8981599987}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.996928495839874, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 770.110507349977, "recall": 0.8981599986999997}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999585890029903, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 951.6715648520504, "recall": 0.8981599987000002}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9540128815706217, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 567.4073126404344, "recall": 0.8981599987000002}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9973871507492503, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 873.3304645764101, "recall": 0.8981599987000002}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.991030102914028, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 781.3286052360754, "recall": 0.8981599987}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.831685922833571, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 607.5251847524365, "recall": 0.8981599941918}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9302019691639783, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 621.7158900806676, "recall": 0.8981599941918}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.8869535167460021, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 632.0397259696424, "recall": 0.8981599941918}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9041558718353383, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 671.0340304736245, "recall": 0.8981599941918}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9087965221399149, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 630.9266437675108, "recall": 0.8981599941918}
+{"bytes_per_query": 1176736.104, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 18322.383, "p99_us": 26722.386000000002, "posts_per_query": 3018.3664, "processed_queries": 10000, "qps": 1111.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.104, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 18196.760000000002, "p99_us": 26441.684, "posts_per_query": 3018.3664, "processed_queries": 10000, "qps": 1117.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.104, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 18365.177, "p99_us": 26575.907, "posts_per_query": 3018.3664, "processed_queries": 10000, "qps": 1109.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.104, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 18290.273, "p99_us": 26674.516, "posts_per_query": 3018.3664, "processed_queries": 10000, "qps": 1113.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.104, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 18298.009000000002, "p99_us": 26578.477, "posts_per_query": 3018.3664, "processed_queries": 10000, "qps": 1113.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.12, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.999560547242011, "p50_us": null, "p99_us": null, "posts_per_query": 3018.3684, "processed_queries": 10000, "qps": 2182.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.12, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9995816754631877, "p50_us": null, "p99_us": null, "posts_per_query": 3018.3684, "processed_queries": 10000, "qps": 2194.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.12, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9996607979697063, "p50_us": null, "p99_us": null, "posts_per_query": 3018.3684, "processed_queries": 10000, "qps": 2204.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.12, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9996928105496596, "p50_us": null, "p99_us": null, "posts_per_query": 3018.3684, "processed_queries": 10000, "qps": 2197.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.12, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9996669098044582, "p50_us": null, "p99_us": null, "posts_per_query": 3018.3684, "processed_queries": 10000, "qps": 2197.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.136, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.999697326036342, "p50_us": null, "p99_us": null, "posts_per_query": 3018.3704, "processed_queries": 10000, "qps": 3274.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.136, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9997726341485978, "p50_us": null, "p99_us": null, "posts_per_query": 3018.3704, "processed_queries": 10000, "qps": 3281.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.136, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9997893189712269, "p50_us": null, "p99_us": null, "posts_per_query": 3018.3704, "processed_queries": 10000, "qps": 3280.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.136, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9998264133895834, "p50_us": null, "p99_us": null, "posts_per_query": 3018.3704, "processed_queries": 10000, "qps": 3271.0, "recall": 0.98901}
+{"bytes_per_query": 1176736.136, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9995663617730572, "p50_us": null, "p99_us": null, "posts_per_query": 3018.3704, "processed_queries": 10000, "qps": 3251.0, "recall": 0.98901}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 1875.857, "p99_us": 2382.821, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 10422.0, "recall": 0.98907}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 1868.134, "p99_us": 2139.038, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 10535.0, "recall": 0.98907}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 1875.51, "p99_us": 2177.366, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 10383.0, "recall": 0.98907}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 1881.7250000000001, "p99_us": 2086.918, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 10462.0, "recall": 0.98907}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": 1876.746, "p99_us": 2339.5750000000003, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 10440.0, "recall": 0.98907}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999017874701907, "p50_us": null, "p99_us": null, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 14690.0, "recall": 0.98907}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9998992795610641, "p50_us": null, "p99_us": null, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 14691.0, "recall": 0.98907}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999422261533429, "p50_us": null, "p99_us": null, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 14703.0, "recall": 0.98907}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999116393810158, "p50_us": null, "p99_us": null, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 14700.0, "recall": 0.98907}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999244140170134, "p50_us": null, "p99_us": null, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 14707.0, "recall": 0.98907}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9698528784981965, "p50_us": null, "p99_us": null, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 21923.0, "recall": 0.9890699999999999}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9690185677088597, "p50_us": null, "p99_us": null, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 21960.0, "recall": 0.9890699999999999}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9686313168714547, "p50_us": null, "p99_us": null, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 21959.0, "recall": 0.9890699999999999}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9681395571350663, "p50_us": null, "p99_us": null, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 21717.0, "recall": 0.9890699999999999}
+{"bytes_per_query": 761436.3176, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9687031180554296, "p50_us": null, "p99_us": null, "posts_per_query": 201.8453, "processed_queries": 10000, "qps": 21935.0, "recall": 0.9890699999999999}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 681.5070925099409, "recall": 0.908919996}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 787.7785807579468, "recall": 0.908919996}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 784.3179132557318, "recall": 0.908919996}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 815.9321792668649, "recall": 0.908919996}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 789.9057753913057, "recall": 0.908919996}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999996826168841, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 813.4516292126184, "recall": 0.9089200049499999}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9996782622880457, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 810.512573892874, "recall": 0.9089200049499999}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9999963575049833, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 719.3985633188886, "recall": 0.9089200049499999}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9558558522315501, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 564.8208311067165, "recall": 0.9089200049499999}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9892654115375406, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 764.9606918421114, "recall": 0.9089200049499999}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9061576799255726, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 681.3854266136485, "recall": 0.9089099950149}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9662868793515778, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 668.2226011811813, "recall": 0.9089099950149}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.836042825583723, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 568.311024576538, "recall": 0.9089099950149}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9017421194061234, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 688.175097667834, "recall": 0.9089099950149}
+{"bytes_per_query": null, "expected_queries": 10000, "failed_queries": 0, "fairness": 0.9048816207804872, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 10000, "qps": 649.2860012732899, "recall": 0.9089099950149}
+{"bytes_per_query": 18079265.152, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": 44390.969, "p99_us": 58184.331, "posts_per_query": 4977.859, "processed_queries": 1000, "qps": 457.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.152, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": 44213.308000000005, "p99_us": 58130.631, "posts_per_query": 4977.859, "processed_queries": 1000, "qps": 461.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.152, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": 44506.933000000005, "p99_us": 58168.41, "posts_per_query": 4977.859, "processed_queries": 1000, "qps": 459.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.152, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": 44715.084, "p99_us": 58125.173, "posts_per_query": 4977.859, "processed_queries": 1000, "qps": 458.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.152, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": 44389.019, "p99_us": 59397.072, "posts_per_query": 4977.859, "processed_queries": 1000, "qps": 459.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.312, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9999796995012313, "p50_us": null, "p99_us": null, "posts_per_query": 4977.879, "processed_queries": 1000, "qps": 624.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.312, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9999967152916792, "p50_us": null, "p99_us": null, "posts_per_query": 4977.879, "processed_queries": 1000, "qps": 626.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.312, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9999778015218249, "p50_us": null, "p99_us": null, "posts_per_query": 4977.879, "processed_queries": 1000, "qps": 624.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.312, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9999803922979561, "p50_us": null, "p99_us": null, "posts_per_query": 4977.879, "processed_queries": 1000, "qps": 625.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.312, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9999859803809341, "p50_us": null, "p99_us": null, "posts_per_query": 4977.879, "processed_queries": 1000, "qps": 625.0, "recall": 0.9071}
+Traceback (most recent call last):
+  File "/home/kvgroup/chaomei/graphbeyond-c1/experiments/sigmetrics/record_vldb_multicn_run.py", line 92, in read_json
+    value = json.loads(path.read_text())
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kvgroup/chaomei/graphbeyond-c1/experiments/sigmetrics/record_vldb_multicn_run.py", line 536, in <module>
+    main()
+  File "/home/kvgroup/chaomei/graphbeyond-c1/experiments/sigmetrics/record_vldb_multicn_run.py", line 520, in main
+    record = record_graph(
+  File "/home/kvgroup/chaomei/graphbeyond-c1/experiments/sigmetrics/record_vldb_multicn_run.py", line 235, in record_graph
+    initiator = read_json(initiator_json)
+  File "/home/kvgroup/chaomei/graphbeyond-c1/experiments/sigmetrics/record_vldb_multicn_run.py", line 94, in read_json
+    raise ValueError(f"invalid measurement JSON: {path}") from exc
+ValueError: invalid measurement JSON: /home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/raw/graph/GIST1M_SHINE_3cn_r0/c0.json
+SKIP SIFT1M SHINE 1CN r0
+SKIP SIFT1M SHINE 1CN r1
+SKIP SIFT1M SHINE 1CN r2
+SKIP SIFT1M SHINE 1CN r3
+SKIP SIFT1M SHINE 1CN r4
+SKIP SIFT1M SHINE 2CN r0
+SKIP SIFT1M SHINE 2CN r1
+SKIP SIFT1M SHINE 2CN r2
+SKIP SIFT1M SHINE 2CN r3
+SKIP SIFT1M SHINE 2CN r4
+SKIP SIFT1M SHINE 3CN r0
+SKIP SIFT1M SHINE 3CN r1
+SKIP SIFT1M SHINE 3CN r2
+SKIP SIFT1M SHINE 3CN r3
+SKIP SIFT1M SHINE 3CN r4
+SKIP SIFT1M SlabWalk 1CN r0
+SKIP SIFT1M SlabWalk 1CN r1
+SKIP SIFT1M SlabWalk 1CN r2
+SKIP SIFT1M SlabWalk 1CN r3
+SKIP SIFT1M SlabWalk 1CN r4
+SKIP SIFT1M SlabWalk 2CN r0
+SKIP SIFT1M SlabWalk 2CN r1
+SKIP SIFT1M SlabWalk 2CN r2
+SKIP SIFT1M SlabWalk 2CN r3
+SKIP SIFT1M SlabWalk 2CN r4
+SKIP SIFT1M SlabWalk 3CN r0
+SKIP SIFT1M SlabWalk 3CN r1
+SKIP SIFT1M SlabWalk 3CN r2
+SKIP SIFT1M SlabWalk 3CN r3
+SKIP SIFT1M SlabWalk 3CN r4
+SKIP SIFT1M d-HNSW 1CN r0
+SKIP SIFT1M d-HNSW 1CN r1
+SKIP SIFT1M d-HNSW 1CN r2
+SKIP SIFT1M d-HNSW 1CN r3
+SKIP SIFT1M d-HNSW 1CN r4
+SKIP SIFT1M d-HNSW 2CN r0
+SKIP SIFT1M d-HNSW 2CN r1
+SKIP SIFT1M d-HNSW 2CN r2
+SKIP SIFT1M d-HNSW 2CN r3
+SKIP SIFT1M d-HNSW 2CN r4
+SKIP SIFT1M d-HNSW 3CN r0
+SKIP SIFT1M d-HNSW 3CN r1
+SKIP SIFT1M d-HNSW 3CN r2
+SKIP SIFT1M d-HNSW 3CN r3
+SKIP SIFT1M d-HNSW 3CN r4
+SKIP DEEP1M SHINE 1CN r0
+SKIP DEEP1M SHINE 1CN r1
+SKIP DEEP1M SHINE 1CN r2
+SKIP DEEP1M SHINE 1CN r3
+SKIP DEEP1M SHINE 1CN r4
+SKIP DEEP1M SHINE 2CN r0
+SKIP DEEP1M SHINE 2CN r1
+SKIP DEEP1M SHINE 2CN r2
+SKIP DEEP1M SHINE 2CN r3
+SKIP DEEP1M SHINE 2CN r4
+SKIP DEEP1M SHINE 3CN r0
+SKIP DEEP1M SHINE 3CN r1
+SKIP DEEP1M SHINE 3CN r2
+SKIP DEEP1M SHINE 3CN r3
+SKIP DEEP1M SHINE 3CN r4
+SKIP DEEP1M SlabWalk 1CN r0
+SKIP DEEP1M SlabWalk 1CN r1
+SKIP DEEP1M SlabWalk 1CN r2
+SKIP DEEP1M SlabWalk 1CN r3
+SKIP DEEP1M SlabWalk 1CN r4
+SKIP DEEP1M SlabWalk 2CN r0
+SKIP DEEP1M SlabWalk 2CN r1
+SKIP DEEP1M SlabWalk 2CN r2
+SKIP DEEP1M SlabWalk 2CN r3
+SKIP DEEP1M SlabWalk 2CN r4
+SKIP DEEP1M SlabWalk 3CN r0
+SKIP DEEP1M SlabWalk 3CN r1
+SKIP DEEP1M SlabWalk 3CN r2
+SKIP DEEP1M SlabWalk 3CN r3
+SKIP DEEP1M SlabWalk 3CN r4
+SKIP DEEP1M d-HNSW 1CN r0
+SKIP DEEP1M d-HNSW 1CN r1
+SKIP DEEP1M d-HNSW 1CN r2
+SKIP DEEP1M d-HNSW 1CN r3
+SKIP DEEP1M d-HNSW 1CN r4
+SKIP DEEP1M d-HNSW 2CN r0
+SKIP DEEP1M d-HNSW 2CN r1
+SKIP DEEP1M d-HNSW 2CN r2
+SKIP DEEP1M d-HNSW 2CN r3
+SKIP DEEP1M d-HNSW 2CN r4
+SKIP DEEP1M d-HNSW 3CN r0
+SKIP DEEP1M d-HNSW 3CN r1
+SKIP DEEP1M d-HNSW 3CN r2
+SKIP DEEP1M d-HNSW 3CN r3
+SKIP DEEP1M d-HNSW 3CN r4
+SKIP GIST1M SHINE 1CN r0
+SKIP GIST1M SHINE 1CN r1
+SKIP GIST1M SHINE 1CN r2
+SKIP GIST1M SHINE 1CN r3
+SKIP GIST1M SHINE 1CN r4
+SKIP GIST1M SHINE 2CN r0
+SKIP GIST1M SHINE 2CN r1
+SKIP GIST1M SHINE 2CN r2
+SKIP GIST1M SHINE 2CN r3
+SKIP GIST1M SHINE 2CN r4
+{"bytes_per_query": 18079265.472, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9999200387314824, "p50_us": null, "p99_us": null, "posts_per_query": 4977.899, "processed_queries": 1000, "qps": 626.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.472, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9999093434972599, "p50_us": null, "p99_us": null, "posts_per_query": 4977.899, "processed_queries": 1000, "qps": 626.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.472, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9998788545849306, "p50_us": null, "p99_us": null, "posts_per_query": 4977.899, "processed_queries": 1000, "qps": 627.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.472, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.999898089896671, "p50_us": null, "p99_us": null, "posts_per_query": 4977.899, "processed_queries": 1000, "qps": 624.0, "recall": 0.9071}
+{"bytes_per_query": 18079265.472, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9999058981430152, "p50_us": null, "p99_us": null, "posts_per_query": 4977.899, "processed_queries": 1000, "qps": 626.0, "recall": 0.9071}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": 6113.286, "p99_us": 11801.710000000001, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 3148.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": 6065.801, "p99_us": 10368.451000000001, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 3222.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": 6123.151, "p99_us": 11910.789, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 3147.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": 6114.505, "p99_us": 11680.898000000001, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 3172.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": 6116.528, "p99_us": 11842.059000000001, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 3158.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9999861184438005, "p50_us": null, "p99_us": null, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 3615.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.999998454310868, "p50_us": null, "p99_us": null, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 3638.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9998601247734913, "p50_us": null, "p99_us": null, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 3600.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9998369342791595, "p50_us": null, "p99_us": null, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 3594.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9998784801418226, "p50_us": null, "p99_us": null, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 3606.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9349335124623076, "p50_us": null, "p99_us": null, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 5357.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9343095689703796, "p50_us": null, "p99_us": null, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 5314.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9335929200690916, "p50_us": null, "p99_us": null, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 5316.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9308844111433248, "p50_us": null, "p99_us": null, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 5368.0, "recall": 0.906}
+{"bytes_per_query": 3125487.968, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9349099491266786, "p50_us": null, "p99_us": null, "posts_per_query": 302.27, "processed_queries": 1000, "qps": 5381.0, "recall": 0.906}
+SKIP SIFT1M SHINE 1CN r0
+SKIP SIFT1M SHINE 1CN r1
+SKIP SIFT1M SHINE 1CN r2
+SKIP SIFT1M SHINE 1CN r3
+SKIP SIFT1M SHINE 1CN r4
+SKIP SIFT1M SHINE 2CN r0
+SKIP SIFT1M SHINE 2CN r1
+SKIP SIFT1M SHINE 2CN r2
+SKIP SIFT1M SHINE 2CN r3
+SKIP SIFT1M SHINE 2CN r4
+SKIP SIFT1M SHINE 3CN r0
+SKIP SIFT1M SHINE 3CN r1
+SKIP SIFT1M SHINE 3CN r2
+SKIP SIFT1M SHINE 3CN r3
+SKIP SIFT1M SHINE 3CN r4
+SKIP SIFT1M SlabWalk 1CN r0
+SKIP SIFT1M SlabWalk 1CN r1
+SKIP SIFT1M SlabWalk 1CN r2
+SKIP SIFT1M SlabWalk 1CN r3
+SKIP SIFT1M SlabWalk 1CN r4
+SKIP SIFT1M SlabWalk 2CN r0
+SKIP SIFT1M SlabWalk 2CN r1
+SKIP SIFT1M SlabWalk 2CN r2
+SKIP SIFT1M SlabWalk 2CN r3
+SKIP SIFT1M SlabWalk 2CN r4
+SKIP SIFT1M SlabWalk 3CN r0
+SKIP SIFT1M SlabWalk 3CN r1
+SKIP SIFT1M SlabWalk 3CN r2
+SKIP SIFT1M SlabWalk 3CN r3
+SKIP SIFT1M SlabWalk 3CN r4
+SKIP SIFT1M d-HNSW 1CN r0
+SKIP SIFT1M d-HNSW 1CN r1
+SKIP SIFT1M d-HNSW 1CN r2
+SKIP SIFT1M d-HNSW 1CN r3
+SKIP SIFT1M d-HNSW 1CN r4
+SKIP SIFT1M d-HNSW 2CN r0
+SKIP SIFT1M d-HNSW 2CN r1
+SKIP SIFT1M d-HNSW 2CN r2
+SKIP SIFT1M d-HNSW 2CN r3
+SKIP SIFT1M d-HNSW 2CN r4
+SKIP SIFT1M d-HNSW 3CN r0
+SKIP SIFT1M d-HNSW 3CN r1
+SKIP SIFT1M d-HNSW 3CN r2
+SKIP SIFT1M d-HNSW 3CN r3
+SKIP SIFT1M d-HNSW 3CN r4
+SKIP DEEP1M SHINE 1CN r0
+SKIP DEEP1M SHINE 1CN r1
+SKIP DEEP1M SHINE 1CN r2
+SKIP DEEP1M SHINE 1CN r3
+SKIP DEEP1M SHINE 1CN r4
+SKIP DEEP1M SHINE 2CN r0
+SKIP DEEP1M SHINE 2CN r1
+SKIP DEEP1M SHINE 2CN r2
+SKIP DEEP1M SHINE 2CN r3
+SKIP DEEP1M SHINE 2CN r4
+SKIP DEEP1M SHINE 3CN r0
+SKIP DEEP1M SHINE 3CN r1
+SKIP DEEP1M SHINE 3CN r2
+SKIP DEEP1M SHINE 3CN r3
+SKIP DEEP1M SHINE 3CN r4
+SKIP DEEP1M SlabWalk 1CN r0
+SKIP DEEP1M SlabWalk 1CN r1
+SKIP DEEP1M SlabWalk 1CN r2
+SKIP DEEP1M SlabWalk 1CN r3
+SKIP DEEP1M SlabWalk 1CN r4
+SKIP DEEP1M SlabWalk 2CN r0
+SKIP DEEP1M SlabWalk 2CN r1
+SKIP DEEP1M SlabWalk 2CN r2
+SKIP DEEP1M SlabWalk 2CN r3
+SKIP DEEP1M SlabWalk 2CN r4
+SKIP DEEP1M SlabWalk 3CN r0
+SKIP DEEP1M SlabWalk 3CN r1
+SKIP DEEP1M SlabWalk 3CN r2
+SKIP DEEP1M SlabWalk 3CN r3
+SKIP DEEP1M SlabWalk 3CN r4
+SKIP DEEP1M d-HNSW 1CN r0
+SKIP DEEP1M d-HNSW 1CN r1
+SKIP DEEP1M d-HNSW 1CN r2
+SKIP DEEP1M d-HNSW 1CN r3
+SKIP DEEP1M d-HNSW 1CN r4
+SKIP DEEP1M d-HNSW 2CN r0
+SKIP DEEP1M d-HNSW 2CN r1
+SKIP DEEP1M d-HNSW 2CN r2
+SKIP DEEP1M d-HNSW 2CN r3
+SKIP DEEP1M d-HNSW 2CN r4
+SKIP DEEP1M d-HNSW 3CN r0
+SKIP DEEP1M d-HNSW 3CN r1
+SKIP DEEP1M d-HNSW 3CN r2
+SKIP DEEP1M d-HNSW 3CN r3
+SKIP DEEP1M d-HNSW 3CN r4
+SKIP GIST1M SHINE 1CN r0
+SKIP GIST1M SHINE 1CN r1
+SKIP GIST1M SHINE 1CN r2
+SKIP GIST1M SHINE 1CN r3
+SKIP GIST1M SHINE 1CN r4
+SKIP GIST1M SHINE 2CN r0
+SKIP GIST1M SHINE 2CN r1
+SKIP GIST1M SHINE 2CN r2
+SKIP GIST1M SHINE 2CN r3
+SKIP GIST1M SHINE 2CN r4
+SKIP GIST1M SHINE 3CN r0
+SKIP GIST1M SHINE 3CN r1
+SKIP GIST1M SHINE 3CN r2
+SKIP GIST1M SHINE 3CN r3
+SKIP GIST1M SHINE 3CN r4
+SKIP GIST1M SlabWalk 1CN r0
+SKIP GIST1M SlabWalk 1CN r1
+SKIP GIST1M SlabWalk 1CN r2
+SKIP GIST1M SlabWalk 1CN r3
+SKIP GIST1M SlabWalk 1CN r4
+SKIP GIST1M SlabWalk 2CN r0
+SKIP GIST1M SlabWalk 2CN r1
+SKIP GIST1M SlabWalk 2CN r2
+SKIP GIST1M SlabWalk 2CN r3
+SKIP GIST1M SlabWalk 2CN r4
+SKIP GIST1M SlabWalk 3CN r0
+SKIP GIST1M SlabWalk 3CN r1
+SKIP GIST1M SlabWalk 3CN r2
+SKIP GIST1M SlabWalk 3CN r3
+SKIP GIST1M SlabWalk 3CN r4
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 43.80652905476641, "recall": 0.7694999994}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 50.728896220178015, "recall": 0.7694999994}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 48.61687241171173, "recall": 0.7694999994}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 46.799362196614524, "recall": 0.7694999994}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 1.0, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 44.310312306162366, "recall": 0.7694999994}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9998376429750049, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 45.33993604536124, "recall": 0.7694999992999999}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9999301957178767, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 48.88212689423221, "recall": 0.7694999992999999}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9975640779315748, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 43.0522003004198, "recall": 0.7694999993000001}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9972356771786913, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 45.9107934521392, "recall": 0.7694999992999999}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9994417173847159, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 48.1720622619013, "recall": 0.7694999992999999}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9973993454650635, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 47.01461161831556, "recall": 0.769499996926}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9196712272622407, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 46.767565641242754, "recall": 0.769499996926}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9964718414009444, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 43.98356168176406, "recall": 0.769499996926}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9560945782618334, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 48.74758108784126, "recall": 0.769499996926}
+{"bytes_per_query": null, "expected_queries": 1000, "failed_queries": 0, "fairness": 0.9774994280215992, "p50_us": null, "p99_us": null, "posts_per_query": null, "processed_queries": 1000, "qps": 43.38145989317531, "recall": 0.769499996926}
+{"cells": 27, "measured_rows": 135, "out_dir": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/summary", "promotion_failures": ["SlabWalk SIFT1M 3-CN scale CI lower bound 1.873 is below 2.30", "SlabWalk SIFT1M 3-CN fairness CI lower bound 0.950 is below 0.95", "SlabWalk DEEP1M 3-CN scale CI lower bound 2.077 is below 2.30", "SlabWalk GIST1M 3-CN scale CI lower bound 1.660 is below 2.30", "SlabWalk GIST1M 3-CN fairness CI lower bound 0.932 is below 0.95"], "promotion_ready": false, "source_files_verified": 135}

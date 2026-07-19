@@ -54,7 +54,7 @@
     "summary_sha256": "58548ad550eb6448516504df71efb69172c3e7361e7e2851432f592010f752cc"
   },
   "cache_control": {
-    "directory": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/cache_control",
+    "directory": "results/vldb_final_evidence/cache_control",
     "measured_cells": 4,
     "measured_rows": 20,
     "post_reduction_c50_pct": 83.15953742092714,
@@ -99,7 +99,7 @@
     "campaign_id": "vldb-colocation-deep1-final-v4-20260715",
     "d1_post_increase_pct": 98.35735585619283,
     "d1_qps_change_pct": -64.5121014214368,
-    "directory": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/colocation_control",
+    "directory": "results/vldb_final_evidence/colocation_control",
     "measured_cells": 6,
     "measured_rows": 30,
     "protocol_fingerprint": "d99de8f75c7153f0182b21a9804e050a45c8c4e60c04ceac37e7071afa4c8bb5",
@@ -148,10 +148,10 @@
       "TTI10M/d-HNSW": 5
     },
     "query_pool_links_verified": 245,
-    "raw_csv": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/frontier/frontier_repeated_raw.csv",
+    "raw_csv": "results/vldb_final_evidence/frontier/frontier_repeated_raw.csv",
     "raw_sha256": "25445e5ddb4c09a27f6e51c0995247d386990e13b114653eaf7c8e51e785ecc6",
     "retained_source_links_verified": 245,
-    "summary_csv": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/frontier/frontier_summary.csv",
+    "summary_csv": "results/vldb_final_evidence/frontier/frontier_summary.csv",
     "summary_sha256": "1af538c8f7f66857d3c932727c9ff8dda44c0c0757bf041aae8b1633de091304"
   },
   "frontier_1m": {
@@ -207,7 +207,7 @@
         "source_sha256": "b4f3cbdff1dbba0971fb2e1af7bc2a377e9597cfa349c1a141b1066e10df84f6"
       }
     },
-    "directory": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/index_construction",
+    "directory": "results/vldb_final_evidence/index_construction",
     "measured_cells": 2
   },
   "kind": "vldb_final_evidence_gate",
@@ -222,7 +222,7 @@
   "mechanism_controls": {
     "budget_summary_sha256": "5d367c9667df11bb227b59c93ddd6a314215933c6d58ffbf5d024816850ff41f",
     "campaign_id": "vldb-mechanism-controls-final-v6-20260715",
-    "directory": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/mechanism_controls",
+    "directory": "results/vldb_final_evidence/mechanism_controls",
     "f05_materialized_fraction_vs_full": 0.16624972765863,
     "measured_cells": 12,
     "measured_rows": 60,
@@ -243,7 +243,7 @@
     "measured_rows": 125,
     "mn_host": "skv-node4",
     "mn_ip": "10.0.0.64",
-    "runs_csv": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/model_controls/rdma_tau_runs.csv",
+    "runs_csv": "results/vldb_final_evidence/model_controls/rdma_tau_runs.csv",
     "runs_sha256": "978db5366252d1f0e2136283dae1136fa2909d4b6d095c4290fe4c10bae527bf"
   },
   "physical_design_advisor": {
@@ -283,7 +283,7 @@
       "TTI10M",
       "SIFT10M"
     ],
-    "directory": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/query_pools",
+    "directory": "results/vldb_final_evidence/query_pools",
     "links": {
       "DEEP10M/SHINE": {
         "groundtruth_canonical_sha256": "51db82a2f80e17ffefee34f60ab288d184a20a1f734503bc957c304f0002c0ce",
@@ -398,7 +398,7 @@
     "tti_exact_queries": 3
   },
   "query_profile": {
-    "directory": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/query_profile",
+    "directory": "results/vldb_final_evidence/query_profile",
     "distance_self_percent": 5.16,
     "lost_samples": 0,
     "perf_data_sha256": "1a9ba844d4ae0509cf80b51eeb66a4235ce7577eb910240317ae7ef3e1aa74f3",
@@ -414,9 +414,9 @@
     "measured_cells": 9,
     "measured_rows": 45,
     "retained_source_cells_verified": 45,
-    "runs_csv": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/resource_ledger/runs.csv",
+    "runs_csv": "results/vldb_final_evidence/resource_ledger/runs.csv",
     "runs_sha256": "33f7386f98f8c2bce7589695c8e7a04597dc5eafa5b1385569ea070e6a580240",
-    "summary_csv": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/resource_ledger/summary.csv",
+    "summary_csv": "results/vldb_final_evidence/resource_ledger/summary.csv",
     "summary_sha256": "b0cd8e832538677bb80f090d523d42e4adc5b68f1f1af515a447a5f7525d0a2d"
   },
   "robustness": {
@@ -424,7 +424,7 @@
     "expected_repeats": 5,
     "measured_cells": 17,
     "measured_rows": 85,
-    "runs_csv": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/robustness/runs.csv",
+    "runs_csv": "results/vldb_final_evidence/robustness/runs.csv",
     "runs_sha256": "ec2dd90ad377d8e98274631db7d159b0b6c6c3a1582057f541555edd42ef33be"
   },
   "topology_control": {
@@ -436,9 +436,9 @@
     "measured_rows": 10,
     "query_manifest_sha256": "a0147ce5fafab891b6b5963b6db47213c8fcb99cfa682486d61f1400d5084a2f",
     "retained_source_links_verified": 10,
-    "runs_csv": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/topology_control/runs.csv",
+    "runs_csv": "results/vldb_final_evidence/topology_control/runs.csv",
     "runs_sha256": "df2e0f5ade9409d4037737aae68be9f4468a5629536f1ea39ea3add3667228f6",
-    "summary_csv": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/topology_control/summary.csv",
+    "summary_csv": "results/vldb_final_evidence/topology_control/summary.csv",
     "summary_sha256": "f29a240ea7ffbe3f3e14da0bb552da4c159eb8607d52b66067cd9bca86993e2f"
   },
   "validated_utc": "2000-01-01T00:00:00+00:00",
@@ -468,7 +468,7 @@
     "query_canonical_sha256": "68973a8fa5af6691d904c0f5a292136be6e3f21fed6b28154a1bfbdb1c93db57",
     "query_pool_manifests_verified": 3,
     "retained_source_links_verified": 60,
-    "runs_csv": "/Users/yanchaomei/Desktop/Working/2026\u79d1\u7814/ANN\u4f18\u5316/GraphBeyond-c1/results/vldb_final_evidence/worker_scaling/runs.csv",
+    "runs_csv": "results/vldb_final_evidence/worker_scaling/runs.csv",
     "runs_sha256": "445d997cb1f5fb68b7b5b8a3740d0dea160d65a15c85404924bd5ce12a8a6972",
     "workers": [
       1,

@@ -27,7 +27,10 @@ try:
     from . import summarize_vldb_mechanism_controls as mechanism_control_summary
     from . import summarize_vldb_resource_ledger as resource_ledger_summary
     from . import vldb_evidence_bundle
-    from .publication_metadata import publication_timestamp
+    from .publication_metadata import (
+        normalize_publication_paths,
+        publication_timestamp,
+    )
 except ImportError:
     import aggregate_frontier_repeats as aggregate_frontier
     import assemble_vldb_10m_build_scaling as build_scaling_10m_assembler
@@ -39,7 +42,7 @@ except ImportError:
     import summarize_vldb_mechanism_controls as mechanism_control_summary
     import summarize_vldb_resource_ledger as resource_ledger_summary
     import vldb_evidence_bundle
-    from publication_metadata import publication_timestamp
+    from publication_metadata import normalize_publication_paths, publication_timestamp
 
 
 FRONTIER_DATASETS = ("DEEP10M", "TTI10M", "SIFT10M")
@@ -3114,6 +3117,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--expected-mechanism-protocol-fingerprint", required=True
     )
+    parser.add_argument("--path-root", type=Path)
     parser.add_argument("--out", type=Path, required=True)
     return parser.parse_args(argv)
 
@@ -3183,6 +3187,8 @@ def main(argv: list[str] | None = None) -> int:
         query_profile_path=args.query_profile,
         expected_profile_runner_sha=args.expected_profile_runner_sha,
     )
+    if args.path_root is not None:
+        report = normalize_publication_paths(report, args.path_root)
     _write_gate_atomically(args.out, report)
     print(
         "VLDB final evidence is plot-ready: "

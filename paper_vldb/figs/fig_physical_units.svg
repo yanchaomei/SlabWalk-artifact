@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 540" width="1440" height="540" font-family="Helvetica,Arial,sans-serif">
+<defs>
+<marker id="aInk" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L18,7 L0,14 z" fill="#263442"/></marker>
+<marker id="aNavy" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L18,7 L0,14 z" fill="#0D426A"/></marker>
+<marker id="aBlue" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L18,7 L0,14 z" fill="#0D6EB5"/></marker>
+<marker id="aTeal" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L18,7 L0,14 z" fill="#147A73"/></marker>
+<marker id="aGreen" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L18,7 L0,14 z" fill="#2F7D46"/></marker>
+<marker id="aOrange" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L18,7 L0,14 z" fill="#CF6B00"/></marker>
+<marker id="aPurple" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L18,7 L0,14 z" fill="#5B3F8F"/></marker>
+<marker id="aRed" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L18,7 L0,14 z" fill="#C24F4B"/></marker>
+<marker id="aMuted" markerWidth="18" markerHeight="14" refX="16" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L18,7 L0,14 z" fill="#667085"/></marker>
+</defs>
+<rect width="1440" height="540" fill="#FFFFFF"/>
+<text x="720" y="34" font-size="28" fill="#263442" text-anchor="middle" font-weight="700">Physical units for one HNSW expansion</text>
+<rect x="24" y="88" width="820" height="182" rx="0" fill="#F7F9FB" stroke="#A1AAB6" stroke-width="1.2"/>
+<rect x="24" y="286" width="820" height="142" rx="0" fill="#FFFFFF" stroke="#A1AAB6" stroke-width="1.2"/>
+<text x="34" y="110" font-size="18" fill="#667085" text-anchor="start" font-weight="700">SEARCH PATH</text>
+<text x="34" y="308" font-size="18" fill="#667085" text-anchor="start" font-weight="700">REMOTE OBJECT</text>
+<text x="34" y="451" font-size="18" fill="#667085" text-anchor="start" font-weight="700">COST VECTOR</text>
+<line x1="24" y1="438" x2="844" y2="438" stroke="#A1AAB6" stroke-width="1.2"/>
+<line x1="38" y1="62" x2="38" y2="80" stroke="#C24F4B" stroke-width="4.0"/>
+<text x="48" y="78" font-size="22" fill="#C24F4B" text-anchor="start" font-weight="700">Node / vector</text>
+<text x="170.0" y="132" font-size="20" fill="#C24F4B" text-anchor="middle" font-weight="700">u=42   N={23,57,81}</text>
+<line x1="302" y1="88" x2="302" y2="428" stroke="#A1AAB6" stroke-width="1.0"/>
+<line x1="302" y1="62" x2="302" y2="80" stroke="#2F7D46" stroke-width="4.0"/>
+<text x="312" y="78" font-size="22" fill="#2F7D46" text-anchor="start" font-weight="700">Expansion</text>
+<text x="434.0" y="132" font-size="20" fill="#2F7D46" text-anchor="middle" font-weight="700">u=42   N={23,57,81}</text>
+<line x1="566" y1="88" x2="566" y2="428" stroke="#A1AAB6" stroke-width="1.0"/>
+<line x1="566" y1="62" x2="566" y2="80" stroke="#CF6B00" stroke-width="4.0"/>
+<text x="576" y="78" font-size="22" fill="#CF6B00" text-anchor="start" font-weight="700">Routed partition</text>
+<text x="698.0" y="132" font-size="20" fill="#CF6B00" text-anchor="middle" font-weight="700">u=42   N={23,57,81}</text>
+<line x1="830" y1="88" x2="830" y2="428" stroke="#A1AAB6" stroke-width="1.0"/>
+<rect x="52" y="150" width="118" height="34" rx="4" fill="#FFFFFF" stroke="#C24F4B" stroke-width="2.0"/>
+<text x="111.0" y="173.4" font-size="20" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="111.0" dy="0">READ L[42]</tspan></text>
+<line x1="172" y1="167" x2="196" y2="167" stroke="#C24F4B" stroke-width="2.6" marker-end="url(#aRed)"/>
+<rect x="200" y="150" width="70" height="34" rx="4" fill="#F6D8D2" stroke="#C24F4B" stroke-width="2.0"/>
+<text x="235.0" y="173.4" font-size="20" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="235.0" dy="0">IDs</tspan></text>
+<text x="170" y="211" font-size="20" fill="#C24F4B" text-anchor="middle" font-weight="700">3 vector READs</text>
+<rect x="54" y="222" width="66" height="34" rx="3" fill="#F6D8D2" stroke="#C24F4B" stroke-width="1.9"/>
+<text x="87.0" y="245.4" font-size="20" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="87.0" dy="0">V[23]</tspan></text>
+<rect x="128" y="222" width="66" height="34" rx="3" fill="#F6D8D2" stroke="#C24F4B" stroke-width="1.9"/>
+<text x="161.0" y="245.4" font-size="20" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="161.0" dy="0">V[57]</tspan></text>
+<rect x="202" y="222" width="66" height="34" rx="3" fill="#F6D8D2" stroke="#C24F4B" stroke-width="1.9"/>
+<text x="235.0" y="245.4" font-size="20" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="235.0" dy="0">V[81]</tspan></text>
+<rect x="50" y="330" width="54" height="42" rx="2" fill="#F6D8D2" stroke="#C24F4B" stroke-width="1.8"/>
+<text x="77.0" y="356.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="77.0" dy="0">L[42]</tspan></text>
+<line x1="77" y1="372" x2="77" y2="390" stroke="#C24F4B" stroke-width="1.8"/>
+<rect x="108" y="330" width="54" height="42" rx="2" fill="#F6D8D2" stroke="#C24F4B" stroke-width="1.8"/>
+<text x="135.0" y="356.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="135.0" dy="0">V[23]</tspan></text>
+<line x1="135" y1="372" x2="135" y2="390" stroke="#C24F4B" stroke-width="1.8"/>
+<rect x="166" y="330" width="54" height="42" rx="2" fill="#F6D8D2" stroke="#C24F4B" stroke-width="1.8"/>
+<text x="193.0" y="356.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="193.0" dy="0">V[57]</tspan></text>
+<line x1="193" y1="372" x2="193" y2="390" stroke="#C24F4B" stroke-width="1.8"/>
+<rect x="224" y="330" width="54" height="42" rx="2" fill="#F6D8D2" stroke="#C24F4B" stroke-width="1.8"/>
+<text x="251.0" y="356.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="251.0" dy="0">V[81]</tspan></text>
+<line x1="251" y1="372" x2="251" y2="390" stroke="#C24F4B" stroke-width="1.8"/>
+<rect x="88" y="390" width="164" height="28" rx="3" fill="#FFFFFF" stroke="#C24F4B" stroke-width="1.8"/>
+<text x="170.0" y="409.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="170.0" dy="0">4 posted READs</tspan></text>
+<rect x="326" y="151" width="216" height="56" rx="4" fill="#DDEEDC" stroke="#2F7D46" stroke-width="2.2"/>
+<text x="434.0" y="173.7" font-size="20" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="434.0" dy="0">READ B[42]</tspan><tspan x="434.0" dy="23.4">&lt;hdr, IDs, codes, rptr&gt;</tspan></text>
+<line x1="434" y1="207" x2="434" y2="218" stroke="#2F7D46" stroke-width="2.4" marker-end="url(#aGreen)"/>
+<rect x="346" y="220" width="176" height="36" rx="4" fill="#FFFFFF" stroke="#2F7D46" stroke-width="1.9"/>
+<text x="434.0" y="244.4" font-size="20" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="434.0" dy="0">in-place score</tspan></text>
+<text x="434" y="282" font-size="18" fill="#5B3F8F" text-anchor="middle" font-weight="700">authoritative topology</text>
+<text x="324" y="326" font-size="20" fill="#2F7D46" text-anchor="start" font-weight="700">B[42]</text>
+<rect x="324" y="336" width="38" height="60" rx="0" fill="#E9EDF2" stroke="#263442" stroke-width="2.0"/>
+<text x="343.0" y="371.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="343.0" dy="0">hdr</tspan></text>
+<rect x="362" y="336" width="92" height="60" rx="0" fill="#DCECF8" stroke="#0D6EB5" stroke-width="2.0"/>
+<text x="408.0" y="361.2" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="408.0" dy="0">IDs</tspan><tspan x="408.0" dy="21.1">23,57,81</tspan></text>
+<rect x="454" y="336" width="54" height="60" rx="0" fill="#FFE3C2" stroke="#CF6B00" stroke-width="2.0"/>
+<text x="481.0" y="371.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="481.0" dy="0">codes</tspan></text>
+<rect x="508" y="336" width="44" height="60" rx="0" fill="#E7DCF3" stroke="#5B3F8F" stroke-width="2.0"/>
+<text x="530.0" y="371.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="530.0" dy="0">rptr</tspan></text>
+<rect x="360" y="400" width="150" height="24" rx="3" fill="#FFFFFF" stroke="#2F7D46" stroke-width="1.8"/>
+<text x="435.0" y="417.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="435.0" dy="0">1 posted READ</tspan></text>
+<rect x="590" y="150" width="106" height="34" rx="4" fill="#FFFFFF" stroke="#CF6B00" stroke-width="1.9"/>
+<text x="643.0" y="173.1" font-size="19" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="643.0" dy="0">route/meta</tspan></text>
+<line x1="698" y1="167" x2="728" y2="167" stroke="#CF6B00" stroke-width="2.6" marker-end="url(#aOrange)"/>
+<rect x="732" y="150" width="72" height="34" rx="4" fill="#FFE3C2" stroke="#CF6B00" stroke-width="1.9"/>
+<text x="768.0" y="173.4" font-size="20" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="768.0" dy="0">p3</tspan></text>
+<rect x="610" y="195" width="174" height="32" rx="3" fill="#FFE3C2" stroke="#CF6B00" stroke-width="1.8"/>
+<text x="697.0" y="217.1" font-size="19" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="697.0" dy="0">serialized p3</tspan></text>
+<line x1="697" y1="227" x2="697" y2="236" stroke="#CF6B00" stroke-width="2.2" marker-end="url(#aOrange)"/>
+<rect x="586" y="238" width="110" height="30" rx="3" fill="#FFFFFF" stroke="#CF6B00" stroke-width="1.8"/>
+<text x="641.0" y="258.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="641.0" dy="0">deserialize</tspan></text>
+<rect x="708" y="234" width="108" height="38" rx="3" fill="#FFE3C2" stroke="#CF6B00" stroke-width="1.8"/>
+<text x="762.0" y="248.2" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="762.0" dy="0">local</tspan><tspan x="762.0" dy="21.1">sub-HNSW</tspan></text>
+<rect x="590" y="320" width="220" height="100" rx="3" fill="#FFFFFF" stroke="#CF6B00" stroke-width="1.8" stroke-dasharray="6 4"/>
+<text x="600" y="342" font-size="19" fill="#CF6B00" text-anchor="start" font-weight="700">p3</text>
+<line x1="696" y1="368" x2="650" y2="342" stroke="#CF6B00" stroke-width="1.5"/>
+<line x1="696" y1="368" x2="752" y2="344" stroke="#CF6B00" stroke-width="1.5"/>
+<line x1="696" y1="368" x2="752" y2="397" stroke="#CF6B00" stroke-width="1.5"/>
+<line x1="696" y1="368" x2="660" y2="404" stroke="#CF6B00" stroke-width="1.5"/>
+<line x1="650" y1="342" x2="614" y2="384" stroke="#CF6B00" stroke-width="1.5"/>
+<line x1="650" y1="342" x2="660" y2="404" stroke="#CF6B00" stroke-width="1.5"/>
+<line x1="752" y1="344" x2="752" y2="397" stroke="#CF6B00" stroke-width="1.5"/>
+<line x1="752" y1="344" x2="792" y2="380" stroke="#CF6B00" stroke-width="1.5"/>
+<line x1="752" y1="397" x2="660" y2="404" stroke="#CF6B00" stroke-width="1.5"/>
+<line x1="752" y1="397" x2="792" y2="380" stroke="#CF6B00" stroke-width="1.5"/>
+<circle cx="696" cy="368" r="12" fill="#FFE3C2" stroke="#CF6B00" stroke-width="2.4"/>
+<text x="696" y="375" font-size="18" fill="#263442" text-anchor="middle" font-weight="700">42</text>
+<circle cx="650" cy="342" r="12" fill="#FFE3C2" stroke="#CF6B00" stroke-width="2.4"/>
+<text x="650" y="349" font-size="18" fill="#263442" text-anchor="middle" font-weight="700">23</text>
+<circle cx="752" cy="344" r="12" fill="#FFE3C2" stroke="#CF6B00" stroke-width="2.4"/>
+<text x="752" y="351" font-size="18" fill="#263442" text-anchor="middle" font-weight="700">57</text>
+<circle cx="752" cy="397" r="12" fill="#FFE3C2" stroke="#CF6B00" stroke-width="2.4"/>
+<text x="752" y="404" font-size="18" fill="#263442" text-anchor="middle" font-weight="700">81</text>
+<circle cx="614" cy="384" r="12" fill="#FFFFFF" stroke="#CF6B00" stroke-width="2.4"/>
+<text x="614" y="391" font-size="18" fill="#263442" text-anchor="middle" font-weight="700">36</text>
+<circle cx="660" cy="404" r="12" fill="#FFFFFF" stroke="#CF6B00" stroke-width="2.4"/>
+<text x="660" y="411" font-size="18" fill="#263442" text-anchor="middle" font-weight="700">68</text>
+<circle cx="792" cy="380" r="12" fill="#FFFFFF" stroke="#CF6B00" stroke-width="2.4"/>
+<text x="792" y="387" font-size="18" fill="#263442" text-anchor="middle" font-weight="700">94</text>
+<circle cx="53" cy="463" r="4" fill="#FFFFFF" stroke="#C24F4B" stroke-width="1.8"/>
+<text x="64" y="468" font-size="18" fill="#C24F4B" text-anchor="start" font-weight="700">ops 4</text>
+<circle cx="53" cy="483" r="4" fill="#FFFFFF" stroke="#C24F4B" stroke-width="1.8"/>
+<text x="64" y="488" font-size="18" fill="#C24F4B" text-anchor="start" font-weight="700">state beam/cache</text>
+<circle cx="53" cy="503" r="4" fill="#FFFFFF" stroke="#C24F4B" stroke-width="1.8"/>
+<text x="64" y="508" font-size="18" fill="#C24F4B" text-anchor="start" font-weight="700">payload L+3V</text>
+<circle cx="53" cy="523" r="4" fill="#FFFFFF" stroke="#C24F4B" stroke-width="1.8"/>
+<text x="64" y="528" font-size="18" fill="#C24F4B" text-anchor="start" font-weight="700">step global</text>
+<circle cx="317" cy="463" r="4" fill="#FFFFFF" stroke="#2F7D46" stroke-width="1.8"/>
+<text x="328" y="468" font-size="18" fill="#2F7D46" text-anchor="start" font-weight="700">ops 1</text>
+<circle cx="317" cy="483" r="4" fill="#FFFFFF" stroke="#2F7D46" stroke-width="1.8"/>
+<text x="328" y="488" font-size="18" fill="#2F7D46" text-anchor="start" font-weight="700">state beam</text>
+<circle cx="317" cy="503" r="4" fill="#FFFFFF" stroke="#2F7D46" stroke-width="1.8"/>
+<text x="328" y="508" font-size="18" fill="#2F7D46" text-anchor="start" font-weight="700">payload B42</text>
+<circle cx="317" cy="523" r="4" fill="#FFFFFF" stroke="#2F7D46" stroke-width="1.8"/>
+<text x="328" y="528" font-size="18" fill="#2F7D46" text-anchor="start" font-weight="700">step global</text>
+<circle cx="581" cy="463" r="4" fill="#FFFFFF" stroke="#CF6B00" stroke-width="1.8"/>
+<text x="592" y="468" font-size="18" fill="#CF6B00" text-anchor="start" font-weight="700">route+fetch</text>
+<circle cx="581" cy="483" r="4" fill="#FFFFFF" stroke="#CF6B00" stroke-width="1.8"/>
+<text x="592" y="488" font-size="18" fill="#CF6B00" text-anchor="start" font-weight="700">state route+p3</text>
+<circle cx="581" cy="503" r="4" fill="#FFFFFF" stroke="#CF6B00" stroke-width="1.8"/>
+<text x="592" y="508" font-size="18" fill="#CF6B00" text-anchor="start" font-weight="700">payload p3</text>
+<circle cx="581" cy="523" r="4" fill="#FFFFFF" stroke="#CF6B00" stroke-width="1.8"/>
+<text x="592" y="528" font-size="18" fill="#CF6B00" text-anchor="start" font-weight="700">step local</text>
+<line x1="866" y1="62" x2="866" y2="92" stroke="#0D426A" stroke-width="4.0"/>
+<text x="882" y="82" font-size="21" fill="#0D426A" text-anchor="start" font-weight="700">Measured motivation: same path, more cache</text>
+<rect x="888" y="104" width="242" height="48" rx="5" fill="#DCECF8" stroke="#0D6EB5" stroke-width="2.0"/>
+<text x="1009.0" y="133.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="1009.0" dy="0">83.2% fewer posts/query</tspan></text>
+<rect x="1150" y="104" width="242" height="48" rx="5" fill="#F6D8D2" stroke="#C24F4B" stroke-width="2.0"/>
+<text x="1271.0" y="133.8" font-size="18" fill="#263442" text-anchor="middle" font-weight="700"><tspan x="1271.0" dy="0">23.2% lower QPS</tspan></text>
+<text x="1140" y="180" font-size="18" fill="#0D426A" text-anchor="middle" font-weight="700">cache budget (%)</text>
+<text x="1392" y="180" font-size="18" fill="#667085" text-anchor="end" font-weight="600">n=5; 95% CI</text>
+<line x1="918" y1="205" x2="1382" y2="205" stroke="#A1AAB6" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="918" y1="291" x2="1382" y2="291" stroke="#A1AAB6" stroke-width="1.0"/>
+<text x="910" y="211" font-size="18" fill="#667085" text-anchor="end" font-weight="600">100%</text>
+<text x="910" y="297" font-size="18" fill="#667085" text-anchor="end" font-weight="600">0</text>
+<line x1="940" y1="205.0" x2="1080" y2="218.32933336090673" stroke="#0D6EB5" stroke-width="2.8"/>
+<line x1="1080" y1="218.32933336090673" x2="1220" y2="242.92875954578386" stroke="#0D6EB5" stroke-width="2.8"/>
+<line x1="1220" y1="242.92875954578386" x2="1360" y2="276.51720218199733" stroke="#0D6EB5" stroke-width="2.8"/>
+<line x1="940" y1="205.0" x2="940" y2="205.0" stroke="#0D6EB5" stroke-width="1.3"/>
+<line x1="936" y1="205.0" x2="944" y2="205.0" stroke="#0D6EB5" stroke-width="1.3"/>
+<line x1="936" y1="205.0" x2="944" y2="205.0" stroke="#0D6EB5" stroke-width="1.3"/>
+<circle cx="940" cy="205.0" r="5" fill="#FFFFFF" stroke="#0D6EB5" stroke-width="2.2"/>
+<text x="940" y="316" font-size="18" fill="#263442" text-anchor="middle" font-weight="600">0</text>
+<line x1="1080" y1="218.32085978410822" x2="1080" y2="218.33780693770527" stroke="#0D6EB5" stroke-width="1.3"/>
+<line x1="1076" y1="218.32085978410822" x2="1084" y2="218.32085978410822" stroke="#0D6EB5" stroke-width="1.3"/>
+<line x1="1076" y1="218.33780693770527" x2="1084" y2="218.33780693770527" stroke="#0D6EB5" stroke-width="1.3"/>
+<circle cx="1080" cy="218.32933336090673" r="5" fill="#FFFFFF" stroke="#0D6EB5" stroke-width="2.2"/>
+<text x="1080" y="316" font-size="18" fill="#263442" text-anchor="middle" font-weight="600">5</text>
+<line x1="1220" y1="242.90788910337517" x2="1220" y2="242.94962998819256" stroke="#0D6EB5" stroke-width="1.3"/>
+<line x1="1216" y1="242.90788910337517" x2="1224" y2="242.90788910337517" stroke="#0D6EB5" stroke-width="1.3"/>
+<line x1="1216" y1="242.94962998819256" x2="1224" y2="242.94962998819256" stroke="#0D6EB5" stroke-width="1.3"/>
+<circle cx="1220" cy="242.92875954578386" r="5" fill="#FFFFFF" stroke="#0D6EB5" stroke-width="2.2"/>
+<text x="1220" y="316" font-size="18" fill="#263442" text-anchor="middle" font-weight="600">20</text>
+<line x1="1360" y1="276.5102695296584" x2="1360" y2="276.5241348343363" stroke="#0D6EB5" stroke-width="1.3"/>
+<line x1="1356" y1="276.5102695296584" x2="1364" y2="276.5102695296584" stroke="#0D6EB5" stroke-width="1.3"/>
+<line x1="1356" y1="276.5241348343363" x2="1364" y2="276.5241348343363" stroke="#0D6EB5" stroke-width="1.3"/>
+<circle cx="1360" cy="276.51720218199733" r="5" fill="#FFFFFF" stroke="#0D6EB5" stroke-width="2.2"/>
+<text x="1360" y="316" font-size="18" fill="#263442" text-anchor="middle" font-weight="600">50</text>
+<line x1="940" y1="205.0" x2="1080" y2="211.69461077844312" stroke="#C24F4B" stroke-width="2.8"/>
+<line x1="1080" y1="211.69461077844312" x2="1220" y2="221.33190761334473" stroke="#C24F4B" stroke-width="2.8"/>
+<line x1="1220" y1="221.33190761334473" x2="1360" y2="224.98574280011405" stroke="#C24F4B" stroke-width="2.8"/>
+<line x1="940" y1="204.14839281271196" x2="940" y2="205.85160718728804" stroke="#C24F4B" stroke-width="1.3"/>
+<line x1="936" y1="204.14839281271196" x2="944" y2="204.14839281271196" stroke="#C24F4B" stroke-width="1.3"/>
+<line x1="936" y1="205.85160718728804" x2="944" y2="205.85160718728804" stroke="#C24F4B" stroke-width="1.3"/>
+<circle cx="940" cy="205.0" r="5" fill="#FFFFFF" stroke="#C24F4B" stroke-width="2.2"/>
+<text x="940" y="316" font-size="18" fill="#263442" text-anchor="middle" font-weight="600">0</text>
+<line x1="1080" y1="211.13119703980502" x2="1080" y2="212.25802451708122" stroke="#C24F4B" stroke-width="1.3"/>
+<line x1="1076" y1="211.13119703980502" x2="1084" y2="211.13119703980502" stroke="#C24F4B" stroke-width="1.3"/>
+<line x1="1076" y1="212.25802451708122" x2="1084" y2="212.25802451708122" stroke="#C24F4B" stroke-width="1.3"/>
+<circle cx="1080" cy="211.69461077844312" r="5" fill="#FFFFFF" stroke="#C24F4B" stroke-width="2.2"/>
+<text x="1080" y="316" font-size="18" fill="#263442" text-anchor="middle" font-weight="600">5</text>
+<line x1="1220" y1="220.42241064161846" x2="1220" y2="222.241404585071" stroke="#C24F4B" stroke-width="1.3"/>
+<line x1="1216" y1="220.42241064161846" x2="1224" y2="220.42241064161846" stroke="#C24F4B" stroke-width="1.3"/>
+<line x1="1216" y1="222.241404585071" x2="1224" y2="222.241404585071" stroke="#C24F4B" stroke-width="1.3"/>
+<circle cx="1220" cy="221.33190761334473" r="5" fill="#FFFFFF" stroke="#C24F4B" stroke-width="2.2"/>
+<text x="1220" y="316" font-size="18" fill="#263442" text-anchor="middle" font-weight="600">20</text>
+<line x1="1360" y1="224.67009601010255" x2="1360" y2="225.30138959012555" stroke="#C24F4B" stroke-width="1.3"/>
+<line x1="1356" y1="224.67009601010255" x2="1364" y2="224.67009601010255" stroke="#C24F4B" stroke-width="1.3"/>
+<line x1="1356" y1="225.30138959012555" x2="1364" y2="225.30138959012555" stroke="#C24F4B" stroke-width="1.3"/>
+<circle cx="1360" cy="224.98574280011405" r="5" fill="#FFFFFF" stroke="#C24F4B" stroke-width="2.2"/>
+<text x="1360" y="316" font-size="18" fill="#263442" text-anchor="middle" font-weight="600">50</text>
+<line x1="948" y1="341" x2="978" y2="341" stroke="#0D6EB5" stroke-width="2.8"/>
+<circle cx="963" cy="341" r="4.5" fill="#FFFFFF" stroke="#0D6EB5" stroke-width="1.9"/>
+<text x="988" y="347" font-size="18" fill="#0D6EB5" text-anchor="start" font-weight="700">posts remaining</text>
+<line x1="1170" y1="341" x2="1200" y2="341" stroke="#C24F4B" stroke-width="2.8"/>
+<circle cx="1185" cy="341" r="4.5" fill="#FFFFFF" stroke="#C24F4B" stroke-width="1.9"/>
+<text x="1210" y="347" font-size="18" fill="#C24F4B" text-anchor="start" font-weight="700">QPS retained</text>
+<text x="888" y="394" font-size="18" fill="#0D426A" text-anchor="start" font-weight="700">CN self-time (200K queries, 3,000 samples)</text>
+<rect x="888" y="408" width="504" height="20" rx="3" fill="#E9EDF2" stroke="#A1AAB6" stroke-width="1.0"/>
+<rect x="888" y="408" width="26.0064" height="20" rx="3" fill="#0D6EB5" stroke="#0D6EB5" stroke-width="0"/>
+<text x="888" y="454" font-size="18" fill="#0D6EB5" text-anchor="start" font-weight="700">useful distance: 5.2%</text>
+<text x="1392" y="454" font-size="18" fill="#667085" text-anchor="end" font-weight="700">other CN work: 94.8%</text>
+<text x="888" y="492" font-size="19" fill="#263442" text-anchor="start" font-weight="700">Caching changes reuse; it does not change the retrieval unit.</text>
+</svg>

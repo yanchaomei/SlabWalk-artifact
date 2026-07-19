@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-07-19T04:53:21.189106+00:00",
+  "dataset": "DEEP1M",
+  "groundtruth": {
+    "bytes": 4040000,
+    "canonical_ids_sha256": "edce835964026fe3161d1c3c0a9fdf5144fae22ee30d9b55585bebfca0117ce5",
+    "file_sha256": "d99e96c21cfdc2383f2735f80d0d7e3c7ef62989510bf840023a6454e108a5b2",
+    "format": "ivecs",
+    "k": 100,
+    "layout": "ids_only",
+    "path": "/home/kvgroup/chaomei/dhnsw_frontier_1m_work_20260709/deep1M/deep1M_groundtruth.ivecs",
+    "rows": 10000,
+    "source_rows": 10000
+  },
+  "kind": "query_pool_fingerprint",
+  "limit": 10000,
+  "method": "d-HNSW",
+  "metric": "l2",
+  "query": {
+    "bytes": 3880000,
+    "canonical_sha256": "68973a8fa5af6691d904c0f5a292136be6e3f21fed6b28154a1bfbdb1c93db57",
+    "dim": 96,
+    "file_sha256": "0359efc4a332e6f79ebeade7665aa314e10b122fea1d54b3878f97c9bb5ba574",
+    "format": "fvecs",
+    "path": "/home/kvgroup/chaomei/dhnsw_frontier_1m_work_20260709/deep1M/deep1M_query.fvecs",
+    "rows": 10000,
+    "source_rows": 10000
+  }
+}

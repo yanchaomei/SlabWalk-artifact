@@ -11,21 +11,21 @@ a manuscript number.
   `2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6`.
 - Final evidence gate:
   `results/vldb_final_evidence/evidence_gate.json`, SHA-256
-  `34af8abc8c5f3a2c7f77cc57ed1f52118933b0d000136c99ab6d35c1b0a58426`.
+  `899493c0dd96cbf6aecc26945622e872bc142dbc4d46812d58cf920cfd0555ce`.
   It reports `ready_for_plotting=true` and verifies all 28 files in the
   composite frontier's exact SHA-256 inventory.
 - Gated manuscript claims:
   `results/vldb_final_evidence/manuscript_claims.json`, SHA-256
-  `19c772ed773c03b7df2c47920fbf0df799fb6b10ded234ad652dac3395d5625f`.
+  `96ae31cfdbf1dad311ae6bab45a0e23127a2cc6dcb9299fce11ec1d150a5c3ea`.
 - Atomic release manifest:
   `results/vldb_final_evidence/release_bundle.json`, SHA-256
-  `294708232c7fa49721a23c80dcfd3b566eaf0526d3b944bfc9da80fe2a09649b`.
+  `3162239595c0b30176a5844221a3dc018e92841c0ef9a581577dadecc196599a`.
   It binds 20 installed files, including the official PVLDB style, and exactly
   nine publication PDFs.
 - `paper_vldb/generated_claims.tex` is rendered from the gated JSON. Numeric
   prose in `main.tex` consumes those macros rather than copying remote logs or
   intermediate CSV values. Its SHA-256 is
-  `39cea1efdf7d2ed60c9795eb04bc933cd1b57f81e10f16167003b4f3ae8c0b6a`.
+  `883976d98dd0185a7a080a3df4c41d56203778e90b9ccb35e0b517b0f6ee0618`.
 - Primary frontier protocol: Recall@10, ten workers, fixed 10K logical query and
   ground-truth pools, one excluded warmup, and five measured repeats.
 - Primary datasets: DEEP10M, SIFT10M, and TTI10M.
@@ -144,6 +144,13 @@ passes; direct manual replacement is outside the release contract.
   campaign enters the atomic frontier bundle.
 - The worker-scaling pre-fix `w40/r0` tree is retained with a SHA inventory but
   excluded. The corrected point was rerun under the same protocol.
+- The complete fixed-pool multi-CN campaign is sealed at
+  `results/vldb_multicn_formal_20260719f/` (seal SHA-256
+  `88ecc25d1228af5f6331b728c1084b6d8d1f13db4f960040f0334a3d20d61356`).
+  It failed its preregistered SlabWalk scaling gate on all three datasets and
+  its fairness gate on SIFT and GIST. It supports the manuscript's explicit
+  no-scale-out boundary, but no row enters a publication figure, generated
+  numeric macro, or `release_bundle.json`.
 
 ## Reproduction Gate
 

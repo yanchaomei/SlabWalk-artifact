@@ -1,0 +1,174 @@
+{
+  "binary_sha256": "2e60c6ea3bb3893b66cbce65cfdc5d82faab4a74fcc469fdeb7b5ff8dda34fb6",
+  "campaign_id": "vldb-multicn-formal-20260719f",
+  "cn_count": 3,
+  "dataset": "GIST1M",
+  "groundtruth_canonical_sha256": "3e0d1ab10df27c25f964992fec6c60a883d2ca627b481388b677c2d62aaa8212",
+  "initiator_local_latency": {
+    "p50_us": 98801.562,
+    "p99_us": 130202.02500000001,
+    "samples": 334
+  },
+  "kind": "vldb_multicn_raw_source",
+  "latency_scope": "not_reported_cross_cn_frozen_binary_boundary",
+  "metrics": {
+    "bytes_per_query": 18079265.472,
+    "expected_queries": 1000,
+    "failed_queries": 0,
+    "fairness": 0.9999093434972599,
+    "p50_us": null,
+    "p99_us": null,
+    "posts_per_query": 4977.899,
+    "processed_queries": 1000,
+    "qps": 626.0,
+    "recall": 0.9071
+  },
+  "per_cn_qps": [
+    209.2728817670367,
+    212.94219660476867,
+    213.97983726853937
+  ],
+  "protocol_fingerprint": "3d307e42c0d412aafe221f2973d2a55b78b46ea919fe76421e3080367d3b17ec",
+  "query_canonical_sha256": "5779751c3b63bee0a0c52a0017232ca2340af0527eb0f79270ae09c010423eea",
+  "raw_measurements": [
+    {
+      "client_id": 0,
+      "kind": "initiator_json",
+      "path": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/raw/graph/GIST1M_SHINE_3cn_r1/c0.json",
+      "payload": {
+        "actual_total_local_buffer_size": 254704192,
+        "allocated_local_buffer_size": 4294967296,
+        "build": {
+          "dist_comps": 0,
+          "index_size": 0,
+          "max_level": 0,
+          "rdma_reads_in_bytes": 0,
+          "rdma_writes_in_bytes": 0,
+          "remote_allocations": 0
+        },
+        "cache": {
+          "cache_buckets_size": 2139400,
+          "cached_nodes": 0,
+          "hit_rate": 0.0,
+          "hits_total": 0,
+          "local_hit_rates": {
+            "c0": 0.0,
+            "c1": 0.0,
+            "c2": 0.0
+          },
+          "local_size": 0,
+          "misses_total": 0,
+          "num_cache_buckets": 53485,
+          "num_cooling_table_buckets": 892
+        },
+        "distance": "squared_l2",
+        "estimated_total_index_size": 4124799780,
+        "hnsw_parameters": {
+          "ef_construction": 100,
+          "ef_search": 300,
+          "k": 10,
+          "m": 16
+        },
+        "lavd_region_registered_bytes_per_mn": 0,
+        "lavd_region_registered_bytes_total": 0,
+        "lavd_region_requested_bytes": 0,
+        "lavd_region_resolved_bytes": 6442450944,
+        "meta": {
+          "compute_nodes": 3,
+          "compute_threads": 30,
+          "coroutines_per_thread": 2,
+          "dataset": "gist1m",
+          "hyperthreading": "true",
+          "label": "GIST1M_SHINE_3cn_r1",
+          "memory_nodes": 1,
+          "query_suffix": "uniform",
+          "threads_pinned": "true",
+          "timestamp": {
+            "$date": "2026-07-19T03:27:28Z"
+          },
+          "zipf_parameter": "niform"
+        },
+        "neighborlist_size": 132,
+        "neighborlist_size_l0": 260,
+        "node_size": 3856,
+        "num_queries": 1000,
+        "num_vectors": 1000000,
+        "queries": {
+          "compute_recall": "true",
+          "cwc_batched_reads": 0,
+          "cwc_batches": 0,
+          "dist_comps": 4669003,
+          "local_cn_read_bytes_gini": 0.0,
+          "local_cn_read_bytes_per_mn": [
+            6161123760
+          ],
+          "local_cn_read_submits_gini": 0.0,
+          "local_cn_read_submits_per_mn": [
+            1694309
+          ],
+          "local_cn_read_wrs_gini": 0.0,
+          "local_cn_read_wrs_per_mn": [
+            1694309
+          ],
+          "local_latency_p50_us": 98801.562,
+          "local_latency_p95_us": 120955.204,
+          "local_latency_p99_us": 130202.02500000001,
+          "local_latency_samples": 334,
+          "posts_l0": 0,
+          "posts_rerank": 0,
+          "posts_upnav": 0,
+          "processed": 1000,
+          "processed_local": {
+            "c0": 334,
+            "c1": 333,
+            "c2": 333
+          },
+          "queries_per_sec": 626,
+          "rdma_cqes": 4977899,
+          "rdma_posts": 4977899,
+          "rdma_reads_in_bytes": 18079265472,
+          "rdma_writes_in_bytes": 0,
+          "rdma_wrs": 4977899,
+          "recall": 0.9071,
+          "rerank_chunks": 0,
+          "visited_neighborlists": 309836,
+          "visited_nodes": 109366,
+          "visited_nodes_l0": 4558637
+        },
+        "query_contexts": 10,
+        "timings": {
+          "build_c0": 0.0,
+          "build_c1": 0.0,
+          "build_c2": 0.0,
+          "build_max": 0.0,
+          "placement_fetch": 43.718092999999996,
+          "placement_kmeans": 1843.45309,
+          "query_c0": 1596.002297,
+          "query_c1": 1563.804663,
+          "query_c2": 1556.221391,
+          "query_max": 1596.002297,
+          "routing": 0.0
+        }
+      },
+      "sha256": "aa387bc7669f73df0cc4d2035a1079167c91f313f61c5a71cd76f07c8850d505"
+    },
+    {
+      "client_id": 1,
+      "kind": "noninitiator_stderr",
+      "log": "============================================================\n                        CLIENT\n============================================================\nconnect to:                   [skv-node4, \b\b]\nis initiator:                 false\nTCP port:                     14431\nIB port:                      1\nmax outstanding CQEs:         16\nmax send work requests:       1024\nmax receive work requests:    1024\n============================================================\nindex region bytes:           4294967296\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\nnum_cores: 80\nphysical cores per socket: 20\nhyperthreading enabled\ninterleaved policy\n[STATUS]: LAVD neighborhood region: requested bytes=0, resolved bytes=6442450944\nconnect to initiator\npairing: 10824 -- 213355\nclient id: 1\nnumber of clients: 3\nconnect to server skv-node4\npairing: 10825 -- 12049\n[STATUS]: pinned main thread to core 20\n[STATUS]: receive access tokens of remote memory regions\n[STATUS]: LAVD neighborhood region: registered bytes per MN=0\nreading input data... (dim=960, num vectors=333/1000, filesize=3840008)\nreading input data... (dim=100, num vectors=1000/1000, filesize=400008)\n[STATUS]: allocate worker threads and read buffers\nallocated ALIGNED MEM (no hugepage) at 140427478208576 with buffer size 4294967296\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10826 -- 12062\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10827 -- 12063\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10828 -- 12064\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10829 -- 12065\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10830 -- 12066\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10831 -- 12067\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10832 -- 12068\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10833 -- 12069\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10834 -- 12070\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.62)\npairing: 10835 -- 12071\n[STATUS]: synchronize compute nodes\n[STATUS]: construct placement datastructure\n  fetched 20 nodes on level 4\n  fetched 257 nodes on level 3\n  fetched 3832 nodes on level 2\n[STATUS]: run balanced k-means\nrun kmeans\ncluster sizes:\n  cluster 0: 1391\n  cluster 1: 1\n  cluster 2: 124\n  cluster 3: 3\n  cluster 4: 1131\n  cluster 5: 1182\n  final iteration: 73, final error: 0\nrun balanced kmeans\nnum iterations: 367\nreported cluster sizes:\n  cluster 0: 639\n  cluster 1: 639\n  cluster 2: 638\n  cluster 3: 639\n  cluster 4: 639\n  cluster 5: 638\nactual cluster sizes:\n  cluster 0: 605\n  cluster 1: 792\n  cluster 2: 591\n  cluster 3: 564\n  cluster 4: 680\n  cluster 5: 600\ncombine clusters\nfinal cluster sizes:\n  cluster 0: 1285\n  cluster 1: 1356\n  cluster 2: 1191\nfinal mapping: 0 1 2 1 0 2 \n[STATUS]: synchronize compute nodes\n[STATUS]: run queries\nallocated ALIGNED MEM (no hugepage) at 140427457966144 with buffer size 9235200\nrouting buffer size: 9235200\n[STATUS]: **QUERY**: running worker threads...\n[STATUS]: pinned thread 1 to core 0\n[STATUS]: pinned thread 2 to core 21\n[STATUS]: pinned thread 3 to core 1\n[STATUS]: pinned thread 4 to core 22\n[STATUS]: pinned thread 5 to core 2\n[STATUS]: pinned thread 6 to core 23\n[STATUS]: pinned thread 7 to core 3\n[STATUS]: pinned thread 8 to core 24\n[STATUS]: pinned thread 9 to core 4\nquery 1/1000\nquery 301/1000\nquery 601/1000\nquery 901/1000\n[STATUS]: join compute threads\nt0 processed: 33, CHR: 0\nt1 processed: 34, CHR: 0\nt2 processed: 35, CHR: 0\nt3 processed: 34, CHR: 0\nt4 processed: 32, CHR: 0\nt5 processed: 33, CHR: 0\nt6 processed: 32, CHR: 0\nt7 processed: 34, CHR: 0\nt8 processed: 33, CHR: 0\nt9 processed: 33, CHR: 0\n[STATUS]: processed queries: 333\n[STATUS]: local recall: 0.912012\n[STATUS]: collect statistics and timings from compute nodes\n{\"build_c0\":0.0,\"placement_fetch\":43.697136,\"placement_kmeans\":1946.875898,\"query_c0\":1563.804663,\"routing\":0.0}\ncache histogram\n  size: 0 | freq: 53485\ntotal entries: 0\ncooling table histogram\n  size: 0 | freq: 892\n  size: 1 | freq: 0\n  size: 2 | freq: 0\n  size: 3 | freq: 0\n  size: 4 | freq: 0\n  size: 5 | freq: 0\n  size: 6 | freq: 0\nCT total entries: 0\n",
+      "path": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/raw/graph/GIST1M_SHINE_3cn_r1/c1.stderr",
+      "processed_queries": 333,
+      "sha256": "4e7c980a4c666c5e2aba73486fde9c96cda01781e03645424ed4a83525cf2a1d"
+    },
+    {
+      "client_id": 2,
+      "kind": "noninitiator_stderr",
+      "log": "============================================================\n                        CLIENT\n============================================================\nconnect to:                   [skv-node4, \b\b]\nis initiator:                 false\nTCP port:                     14431\nIB port:                      1\nmax outstanding CQEs:         16\nmax send work requests:       1024\nmax receive work requests:    1024\n============================================================\nindex region bytes:           4294967296\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\nnum_cores: 80\nphysical cores per socket: 20\nhyperthreading enabled\ninterleaved policy\n[STATUS]: LAVD neighborhood region: requested bytes=0, resolved bytes=6442450944\nconnect to initiator\npairing: 23706 -- 213356\nclient id: 2\nnumber of clients: 3\nconnect to server skv-node4\npairing: 23707 -- 12050\n[STATUS]: pinned main thread to core 20\n[STATUS]: receive access tokens of remote memory regions\n[STATUS]: LAVD neighborhood region: registered bytes per MN=0\nreading input data... (dim=960, num vectors=333/1000, filesize=3840008)\nreading input data... (dim=100, num vectors=1000/1000, filesize=400008)\n[STATUS]: allocate worker threads and read buffers\nallocated ALIGNED MEM (no hugepage) at 140246458843200 with buffer size 4294967296\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 23708 -- 12072\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 23709 -- 12073\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 23710 -- 12074\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 23711 -- 12075\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 23712 -- 12076\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 23713 -- 12077\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 23714 -- 12078\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 23715 -- 12079\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 23716 -- 12080\n2 device(s) found\nSelected device: mlx5_1 (idx=1)\nLink layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)\npairing: 23717 -- 12081\n[STATUS]: synchronize compute nodes\n[STATUS]: construct placement datastructure\n  fetched 20 nodes on level 4\n  fetched 257 nodes on level 3\n  fetched 3832 nodes on level 2\n[STATUS]: run balanced k-means\nrun kmeans\ncluster sizes:\n  cluster 0: 1391\n  cluster 1: 1\n  cluster 2: 124\n  cluster 3: 3\n  cluster 4: 1131\n  cluster 5: 1182\n  final iteration: 73, final error: 0\nrun balanced kmeans\nnum iterations: 367\nreported cluster sizes:\n  cluster 0: 639\n  cluster 1: 639\n  cluster 2: 638\n  cluster 3: 639\n  cluster 4: 639\n  cluster 5: 638\nactual cluster sizes:\n  cluster 0: 605\n  cluster 1: 792\n  cluster 2: 591\n  cluster 3: 564\n  cluster 4: 680\n  cluster 5: 600\ncombine clusters\nfinal cluster sizes:\n  cluster 0: 1285\n  cluster 1: 1356\n  cluster 2: 1191\nfinal mapping: 0 1 2 1 0 2 \n[STATUS]: synchronize compute nodes\n[STATUS]: run queries\nallocated ALIGNED MEM (no hugepage) at 140246435872832 with buffer size 9235200\nrouting buffer size: 9235200\n[STATUS]: **QUERY**: running worker threads...\n[STATUS]: pinned thread 1 to core 0\n[STATUS]: pinned thread 2 to core 21\n[STATUS]: pinned thread 3 to core 1\n[STATUS]: pinned thread 4 to core 22\n[STATUS]: pinned thread 5 to core 2\n[STATUS]: pinned thread 6 to core 23\n[STATUS]: pinned thread 7 to core 3\n[STATUS]: pinned thread 8 to core 24\n[STATUS]: pinned thread 9 to core 4\nquery 2/1000\nquery 302/1000\nquery 602/1000\nquery 902/1000\n[STATUS]: join compute threads\nt0 processed: 33, CHR: 0\nt1 processed: 34, CHR: 0\nt2 processed: 33, CHR: 0\nt3 processed: 33, CHR: 0\nt4 processed: 35, CHR: 0\nt5 processed: 33, CHR: 0\nt6 processed: 32, CHR: 0\nt7 processed: 34, CHR: 0\nt8 processed: 33, CHR: 0\nt9 processed: 33, CHR: 0\n[STATUS]: processed queries: 333\n[STATUS]: local recall: 0.915315\n[STATUS]: collect statistics and timings from compute nodes\n{\"build_c0\":0.0,\"placement_fetch\":44.519675,\"placement_kmeans\":1951.9197100000001,\"query_c0\":1556.221391,\"routing\":0.0}\ncache histogram\n  size: 0 | freq: 53485\ntotal entries: 0\ncooling table histogram\n  size: 0 | freq: 892\n  size: 1 | freq: 0\n  size: 2 | freq: 0\n  size: 3 | freq: 0\n  size: 4 | freq: 0\n  size: 5 | freq: 0\n  size: 6 | freq: 0\nCT total entries: 0\n",
+      "path": "/home/kvgroup/chaomei/graphbeyond-c1/evidence/vldb-multicn-formal-20260719f/raw/graph/GIST1M_SHINE_3cn_r1/c2.stderr",
+      "processed_queries": 333,
+      "sha256": "9997f9cd978db5d68c164be7639750beeedffd858348df49ba34345776fe6d88"
+    }
+  ],
+  "repeat": 1,
+  "system": "SHINE"
+}

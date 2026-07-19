@@ -1,0 +1,155 @@
+============================================================
+                        CLIENT
+============================================================
+connect to:                   [skv-node4, ]
+is initiator:                 false
+TCP port:                     14433
+IB port:                      1
+max outstanding CQEs:         16
+max send work requests:       1024
+max receive work requests:    1024
+============================================================
+index region bytes:           4294967296
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+num_cores: 80
+physical cores per socket: 20
+hyperthreading enabled
+interleaved policy
+[STATUS]: LAVD neighborhood region: requested bytes=0, resolved bytes=6442450944
+connect to initiator
+pairing: 23730 -- 213382
+client id: 2
+number of clients: 3
+connect to server skv-node4
+pairing: 23731 -- 12116
+[STATUS]: pinned main thread to core 20
+[STATUS]: receive access tokens of remote memory regions
+[STATUS]: LAVD neighborhood region: registered bytes per MN=0
+reading input data... (dim=960, num vectors=333/1000, filesize=3840008)
+reading input data... (dim=100, num vectors=1000/1000, filesize=400008)
+[STATUS]: allocate worker threads and read buffers
+allocated ALIGNED MEM (no hugepage) at 140275063095360 with buffer size 4294967296
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 23732 -- 12138
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 23733 -- 12139
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 23734 -- 12140
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 23735 -- 12141
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 23736 -- 12142
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 23737 -- 12143
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 23738 -- 12144
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 23739 -- 12145
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 23740 -- 12146
+2 device(s) found
+Selected device: mlx5_1 (idx=1)
+Link layer: Ethernet (RoCE), using GID index 3 (local IPv4 10.0.0.63)
+pairing: 23741 -- 12147
+[STATUS]: synchronize compute nodes
+[STATUS]: construct placement datastructure
+  fetched 20 nodes on level 4
+  fetched 257 nodes on level 3
+  fetched 3832 nodes on level 2
+[STATUS]: run balanced k-means
+run kmeans
+cluster sizes:
+  cluster 0: 1391
+  cluster 1: 1
+  cluster 2: 124
+  cluster 3: 3
+  cluster 4: 1131
+  cluster 5: 1182
+  final iteration: 73, final error: 0
+run balanced kmeans
+num iterations: 367
+reported cluster sizes:
+  cluster 0: 639
+  cluster 1: 639
+  cluster 2: 638
+  cluster 3: 639
+  cluster 4: 639
+  cluster 5: 638
+actual cluster sizes:
+  cluster 0: 605
+  cluster 1: 792
+  cluster 2: 591
+  cluster 3: 564
+  cluster 4: 680
+  cluster 5: 600
+combine clusters
+final cluster sizes:
+  cluster 0: 1285
+  cluster 1: 1356
+  cluster 2: 1191
+final mapping: 0 1 2 1 0 2 
+[STATUS]: synchronize compute nodes
+[STATUS]: run queries
+allocated ALIGNED MEM (no hugepage) at 140275040124992 with buffer size 9235200
+routing buffer size: 9235200
+[STATUS]: **QUERY**: running worker threads...
+[STATUS]: pinned thread 1 to core 0
+[STATUS]: pinned thread 2 to core 21
+[STATUS]: pinned thread 3 to core 1
+[STATUS]: pinned thread 4 to core 22
+[STATUS]: pinned thread 5 to core 2
+[STATUS]: pinned thread 6 to core 23
+[STATUS]: pinned thread 7 to core 3
+[STATUS]: pinned thread 8 to core 24
+[STATUS]: pinned thread 9 to core 4
+query 2/1000
+query 302/1000
+query 602/1000
+query 902/1000
+[STATUS]: join compute threads
+t0 processed: 34, CHR: 0
+t1 processed: 34, CHR: 0
+t2 processed: 33, CHR: 0
+t3 processed: 34, CHR: 0
+t4 processed: 32, CHR: 0
+t5 processed: 33, CHR: 0
+t6 processed: 34, CHR: 0
+t7 processed: 33, CHR: 0
+t8 processed: 33, CHR: 0
+t9 processed: 33, CHR: 0
+[STATUS]: processed queries: 333
+[STATUS]: local recall: 0.915315
+[STATUS]: collect statistics and timings from compute nodes
+{"build_c0":0.0,"placement_fetch":43.068321,"placement_kmeans":1938.635801,"query_c0":1557.4283580000001,"routing":0.0}
+cache histogram
+  size: 0 | freq: 53485
+total entries: 0
+cooling table histogram
+  size: 0 | freq: 892
+  size: 1 | freq: 0
+  size: 2 | freq: 0
+  size: 3 | freq: 0
+  size: 4 | freq: 0
+  size: 5 | freq: 0
+  size: 6 | freq: 0
+CT total entries: 0
